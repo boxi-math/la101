@@ -1,0 +1,385 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:05.620
+The drone's four buttons
+
+2
+00:00:05.733 --> 00:00:09.813
+are the columns of A: u, v, w and s.
+
+3
+00:00:09.813 --> 00:00:14.913
+Every target it can reach lies in one plane
+
+4
+00:00:14.913 --> 00:00:19.900
+b one minus b two plus b three equals zero.
+
+5
+00:00:20.250 --> 00:00:22.307
+Lay that plane flat
+
+6
+00:00:22.307 --> 00:00:26.934
+and measure every point in steps of u and v.
+
+7
+00:00:26.934 --> 00:00:31.561
+Then u is one step across, v is one step up
+
+8
+00:00:31.561 --> 00:00:36.086
+w, which is two u plus v, sits at two, one
+
+9
+00:00:36.086 --> 00:00:38.862
+and s, which is v minus u
+
+10
+00:00:38.862 --> 00:00:41.330
+sits at minus one, one.
+
+11
+00:00:41.680 --> 00:00:45.715
+How many buttons does the drone really need
+
+12
+00:00:45.807 --> 00:00:48.192
+to reach a target like the
+
+13
+00:00:48.283 --> 00:00:50.759
+delivery point at one, one?
+
+14
+00:00:50.759 --> 00:00:54.245
+One button alone reaches only a line.
+
+15
+00:00:54.245 --> 00:00:58.372
+But a pair reaches the whole plane: u and w
+
+16
+00:00:58.372 --> 00:01:02.040
+u and s, w and s, and every other pair.
+
+17
+00:01:02.390 --> 00:01:04.157
+Here is a puzzle.
+
+18
+00:01:04.157 --> 00:01:08.729
+Can three buttons, no two of them parallel
+
+19
+00:01:08.729 --> 00:01:10.703
+still be wasteful?
+
+20
+00:01:10.703 --> 00:01:12.470
+Pause and think.
+
+21
+00:01:19.407 --> 00:01:23.280
+Vectors are independent when the only combination
+
+22
+00:01:23.359 --> 00:01:26.362
+that gives zero has every amount zero.
+
+23
+00:01:26.362 --> 00:01:28.733
+Otherwise they are dependent
+
+24
+00:01:28.812 --> 00:01:31.341
+and one of them is a combination
+
+25
+00:01:31.420 --> 00:01:32.527
+of the others.
+
+26
+00:01:32.877 --> 00:01:36.409
+Put the vectors in the columns of a matrix.
+
+27
+00:01:36.492 --> 00:01:38.874
+A combination that gives zero
+
+28
+00:01:38.956 --> 00:01:41.174
+is then a nullspace vector
+
+29
+00:01:41.256 --> 00:01:44.378
+so the columns are independent exactly
+
+30
+00:01:44.460 --> 00:01:47.171
+when there are no free variables
+
+31
+00:01:47.171 --> 00:01:48.157
+r equals n.
+
+32
+00:01:48.737 --> 00:01:53.310
+The drone has rank two and four columns
+
+33
+00:01:53.310 --> 00:01:54.567
+dependent.
+
+34
+00:01:54.567 --> 00:01:59.140
+Here is one relation in the flat plane.
+
+35
+00:01:59.140 --> 00:02:03.713
+Minus two u, then minus v, then plus w
+
+36
+00:02:03.713 --> 00:02:07.257
+the path closes, back at zero.
+
+37
+00:02:07.607 --> 00:02:11.956
+And another: u, then minus v, then plus s
+
+38
+00:02:11.956 --> 00:02:14.027
+back at zero again.
+
+39
+00:02:14.130 --> 00:02:16.615
+A dependence is a closed
+
+40
+00:02:16.719 --> 00:02:18.790
+loop of the vectors.
+
+41
+00:02:18.893 --> 00:02:22.103
+These are the special solutions
+
+42
+00:02:22.207 --> 00:02:23.967
+of lecture seven.
+
+43
+00:02:24.547 --> 00:02:26.128
+Three quick facts.
+
+44
+00:02:26.215 --> 00:02:28.674
+A set that contains the zero
+
+45
+00:02:28.762 --> 00:02:31.133
+vector is always dependent
+
+46
+00:02:31.133 --> 00:02:34.031
+give the zero vector amount one.
+
+47
+00:02:34.119 --> 00:02:36.226
+More than m vectors in R
+
+48
+00:02:36.314 --> 00:02:38.334
+m are always dependent
+
+49
+00:02:38.334 --> 00:02:42.110
+so in our flat plane any three arrows are
+
+50
+00:02:42.197 --> 00:02:45.095
+and four buttons in R three could
+
+51
+00:02:45.183 --> 00:02:47.027
+never be independent.
+
+52
+00:02:47.377 --> 00:02:50.615
+And two vectors are dependent exactly
+
+53
+00:02:50.702 --> 00:02:53.852
+when one is a multiple of the other
+
+54
+00:02:53.852 --> 00:02:55.777
+they lie on one line.
+
+55
+00:02:56.357 --> 00:03:00.537
+So is dependence just two parallel vectors?
+
+56
+00:03:00.537 --> 00:03:00.926
+No.
+
+57
+00:03:00.926 --> 00:03:04.329
+No two of u, v and w are parallel
+
+58
+00:03:04.329 --> 00:03:08.023
+yet w is two u plus v: one step of u
+
+59
+00:03:08.023 --> 00:03:12.301
+another, then one of v, lands exactly on w.
+
+60
+00:03:12.301 --> 00:03:14.926
+For three or more vectors
+
+61
+00:03:14.926 --> 00:03:18.717
+test with the rank, not two at a time.
+
+62
+00:03:19.067 --> 00:03:22.805
+And dependent does not mean every vector
+
+63
+00:03:22.898 --> 00:03:25.795
+is a combination of the others.
+
+64
+00:03:25.795 --> 00:03:29.813
+In an ordinary plane, take a equal to one
+
+65
+00:03:29.813 --> 00:03:32.429
+zero, b equal to two, zero
+
+66
+00:03:32.429 --> 00:03:34.858
+and c equal to zero, one.
+
+67
+00:03:34.858 --> 00:03:38.783
+They are dependent, because b is twice a.
+
+68
+00:03:38.783 --> 00:03:42.427
+But c is not a combination of a and b.
+
+69
+00:03:43.007 --> 00:03:45.364
+The span of some vectors is the
+
+70
+00:03:45.440 --> 00:03:47.720
+set of all their combinations.
+
+71
+00:03:47.720 --> 00:03:51.141
+The column space is the span of the columns
+
+72
+00:03:51.141 --> 00:03:54.258
+all four buttons span the drone's plane
+
+73
+00:03:54.258 --> 00:03:56.386
+and so do just two of them.
+
+74
+00:03:56.386 --> 00:03:59.047
+Spanning says nothing about waste.
+
+75
+00:03:59.397 --> 00:04:01.778
+And always name the space.
+
+76
+00:04:01.778 --> 00:04:03.976
+u and v span the plane
+
+77
+00:04:03.976 --> 00:04:07.090
+but not all of R three: one, one
+
+78
+00:04:07.090 --> 00:04:09.105
+one is off the plane
+
+79
+00:04:09.105 --> 00:04:12.677
+because one minus one plus one is one
+
+80
+00:04:12.677 --> 00:04:13.593
+not zero.
+
+81
+00:04:13.593 --> 00:04:16.341
+Add one, one, one to u and v
+
+82
+00:04:16.341 --> 00:04:20.004
+the matrix of the three has rank three
+
+83
+00:04:20.004 --> 00:04:22.477
+so they span all of space.
+
+84
+00:04:23.057 --> 00:04:26.084
+So: vectors are independent when only
+
+85
+00:04:26.166 --> 00:04:28.784
+the zero combination gives zero
+
+86
+00:04:28.784 --> 00:04:31.156
+for the columns of a matrix
+
+87
+00:04:31.156 --> 00:04:32.547
+when r equals n.
+
+88
+00:04:32.547 --> 00:04:35.410
+Dependence is a loop back to zero
+
+89
+00:04:35.492 --> 00:04:37.537
+and it can happen with no
+
+90
+00:04:37.619 --> 00:04:39.337
+two vectors parallel.
+
+91
+00:04:39.687 --> 00:04:42.748
+The span is all combinations
+
+92
+00:04:42.748 --> 00:04:47.393
+and any two buttons span the drone's plane.
+
+93
+00:04:47.393 --> 00:04:48.554
+Your turn
+
+94
+00:04:48.554 --> 00:04:52.249
+can two vectors ever span R three?
+
+95
+00:04:52.249 --> 00:04:55.944
+In part two: a basis, coordinates
+
+96
+00:04:55.944 --> 00:04:57.527
+and dimension.

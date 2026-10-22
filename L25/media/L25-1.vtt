@@ -1,0 +1,485 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:05.940
+So far a matrix was a table of numbers
+
+2
+00:00:06.020 --> 00:00:08.420
+acting on a column of numbers.
+
+3
+00:00:08.420 --> 00:00:11.700
+Today, watch one act on the whole plane.
+
+4
+00:00:12.050 --> 00:00:14.667
+Every grid line stays straight
+
+5
+00:00:14.751 --> 00:00:17.114
+parallel lines stay parallel
+
+6
+00:00:17.199 --> 00:00:18.718
+and evenly spaced
+
+7
+00:00:18.718 --> 00:00:21.250
+and the origin does not move.
+
+8
+00:00:21.600 --> 00:00:25.594
+Now a very different map: the derivative.
+
+9
+00:00:25.691 --> 00:00:28.906
+It sends three minus two t plus t
+
+10
+00:00:29.003 --> 00:00:32.120
+squared to minus two plus two t.
+
+11
+00:00:32.470 --> 00:00:34.779
+Is the derivative a matrix too?
+
+12
+00:00:34.854 --> 00:00:36.791
+Pause and think about what
+
+13
+00:00:36.865 --> 00:00:38.430
+that would even mean.
+
+14
+00:00:42.010 --> 00:00:45.028
+First, widen the idea of a vector.
+
+15
+00:00:45.028 --> 00:00:48.933
+A vector is anything you can add and scale
+
+16
+00:00:48.933 --> 00:00:51.330
+following the usual rules.
+
+17
+00:00:51.680 --> 00:00:54.953
+Functions can be added and scaled.
+
+18
+00:00:54.953 --> 00:00:58.803
+Let the arrow e one stand for cosine t
+
+19
+00:00:58.803 --> 00:01:00.920
+and e two for sine t.
+
+20
+00:01:01.270 --> 00:01:03.714
+Two cosine t plus five sine
+
+21
+00:01:03.805 --> 00:01:07.335
+t is then one arrow, built tip to tail
+
+22
+00:01:07.335 --> 00:01:10.051
+exactly like a column vector.
+
+23
+00:01:10.051 --> 00:01:13.310
+This plane is a plane of functions.
+
+24
+00:01:13.660 --> 00:01:17.347
+The polynomials of degree at most two
+
+25
+00:01:17.347 --> 00:01:20.453
+called P two, form a space too.
+
+26
+00:01:20.453 --> 00:01:23.655
+But degree exactly two does not
+
+27
+00:01:23.655 --> 00:01:27.827
+t squared plus one minus t squared is one
+
+28
+00:01:27.827 --> 00:01:29.380
+of degree zero.
+
+29
+00:01:29.960 --> 00:01:32.291
+A basis gives coordinates.
+
+30
+00:01:32.291 --> 00:01:35.159
+In the basis one, t, t squared
+
+31
+00:01:35.159 --> 00:01:38.566
+our polynomial has coordinates three
+
+32
+00:01:38.566 --> 00:01:40.000
+minus two, one.
+
+33
+00:01:40.350 --> 00:01:44.650
+Now draw the polynomial itself, as a curve.
+
+34
+00:01:44.650 --> 00:01:48.550
+Centre the basis at t equals one: one
+
+35
+00:01:48.550 --> 00:01:52.350
+t minus one, and t minus one squared.
+
+36
+00:01:52.350 --> 00:01:56.350
+Now the coordinates are two, zero, one.
+
+37
+00:01:56.700 --> 00:01:59.957
+The new coordinates tell you something.
+
+38
+00:01:59.957 --> 00:02:03.213
+The two is p of one, the lowest value.
+
+39
+00:02:03.297 --> 00:02:05.468
+The zero says the slope at
+
+40
+00:02:05.551 --> 00:02:07.305
+t equals one is zero
+
+41
+00:02:07.305 --> 00:02:10.060
+this is the bottom of the curve.
+
+42
+00:02:10.410 --> 00:02:12.705
+The vector did not change
+
+43
+00:02:12.705 --> 00:02:14.647
+only its description.
+
+44
+00:02:14.647 --> 00:02:18.090
+A good basis makes a property visible.
+
+45
+00:02:18.670 --> 00:02:21.358
+Changing coordinates is a matrix.
+
+46
+00:02:21.358 --> 00:02:23.557
+Put the new basis vectors
+
+47
+00:02:23.557 --> 00:02:25.837
+written in old coordinates
+
+48
+00:02:25.837 --> 00:02:27.710
+into the columns of B.
+
+49
+00:02:28.060 --> 00:02:31.515
+So to get the new coordinates
+
+50
+00:02:31.515 --> 00:02:34.740
+multiply the old ones by B?
+
+51
+00:02:34.740 --> 00:02:38.540
+That gives six, minus four, one.
+
+52
+00:02:38.890 --> 00:02:41.162
+Rebuild the polynomial from
+
+53
+00:02:41.246 --> 00:02:43.855
+those coordinates, and draw it.
+
+54
+00:02:43.855 --> 00:02:47.305
+It is eleven minus six t plus t squared
+
+55
+00:02:47.305 --> 00:02:50.671
+the same shape, moved two to the right.
+
+56
+00:02:50.671 --> 00:02:52.690
+A different polynomial.
+
+57
+00:02:53.040 --> 00:02:55.253
+B goes from new to old
+
+58
+00:02:55.253 --> 00:02:58.621
+old coordinates equal B times new.
+
+59
+00:02:58.621 --> 00:03:01.604
+So old to new needs B inverse
+
+60
+00:03:01.604 --> 00:03:04.298
+which gives two, zero, one
+
+61
+00:03:04.298 --> 00:03:06.800
+and the curve comes back.
+
+62
+00:03:07.380 --> 00:03:08.625
+Now the maps.
+
+63
+00:03:08.721 --> 00:03:11.785
+A linear transformation respects
+
+64
+00:03:11.881 --> 00:03:13.700
+sums and multiples.
+
+65
+00:03:14.050 --> 00:03:18.116
+Take two arrows, u and v, and their sum
+
+66
+00:03:18.116 --> 00:03:21.674
+the diagonal of the parallelogram.
+
+67
+00:03:21.674 --> 00:03:23.402
+Apply the shear
+
+68
+00:03:23.402 --> 00:03:27.874
+the parallelogram is still a parallelogram
+
+69
+00:03:27.874 --> 00:03:31.330
+so T of u plus v is T u plus T v.
+
+70
+00:03:31.680 --> 00:03:34.017
+Scaling works the same way
+
+71
+00:03:34.017 --> 00:03:37.480
+twice an arrow goes to twice its image.
+
+72
+00:03:37.830 --> 00:03:40.897
+Adding a fixed vector is not linear
+
+73
+00:03:40.897 --> 00:03:42.685
+it moves the origin.
+
+74
+00:03:42.685 --> 00:03:46.178
+Squaring is not linear either: double p
+
+75
+00:03:46.178 --> 00:03:49.670
+and p squared becomes four times as big.
+
+76
+00:03:50.250 --> 00:03:52.409
+A linear map is known once
+
+77
+00:03:52.492 --> 00:03:54.401
+you know it on a basis
+
+78
+00:03:54.484 --> 00:03:57.556
+because every vector is a combination
+
+79
+00:03:57.639 --> 00:03:59.050
+of basis vectors.
+
+80
+00:03:59.400 --> 00:04:01.766
+So record exactly that.
+
+81
+00:04:01.766 --> 00:04:05.160
+The shear sends e one to itself
+
+82
+00:04:05.160 --> 00:04:07.526
+and e two to one, one.
+
+83
+00:04:07.526 --> 00:04:11.949
+Those two images are the two columns of N
+
+84
+00:04:11.949 --> 00:04:14.520
+column j holds T of v j.
+
+85
+00:04:14.870 --> 00:04:17.636
+Now the derivative on P two.
+
+86
+00:04:17.636 --> 00:04:20.896
+D of one is zero, D of t is one
+
+87
+00:04:20.896 --> 00:04:23.366
+D of t squared is two t.
+
+88
+00:04:23.465 --> 00:04:25.934
+Their coordinates are the
+
+89
+00:04:26.033 --> 00:04:27.910
+three columns of D.
+
+90
+00:04:28.260 --> 00:04:31.865
+Multiply D by three, minus two, one.
+
+91
+00:04:31.865 --> 00:04:34.868
+You get minus two, two, zero
+
+92
+00:04:34.868 --> 00:04:37.972
+the line minus two plus two t
+
+93
+00:04:37.972 --> 00:04:41.577
+which crosses zero at t equals one
+
+94
+00:04:41.577 --> 00:04:44.380
+the bottom of the parabola.
+
+95
+00:04:44.730 --> 00:04:47.021
+Differentiation has become
+
+96
+00:04:47.109 --> 00:04:49.048
+matrix multiplication.
+
+97
+00:04:49.136 --> 00:04:51.956
+And three derivatives kill every
+
+98
+00:04:52.044 --> 00:04:54.248
+polynomial of degree two
+
+99
+00:04:54.248 --> 00:04:56.010
+so D cubed is zero.
+
+100
+00:04:56.590 --> 00:04:59.334
+Back to the plane of functions
+
+101
+00:04:59.334 --> 00:05:02.786
+with cosine t and sine t as the basis.
+
+102
+00:05:02.874 --> 00:05:05.264
+The derivative sends cosine
+
+103
+00:05:05.353 --> 00:05:09.070
+t to minus sine t, and sine t to cosine t.
+
+104
+00:05:09.420 --> 00:05:13.392
+Write those as columns: zero, minus one
+
+105
+00:05:13.392 --> 00:05:14.882
+and one, zero.
+
+106
+00:05:14.882 --> 00:05:17.265
+As a warp of the plane
+
+107
+00:05:17.265 --> 00:05:20.740
+that is a quarter turn, clockwise.
+
+108
+00:05:21.090 --> 00:05:23.673
+Watch two cosine t plus five
+
+109
+00:05:23.766 --> 00:05:25.426
+sine t ride along.
+
+110
+00:05:25.426 --> 00:05:29.486
+It lands on five cosine t minus two sine t
+
+111
+00:05:29.486 --> 00:05:32.530
+which is exactly its derivative.
+
+112
+00:05:32.880 --> 00:05:34.596
+Every arrow turns
+
+113
+00:05:34.596 --> 00:05:38.217
+so no real arrow keeps its direction
+
+114
+00:05:38.217 --> 00:05:41.839
+the eigenvalues are plus and minus i.
+
+115
+00:05:41.934 --> 00:05:45.461
+That is why e to the i t appeared for
+
+116
+00:05:45.556 --> 00:05:48.320
+the spring in Lecture twenty.
+
+117
+00:05:48.900 --> 00:05:52.937
+So: a linear map keeps sums and multiples
+
+118
+00:05:52.937 --> 00:05:57.167
+a basis gives every vector its coordinates
+
+119
+00:05:57.167 --> 00:06:01.300
+and column j of the matrix holds T of v j.
+
+120
+00:06:01.650 --> 00:06:05.543
+Next, one map seen in two different bases
+
+121
+00:06:05.543 --> 00:06:09.250
+two matrices, and what they must share.

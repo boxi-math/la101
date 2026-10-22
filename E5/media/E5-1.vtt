@@ -1,0 +1,513 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:06.181
+Two rain barrels stand one above the other.
+
+2
+00:00:06.181 --> 00:00:08.851
+Barrel one drains into barrel two
+
+3
+00:00:08.851 --> 00:00:11.826
+and barrel two drains onto the garden.
+
+4
+00:00:11.826 --> 00:00:14.420
+Each drains at rate one per hour.
+
+5
+00:00:14.770 --> 00:00:18.458
+So the rate of change of x is A times x
+
+6
+00:00:18.458 --> 00:00:21.962
+with A equal to minus one, zero, one
+
+7
+00:00:21.962 --> 00:00:22.976
+minus one.
+
+8
+00:00:22.976 --> 00:00:27.034
+Barrel one starts with four hundred litres
+
+9
+00:00:27.034 --> 00:00:28.970
+barrel two is empty.
+
+10
+00:00:29.320 --> 00:00:30.935
+A is triangular
+
+11
+00:00:30.935 --> 00:00:34.873
+so its eigenvalue is minus one, twice.
+
+12
+00:00:34.873 --> 00:00:38.003
+As a warp, minus A is a shear.
+
+13
+00:00:38.003 --> 00:00:41.133
+Only one line stays on itself
+
+14
+00:00:41.133 --> 00:00:43.960
+the line through zero, one.
+
+15
+00:00:44.310 --> 00:00:48.353
+Can eigenvectors alone solve this system?
+
+16
+00:00:48.353 --> 00:00:50.030
+Pause and think.
+
+17
+00:00:53.610 --> 00:00:53.862
+No.
+
+18
+00:00:53.862 --> 00:00:57.646
+Every eigen-solution keeps barrel one empty
+
+19
+00:00:57.646 --> 00:01:01.010
+so none of them starts from four, zero.
+
+20
+00:01:01.360 --> 00:01:04.517
+But we can solve one barrel at a time.
+
+21
+00:01:04.517 --> 00:01:06.511
+Barrel one just drains
+
+22
+00:01:06.511 --> 00:01:09.169
+x one is four e to the minus t
+
+23
+00:01:09.169 --> 00:01:11.080
+in hundreds of litres.
+
+24
+00:01:11.430 --> 00:01:14.886
+Barrel two fills and drains at once
+
+25
+00:01:14.886 --> 00:01:18.150
+x two is four t e to the minus t.
+
+26
+00:01:18.150 --> 00:01:21.030
+It is fullest after one hour
+
+27
+00:01:21.030 --> 00:01:25.350
+with about a hundred and forty seven litres.
+
+28
+00:01:25.700 --> 00:01:27.687
+That factor t is new.
+
+29
+00:01:27.687 --> 00:01:31.660
+No mix of eigen-solutions can produce it.
+
+30
+00:01:32.240 --> 00:01:35.317
+An eigenvalue can be counted in two ways.
+
+31
+00:01:35.392 --> 00:01:38.470
+Its algebraic multiplicity counts it as a
+
+32
+00:01:38.545 --> 00:01:41.397
+root of the characteristic polynomial.
+
+33
+00:01:41.472 --> 00:01:43.948
+Its geometric multiplicity counts
+
+34
+00:01:44.023 --> 00:01:46.200
+its independent eigenvectors.
+
+35
+00:01:46.550 --> 00:01:49.113
+When the second count falls short
+
+36
+00:01:49.113 --> 00:01:51.525
+the matrix is called defective
+
+37
+00:01:51.525 --> 00:01:54.089
+too few eigenvectors for a basis
+
+38
+00:01:54.089 --> 00:01:56.350
+so it cannot be diagonalized.
+
+39
+00:01:56.700 --> 00:02:00.758
+For the cascade: algebraic multiplicity two
+
+40
+00:02:00.758 --> 00:02:03.340
+geometric multiplicity one.
+
+41
+00:02:03.920 --> 00:02:07.049
+Here is a look-alike pair, G and H.
+
+42
+00:02:07.049 --> 00:02:10.000
+They differ in just two entries.
+
+43
+00:02:10.350 --> 00:02:14.044
+Both have trace six, determinant eight
+
+44
+00:02:14.044 --> 00:02:16.885
+and a single eigenvalue: two
+
+45
+00:02:16.885 --> 00:02:18.590
+three times over.
+
+46
+00:02:18.940 --> 00:02:22.004
+But G minus two I has rank two
+
+47
+00:02:22.004 --> 00:02:25.167
+and H minus two I has rank one.
+
+48
+00:02:25.167 --> 00:02:29.417
+So G has only one independent eigenvector
+
+49
+00:02:29.417 --> 00:02:30.900
+and H has two.
+
+50
+00:02:31.480 --> 00:02:33.089
+A tempting rule
+
+51
+00:02:33.189 --> 00:02:36.306
+a repeated eigenvalue means the
+
+52
+00:02:36.407 --> 00:02:39.424
+matrix cannot be diagonalized.
+
+53
+00:02:39.424 --> 00:02:40.630
+Is it true?
+
+54
+00:02:40.630 --> 00:02:42.440
+Pause and decide.
+
+55
+00:02:46.020 --> 00:02:46.698
+Not so.
+
+56
+00:02:46.795 --> 00:02:49.315
+Two times the identity has
+
+57
+00:02:49.412 --> 00:02:51.931
+the eigenvalue two, twice
+
+58
+00:02:51.931 --> 00:02:55.420
+and every vector is an eigenvector.
+
+59
+00:02:55.770 --> 00:02:58.605
+Defective means fewer eigenvectors
+
+60
+00:02:58.688 --> 00:03:00.523
+than the multiplicity.
+
+61
+00:03:00.523 --> 00:03:01.690
+Nothing else.
+
+62
+00:03:02.270 --> 00:03:06.005
+So what fills the missing directions?
+
+63
+00:03:06.106 --> 00:03:10.851
+A generalized eigenvector is a vector that some
+
+64
+00:03:10.952 --> 00:03:14.990
+power of A minus lambda I sends to zero.
+
+65
+00:03:15.340 --> 00:03:17.055
+They come in chains.
+
+66
+00:03:17.055 --> 00:03:20.914
+The first vector is an ordinary eigenvector
+
+67
+00:03:21.000 --> 00:03:24.173
+and A minus lambda I sends each later
+
+68
+00:03:24.259 --> 00:03:26.660
+vector to the one before it.
+
+69
+00:03:27.010 --> 00:03:29.833
+So A times each chain vector is
+
+70
+00:03:29.924 --> 00:03:32.200
+lambda times that vector
+
+71
+00:03:32.200 --> 00:03:34.112
+plus the one before.
+
+72
+00:03:34.112 --> 00:03:36.388
+In the basis of a chain
+
+73
+00:03:36.388 --> 00:03:39.120
+the matrix is a Jordan block
+
+74
+00:03:39.120 --> 00:03:41.305
+lambda on the diagonal
+
+75
+00:03:41.305 --> 00:03:43.490
+and ones just above it.
+
+76
+00:03:43.840 --> 00:03:45.355
+For the barrels
+
+77
+00:03:45.355 --> 00:03:49.614
+A plus the identity sends one, zero to zero
+
+78
+00:03:49.614 --> 00:03:53.873
+one, and zero, one to zero: from barrel one
+
+79
+00:03:53.873 --> 00:03:56.429
+to barrel two, to nothing.
+
+80
+00:03:56.429 --> 00:03:57.849
+In that basis
+
+81
+00:03:57.943 --> 00:04:00.972
+A is the Jordan block with minus
+
+82
+00:04:01.067 --> 00:04:02.960
+one on the diagonal.
+
+83
+00:04:03.540 --> 00:04:06.985
+For G, the eigenvectors of G minus
+
+84
+00:04:07.087 --> 00:04:10.937
+two I form a single line, through one
+
+85
+00:04:10.937 --> 00:04:12.660
+minus one, zero.
+
+86
+00:04:13.010 --> 00:04:17.012
+Solving G minus two I, times v two
+
+87
+00:04:17.012 --> 00:04:21.814
+equals v one, gives minus one, zero, one.
+
+88
+00:04:21.814 --> 00:04:26.730
+Once more, and v three is zero, zero, one.
+
+89
+00:04:27.080 --> 00:04:30.526
+With this chain as the columns of M
+
+90
+00:04:30.622 --> 00:04:33.589
+M inverse G M is a single three
+
+91
+00:04:33.684 --> 00:04:37.800
+by three Jordan block, with eigenvalue two.
+
+92
+00:04:38.380 --> 00:04:40.909
+Collect chains for every eigenvalue
+
+93
+00:04:40.982 --> 00:04:44.089
+until they form a basis; that always works.
+
+94
+00:04:44.161 --> 00:04:47.124
+Every square matrix is similar to a block
+
+95
+00:04:47.196 --> 00:04:49.581
+diagonal matrix of Jordan blocks
+
+96
+00:04:49.581 --> 00:04:51.460
+unique up to their order.
+
+97
+00:04:51.810 --> 00:04:54.881
+A matrix can be diagonalized exactly
+
+98
+00:04:54.966 --> 00:04:57.610
+when every block is one by one.
+
+99
+00:04:57.960 --> 00:05:00.554
+Each chain holds one eigenvector
+
+100
+00:05:00.633 --> 00:05:03.305
+so the number of blocks for lambda
+
+101
+00:05:03.384 --> 00:05:05.742
+is the number of eigenvectors
+
+102
+00:05:05.742 --> 00:05:09.200
+and their sizes add up to the multiplicity.
+
+103
+00:05:09.780 --> 00:05:13.064
+For the sizes, take the ranks of the powers
+
+104
+00:05:13.140 --> 00:05:14.667
+of A minus lambda I.
+
+105
+00:05:14.667 --> 00:05:17.722
+Each power shortens every chain by one
+
+106
+00:05:17.798 --> 00:05:20.166
+so the rank drops by the number
+
+107
+00:05:20.242 --> 00:05:22.380
+of chains still long enough.
+
+108
+00:05:22.730 --> 00:05:26.897
+For G, the ranks are three, two, one, zero.
+
+109
+00:05:26.897 --> 00:05:30.676
+They drop by one each time: one block
+
+110
+00:05:30.676 --> 00:05:32.130
+of size three.
+
+111
+00:05:32.480 --> 00:05:35.727
+For H, they are three, one, zero.
+
+112
+00:05:35.727 --> 00:05:39.466
+A first drop of two means two blocks.
+
+113
+00:05:39.564 --> 00:05:42.122
+A second drop of one means
+
+114
+00:05:42.220 --> 00:05:44.680
+one of them has size two.
+
+115
+00:05:45.030 --> 00:05:47.782
+So G and H are not similar
+
+116
+00:05:47.782 --> 00:05:50.023
+although their trace
+
+117
+00:05:50.023 --> 00:05:53.590
+determinant and eigenvalues agree.
+
+118
+00:05:54.170 --> 00:05:57.266
+A defective matrix has fewer eigenvectors
+
+119
+00:05:57.341 --> 00:05:59.002
+than its multiplicity.
+
+120
+00:05:59.002 --> 00:06:01.117
+Jordan chains fill the gap
+
+121
+00:06:01.192 --> 00:06:03.382
+and in their basis the matrix
+
+122
+00:06:03.457 --> 00:06:05.118
+becomes Jordan blocks.
+
+123
+00:06:05.118 --> 00:06:07.610
+You read their sizes from ranks.
+
+124
+00:06:07.960 --> 00:06:08.992
+Try this
+
+125
+00:06:08.992 --> 00:06:13.806
+a five by five matrix has one eigenvalue
+
+126
+00:06:13.806 --> 00:06:18.048
+and A minus lambda I has rank three.
+
+127
+00:06:18.048 --> 00:06:21.487
+How many blocks does it have?
+
+128
+00:06:21.487 --> 00:06:25.040
+Next: powers and exponentials.

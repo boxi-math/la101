@@ -1,0 +1,557 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:05.499
+Part one ended with Jordan blocks.
+
+2
+00:00:05.499 --> 00:00:07.639
+Now let's put them to work.
+
+3
+00:00:07.716 --> 00:00:10.391
+Take the two by two block with zero
+
+4
+00:00:10.467 --> 00:00:12.531
+point nine on the diagonal
+
+5
+00:00:12.531 --> 00:00:14.060
+and a one above it.
+
+6
+00:00:14.410 --> 00:00:17.233
+Both eigenvalues are zero point nine
+
+7
+00:00:17.233 --> 00:00:18.606
+smaller than one
+
+8
+00:00:18.606 --> 00:00:21.810
+so the powers of J go to zero in the end.
+
+9
+00:00:22.160 --> 00:00:26.295
+But do they shrink from the very first step?
+
+10
+00:00:26.295 --> 00:00:28.080
+Pause and predict.
+
+11
+00:00:31.660 --> 00:00:34.183
+Write J as lambda I plus N
+
+12
+00:00:34.183 --> 00:00:38.108
+where N holds the one above the diagonal.
+
+13
+00:00:38.108 --> 00:00:39.883
+N squared is zero
+
+14
+00:00:39.883 --> 00:00:43.060
+and N commutes with the identity.
+
+15
+00:00:43.410 --> 00:00:46.207
+So the binomial theorem works
+
+16
+00:00:46.207 --> 00:00:48.072
+and it stops early.
+
+17
+00:00:48.072 --> 00:00:51.802
+J to the k is lambda to the k, times I
+
+18
+00:00:51.895 --> 00:00:54.319
+plus k times lambda to the
+
+19
+00:00:54.412 --> 00:00:56.930
+power k minus one, times N.
+
+20
+00:00:57.280 --> 00:01:00.713
+On the diagonal sits lambda to the k.
+
+21
+00:01:00.806 --> 00:01:03.868
+In the corner sits k times lambda
+
+22
+00:01:03.960 --> 00:01:06.280
+to the power k minus one.
+
+23
+00:01:06.860 --> 00:01:09.929
+With lambda equal to zero point nine
+
+24
+00:01:09.929 --> 00:01:12.086
+the corner starts at one
+
+25
+00:01:12.086 --> 00:01:13.911
+then one point eight
+
+26
+00:01:13.911 --> 00:01:16.150
+then two point four three.
+
+27
+00:01:16.150 --> 00:01:16.980
+It grows.
+
+28
+00:01:17.330 --> 00:01:21.147
+It peaks at about three point eight seven
+
+29
+00:01:21.147 --> 00:01:24.509
+at k equal to nine and again at ten.
+
+30
+00:01:24.509 --> 00:01:28.235
+Only then does the shrinking factor win
+
+31
+00:01:28.235 --> 00:01:31.960
+one point four one at k equal to thirty
+
+32
+00:01:31.960 --> 00:01:35.050
+and zero point two nine at fifty.
+
+33
+00:01:35.630 --> 00:01:36.990
+So beware the rule
+
+34
+00:01:36.990 --> 00:01:39.925
+if every eigenvalue is smaller than one
+
+35
+00:01:39.925 --> 00:01:42.358
+the powers shrink from the start.
+
+36
+00:01:42.358 --> 00:01:43.790
+Where does it hold?
+
+37
+00:01:44.370 --> 00:01:46.580
+The rule holds for zero point
+
+38
+00:01:46.656 --> 00:01:48.484
+nine times the identity
+
+39
+00:01:48.484 --> 00:01:50.922
+which has the same eigenvalues.
+
+40
+00:01:50.922 --> 00:01:53.818
+Its size is zero point nine to the k
+
+41
+00:01:53.818 --> 00:01:55.570
+smaller at every step.
+
+42
+00:01:55.920 --> 00:01:59.729
+The Jordan block, with the same eigenvalues
+
+43
+00:01:59.729 --> 00:02:02.240
+first climbs to almost four.
+
+44
+00:02:02.590 --> 00:02:04.632
+The eigenvalues decide where
+
+45
+00:02:04.705 --> 00:02:06.018
+the powers end up.
+
+46
+00:02:06.018 --> 00:02:08.790
+The Jordan blocks decide the journey.
+
+47
+00:02:09.370 --> 00:02:12.221
+Exponentials work the same way.
+
+48
+00:02:12.221 --> 00:02:15.440
+E to the J t is e to the lambda t
+
+49
+00:02:15.440 --> 00:02:17.280
+times e to the N t
+
+50
+00:02:17.280 --> 00:02:20.866
+and that series stops after two terms
+
+51
+00:02:20.866 --> 00:02:21.970
+I plus t N.
+
+52
+00:02:22.320 --> 00:02:24.730
+So e to the J t has e to the
+
+53
+00:02:24.816 --> 00:02:26.967
+lambda t on the diagonal
+
+54
+00:02:26.967 --> 00:02:30.840
+and t times e to the lambda t in the corner.
+
+55
+00:02:31.190 --> 00:02:35.229
+For the barrels, this gives x two equal to
+
+56
+00:02:35.326 --> 00:02:37.634
+four t e to the minus t.
+
+57
+00:02:37.730 --> 00:02:41.289
+The mysterious factor t from part one
+
+58
+00:02:41.385 --> 00:02:44.270
+is the corner of e to the N t.
+
+59
+00:02:44.620 --> 00:02:46.927
+A block of size m brings t
+
+60
+00:02:47.016 --> 00:02:49.234
+to the power m minus one.
+
+61
+00:02:49.234 --> 00:02:53.050
+Three barrels in a cascade give t squared
+
+62
+00:02:53.050 --> 00:02:55.180
+times e to the minus t.
+
+63
+00:02:55.760 --> 00:02:58.374
+Now change the barrels slightly
+
+64
+00:02:58.456 --> 00:03:00.334
+let barrel two drain at
+
+65
+00:03:00.416 --> 00:03:02.213
+rate b instead of one.
+
+66
+00:03:02.213 --> 00:03:04.174
+For b not equal to one
+
+67
+00:03:04.255 --> 00:03:06.624
+the eigenvalues minus one and
+
+68
+00:03:06.706 --> 00:03:08.421
+minus b are distinct
+
+69
+00:03:08.421 --> 00:03:11.280
+so the matrix can be diagonalized.
+
+70
+00:03:11.630 --> 00:03:13.408
+But as b approaches one
+
+71
+00:03:13.408 --> 00:03:16.222
+the two eigenvectors become parallel.
+
+72
+00:03:16.296 --> 00:03:19.185
+The condition number of the eigenvector
+
+73
+00:03:19.259 --> 00:03:21.925
+matrix is about twenty, two hundred
+
+74
+00:03:21.925 --> 00:03:23.259
+and two thousand
+
+75
+00:03:23.259 --> 00:03:25.481
+for b equal to one point one
+
+76
+00:03:25.481 --> 00:03:26.962
+one point zero one
+
+77
+00:03:26.962 --> 00:03:29.110
+and one point zero zero one.
+
+78
+00:03:29.460 --> 00:03:33.284
+Splitting the start into eigenvectors needs
+
+79
+00:03:33.373 --> 00:03:36.664
+huge coefficients that nearly cancel
+
+80
+00:03:36.664 --> 00:03:39.865
+plus and minus forty, four hundred
+
+81
+00:03:39.865 --> 00:03:41.199
+four thousand.
+
+82
+00:03:41.199 --> 00:03:44.401
+Yet the solution itself stays calm
+
+83
+00:03:44.401 --> 00:03:47.780
+and tends to four t e to the minus t.
+
+84
+00:03:48.130 --> 00:03:50.473
+So the Jordan form jumps
+
+85
+00:03:50.473 --> 00:03:54.128
+diagonal for every b not equal to one
+
+86
+00:03:54.128 --> 00:03:57.690
+and a single block at b equal to one.
+
+87
+00:03:58.270 --> 00:03:59.333
+It gets worse
+
+88
+00:03:59.409 --> 00:04:01.915
+the eigenvalues of a Jordan block
+
+89
+00:04:01.991 --> 00:04:03.814
+are extremely sensitive.
+
+90
+00:04:03.890 --> 00:04:06.320
+Put a tiny epsilon in the bottom
+
+91
+00:04:06.396 --> 00:04:08.750
+left corner of the n by n block
+
+92
+00:04:08.826 --> 00:04:10.877
+with zeros on the diagonal.
+
+93
+00:04:10.953 --> 00:04:13.003
+The eigenvalues jump to the
+
+94
+00:04:13.079 --> 00:04:14.750
+n-th roots of epsilon.
+
+95
+00:04:15.100 --> 00:04:17.625
+With n equal to ten and epsilon
+
+96
+00:04:17.706 --> 00:04:20.149
+equal to ten to the minus ten
+
+97
+00:04:20.149 --> 00:04:22.837
+they move out to zero point one.
+
+98
+00:04:22.918 --> 00:04:26.257
+A change in the tenth decimal place moves
+
+99
+00:04:26.338 --> 00:04:28.700
+the eigenvalues in the first.
+
+100
+00:04:29.050 --> 00:04:31.131
+Rounding errors are enough.
+
+101
+00:04:31.208 --> 00:04:33.366
+For the exact integer matrix
+
+102
+00:04:33.443 --> 00:04:34.676
+G from part one
+
+103
+00:04:34.676 --> 00:04:37.991
+NumPy returns three different eigenvalues
+
+104
+00:04:38.068 --> 00:04:40.149
+each about ten to the minus
+
+105
+00:04:40.226 --> 00:04:41.690
+five away from two.
+
+106
+00:04:42.040 --> 00:04:44.669
+So no numerical library computes
+
+107
+00:04:44.751 --> 00:04:45.901
+a Jordan form.
+
+108
+00:04:45.983 --> 00:04:49.104
+It would have to decide that different
+
+109
+00:04:49.186 --> 00:04:51.240
+numbers are really equal.
+
+110
+00:04:51.820 --> 00:04:54.259
+What computers use instead
+
+111
+00:04:54.353 --> 00:04:56.041
+is the Schur form.
+
+112
+00:04:56.041 --> 00:04:58.480
+A equals Q T Q transpose
+
+113
+00:04:58.480 --> 00:05:02.420
+with Q orthogonal and T upper triangular.
+
+114
+00:05:02.770 --> 00:05:06.186
+The eigenvalues sit on the diagonal of T.
+
+115
+00:05:06.186 --> 00:05:09.268
+This form asks for less than Jordan
+
+116
+00:05:09.268 --> 00:05:12.433
+triangular instead of block diagonal
+
+117
+00:05:12.433 --> 00:05:14.599
+and that makes it robust
+
+118
+00:05:14.599 --> 00:05:16.932
+Q has condition number one
+
+119
+00:05:17.015 --> 00:05:19.681
+and the Q R algorithm of Lecture
+
+120
+00:05:19.764 --> 00:05:21.930
+thirty computes it stably.
+
+121
+00:05:22.280 --> 00:05:26.574
+For the perturbed barrels, T is minus b
+
+122
+00:05:26.574 --> 00:05:28.936
+one, zero, minus one.
+
+123
+00:05:28.936 --> 00:05:31.727
+It moves smoothly with b
+
+124
+00:05:31.727 --> 00:05:34.840
+while the Jordan form jumps.
+
+125
+00:05:35.190 --> 00:05:37.449
+The SVD is even calmer.
+
+126
+00:05:37.547 --> 00:05:41.672
+A perturbation of size epsilon moves every
+
+127
+00:05:41.771 --> 00:05:45.110
+singular value by at most epsilon.
+
+128
+00:05:45.690 --> 00:05:48.110
+A Jordan block is lambda I plus N
+
+129
+00:05:48.181 --> 00:05:50.601
+which explains the corner terms in
+
+130
+00:05:50.672 --> 00:05:52.665
+its powers and exponentials.
+
+131
+00:05:52.665 --> 00:05:55.156
+Powers can grow before they decay.
+
+132
+00:05:55.227 --> 00:05:57.149
+And because the Jordan form
+
+133
+00:05:57.220 --> 00:05:58.999
+jumps under tiny changes
+
+134
+00:05:58.999 --> 00:06:01.490
+we compute with Schur and the SVD.
+
+135
+00:06:01.840 --> 00:06:02.586
+Try this
+
+136
+00:06:02.669 --> 00:06:05.900
+put ten to the minus nine in the corner
+
+137
+00:06:05.983 --> 00:06:08.137
+of a three by three block.
+
+138
+00:06:08.137 --> 00:06:10.872
+How far do its eigenvalues move?
+
+139
+00:06:10.872 --> 00:06:13.440
+And that brings us to the end.

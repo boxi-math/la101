@@ -1,0 +1,445 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:05.353
+Here is a delivery robot at
+
+2
+00:00:05.444 --> 00:00:07.352
+the corner of a grid.
+
+3
+00:00:07.352 --> 00:00:09.168
+It knows two moves.
+
+4
+00:00:09.259 --> 00:00:11.531
+Move a goes one step east
+
+5
+00:00:11.621 --> 00:00:13.620
+and three steps north.
+
+6
+00:00:13.970 --> 00:00:16.431
+Move b goes two steps east
+
+7
+00:00:16.526 --> 00:00:18.324
+and one step south.
+
+8
+00:00:18.324 --> 00:00:22.300
+We want it to stop at the charging point
+
+9
+00:00:22.300 --> 00:00:23.530
+seven, zero.
+
+10
+00:00:23.880 --> 00:00:27.334
+How many a moves, and how many b moves?
+
+11
+00:00:27.334 --> 00:00:28.840
+Pause and guess.
+
+12
+00:00:32.420 --> 00:00:35.100
+Call the number of a moves x
+
+13
+00:00:35.100 --> 00:00:37.780
+and the number of b moves y.
+
+14
+00:00:38.130 --> 00:00:40.756
+Count the steps east first.
+
+15
+00:00:40.756 --> 00:00:44.257
+Each a gives one, each b gives two
+
+16
+00:00:44.257 --> 00:00:46.104
+and we need seven
+
+17
+00:00:46.104 --> 00:00:48.730
+x plus two y equals seven.
+
+18
+00:00:49.080 --> 00:00:50.752
+Now count north.
+
+19
+00:00:50.752 --> 00:00:55.247
+Each a gives three, each b takes one away
+
+20
+00:00:55.247 --> 00:00:57.129
+and we need zero
+
+21
+00:00:57.129 --> 00:01:00.160
+three x minus y equals zero.
+
+22
+00:01:00.510 --> 00:01:03.120
+Two unknowns and two equations
+
+23
+00:01:03.120 --> 00:01:06.150
+one for each direction on the grid.
+
+24
+00:01:06.730 --> 00:01:08.824
+The first way to read this
+
+25
+00:01:08.905 --> 00:01:10.435
+is the row picture.
+
+26
+00:01:10.435 --> 00:01:13.978
+It lives on a different plane: across is x
+
+27
+00:01:13.978 --> 00:01:16.878
+the number of a moves, and up is y
+
+28
+00:01:16.878 --> 00:01:18.730
+the number of b moves.
+
+29
+00:01:19.080 --> 00:01:22.030
+Every point here is one possible answer.
+
+30
+00:01:22.103 --> 00:01:24.389
+The pairs that satisfy the east
+
+31
+00:01:24.463 --> 00:01:26.675
+equation fill a straight line.
+
+32
+00:01:26.675 --> 00:01:29.920
+Seven, zero is on it, and so is three, two.
+
+33
+00:01:30.270 --> 00:01:32.896
+The north equation is a second line.
+
+34
+00:01:32.969 --> 00:01:35.668
+It goes through the origin and climbs
+
+35
+00:01:35.741 --> 00:01:37.710
+three for every one across.
+
+36
+00:01:38.060 --> 00:01:40.085
+An answer to both equations
+
+37
+00:01:40.160 --> 00:01:41.885
+must sit on both lines
+
+38
+00:01:41.885 --> 00:01:44.060
+so we look where they cross.
+
+39
+00:01:44.640 --> 00:01:47.140
+They cross at one, three.
+
+40
+00:01:47.140 --> 00:01:48.340
+Check east
+
+41
+00:01:48.340 --> 00:01:51.840
+one plus two times three is seven.
+
+42
+00:01:51.840 --> 00:01:53.140
+Check north
+
+43
+00:01:53.140 --> 00:01:56.840
+three times one minus three is zero.
+
+44
+00:01:57.190 --> 00:01:58.431
+Both hold.
+
+45
+00:01:58.431 --> 00:02:03.393
+So x is one and y is three: one a move
+
+46
+00:02:03.393 --> 00:02:05.750
+and three b moves.
+
+47
+00:02:06.330 --> 00:02:09.130
+But look at this picture once more.
+
+48
+00:02:09.130 --> 00:02:12.570
+The robot's two moves, the arrows a and b
+
+49
+00:02:12.570 --> 00:02:14.090
+are nowhere in it.
+
+50
+00:02:14.440 --> 00:02:17.467
+The lines came from the equations.
+
+51
+00:02:17.467 --> 00:02:19.960
+So where did the arrows go?
+
+52
+00:02:22.540 --> 00:02:25.428
+They come back in the column picture.
+
+53
+00:02:25.428 --> 00:02:27.614
+Return to the robot's grid
+
+54
+00:02:27.692 --> 00:02:30.112
+and read the equations down the
+
+55
+00:02:30.190 --> 00:02:32.220
+columns instead of across.
+
+56
+00:02:32.570 --> 00:02:36.653
+The numbers beside x are one and three
+
+57
+00:02:36.653 --> 00:02:38.328
+that is move a.
+
+58
+00:02:38.328 --> 00:02:42.935
+The numbers beside y are two and minus one
+
+59
+00:02:42.935 --> 00:02:44.610
+that is move b.
+
+60
+00:02:44.960 --> 00:02:48.539
+So the system asks a single question
+
+61
+00:02:48.636 --> 00:02:51.248
+x copies of a plus y copies
+
+62
+00:02:51.345 --> 00:02:54.440
+of b should land on seven, zero.
+
+63
+00:02:55.020 --> 00:02:58.541
+Test the amounts from the row picture
+
+64
+00:02:58.541 --> 00:03:02.340
+one a and three b's, placed tip to tail.
+
+65
+00:03:02.690 --> 00:03:05.608
+One a move reaches one, three.
+
+66
+00:03:05.608 --> 00:03:07.456
+One b: three, two.
+
+67
+00:03:07.456 --> 00:03:09.401
+Another: five, one.
+
+68
+00:03:09.401 --> 00:03:11.930
+And a third: seven, zero.
+
+69
+00:03:12.280 --> 00:03:13.920
+Right on the target.
+
+70
+00:03:13.920 --> 00:03:16.791
+One a plus three b is seven, zero
+
+71
+00:03:16.791 --> 00:03:20.400
+and the order of the moves does not matter.
+
+72
+00:03:20.980 --> 00:03:23.652
+Why is there only one answer?
+
+73
+00:03:23.744 --> 00:03:26.416
+Every amount of a lies on one
+
+74
+00:03:26.508 --> 00:03:28.627
+line through the start
+
+75
+00:03:28.627 --> 00:03:32.220
+and every amount of b lies on another.
+
+76
+00:03:32.570 --> 00:03:35.839
+The two lines point in different directions
+
+77
+00:03:35.913 --> 00:03:38.587
+so each point of the grid is reached
+
+78
+00:03:38.662 --> 00:03:40.890
+by exactly one mix of a and b.
+
+79
+00:03:41.470 --> 00:03:42.912
+Here is a trap.
+
+80
+00:03:42.912 --> 00:03:45.411
+Our answer is one, three
+
+81
+00:03:45.411 --> 00:03:48.390
+and move a is also one, three.
+
+82
+00:03:48.740 --> 00:03:52.567
+That match is a coincidence of this example.
+
+83
+00:03:52.567 --> 00:03:56.133
+The answer is not an arrow on this grid.
+
+84
+00:03:56.133 --> 00:03:57.524
+It is a recipe
+
+85
+00:03:57.524 --> 00:04:00.220
+how much of each arrow to use.
+
+86
+00:04:00.800 --> 00:04:03.764
+Move the target to four, five.
+
+87
+00:04:03.764 --> 00:04:08.111
+Make one b move, then one a, and another a.
+
+88
+00:04:08.111 --> 00:04:10.680
+That lands on four, five.
+
+89
+00:04:11.030 --> 00:04:13.311
+So the recipe is x equals
+
+90
+00:04:13.402 --> 00:04:15.318
+two and y equals one
+
+91
+00:04:15.318 --> 00:04:18.329
+which looks nothing like a or b.
+
+92
+00:04:18.329 --> 00:04:22.070
+Amounts and arrows are different things.
+
+93
+00:04:22.650 --> 00:04:25.455
+So one system gives two pictures.
+
+94
+00:04:25.455 --> 00:04:29.195
+In the row picture each equation is a line
+
+95
+00:04:29.280 --> 00:04:31.575
+and the answer is the point
+
+96
+00:04:31.660 --> 00:04:33.530
+where the lines cross.
+
+97
+00:04:33.880 --> 00:04:36.588
+In the column picture each unknown
+
+98
+00:04:36.668 --> 00:04:38.818
+is an amount of one column
+
+99
+00:04:38.898 --> 00:04:41.288
+and the answer is the mix that
+
+100
+00:04:41.367 --> 00:04:42.960
+lands on the target.
+
+101
+00:04:43.310 --> 00:04:45.948
+Both pictures give the same answer
+
+102
+00:04:45.948 --> 00:04:48.510
+x equals one, and y equals three.
+
+103
+00:04:49.090 --> 00:04:50.986
+With two unknowns the row
+
+104
+00:04:51.062 --> 00:04:52.882
+picture is easy to draw.
+
+105
+00:04:52.882 --> 00:04:55.992
+With many unknowns, lines become planes
+
+106
+00:04:55.992 --> 00:04:58.570
+and the picture gets hard to see.
+
+107
+00:04:58.920 --> 00:05:01.723
+The column picture keeps working
+
+108
+00:05:01.811 --> 00:05:03.299
+in any dimension.
+
+109
+00:05:03.299 --> 00:05:03.825
+Next
+
+110
+00:05:03.825 --> 00:05:07.328
+we pack both pictures into one product
+
+111
+00:05:07.328 --> 00:05:09.080
+A times x equals b.

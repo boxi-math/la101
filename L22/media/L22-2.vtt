@@ -1,0 +1,469 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:03.943
+In part one
+
+2
+00:00:04.030 --> 00:00:06.813
+the café's covariance matrix had
+
+3
+00:00:06.900 --> 00:00:10.203
+two positive eigenvalues, six and one.
+
+4
+00:00:10.290 --> 00:00:14.116
+A symmetric matrix whose eigenvalues are all
+
+5
+00:00:14.203 --> 00:00:17.420
+positive is called positive definite.
+
+6
+00:00:17.770 --> 00:00:20.685
+Here are two symmetric matrices.
+
+7
+00:00:20.685 --> 00:00:23.235
+One, K, has two minus ones.
+
+8
+00:00:23.235 --> 00:00:26.970
+The other, M, has only positive entries.
+
+9
+00:00:27.320 --> 00:00:30.523
+Which one is positive definite?
+
+10
+00:00:30.523 --> 00:00:32.280
+Pause and guess.
+
+11
+00:00:35.860 --> 00:00:39.751
+You can see the answer in the plane.
+
+12
+00:00:39.751 --> 00:00:41.480
+For a vector x
+
+13
+00:00:41.480 --> 00:00:44.830
+the energy is x transpose S x
+
+14
+00:00:44.830 --> 00:00:48.180
+the dot product of x with S x.
+
+15
+00:00:48.530 --> 00:00:52.447
+Take the café matrix C, and x equal to one
+
+16
+00:00:52.447 --> 00:00:53.449
+minus one.
+
+17
+00:00:53.449 --> 00:00:55.817
+C moves x to three, zero.
+
+18
+00:00:55.908 --> 00:00:58.641
+The angle between them is less
+
+19
+00:00:58.732 --> 00:01:02.375
+than ninety degrees, so the dot product
+
+20
+00:01:02.375 --> 00:01:05.290
+the energy, is positive: three.
+
+21
+00:01:05.640 --> 00:01:09.096
+Positive definite means this happens
+
+22
+00:01:09.192 --> 00:01:11.112
+for every nonzero x
+
+23
+00:01:11.112 --> 00:01:13.800
+S x always leans towards x
+
+24
+00:01:13.800 --> 00:01:17.160
+never ninety degrees or more away.
+
+25
+00:01:17.740 --> 00:01:19.838
+Picture the energy as a
+
+26
+00:01:19.929 --> 00:01:21.936
+height over the plane.
+
+27
+00:01:21.936 --> 00:01:23.760
+For C it is a bowl
+
+28
+00:01:23.760 --> 00:01:26.587
+with its bottom at the origin.
+
+29
+00:01:26.679 --> 00:01:29.141
+Here is the curve where the
+
+30
+00:01:29.232 --> 00:01:32.060
+energy equals four: an ellipse.
+
+31
+00:01:32.410 --> 00:01:34.969
+Its axes are the eigenvectors.
+
+32
+00:01:34.969 --> 00:01:36.334
+Along two, one
+
+33
+00:01:36.334 --> 00:01:39.832
+the eigenvalue six makes the bowl steep
+
+34
+00:01:39.832 --> 00:01:41.964
+so the ellipse is short.
+
+35
+00:01:41.964 --> 00:01:43.841
+Along one, minus two
+
+36
+00:01:43.841 --> 00:01:46.997
+the eigenvalue one makes it shallow
+
+37
+00:01:46.997 --> 00:01:49.130
+and the ellipse is long.
+
+38
+00:01:49.710 --> 00:01:53.454
+You do not need eigenvalues to decide.
+
+39
+00:01:53.454 --> 00:01:55.819
+For a symmetric matrix
+
+40
+00:01:55.819 --> 00:01:58.479
+five tests are equivalent.
+
+41
+00:01:58.479 --> 00:02:01.927
+One: every eigenvalue is positive
+
+42
+00:02:01.927 --> 00:02:03.208
+six and one.
+
+43
+00:02:03.208 --> 00:02:06.755
+Two: every pivot is positive, five
+
+44
+00:02:06.755 --> 00:02:08.430
+then six fifths.
+
+45
+00:02:08.780 --> 00:02:11.900
+Three: the upper-left determinants
+
+46
+00:02:11.900 --> 00:02:14.396
+five and six, are positive.
+
+47
+00:02:14.396 --> 00:02:17.071
+Four: the energy is positive.
+
+48
+00:02:17.160 --> 00:02:19.923
+Completing the square writes it
+
+49
+00:02:20.013 --> 00:02:22.420
+with the pivots as weights.
+
+50
+00:02:22.420 --> 00:02:24.737
+Five: C is A transpose A
+
+51
+00:02:24.737 --> 00:02:27.858
+for an A with independent columns
+
+52
+00:02:27.858 --> 00:02:31.780
+so the energy is the squared length of A x.
+
+53
+00:02:32.130 --> 00:02:33.827
+Why do they agree?
+
+54
+00:02:33.827 --> 00:02:37.881
+Write x in the perpendicular eigenvectors.
+
+55
+00:02:37.976 --> 00:02:40.616
+The energy becomes six c one
+
+56
+00:02:40.710 --> 00:02:43.256
+squared plus c two squared
+
+57
+00:02:43.350 --> 00:02:46.461
+positive for every x exactly when
+
+58
+00:02:46.556 --> 00:02:49.290
+every eigenvalue is positive.
+
+59
+00:02:49.870 --> 00:02:51.673
+Back to the question.
+
+60
+00:02:51.673 --> 00:02:54.163
+M has only positive entries.
+
+61
+00:02:54.163 --> 00:02:56.310
+Is it positive definite?
+
+62
+00:02:56.890 --> 00:02:57.234
+No.
+
+63
+00:02:57.234 --> 00:03:01.247
+Its determinant is one minus nine
+
+64
+00:03:01.247 --> 00:03:02.737
+minus eight.
+
+65
+00:03:02.737 --> 00:03:06.406
+Take x equal to one, minus one.
+
+66
+00:03:06.406 --> 00:03:09.043
+M x is minus two, two
+
+67
+00:03:09.043 --> 00:03:11.909
+it points straight back.
+
+68
+00:03:11.909 --> 00:03:14.890
+The energy is minus four.
+
+69
+00:03:15.240 --> 00:03:18.365
+The curve of energy four is not
+
+70
+00:03:18.466 --> 00:03:22.296
+an ellipse but a hyperbola: along one
+
+71
+00:03:22.296 --> 00:03:26.328
+one the surface goes up, and along one
+
+72
+00:03:26.328 --> 00:03:28.747
+minus one it goes down.
+
+73
+00:03:28.747 --> 00:03:30.360
+It is a saddle.
+
+74
+00:03:30.710 --> 00:03:34.480
+And K, with its minus ones, sends one
+
+75
+00:03:34.480 --> 00:03:38.746
+zero to two, minus one, leaning towards x.
+
+76
+00:03:38.746 --> 00:03:42.218
+Its eigenvalues are three and one
+
+77
+00:03:42.218 --> 00:03:44.202
+an ellipse, a bowl.
+
+78
+00:03:44.202 --> 00:03:48.270
+Never judge by the signs of the entries.
+
+79
+00:03:48.850 --> 00:03:52.279
+One more case: two, four, four, eight.
+
+80
+00:03:52.279 --> 00:03:55.347
+Its eigenvalues are ten and zero.
+
+81
+00:03:55.347 --> 00:03:59.408
+The energy is never negative, but along two
+
+82
+00:03:59.408 --> 00:04:01.393
+minus one it is zero.
+
+83
+00:04:01.483 --> 00:04:03.919
+The curve of energy four is
+
+84
+00:04:04.010 --> 00:04:06.266
+a pair of parallel lines
+
+85
+00:04:06.266 --> 00:04:08.973
+the bowl has become a trough.
+
+86
+00:04:08.973 --> 00:04:11.770
+That is positive semidefinite.
+
+87
+00:04:12.120 --> 00:04:14.947
+Add a millionth of the identity
+
+88
+00:04:15.036 --> 00:04:17.598
+and the trough closes into an
+
+89
+00:04:17.686 --> 00:04:19.718
+extremely long ellipse.
+
+90
+00:04:19.718 --> 00:04:22.280
+That trick is called jitter.
+
+91
+00:04:22.860 --> 00:04:25.725
+These matrices are everywhere.
+
+92
+00:04:25.820 --> 00:04:30.117
+Every A transpose A is positive semidefinite
+
+93
+00:04:30.117 --> 00:04:33.459
+and so is every covariance matrix.
+
+94
+00:04:33.459 --> 00:04:35.369
+For the café score
+
+95
+00:04:35.369 --> 00:04:38.711
+temperature minus twice the sales
+
+96
+00:04:38.711 --> 00:04:42.435
+w transpose C w is its variance: five.
+
+97
+00:04:42.435 --> 00:04:45.300
+A variance is never negative.
+
+98
+00:04:45.650 --> 00:04:48.521
+Gram matrices of embeddings and kernel
+
+99
+00:04:48.597 --> 00:04:50.486
+matrices belong here too.
+
+100
+00:04:50.561 --> 00:04:54.037
+Gaussian models need a Cholesky factorization
+
+101
+00:04:54.112 --> 00:04:56.379
+which only exists for positive
+
+102
+00:04:56.454 --> 00:04:57.814
+definite matrices.
+
+103
+00:04:57.814 --> 00:05:00.006
+On M it stops with an error
+
+104
+00:05:00.006 --> 00:05:02.650
+which makes Cholesky a quick test.
+
+105
+00:05:03.230 --> 00:05:04.200
+To sum up.
+
+106
+00:05:04.200 --> 00:05:08.082
+Positive definite: S x leans towards x
+
+107
+00:05:08.082 --> 00:05:10.217
+the energy is a bowl
+
+108
+00:05:10.217 --> 00:05:13.614
+and its level curves are ellipses.
+
+109
+00:05:13.614 --> 00:05:16.234
+A saddle gives hyperbolas
+
+110
+00:05:16.234 --> 00:05:19.630
+and a trough gives parallel lines.
+
+111
+00:05:19.980 --> 00:05:25.209
+Eigenvalues, pivots, determinants, energy
+
+112
+00:05:25.209 --> 00:05:27.574
+and A transpose A
+
+113
+00:05:27.574 --> 00:05:31.060
+five faces of one property.
+
+114
+00:05:31.640 --> 00:05:34.093
+Next: the energy bowl tells a
+
+115
+00:05:34.177 --> 00:05:36.038
+minimum from a saddle
+
+116
+00:05:36.122 --> 00:05:38.321
+and its steepness sets the
+
+117
+00:05:38.406 --> 00:05:40.520
+step of gradient descent.

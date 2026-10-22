@@ -1,0 +1,477 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:05.708
+A factory makes one hundred products.
+
+2
+00:00:05.708 --> 00:00:08.516
+Every day it gets a thousand orders
+
+3
+00:00:08.516 --> 00:00:10.186
+one per sales region.
+
+4
+00:00:10.186 --> 00:00:12.387
+The matrix A stays the same
+
+5
+00:00:12.387 --> 00:00:14.740
+only the right side b changes.
+
+6
+00:00:15.090 --> 00:00:18.236
+We could eliminate from scratch
+
+7
+00:00:18.337 --> 00:00:19.961
+for every order
+
+8
+00:00:19.961 --> 00:00:23.614
+or factor A once and reuse L and U.
+
+9
+00:00:23.614 --> 00:00:27.166
+How much does factoring once save?
+
+10
+00:00:27.166 --> 00:00:28.689
+Twice as fast?
+
+11
+00:00:28.689 --> 00:00:29.805
+Ten times?
+
+12
+00:00:29.805 --> 00:00:31.530
+Pause and guess.
+
+13
+00:00:35.110 --> 00:00:36.279
+Count the work.
+
+14
+00:00:36.356 --> 00:00:38.849
+The inner step of elimination is
+
+15
+00:00:38.927 --> 00:00:41.264
+one multiply and one subtract.
+
+16
+00:00:41.264 --> 00:00:42.900
+For the first pivot
+
+17
+00:00:42.900 --> 00:00:45.783
+there are n minus one rows below it
+
+18
+00:00:45.783 --> 00:00:48.977
+each with n minus one entries to update.
+
+19
+00:00:48.977 --> 00:00:52.093
+The next pivot has n minus two of each
+
+20
+00:00:52.093 --> 00:00:52.950
+and so on.
+
+21
+00:00:53.300 --> 00:00:55.837
+Adding those squares gives about
+
+22
+00:00:55.916 --> 00:00:57.898
+n cubed over three steps.
+
+23
+00:00:57.977 --> 00:01:00.831
+The forward and back solves together
+
+24
+00:01:00.910 --> 00:01:02.971
+take only about n squared
+
+25
+00:01:02.971 --> 00:01:06.380
+and the gap between the curves grows fast.
+
+26
+00:01:06.960 --> 00:01:08.880
+For one hundred products
+
+27
+00:01:08.957 --> 00:01:11.185
+factoring takes three hundred
+
+28
+00:01:11.261 --> 00:01:13.412
+twenty eight thousand steps
+
+29
+00:01:13.489 --> 00:01:15.793
+and each order then takes nine
+
+30
+00:01:15.870 --> 00:01:17.560
+thousand nine hundred.
+
+31
+00:01:17.910 --> 00:01:21.128
+Eliminating from scratch for a thousand
+
+32
+00:01:21.210 --> 00:01:24.428
+orders costs about three hundred thirty
+
+33
+00:01:24.511 --> 00:01:26.161
+eight million steps.
+
+34
+00:01:26.161 --> 00:01:29.462
+Factoring once costs about ten million.
+
+35
+00:01:29.462 --> 00:01:32.184
+That is thirty three times less
+
+36
+00:01:32.184 --> 00:01:34.412
+and the bigger the matrix
+
+37
+00:01:34.412 --> 00:01:36.310
+the bigger the saving.
+
+38
+00:01:36.660 --> 00:01:39.470
+And do not compute the inverse
+
+39
+00:01:39.564 --> 00:01:40.875
+just to solve.
+
+40
+00:01:40.875 --> 00:01:45.091
+Finding A inverse costs about n cubed steps
+
+41
+00:01:45.091 --> 00:01:47.620
+three times the factoring.
+
+42
+00:01:48.200 --> 00:01:51.065
+Some matrices are much cheaper.
+
+43
+00:01:51.157 --> 00:01:53.560
+A temperature sensor gives
+
+44
+00:01:53.652 --> 00:01:55.408
+six noisy readings.
+
+45
+00:01:55.500 --> 00:01:58.272
+We want a smoothed series that
+
+46
+00:01:58.365 --> 00:02:00.952
+stays close to the readings
+
+47
+00:02:00.952 --> 00:02:02.800
+and changes slowly.
+
+48
+00:02:03.150 --> 00:02:05.321
+Minimising both errors gives
+
+49
+00:02:05.399 --> 00:02:07.337
+one equation per reading
+
+50
+00:02:07.415 --> 00:02:09.819
+and each smoothed value is tied
+
+51
+00:02:09.896 --> 00:02:11.990
+only to its two neighbours.
+
+52
+00:02:12.340 --> 00:02:14.596
+So the matrix is tridiagonal
+
+53
+00:02:14.673 --> 00:02:16.851
+nonzero only on the diagonal
+
+54
+00:02:16.929 --> 00:02:18.562
+and right next to it.
+
+55
+00:02:18.640 --> 00:02:21.673
+The smoothed values run from about four
+
+56
+00:02:21.751 --> 00:02:24.318
+point eight to seven point seven
+
+57
+00:02:24.318 --> 00:02:26.340
+instead of three to nine.
+
+58
+00:02:26.920 --> 00:02:28.213
+Now factor T.
+
+59
+00:02:28.312 --> 00:02:30.898
+L has one entry below each
+
+60
+00:02:30.997 --> 00:02:32.986
+one on its diagonal
+
+61
+00:02:33.086 --> 00:02:35.672
+and U has one entry to the
+
+62
+00:02:35.771 --> 00:02:37.760
+right of each pivot.
+
+63
+00:02:38.110 --> 00:02:39.820
+The zeros stay zeros
+
+64
+00:02:39.820 --> 00:02:42.507
+so each step changes one number.
+
+65
+00:02:42.507 --> 00:02:44.624
+For two hundred readings
+
+66
+00:02:44.705 --> 00:02:47.148
+a simple loop visits two point
+
+67
+00:02:47.229 --> 00:02:48.858
+six million entries
+
+68
+00:02:48.939 --> 00:02:51.545
+but only one hundred ninety nine
+
+69
+00:02:51.626 --> 00:02:54.150
+of those steps change anything.
+
+70
+00:02:54.500 --> 00:02:57.327
+The work grows like n, not n cubed.
+
+71
+00:02:57.327 --> 00:03:00.962
+A million readings take a few million steps
+
+72
+00:03:01.043 --> 00:03:04.274
+a full matrix that size would need about
+
+73
+00:03:04.354 --> 00:03:07.020
+three times ten to the seventeen.
+
+74
+00:03:07.600 --> 00:03:08.793
+Now a warning.
+
+75
+00:03:08.793 --> 00:03:12.117
+Here is the matrix B from lecture two.
+
+76
+00:03:12.117 --> 00:03:13.991
+After the first step
+
+77
+00:03:13.991 --> 00:03:17.400
+the second pivot position holds a zero.
+
+78
+00:03:17.750 --> 00:03:20.138
+We cannot divide by zero
+
+79
+00:03:20.138 --> 00:03:22.813
+so plain elimination stops.
+
+80
+00:03:22.813 --> 00:03:24.437
+B is invertible
+
+81
+00:03:24.437 --> 00:03:27.590
+but it has no L U factorization.
+
+82
+00:03:28.170 --> 00:03:30.393
+So this belief is false
+
+83
+00:03:30.485 --> 00:03:33.449
+that every invertible matrix can
+
+84
+00:03:33.542 --> 00:03:35.765
+be written as L times U
+
+85
+00:03:35.765 --> 00:03:37.895
+with no row exchanges.
+
+86
+00:03:37.895 --> 00:03:40.210
+B is the counterexample.
+
+87
+00:03:40.790 --> 00:03:44.506
+The fix is to do the exchanges first.
+
+88
+00:03:44.606 --> 00:03:47.719
+A permutation matrix P puts row
+
+89
+00:03:47.819 --> 00:03:50.330
+three of B above row two.
+
+90
+00:03:50.330 --> 00:03:53.142
+Now every pivot is nonzero
+
+91
+00:03:53.142 --> 00:03:55.150
+and P B equals L U.
+
+92
+00:03:55.500 --> 00:03:59.072
+Every invertible matrix has a factorization
+
+93
+00:03:59.155 --> 00:04:00.402
+P A equals L U.
+
+94
+00:04:00.402 --> 00:04:04.057
+That is what numpy's solve computes inside.
+
+95
+00:04:04.140 --> 00:04:06.715
+Real solvers also exchange rows
+
+96
+00:04:06.799 --> 00:04:09.208
+when a pivot is merely small
+
+97
+00:04:09.208 --> 00:04:11.700
+to keep rounding errors down.
+
+98
+00:04:12.280 --> 00:04:15.520
+Last, a habit for working with AI.
+
+99
+00:04:15.615 --> 00:04:18.283
+Suppose an assistant factors
+
+100
+00:04:18.378 --> 00:04:19.998
+the paint matrix.
+
+101
+00:04:19.998 --> 00:04:24.000
+Its L is right, but its U is this matrix.
+
+102
+00:04:24.350 --> 00:04:26.919
+Two checks, one line each.
+
+103
+00:04:26.919 --> 00:04:30.377
+First, U must be upper triangular
+
+104
+00:04:30.377 --> 00:04:34.824
+and this one has a three below the diagonal.
+
+105
+00:04:34.824 --> 00:04:37.986
+Second, L times U must equal A
+
+106
+00:04:37.986 --> 00:04:40.950
+and here the last row is off.
+
+107
+00:04:41.300 --> 00:04:44.586
+The assistant stopped one step early.
+
+108
+00:04:44.586 --> 00:04:46.540
+Always multiply back.
+
+109
+00:04:47.120 --> 00:04:48.026
+To sum up.
+
+110
+00:04:48.026 --> 00:04:51.831
+Factoring costs about n cubed over three
+
+111
+00:04:51.831 --> 00:04:55.817
+each solve about n squared, so factor once.
+
+112
+00:04:55.817 --> 00:04:58.534
+A banded matrix stays banded
+
+113
+00:04:58.534 --> 00:05:00.255
+and costs about n.
+
+114
+00:05:00.255 --> 00:05:04.151
+And for a zero pivot, exchange rows first
+
+115
+00:05:04.151 --> 00:05:05.600
+P A equals L U.
+
+116
+00:05:05.950 --> 00:05:10.364
+Now you try: factor the matrix three, one
+
+117
+00:05:10.364 --> 00:05:13.518
+six, five, and multiply back.
+
+118
+00:05:13.518 --> 00:05:17.722
+Next lecture: transposes, permutations
+
+119
+00:05:17.722 --> 00:05:21.190
+and the first spaces of vectors.

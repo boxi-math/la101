@@ -1,0 +1,477 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:05.492
+Take one map of the plane
+
+2
+00:00:05.492 --> 00:00:09.180
+projection onto the line y equals x.
+
+3
+00:00:09.530 --> 00:00:11.007
+The point three
+
+4
+00:00:11.007 --> 00:00:14.882
+one drops straight onto the line, at two
+
+5
+00:00:14.882 --> 00:00:15.382
+two.
+
+6
+00:00:15.436 --> 00:00:18.389
+In the standard basis the matrix
+
+7
+00:00:18.481 --> 00:00:21.250
+of this map is all one halves.
+
+8
+00:00:21.600 --> 00:00:23.591
+Is there a better basis
+
+9
+00:00:23.591 --> 00:00:26.911
+one where this map has a simpler table?
+
+10
+00:00:26.911 --> 00:00:29.400
+Pause and choose two vectors.
+
+11
+00:00:33.694 --> 00:00:36.767
+Choose the basis that suits the map.
+
+12
+00:00:36.767 --> 00:00:40.437
+Lay down a new grid, with v one, one, one
+
+13
+00:00:40.437 --> 00:00:44.107
+along the line, and v two, one, minus one
+
+14
+00:00:44.107 --> 00:00:45.814
+straight across it.
+
+15
+00:00:46.164 --> 00:00:48.404
+The projection keeps v one
+
+16
+00:00:48.404 --> 00:00:50.643
+it is already on the line.
+
+17
+00:00:50.643 --> 00:00:54.044
+And it kills v two, which drops to zero.
+
+18
+00:00:54.394 --> 00:00:59.571
+So in this basis the matrix is one, zero
+
+19
+00:00:59.571 --> 00:01:01.086
+zero, zero.
+
+20
+00:01:01.086 --> 00:01:04.874
+Same map, much simpler table.
+
+21
+00:01:05.454 --> 00:01:08.155
+How are the two tables related?
+
+22
+00:01:08.155 --> 00:01:11.467
+Follow one point through three steps.
+
+23
+00:01:11.467 --> 00:01:12.948
+In the new grid
+
+24
+00:01:13.035 --> 00:01:15.475
+the point is two steps along
+
+25
+00:01:15.563 --> 00:01:17.828
+v one and one step across
+
+26
+00:01:17.828 --> 00:01:20.094
+new coordinates two, one.
+
+27
+00:01:20.444 --> 00:01:25.724
+First B turns new coordinates into old ones
+
+28
+00:01:25.724 --> 00:01:30.044
+two v one plus v two is three, one.
+
+29
+00:01:30.394 --> 00:01:32.381
+Then A does the projection
+
+30
+00:01:32.457 --> 00:01:35.514
+in old coordinates, landing at two, two.
+
+31
+00:01:35.864 --> 00:01:36.383
+Last
+
+32
+00:01:36.383 --> 00:01:40.951
+B inverse reads the answer in the new grid
+
+33
+00:01:40.951 --> 00:01:44.481
+two v one, coordinates two, zero.
+
+34
+00:01:44.481 --> 00:01:47.076
+Read from right to left
+
+35
+00:01:47.076 --> 00:01:49.464
+that is B inverse A B.
+
+36
+00:01:49.814 --> 00:01:53.892
+Here the new basis is made of eigenvectors
+
+37
+00:01:53.987 --> 00:01:57.021
+so B inverse A B is the diagonal
+
+38
+00:01:57.116 --> 00:01:59.203
+matrix of eigenvalues.
+
+39
+00:01:59.297 --> 00:02:01.953
+Diagonalizing is a change to
+
+40
+00:02:02.048 --> 00:02:04.134
+the eigenvector basis.
+
+41
+00:02:04.714 --> 00:02:08.651
+Two matrices are similar when one equals
+
+42
+00:02:08.750 --> 00:02:12.097
+M inverse times the other times M.
+
+43
+00:02:12.097 --> 00:02:16.034
+They are one map, written in two bases.
+
+44
+00:02:16.384 --> 00:02:20.074
+Lecture eighteen's matrix four, one, two
+
+45
+00:02:20.074 --> 00:02:20.704
+three.
+
+46
+00:02:20.704 --> 00:02:21.694
+As a warp
+
+47
+00:02:21.784 --> 00:02:25.024
+it stretches the blue eigenvector by
+
+48
+00:02:25.114 --> 00:02:27.904
+five and the orange one by two.
+
+49
+00:02:28.254 --> 00:02:32.265
+With M equal to the shear one, one, zero
+
+50
+00:02:32.265 --> 00:02:36.471
+one, it becomes the triangular matrix two
+
+51
+00:02:36.471 --> 00:02:38.134
+zero, two, five.
+
+52
+00:02:38.484 --> 00:02:41.411
+Same map, so the same eigenvalues
+
+53
+00:02:41.411 --> 00:02:44.424
+five and two, now on the diagonal.
+
+54
+00:02:44.424 --> 00:02:48.298
+The same trace, seven, the same determinant
+
+55
+00:02:48.298 --> 00:02:50.364
+ten, and the same rank.
+
+56
+00:02:50.714 --> 00:02:53.564
+What changes are the coordinates.
+
+57
+00:02:53.564 --> 00:02:57.365
+In the grid of M, the blue eigenvector one
+
+58
+00:02:57.365 --> 00:03:00.043
+one is described as zero, one.
+
+59
+00:03:00.043 --> 00:03:02.634
+One vector, two descriptions.
+
+60
+00:03:03.214 --> 00:03:06.947
+So it is tempting to turn this around
+
+61
+00:03:06.947 --> 00:03:09.894
+same eigenvalues, so similar?
+
+62
+00:03:10.244 --> 00:03:14.126
+The identity and the shear one, one, zero
+
+63
+00:03:14.126 --> 00:03:17.731
+one both have eigenvalues one and one
+
+64
+00:03:17.731 --> 00:03:21.244
+the same trace, the same determinant.
+
+65
+00:03:21.594 --> 00:03:24.517
+But the identity does nothing
+
+66
+00:03:24.517 --> 00:03:27.246
+in every grid you lay down
+
+67
+00:03:27.246 --> 00:03:30.364
+M inverse times I times M is I.
+
+68
+00:03:30.364 --> 00:03:34.554
+Nothing but the identity is similar to it.
+
+69
+00:03:34.904 --> 00:03:37.619
+The shear really moves the plane
+
+70
+00:03:37.702 --> 00:03:39.923
+and only one line of arrows
+
+71
+00:03:40.006 --> 00:03:41.651
+keeps its direction.
+
+72
+00:03:41.651 --> 00:03:43.544
+It is a different map.
+
+73
+00:03:44.124 --> 00:03:46.738
+So some maps cannot be made
+
+74
+00:03:46.834 --> 00:03:48.964
+diagonal in any basis.
+
+75
+00:03:48.964 --> 00:03:52.061
+The derivative on P two is one
+
+76
+00:03:52.061 --> 00:03:54.868
+its only eigenvalue is zero
+
+77
+00:03:54.868 --> 00:03:59.224
+and its only eigenvectors are the constants.
+
+78
+00:03:59.224 --> 00:04:01.644
+One line is not a basis.
+
+79
+00:04:01.994 --> 00:04:04.364
+The best basis is a chain
+
+80
+00:04:04.364 --> 00:04:07.828
+one half t squared, then t, then one.
+
+81
+00:04:07.828 --> 00:04:11.748
+The derivative moves each one to the next
+
+82
+00:04:11.748 --> 00:04:13.754
+and one goes to zero.
+
+83
+00:04:14.104 --> 00:04:16.521
+So the matrix has ones just
+
+84
+00:04:16.611 --> 00:04:19.744
+above the diagonal: a Jordan block.
+
+85
+00:04:19.744 --> 00:04:23.504
+The shear is the two by two Jordan block
+
+86
+00:04:23.504 --> 00:04:25.384
+with eigenvalue one.
+
+87
+00:04:25.964 --> 00:04:28.001
+Change of basis also happens
+
+88
+00:04:28.074 --> 00:04:29.529
+in machine learning.
+
+89
+00:04:29.601 --> 00:04:32.075
+A linear model prices a house with
+
+90
+00:04:32.148 --> 00:04:33.966
+weights three and twenty
+
+91
+00:04:34.039 --> 00:04:36.658
+eighty square metres and three rooms
+
+92
+00:04:36.731 --> 00:04:39.204
+give three hundred thousand euros.
+
+93
+00:04:39.554 --> 00:04:41.616
+Measure the area in tens of
+
+94
+00:04:41.692 --> 00:04:43.372
+square metres instead.
+
+95
+00:04:43.372 --> 00:04:45.663
+To keep the same predictions
+
+96
+00:04:45.663 --> 00:04:48.259
+the weights change the other way
+
+97
+00:04:48.259 --> 00:04:49.710
+thirty and twenty.
+
+98
+00:04:49.710 --> 00:04:51.314
+Still three hundred.
+
+99
+00:04:51.664 --> 00:04:53.410
+The model is the same
+
+100
+00:04:53.410 --> 00:04:56.187
+but training sees the coordinates.
+
+101
+00:04:56.187 --> 00:04:59.123
+Here is one level curve of the loss
+
+102
+00:04:59.123 --> 00:05:01.424
+so thin it is almost a line.
+
+103
+00:05:01.774 --> 00:05:04.720
+Change the weights with the features
+
+104
+00:05:04.720 --> 00:05:07.029
+and the same curve opens up.
+
+105
+00:05:07.109 --> 00:05:09.896
+The condition number of the Hessian
+
+106
+00:05:09.975 --> 00:05:12.921
+drops from about one hundred nineteen
+
+107
+00:05:13.001 --> 00:05:15.231
+thousand to sixteen hundred
+
+108
+00:05:15.231 --> 00:05:18.734
+and gradient descent needs far fewer steps.
+
+109
+00:05:19.314 --> 00:05:23.137
+So: one map in two bases gives
+
+110
+00:05:23.264 --> 00:05:27.851
+two similar matrices, B inverse A B
+
+111
+00:05:27.851 --> 00:05:31.674
+convert, apply, convert back.
+
+112
+00:05:32.024 --> 00:05:34.581
+They share eigenvalues, trace
+
+113
+00:05:34.581 --> 00:05:36.455
+determinant and rank.
+
+114
+00:05:36.455 --> 00:05:39.864
+The best basis is made of eigenvectors
+
+115
+00:05:39.864 --> 00:05:42.250
+and when there are too few
+
+116
+00:05:42.250 --> 00:05:43.784
+of Jordan chains.
+
+117
+00:05:44.134 --> 00:05:47.370
+Next: the singular value decomposition
+
+118
+00:05:47.370 --> 00:05:49.943
+two good bases for any matrix
+
+119
+00:05:49.943 --> 00:05:51.934
+even a rectangular one.

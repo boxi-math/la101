@@ -1,0 +1,497 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:06.180
+Multiplying the Fourier matrix by a vector
+
+2
+00:00:06.258 --> 00:00:08.757
+costs n squared multiplications
+
+3
+00:00:08.835 --> 00:00:11.256
+every entry of the matrix meets
+
+4
+00:00:11.334 --> 00:00:13.130
+an entry of the vector.
+
+5
+00:00:13.130 --> 00:00:16.332
+For a million samples, about a trillion.
+
+6
+00:00:16.332 --> 00:00:19.378
+An audio file has millions of samples
+
+7
+00:00:19.378 --> 00:00:20.940
+an image even more.
+
+8
+00:00:21.290 --> 00:00:24.442
+How much could a clever method save?
+
+9
+00:00:24.442 --> 00:00:25.930
+Pause and guess.
+
+10
+00:00:29.510 --> 00:00:31.972
+One idea, used again and again
+
+11
+00:00:31.972 --> 00:00:35.545
+split the input into even and odd positions.
+
+12
+00:00:35.545 --> 00:00:38.404
+Here are the eighth roots of unity
+
+13
+00:00:38.404 --> 00:00:41.263
+the powers of w for n equals eight.
+
+14
+00:00:41.263 --> 00:00:44.678
+The even powers land on every other point
+
+15
+00:00:44.678 --> 00:00:47.457
+they are exactly the fourth roots
+
+16
+00:00:47.457 --> 00:00:49.443
+the powers of w squared.
+
+17
+00:00:49.522 --> 00:00:52.222
+So the even entries form a Fourier
+
+18
+00:00:52.302 --> 00:00:54.446
+transform of half the size
+
+19
+00:00:54.446 --> 00:00:56.590
+and so do the odd entries.
+
+20
+00:00:57.170 --> 00:01:01.854
+Output k is e k plus w to the k times o k.
+
+21
+00:01:01.965 --> 00:01:05.422
+Output k plus n over two is e k
+
+22
+00:01:05.534 --> 00:01:08.545
+minus w to the k times o k
+
+23
+00:01:08.656 --> 00:01:12.113
+because w to the power k plus n
+
+24
+00:01:12.225 --> 00:01:15.459
+over two is minus w to the k
+
+25
+00:01:15.459 --> 00:01:19.250
+the opposite point on the circle.
+
+26
+00:01:19.600 --> 00:01:23.005
+So one product, w to the k times o k
+
+27
+00:01:23.005 --> 00:01:24.386
+is used twice
+
+28
+00:01:24.478 --> 00:01:27.699
+added for one output and subtracted
+
+29
+00:01:27.791 --> 00:01:29.080
+for the other.
+
+30
+00:01:29.660 --> 00:01:33.726
+For n equals four: two two-point transforms
+
+31
+00:01:33.726 --> 00:01:37.423
+of x zero, x two and of x one, x three
+
+32
+00:01:37.423 --> 00:01:40.380
+then four sums and differences.
+
+33
+00:01:40.730 --> 00:01:43.384
+One transform of size n costs
+
+34
+00:01:43.476 --> 00:01:45.581
+two of size n over two
+
+35
+00:01:45.581 --> 00:01:48.601
+plus n over two multiplications.
+
+36
+00:01:48.601 --> 00:01:52.170
+Repeat until the pieces have size one
+
+37
+00:01:52.170 --> 00:01:54.092
+log two of n levels
+
+38
+00:01:54.092 --> 00:01:57.570
+each with n over two multiplications.
+
+39
+00:01:58.150 --> 00:01:59.626
+For eight samples
+
+40
+00:01:59.708 --> 00:02:02.168
+twelve multiplications instead
+
+41
+00:02:02.250 --> 00:02:03.397
+of sixty-four.
+
+42
+00:02:03.397 --> 00:02:05.857
+For one thousand twenty-four
+
+43
+00:02:05.939 --> 00:02:08.563
+five thousand one hundred twenty
+
+44
+00:02:08.645 --> 00:02:10.858
+instead of about a million
+
+45
+00:02:10.858 --> 00:02:12.990
+two hundred times faster.
+
+46
+00:02:13.340 --> 00:02:15.071
+For a million samples
+
+47
+00:02:15.071 --> 00:02:18.138
+about a hundred thousand times faster
+
+48
+00:02:18.138 --> 00:02:21.363
+a fraction of a second instead of hours.
+
+49
+00:02:21.363 --> 00:02:24.195
+This is the fast Fourier transform
+
+50
+00:02:24.195 --> 00:02:27.184
+usually credited to Cooley and Tukey
+
+51
+00:02:27.184 --> 00:02:29.780
+and known much earlier to Gauss.
+
+52
+00:02:30.360 --> 00:02:33.003
+So fast must mean approximate.
+
+53
+00:02:33.091 --> 00:02:35.910
+Is the FFT a shortcut that gives
+
+54
+00:02:35.998 --> 00:02:38.200
+roughly the right answer?
+
+55
+00:02:38.780 --> 00:02:39.005
+No.
+
+56
+00:02:39.005 --> 00:02:42.006
+A short recursive version of the split
+
+57
+00:02:42.006 --> 00:02:44.032
+about ten lines of Python
+
+58
+00:02:44.107 --> 00:02:46.207
+agrees with NumPy's f f t on
+
+59
+00:02:46.282 --> 00:02:49.433
+a thousand random samples, up to rounding.
+
+60
+00:02:49.508 --> 00:02:51.684
+It is the same multiplication
+
+61
+00:02:51.759 --> 00:02:53.409
+by the Fourier matrix
+
+62
+00:02:53.484 --> 00:02:55.360
+organized so that most of
+
+63
+00:02:55.435 --> 00:02:56.860
+the work is shared.
+
+64
+00:02:57.440 --> 00:02:59.390
+Where does this matter?
+
+65
+00:02:59.390 --> 00:03:00.746
+In convolution.
+
+66
+00:03:00.746 --> 00:03:03.119
+Blur a row of eight pixels
+
+67
+00:03:03.204 --> 00:03:06.340
+each new value is half the pixel plus
+
+68
+00:03:06.425 --> 00:03:08.798
+a quarter of each neighbour
+
+69
+00:03:08.798 --> 00:03:12.612
+and the last pixel's neighbour is the first.
+
+70
+00:03:12.612 --> 00:03:16.002
+A bright bar, zero, zero, eight, eight
+
+71
+00:03:16.002 --> 00:03:19.732
+eight, zero, zero, zero, becomes zero, two
+
+72
+00:03:19.732 --> 00:03:22.613
+six, eight, six, two, zero, zero
+
+73
+00:03:22.613 --> 00:03:23.800
+softer edges.
+
+74
+00:03:24.150 --> 00:03:27.178
+The matrix of this blur is constant
+
+75
+00:03:27.265 --> 00:03:29.687
+along each wrapped diagonal
+
+76
+00:03:29.687 --> 00:03:31.417
+a circulant matrix.
+
+77
+00:03:31.417 --> 00:03:35.310
+Multiplying by it is a circular convolution.
+
+78
+00:03:35.890 --> 00:03:37.672
+Here is the key fact.
+
+79
+00:03:37.756 --> 00:03:40.895
+Every column of the Fourier matrix is
+
+80
+00:03:40.980 --> 00:03:43.865
+an eigenvector of every circulant.
+
+81
+00:03:43.865 --> 00:03:47.513
+Take column one for n equals four: one, i
+
+82
+00:03:47.513 --> 00:03:49.209
+minus one, minus i.
+
+83
+00:03:49.294 --> 00:03:52.603
+Shifting it by one place only turns all
+
+84
+00:03:52.687 --> 00:03:55.826
+its entries by the same quarter turn
+
+85
+00:03:55.826 --> 00:03:59.050
+and a circulant is built from shifts.
+
+86
+00:03:59.400 --> 00:04:01.820
+So the eigenvalues are the f
+
+87
+00:04:01.906 --> 00:04:03.980
+f t of the first column.
+
+88
+00:04:03.980 --> 00:04:07.091
+For the blur: one for the constant
+
+89
+00:04:07.091 --> 00:04:10.115
+then point eight five, point five
+
+90
+00:04:10.115 --> 00:04:11.498
+point one five
+
+91
+00:04:11.498 --> 00:04:14.781
+and zero for the fastest alternation.
+
+92
+00:04:14.781 --> 00:04:17.201
+So C is F lambda F inverse
+
+93
+00:04:17.201 --> 00:04:19.620
+the blur keeps the average
+
+94
+00:04:19.620 --> 00:04:21.694
+as in Lecture eighteen
+
+95
+00:04:21.694 --> 00:04:24.200
+and kills the finest detail.
+
+96
+00:04:24.780 --> 00:04:27.684
+That gives the convolution rule.
+
+97
+00:04:27.684 --> 00:04:31.132
+To convolve c with x: transform both
+
+98
+00:04:31.132 --> 00:04:34.852
+multiply entry by entry, transform back.
+
+99
+00:04:34.852 --> 00:04:38.300
+Three FFTs instead of n squared work.
+
+100
+00:04:38.650 --> 00:04:42.009
+Multiplying polynomials is a convolution
+
+101
+00:04:42.093 --> 00:04:43.940
+of their coefficients.
+
+102
+00:04:43.940 --> 00:04:47.046
+One plus two t plus three t squared
+
+103
+00:04:47.046 --> 00:04:50.657
+times four plus five t, comes out as four
+
+104
+00:04:50.657 --> 00:04:53.259
+thirteen, twenty-two, fifteen.
+
+105
+00:04:53.259 --> 00:04:55.442
+But pad with zeros first.
+
+106
+00:04:55.442 --> 00:04:57.038
+With length three
+
+107
+00:04:57.122 --> 00:04:59.305
+the last coefficient wraps
+
+108
+00:04:59.389 --> 00:05:03.083
+around onto the first, and you get nineteen
+
+109
+00:05:03.083 --> 00:05:04.930
+thirteen, twenty-two.
+
+110
+00:05:05.280 --> 00:05:08.104
+Convolutional networks slide small
+
+111
+00:05:08.187 --> 00:05:10.014
+filters across images
+
+112
+00:05:10.097 --> 00:05:14.084
+and long convolutions in audio and some sequence
+
+113
+00:05:14.167 --> 00:05:17.240
+models are computed exactly this way.
+
+114
+00:05:17.820 --> 00:05:18.677
+To sum up.
+
+115
+00:05:18.677 --> 00:05:21.247
+The FFT splits even from odd
+
+116
+00:05:21.247 --> 00:05:23.645
+reusing each product twice
+
+117
+00:05:23.731 --> 00:05:26.900
+and computes exactly the same Fourier
+
+118
+00:05:26.986 --> 00:05:29.299
+transform in n log n steps.
+
+119
+00:05:29.385 --> 00:05:32.126
+Fourier vectors are eigenvectors
+
+120
+00:05:32.212 --> 00:05:33.839
+of every circulant
+
+121
+00:05:33.839 --> 00:05:37.180
+so convolution becomes multiplication.
+
+122
+00:05:37.760 --> 00:05:40.848
+Next: a matrix depends on the basis.
+
+123
+00:05:40.848 --> 00:05:42.392
+Change the basis
+
+124
+00:05:42.392 --> 00:05:45.480
+and the same map gets a new matrix.

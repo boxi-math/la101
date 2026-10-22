@@ -1,0 +1,425 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:06.094
+The drone now works for a delivery service
+
+2
+00:00:06.094 --> 00:00:08.546
+five landing pads on a hillside
+
+3
+00:00:08.546 --> 00:00:10.180
+joined by six routes.
+
+4
+00:00:10.530 --> 00:00:12.425
+Each route has an arrow
+
+5
+00:00:12.425 --> 00:00:14.952
+from a start pad to an end pad.
+
+6
+00:00:14.952 --> 00:00:17.241
+The arrow only fixes a sign
+
+7
+00:00:17.241 --> 00:00:19.610
+crates can travel either way.
+
+8
+00:00:19.960 --> 00:00:22.060
+The three arrows on the left
+
+9
+00:00:22.135 --> 00:00:23.485
+make one triangle
+
+10
+00:00:23.485 --> 00:00:26.260
+the three on the right make another
+
+11
+00:00:26.260 --> 00:00:28.960
+and they meet at landing pad three
+
+12
+00:00:28.960 --> 00:00:30.160
+like a bow tie.
+
+13
+00:00:30.510 --> 00:00:32.823
+A surveyor measures how much
+
+14
+00:00:32.905 --> 00:00:34.392
+each route climbs.
+
+15
+00:00:34.392 --> 00:00:37.118
+Without knowing a single height
+
+16
+00:00:37.200 --> 00:00:39.678
+how could you tell whether the
+
+17
+00:00:39.761 --> 00:00:41.826
+six numbers fit together?
+
+18
+00:00:41.826 --> 00:00:43.230
+Pause and think.
+
+19
+00:00:46.810 --> 00:00:49.721
+One matrix records the whole network
+
+20
+00:00:49.721 --> 00:00:51.609
+the incidence matrix A.
+
+21
+00:00:51.687 --> 00:00:54.283
+It has one row for each route and
+
+22
+00:00:54.362 --> 00:00:56.879
+one column for each landing pad
+
+23
+00:00:56.879 --> 00:00:58.610
+so it is six by five.
+
+24
+00:00:58.960 --> 00:01:01.131
+Row one is route e one
+
+25
+00:01:01.131 --> 00:01:03.491
+from pad one to pad two
+
+26
+00:01:03.491 --> 00:01:07.456
+minus one in column one, where it starts
+
+27
+00:01:07.456 --> 00:01:11.138
+plus one in column two, where it ends
+
+28
+00:01:11.138 --> 00:01:13.120
+and zeros elsewhere.
+
+29
+00:01:13.470 --> 00:01:17.511
+The other five rows follow the same rule
+
+30
+00:01:17.511 --> 00:01:21.750
+e two, e three, e four, e five, and e six.
+
+31
+00:01:22.100 --> 00:01:25.774
+Each row has one minus one and one plus one
+
+32
+00:01:25.774 --> 00:01:28.029
+so every row adds to zero.
+
+33
+00:01:28.112 --> 00:01:30.367
+Rows are routes and columns
+
+34
+00:01:30.450 --> 00:01:31.870
+are landing pads
+
+35
+00:01:31.870 --> 00:01:35.460
+swap them and you get A transpose instead.
+
+36
+00:01:36.040 --> 00:01:40.904
+Now give each pad a height in metres: ten
+
+37
+00:01:40.904 --> 00:01:45.652
+fourteen, thirteen, twenty and eighteen.
+
+38
+00:01:45.652 --> 00:01:48.200
+That is the vector x.
+
+39
+00:01:48.550 --> 00:01:51.343
+Each row of A times x gives the
+
+40
+00:01:51.433 --> 00:01:54.225
+height where a route ends minus
+
+41
+00:01:54.315 --> 00:01:56.748
+the height where it starts
+
+42
+00:01:56.748 --> 00:01:59.270
+the climb along that route.
+
+43
+00:01:59.620 --> 00:02:02.612
+Route e one climbs four
+
+44
+00:02:02.612 --> 00:02:05.354
+from ten to fourteen.
+
+45
+00:02:05.354 --> 00:02:07.473
+e two drops one.
+
+46
+00:02:07.473 --> 00:02:12.334
+Then three, seven, minus two and five
+
+47
+00:02:12.334 --> 00:02:15.700
+six climbs, one per route.
+
+48
+00:02:16.280 --> 00:02:18.981
+Which heights give no climb at all?
+
+49
+00:02:19.058 --> 00:02:22.222
+A x equals zero says that the two ends of
+
+50
+00:02:22.299 --> 00:02:25.000
+every route are at the same height.
+
+51
+00:02:25.350 --> 00:02:28.331
+You can walk from any landing pad
+
+52
+00:02:28.421 --> 00:02:31.221
+to any other along the network
+
+53
+00:02:31.221 --> 00:02:34.021
+so all five heights are equal.
+
+54
+00:02:34.021 --> 00:02:37.995
+The nullspace is the line through one, one
+
+55
+00:02:37.995 --> 00:02:39.350
+one, one, one.
+
+56
+00:02:39.700 --> 00:02:42.878
+In words: raise every pad by seven metres
+
+57
+00:02:42.878 --> 00:02:45.300
+and not a single climb changes.
+
+58
+00:02:45.650 --> 00:02:49.064
+So the nullspace has dimension one
+
+59
+00:02:49.064 --> 00:02:52.771
+and the rank is five minus one: four.
+
+60
+00:02:52.771 --> 00:02:55.502
+Fix pad one at height zero
+
+61
+00:02:55.502 --> 00:02:59.891
+and the heights become relative to it: zero
+
+62
+00:02:59.891 --> 00:03:02.330
+four, three, ten, eight.
+
+63
+00:03:02.910 --> 00:03:04.729
+Back to the surveyor
+
+64
+00:03:04.729 --> 00:03:08.627
+which lists of climbs can come from heights?
+
+65
+00:03:08.627 --> 00:03:12.179
+Walk around the left triangle: up e one
+
+66
+00:03:12.179 --> 00:03:15.384
+along e two, and back along e three
+
+67
+00:03:15.384 --> 00:03:17.030
+against its arrow.
+
+68
+00:03:17.380 --> 00:03:21.122
+You come back to the height you started at
+
+69
+00:03:21.122 --> 00:03:24.864
+so b one plus b two minus b three is zero
+
+70
+00:03:24.864 --> 00:03:27.300
+four minus one minus three.
+
+71
+00:03:27.650 --> 00:03:31.100
+The right triangle gives b four plus
+
+72
+00:03:31.196 --> 00:03:34.167
+b five minus b six equals zero
+
+73
+00:03:34.167 --> 00:03:36.850
+seven minus two minus five.
+
+74
+00:03:37.200 --> 00:03:38.855
+This is the loop law
+
+75
+00:03:38.855 --> 00:03:41.849
+climbs add to zero around every loop.
+
+76
+00:03:41.928 --> 00:03:44.292
+Each loop is a vector y with y
+
+77
+00:03:44.370 --> 00:03:46.419
+transpose A equal to zero
+
+78
+00:03:46.419 --> 00:03:49.650
+so the loops live in the left nullspace
+
+79
+00:03:49.650 --> 00:03:52.880
+they are the tests for the column space.
+
+80
+00:03:53.460 --> 00:03:55.346
+It is tempting to think six
+
+81
+00:03:55.415 --> 00:03:57.859
+climbs can be anything: six routes
+
+82
+00:03:57.859 --> 00:03:59.186
+five free heights.
+
+83
+00:03:59.256 --> 00:04:01.072
+But five heights give only
+
+84
+00:04:01.141 --> 00:04:02.817
+four independent climbs.
+
+85
+00:04:02.887 --> 00:04:04.982
+The column space has dimension
+
+86
+00:04:05.052 --> 00:04:06.309
+four inside R six
+
+87
+00:04:06.379 --> 00:04:08.404
+and the two loops are the two
+
+88
+00:04:08.474 --> 00:04:09.940
+conditions left over.
+
+89
+00:04:10.290 --> 00:04:14.080
+Now a surveyor reports the same climbs
+
+90
+00:04:14.080 --> 00:04:16.412
+but six on route e six.
+
+91
+00:04:16.412 --> 00:04:19.717
+The left loop still adds to zero.
+
+92
+00:04:19.814 --> 00:04:22.340
+The right loop gives seven
+
+93
+00:04:22.438 --> 00:04:25.450
+minus two minus six: minus one.
+
+94
+00:04:25.800 --> 00:04:28.660
+So no heights at all fit this survey
+
+95
+00:04:28.660 --> 00:04:31.056
+it is not in the column space
+
+96
+00:04:31.133 --> 00:04:33.142
+and the error is somewhere
+
+97
+00:04:33.220 --> 00:04:34.920
+on the right triangle.
+
+98
+00:04:35.500 --> 00:04:39.238
+So: the incidence matrix turns heights on
+
+99
+00:04:39.329 --> 00:04:42.520
+the pads into climbs on the routes.
+
+100
+00:04:42.520 --> 00:04:45.437
+Its nullspace is equal heights
+
+101
+00:04:45.437 --> 00:04:49.540
+so its rank is the number of pads minus one.
+
+102
+00:04:49.890 --> 00:04:54.347
+And a list of climbs comes from heights exactly
+
+103
+00:04:54.442 --> 00:04:58.141
+when it adds to zero around every loop.
+
+104
+00:04:58.141 --> 00:05:02.124
+Your turn: do the climbs one, zero, zero
+
+105
+00:05:02.124 --> 00:05:06.012
+zero, zero, minus one come from heights?
+
+106
+00:05:06.012 --> 00:05:10.090
+In part two, crates flow along the routes.

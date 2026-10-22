@@ -1,0 +1,485 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:04.718
+One number, the rank
+
+2
+00:00:04.718 --> 00:00:08.181
+sorts every system before you solve it.
+
+3
+00:00:08.181 --> 00:00:11.470
+Compare r with m, the number of rows
+
+4
+00:00:11.470 --> 00:00:14.500
+and with n, the number of columns.
+
+5
+00:00:14.850 --> 00:00:17.793
+Draw each equation as a line in
+
+6
+00:00:17.888 --> 00:00:20.356
+the plane of the unknowns.
+
+7
+00:00:20.356 --> 00:00:21.685
+Square first
+
+8
+00:00:21.685 --> 00:00:24.817
+x one plus two x two equals one
+
+9
+00:00:24.817 --> 00:00:26.906
+and x two equals one.
+
+10
+00:00:27.001 --> 00:00:29.943
+Two lines that are not parallel
+
+11
+00:00:30.038 --> 00:00:34.120
+cross at exactly one point, minus one, one.
+
+12
+00:00:34.120 --> 00:00:37.158
+r equals m equals n equals two
+
+13
+00:00:37.158 --> 00:00:41.050
+one solution, for every right hand side.
+
+14
+00:00:41.630 --> 00:00:45.469
+Now the two to three layer: a third row
+
+15
+00:00:45.469 --> 00:00:47.772
+x one plus three x two.
+
+16
+00:00:47.772 --> 00:00:50.747
+With the target one, one, two
+
+17
+00:00:50.843 --> 00:00:53.530
+the third line is x one plus
+
+18
+00:00:53.626 --> 00:00:55.833
+three x two equals two.
+
+19
+00:00:55.833 --> 00:00:59.096
+It passes through minus one, one
+
+20
+00:00:59.096 --> 00:01:01.879
+minus one plus three is two.
+
+21
+00:01:01.879 --> 00:01:03.990
+Exactly one solution.
+
+22
+00:01:04.340 --> 00:01:06.940
+Change the last target to one.
+
+23
+00:01:06.940 --> 00:01:08.847
+The third line moves
+
+24
+00:01:08.847 --> 00:01:12.487
+and minus one plus three is two, not one
+
+25
+00:01:12.487 --> 00:01:15.087
+it misses the crossing point.
+
+26
+00:01:15.087 --> 00:01:16.820
+No solution at all.
+
+27
+00:01:17.170 --> 00:01:20.712
+Tall, with r equal to n, two
+
+28
+00:01:20.712 --> 00:01:23.643
+but less than m, three
+
+29
+00:01:23.643 --> 00:01:27.917
+a zero row gives a condition on b
+
+30
+00:01:27.917 --> 00:01:30.970
+so zero or one solution.
+
+31
+00:01:31.550 --> 00:01:34.348
+Keep a faint copy of the layer.
+
+32
+00:01:34.348 --> 00:01:38.410
+Now the matrix with rows one, three and two
+
+33
+00:01:38.410 --> 00:01:40.035
+six, of rank one.
+
+34
+00:01:40.035 --> 00:01:42.291
+With target four, eight
+
+35
+00:01:42.291 --> 00:01:45.902
+the second equation is twice the first
+
+36
+00:01:45.902 --> 00:01:47.978
+one line, drawn twice.
+
+37
+00:01:47.978 --> 00:01:50.776
+Every point on it solves both
+
+38
+00:01:50.776 --> 00:01:52.310
+infinitely many.
+
+39
+00:01:52.660 --> 00:01:54.565
+With target four, nine
+
+40
+00:01:54.648 --> 00:01:56.884
+the second line is parallel
+
+41
+00:01:56.967 --> 00:02:00.197
+and never meets the first: no solution.
+
+42
+00:02:00.197 --> 00:02:03.013
+When r is less than both m and n
+
+43
+00:02:03.013 --> 00:02:06.740
+there are zero or infinitely many solutions.
+
+44
+00:02:07.320 --> 00:02:10.255
+The last case needs three unknowns
+
+45
+00:02:10.255 --> 00:02:12.183
+so we use the numbers.
+
+46
+00:02:12.267 --> 00:02:14.950
+The data matrix has two examples
+
+47
+00:02:15.034 --> 00:02:16.543
+and three weights.
+
+48
+00:02:16.543 --> 00:02:18.975
+Its rank is two, equal to m
+
+49
+00:02:18.975 --> 00:02:20.400
+and less than n.
+
+50
+00:02:20.750 --> 00:02:25.265
+For the targets three, two, one fit is two
+
+51
+00:02:25.265 --> 00:02:26.945
+one half, zero
+
+52
+00:02:26.945 --> 00:02:30.410
+two plus one plus zero is three
+
+53
+00:02:30.410 --> 00:02:34.190
+and two plus zero plus zero is two.
+
+54
+00:02:34.540 --> 00:02:36.705
+The library finds another
+
+55
+00:02:36.705 --> 00:02:40.202
+one point two two, zero point eight nine
+
+56
+00:02:40.202 --> 00:02:42.200
+zero point seven eight.
+
+57
+00:02:42.200 --> 00:02:43.283
+It fits too
+
+58
+00:02:43.366 --> 00:02:46.030
+one point two two plus one point
+
+59
+00:02:46.114 --> 00:02:47.862
+seven eight is three
+
+60
+00:02:47.945 --> 00:02:50.193
+one point two two plus zero
+
+61
+00:02:50.277 --> 00:02:52.358
+point seven eight is two.
+
+62
+00:02:52.358 --> 00:02:55.938
+With r equal to m, every target is fitted
+
+63
+00:02:55.938 --> 00:02:58.020
+in infinitely many ways.
+
+64
+00:02:58.600 --> 00:03:02.732
+numpy's solve handles only the first case
+
+65
+00:03:02.732 --> 00:03:06.176
+a square matrix with r equal to n.
+
+66
+00:03:06.176 --> 00:03:08.734
+lstsq handles every case.
+
+67
+00:03:08.734 --> 00:03:12.867
+When there are infinitely many solutions
+
+68
+00:03:12.867 --> 00:03:15.720
+it returns the shortest one.
+
+69
+00:03:16.070 --> 00:03:18.480
+Picture it on the solution line
+
+70
+00:03:18.558 --> 00:03:21.902
+of the rank one example: x p is four, zero
+
+71
+00:03:21.979 --> 00:03:24.545
+but the point of the line closest
+
+72
+00:03:24.623 --> 00:03:26.567
+to the origin is shorter.
+
+73
+00:03:26.567 --> 00:03:29.988
+For the drone, the least squares answer has
+
+74
+00:03:30.066 --> 00:03:32.165
+length zero point six four
+
+75
+00:03:32.165 --> 00:03:35.353
+while x p has length one point four one.
+
+76
+00:03:35.353 --> 00:03:36.753
+Both are correct
+
+77
+00:03:36.753 --> 00:03:39.630
+two points of the same solution set.
+
+78
+00:03:40.210 --> 00:03:43.759
+A three by three matrix has rank two.
+
+79
+00:03:43.759 --> 00:03:47.884
+Can A x equal b have exactly one solution?
+
+80
+00:03:47.884 --> 00:03:49.610
+Pause and decide.
+
+81
+00:03:50.160 --> 00:03:50.436
+No.
+
+82
+00:03:50.436 --> 00:03:52.093
+r is less than n
+
+83
+00:03:52.093 --> 00:03:55.867
+so there is a free variable: a solution
+
+84
+00:03:55.867 --> 00:03:59.089
+when there is one, is never alone.
+
+85
+00:03:59.089 --> 00:04:01.115
+And r is less than m
+
+86
+00:04:01.115 --> 00:04:03.600
+so some targets have none.
+
+87
+00:04:03.950 --> 00:04:05.653
+The opposite mistake
+
+88
+00:04:05.734 --> 00:04:08.086
+exactly one solution does not
+
+89
+00:04:08.167 --> 00:04:09.870
+need a square matrix.
+
+90
+00:04:09.870 --> 00:04:13.357
+The tall example had exactly one solution
+
+91
+00:04:13.357 --> 00:04:15.790
+for the target one, one, two.
+
+92
+00:04:19.370 --> 00:04:23.043
+An assistant answers for the drone
+
+93
+00:04:23.151 --> 00:04:25.852
+with x p and a nullspace.
+
+94
+00:04:25.852 --> 00:04:30.498
+x p is one, one, zero, zero: A x p is two
+
+95
+00:04:30.498 --> 00:04:31.903
+five, three.
+
+96
+00:04:31.903 --> 00:04:32.875
+Correct.
+
+97
+00:04:32.875 --> 00:04:37.413
+Its one nullspace vector, one, minus one
+
+98
+00:04:37.413 --> 00:04:39.898
+zero, one, gives zero.
+
+99
+00:04:39.898 --> 00:04:41.410
+Also correct.
+
+100
+00:04:41.760 --> 00:04:44.993
+But count: n minus r is four minus two
+
+101
+00:04:44.993 --> 00:04:47.231
+two directions are needed
+
+102
+00:04:47.231 --> 00:04:49.220
+and only one was given.
+
+103
+00:04:49.303 --> 00:04:51.789
+The answer misses every recipe
+
+104
+00:04:51.872 --> 00:04:53.447
+that uses button w.
+
+105
+00:04:53.447 --> 00:04:56.514
+Multiplying alone cannot catch that
+
+106
+00:04:56.514 --> 00:04:57.840
+the count does.
+
+107
+00:04:58.420 --> 00:05:01.601
+So: r equal to m equal to n
+
+108
+00:05:01.601 --> 00:05:05.463
+two lines crossing: one solution.
+
+109
+00:05:05.463 --> 00:05:08.530
+r equal to n, less than m
+
+110
+00:05:08.530 --> 00:05:12.620
+a third line may miss, zero or one.
+
+111
+00:05:12.970 --> 00:05:17.819
+r equal to m, less than n: infinitely many
+
+112
+00:05:17.819 --> 00:05:18.721
+always.
+
+113
+00:05:18.721 --> 00:05:20.750
+r less than both
+
+114
+00:05:20.750 --> 00:05:24.471
+the same line or parallel lines
+
+115
+00:05:24.471 --> 00:05:27.290
+zero or infinitely many.
+
+116
+00:05:27.640 --> 00:05:28.517
+Your turn
+
+117
+00:05:28.517 --> 00:05:31.588
+a two by five matrix has rank two.
+
+118
+00:05:31.675 --> 00:05:33.869
+For how many targets b is
+
+119
+00:05:33.956 --> 00:05:36.062
+A x equal to b solvable?
+
+120
+00:05:36.062 --> 00:05:38.518
+Next lecture: independence
+
+121
+00:05:38.518 --> 00:05:40.360
+basis and dimension.

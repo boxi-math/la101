@@ -1,0 +1,409 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:05.858
+Here is a function of two variables
+
+2
+00:00:05.858 --> 00:00:08.488
+a cubic in x, plus a quadratic.
+
+3
+00:00:08.488 --> 00:00:11.446
+It is not a loss from a real model
+
+4
+00:00:11.446 --> 00:00:13.500
+but it behaves like one.
+
+5
+00:00:13.850 --> 00:00:17.468
+Its gradient is zero at two points: two
+
+6
+00:00:17.468 --> 00:00:20.272
+minus two, and minus two, two.
+
+7
+00:00:20.272 --> 00:00:23.890
+At both, the surface is perfectly flat.
+
+8
+00:00:24.240 --> 00:00:27.256
+Which one is the bottom of a valley?
+
+9
+00:00:27.256 --> 00:00:28.680
+Pause and guess.
+
+10
+00:00:32.260 --> 00:00:33.621
+In one variable
+
+11
+00:00:33.621 --> 00:00:36.259
+the second derivative decides.
+
+12
+00:00:36.259 --> 00:00:39.322
+In two, the second derivatives fill
+
+13
+00:00:39.407 --> 00:00:42.300
+a symmetric matrix, the Hessian H.
+
+14
+00:00:42.650 --> 00:00:44.174
+Near a flat point
+
+15
+00:00:44.258 --> 00:00:46.544
+Taylor's formula keeps only
+
+16
+00:00:46.628 --> 00:00:48.236
+the quadratic term
+
+17
+00:00:48.236 --> 00:00:50.437
+one half h transpose H h.
+
+18
+00:00:50.437 --> 00:00:53.823
+That is the energy of the last lecture
+
+19
+00:00:53.823 --> 00:00:56.870
+so its level curves tell the story
+
+20
+00:00:56.870 --> 00:00:59.155
+ellipses around a minimum
+
+21
+00:00:59.155 --> 00:01:01.610
+hyperbolas through a saddle.
+
+22
+00:01:02.190 --> 00:01:06.335
+At two, minus two, the Hessian is six, two
+
+23
+00:01:06.335 --> 00:01:07.299
+two, two.
+
+24
+00:01:07.299 --> 00:01:10.769
+Its pivots are six and four thirds
+
+25
+00:01:10.769 --> 00:01:12.215
+both positive.
+
+26
+00:01:12.215 --> 00:01:15.492
+So the level curves are ellipses
+
+27
+00:01:15.492 --> 00:01:19.830
+and f goes up in every direction: a minimum.
+
+28
+00:01:20.180 --> 00:01:23.694
+Check with a small step from there.
+
+29
+00:01:23.794 --> 00:01:26.404
+f rises by zero point zero
+
+30
+00:01:26.505 --> 00:01:28.613
+four two eight three
+
+31
+00:01:28.713 --> 00:01:32.428
+and one half h transpose H h predicts
+
+32
+00:01:32.528 --> 00:01:35.540
+zero point zero four two five.
+
+33
+00:01:36.120 --> 00:01:38.431
+At the point where x is minus
+
+34
+00:01:38.511 --> 00:01:39.866
+two and y is two
+
+35
+00:01:39.866 --> 00:01:43.452
+the Hessian has entries minus two, two, two
+
+36
+00:01:43.452 --> 00:01:46.242
+two, with determinant minus eight.
+
+37
+00:01:46.242 --> 00:01:49.191
+The eigenvalues have opposite signs
+
+38
+00:01:49.191 --> 00:01:52.060
+so the level curves are hyperbolas
+
+39
+00:01:52.140 --> 00:01:54.451
+f goes up along one direction
+
+40
+00:01:54.531 --> 00:01:56.523
+and down along the other.
+
+41
+00:01:56.523 --> 00:01:57.320
+A saddle.
+
+42
+00:01:57.900 --> 00:01:59.980
+Here is a tempting shortcut
+
+43
+00:01:59.980 --> 00:02:03.249
+if the diagonal of the Hessian is positive
+
+44
+00:02:03.249 --> 00:02:04.660
+call it a minimum.
+
+45
+00:02:05.240 --> 00:02:09.280
+Take x squared plus four x y plus y squared.
+
+46
+00:02:09.280 --> 00:02:12.770
+Its Hessian has twos on the diagonal
+
+47
+00:02:12.770 --> 00:02:14.147
+both positive.
+
+48
+00:02:14.147 --> 00:02:16.259
+But at one, minus one
+
+49
+00:02:16.259 --> 00:02:20.023
+the function is one minus four plus one
+
+50
+00:02:20.023 --> 00:02:23.880
+minus two, below its value at the origin.
+
+51
+00:02:24.230 --> 00:02:27.473
+The eigenvalues are six and minus two
+
+52
+00:02:27.473 --> 00:02:30.971
+the cross term made the origin a saddle.
+
+53
+00:02:30.971 --> 00:02:34.470
+Test the whole matrix, not its diagonal.
+
+54
+00:02:35.050 --> 00:02:38.118
+How curved is a bowl in one direction?
+
+55
+00:02:38.118 --> 00:02:41.428
+Divide the energy by the squared length.
+
+56
+00:02:41.509 --> 00:02:44.900
+This Rayleigh quotient always lies between
+
+57
+00:02:44.981 --> 00:02:48.210
+the smallest and the largest eigenvalue.
+
+58
+00:02:48.560 --> 00:02:51.290
+For the café matrix: along one
+
+59
+00:02:51.290 --> 00:02:52.787
+zero it is five.
+
+60
+00:02:52.787 --> 00:02:56.222
+Along two, one it is six, the maximum.
+
+61
+00:02:56.222 --> 00:03:00.185
+Along one, minus two it is one, the minimum.
+
+62
+00:03:00.185 --> 00:03:03.620
+Drawn at half size in every direction
+
+63
+00:03:03.708 --> 00:03:06.438
+the curve stays inside the ring
+
+64
+00:03:06.526 --> 00:03:08.640
+between the two circles.
+
+65
+00:03:09.220 --> 00:03:11.166
+Now roll down a bowl.
+
+66
+00:03:11.166 --> 00:03:14.873
+Take the quadratic loss with Hessian C
+
+67
+00:03:14.873 --> 00:03:18.765
+and measure every point from its minimum.
+
+68
+00:03:18.858 --> 00:03:21.545
+Each gradient step multiplies
+
+69
+00:03:21.638 --> 00:03:24.140
+the error by I minus eta C.
+
+70
+00:03:24.490 --> 00:03:27.277
+Along the steep axis that factor
+
+71
+00:03:27.364 --> 00:03:29.193
+is one minus six eta
+
+72
+00:03:29.193 --> 00:03:32.589
+along the shallow axis, one minus eta.
+
+73
+00:03:32.589 --> 00:03:35.985
+Both must be smaller than one in size
+
+74
+00:03:35.985 --> 00:03:39.381
+so the steep direction sets the limit
+
+75
+00:03:39.381 --> 00:03:41.210
+eta below one third.
+
+76
+00:03:41.560 --> 00:03:44.456
+With eta equal to zero point one
+
+77
+00:03:44.456 --> 00:03:47.002
+the steps are safe but slow.
+
+78
+00:03:47.002 --> 00:03:49.986
+With two sevenths, the best step
+
+79
+00:03:50.074 --> 00:03:52.268
+the error shrinks by five
+
+80
+00:03:52.356 --> 00:03:54.023
+sevenths each time.
+
+81
+00:03:54.023 --> 00:03:56.481
+With zero point three four
+
+82
+00:03:56.481 --> 00:03:58.412
+just above one third
+
+83
+00:03:58.499 --> 00:04:00.869
+the path zigzags across the
+
+84
+00:04:00.957 --> 00:04:02.800
+steep axis and grows.
+
+85
+00:04:03.150 --> 00:04:07.092
+The ratio of the extreme eigenvalues, kappa
+
+86
+00:04:07.092 --> 00:04:08.257
+is six here.
+
+87
+00:04:08.257 --> 00:04:11.304
+A large kappa means slow descent
+
+88
+00:04:11.393 --> 00:04:14.260
+which is one reason features are
+
+89
+00:04:14.350 --> 00:04:16.590
+rescaled before training.
+
+90
+00:04:17.170 --> 00:04:18.079
+To sum up.
+
+91
+00:04:18.170 --> 00:04:21.259
+A flat point is a minimum when the
+
+92
+00:04:21.350 --> 00:04:23.984
+Hessian is positive definite
+
+93
+00:04:23.984 --> 00:04:25.892
+ellipses all around.
+
+94
+00:04:25.892 --> 00:04:29.890
+Mixed signs give a saddle, with hyperbolas.
+
+95
+00:04:30.240 --> 00:04:32.206
+The Rayleigh quotient is the
+
+96
+00:04:32.276 --> 00:04:34.031
+curvature in a direction
+
+97
+00:04:34.031 --> 00:04:36.347
+between the extreme eigenvalues
+
+98
+00:04:36.418 --> 00:04:38.734
+and the steepest direction limits
+
+99
+00:04:38.804 --> 00:04:40.840
+the step of gradient descent.
+
+100
+00:04:41.420 --> 00:04:42.402
+In part two
+
+101
+00:04:42.402 --> 00:04:45.346
+the same quadratic forms as shapes
+
+102
+00:04:45.346 --> 00:04:48.700
+and what survives a change of variables.

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linear Programming and Duality — LA101 Elective E2 (link page)</title>
+  <meta name="description" content="LA101 Linear Algebra, Elective E2: a short introduction to linear programs and duality, with a worked two-variable example, pointing to the optimisation course OPT101.">
+  <!-- seo --><!-- written by la101/tools/site_build.py -->
+  <link rel="canonical" href="https://boxi-math.github.io/la101/E2/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="LA101 Linear Algebra">
+  <meta property="og:title" content="Linear Programming and Duality — LA101 Elective E2 (link page)">
+  <meta property="og:description" content="LA101 Linear Algebra, Elective E2: a short introduction to linear programs and duality, with a worked two-variable example, pointing to the optimisation course OPT101.">
+  <meta property="og:url" content="https://boxi-math.github.io/la101/E2/">
+  <meta property="og:image" content="https://boxi-math.github.io/la101/assets/share-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="LA101 Linear Algebra: an open course with interactive notes, demos and videos">
+  <meta property="og:locale" content="en">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Linear Programming and Duality — LA101 Elective E2 (link page)">
+  <meta name="twitter:description" content="LA101 Linear Algebra, Elective E2: a short introduction to linear programs and duality, with a worked two-variable example, pointing to the optimisation course OPT101.">
+  <meta name="twitter:image" content="https://boxi-math.github.io/la101/assets/share-card.png">
+  <!-- /seo -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230F6E73'/%3E%3Ctext x='16' y='22' font-family='serif' font-size='17' font-weight='700' text-anchor='middle' fill='%23F6F5F1'%3EAx%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../assets/katex/katex.min.css">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="../index.html"><span class="brand-mark">Ax</span><span class="brand-text"><b>Linear Programming and Duality · E2</b><span>LA101 Linear Algebra</span></span></a>
+  </header>
+  <main id="main"><div class="wrap">
+    <section class="hero" style="grid-template-columns: minmax(0, 1fr);">
+      <div>
+        <span class="pill">LA101 Linear Algebra · Elective E2 · link page</span>
+        <h1>Linear Programming and Duality<small>No lecture of its own: this topic belongs to the optimisation course OPT101</small></h1>
+        <p class="lead">A linear program optimises a linear function over a region cut out by linear inequalities. LA101 meets it twice: maximum flows in a network (elective E3) and optimal mixed strategies in a zero-sum game (E3, part 2) are both linear programs, and max-flow min-cut and the minimax theorem are both instances of linear programming duality.</p>
+      </div>
+    </section>
+    <article style="max-width: 46em; margin: 0 auto 48px;">
+      <h2>A linear program in two variables</h2>
+      <p>A workshop makes tables (\(x\)) and chairs (\(y\)) and earns 3 per table and 5 per chair. It has 4 hours of cutting and 6 hours of finishing; a table takes 1 hour of each, a chair 1 hour of cutting and 3 of finishing:</p>
+      $$\text{maximise } 3x + 5y \quad\text{subject to}\quad x + y \le 4,\quad x + 3y \le 6,\quad x \ge 0,\ y \ge 0 .$$
+      <p>The allowed region is a polygon with corners \((0, 0)\), \((4, 0)\), \((3, 1)\) and \((0, 2)\). A linear objective is largest at a corner: the values are 0, 12, 14 and 10, so the best plan is \((3, 1)\) with profit 14. Finding a corner means solving the square linear system of the constraints that are tight there, here \(x + y = 4\), \(x + 3y = 6\): elimination, <a href="../L02/index.html">Lecture 2</a>.</p>
+      <h2>The dual program</h2>
+      <p>Put a price \(u\) on an hour of cutting and \(v\) on an hour of finishing. If the hours a table uses are worth at least 3 and the hours a chair uses at least 5, the hours themselves are worth at least as much as any plan earns:</p>
+      $$\text{minimise } 4u + 6v \quad\text{subject to}\quad u + v \ge 3,\quad u + 3v \ge 5,\quad u \ge 0,\ v \ge 0 .$$
+      <p>Any plan earns at most any such pricing (<b>weak duality</b>), so every feasible pricing is a certificate. Both dual constraints are tight at \(u = 2\), \(v = 1\), and \(4 \cdot 2 + 6 \cdot 1 = 14\): the dual minimum equals the primal maximum (<b>strong duality</b>). The prices say what one more hour of cutting (2) or of finishing (1) is worth. The dual uses the transposed matrix, \(A^\top\), the same transpose that links the column space and the row space in <a href="../L12/index.html">Lecture 12</a>.</p>
+      <div class="callout ml"><b>WHERE IT CONTINUES</b><p>The optimisation course OPT101 treats linear programs properly (in preparation, not yet online):</p>
+        <ul>
+          <li><b>OPT101 L01</b> — What an optimisation problem is: least squares, linear programs, examples.</li>
+          <li><b>OPT101 L04</b> — Convex problems: LP, QP, SOCP, SDP; disciplined convex programming.</li>
+          <li><b>OPT101 L05</b> — Lagrange duality: the dual function, weak and strong duality, Slater's condition.</li>
+        </ul>
+        <p>Inside LA101: <a href="../E3/index.html">elective E3, network flows and zero-sum games</a>, and the four subspaces, the transpose and orthogonality (Lectures <a href="../L05/index.html">5</a>–<a href="../L12/index.html">12</a>).</p>
+      </div>
+    </article>
+  </div></main>
+  <footer></footer>
+  <script src="../assets/katex/katex.min.js"></script>
+  <script src="../assets/katex/auto-render.min.js"></script>
+  <script src="../assets/course.js"></script>
+  <script>
+    renderFooter("../");
+    renderMathInElement(document.body, { delimiters: [{ left: "$$", right: "$$", display: true }, { left: "\\(", right: "\\)", display: false }] });
+  </script>
+</body>
+</html>

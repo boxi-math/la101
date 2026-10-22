@@ -1,0 +1,389 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:05.355
+A new café sells cold brew.
+
+2
+00:00:05.355 --> 00:00:09.445
+In its first four weeks it sells two, three
+
+3
+00:00:09.445 --> 00:00:11.900
+five and six hundred cups.
+
+4
+00:00:12.250 --> 00:00:14.200
+The owner wants a straight
+
+5
+00:00:14.275 --> 00:00:17.500
+line through them, C plus D times the week
+
+6
+00:00:17.500 --> 00:00:18.850
+to see the trend.
+
+7
+00:00:19.200 --> 00:00:21.403
+The line through the first
+
+8
+00:00:21.488 --> 00:00:23.521
+two weeks is two plus t.
+
+9
+00:00:23.521 --> 00:00:27.080
+Will the best line be steeper or flatter?
+
+10
+00:00:27.080 --> 00:00:28.520
+Pause and guess.
+
+11
+00:00:32.100 --> 00:00:34.748
+One equation per week gives four
+
+12
+00:00:34.830 --> 00:00:37.064
+equations for two unknowns.
+
+13
+00:00:37.147 --> 00:00:39.463
+The matrix A has a column of
+
+14
+00:00:39.546 --> 00:00:41.780
+ones and a column of weeks.
+
+15
+00:00:42.130 --> 00:00:45.185
+The first two weeks fix C equals
+
+16
+00:00:45.281 --> 00:00:47.285
+two and D equals one.
+
+17
+00:00:47.285 --> 00:00:51.200
+Then week two says two plus two is five.
+
+18
+00:00:51.200 --> 00:00:52.250
+It misses.
+
+19
+00:00:52.600 --> 00:00:54.733
+And week three misses too.
+
+20
+00:00:54.733 --> 00:00:57.603
+b is not in the column space of A
+
+21
+00:00:57.603 --> 00:01:00.720
+no line goes through all four points.
+
+22
+00:01:01.070 --> 00:01:03.604
+So the question changes
+
+23
+00:01:03.604 --> 00:01:07.510
+which line makes the error smallest?
+
+24
+00:01:08.090 --> 00:01:10.758
+Least squares picks the x that
+
+25
+00:01:10.847 --> 00:01:12.981
+makes the squared error
+
+26
+00:01:12.981 --> 00:01:16.094
+the length squared of b minus A x
+
+27
+00:01:16.094 --> 00:01:18.050
+as small as possible.
+
+28
+00:01:18.400 --> 00:01:21.489
+Lecture thirteen solved exactly this.
+
+29
+00:01:21.489 --> 00:01:24.744
+The closest point is the projection p
+
+30
+00:01:24.744 --> 00:01:28.000
+and x hat solves the normal equations.
+
+31
+00:01:28.350 --> 00:01:32.811
+For the café, A transpose A is four, six
+
+32
+00:01:32.811 --> 00:01:37.708
+six, fourteen: counts and sums of the weeks.
+
+33
+00:01:37.708 --> 00:01:41.843
+A transpose b is sixteen, thirty one
+
+34
+00:01:41.843 --> 00:01:43.910
+sums of the sales.
+
+35
+00:01:44.260 --> 00:01:46.792
+Solve: C is one point nine
+
+36
+00:01:46.792 --> 00:01:49.136
+and D is one point four
+
+37
+00:01:49.136 --> 00:01:52.980
+a hundred and forty more cups each week.
+
+38
+00:01:53.330 --> 00:01:55.943
+Watch the line tilt from two
+
+39
+00:01:56.037 --> 00:01:58.277
+plus t to the best line.
+
+40
+00:01:58.277 --> 00:02:01.730
+Steeper: the later weeks pull it up.
+
+41
+00:02:02.310 --> 00:02:05.467
+At the four weeks the line gives p
+
+42
+00:02:05.467 --> 00:02:08.623
+one point nine, three point three
+
+43
+00:02:08.623 --> 00:02:11.870
+four point seven and six point one.
+
+44
+00:02:12.220 --> 00:02:14.399
+The residuals are b minus p
+
+45
+00:02:14.399 --> 00:02:17.511
+the gaps between the dots and the line
+
+46
+00:02:17.511 --> 00:02:20.857
+point one, minus point three, point three
+
+47
+00:02:20.857 --> 00:02:22.180
+minus point one.
+
+48
+00:02:22.530 --> 00:02:25.184
+Their squares add to point two
+
+49
+00:02:25.184 --> 00:02:27.067
+and they add to zero
+
+50
+00:02:27.152 --> 00:02:29.121
+that is e perpendicular
+
+51
+00:02:29.207 --> 00:02:31.090
+to the column of ones.
+
+52
+00:02:31.440 --> 00:02:34.022
+Continue the line to week four
+
+53
+00:02:34.022 --> 00:02:35.522
+seven point five
+
+54
+00:02:35.522 --> 00:02:38.521
+about seven hundred and fifty cups.
+
+55
+00:02:38.521 --> 00:02:40.520
+A trend, not a promise.
+
+56
+00:02:41.100 --> 00:02:44.526
+So there are two pictures of one answer.
+
+57
+00:02:44.526 --> 00:02:46.325
+In the data picture
+
+58
+00:02:46.325 --> 00:02:49.580
+the four residuals are vertical gaps.
+
+59
+00:02:49.930 --> 00:02:52.436
+In Lecture thirteen's picture
+
+60
+00:02:52.436 --> 00:02:54.107
+in four dimensions
+
+61
+00:02:54.107 --> 00:02:57.698
+they are the four entries of one vector e
+
+62
+00:02:57.698 --> 00:03:01.290
+perpendicular to the plane of the columns.
+
+63
+00:03:01.870 --> 00:03:04.439
+A common slip is to measure each error
+
+64
+00:03:04.506 --> 00:03:07.008
+as the shortest distance to the line
+
+65
+00:03:07.008 --> 00:03:08.630
+at a right angle to it.
+
+66
+00:03:09.210 --> 00:03:11.522
+That is not least squares.
+
+67
+00:03:11.611 --> 00:03:13.923
+We use the line to predict
+
+68
+00:03:14.012 --> 00:03:15.791
+sales from the week
+
+69
+00:03:15.791 --> 00:03:19.170
+and a wrong prediction is wrong in y.
+
+70
+00:03:19.520 --> 00:03:22.168
+So the error is the vertical gap.
+
+71
+00:03:22.168 --> 00:03:24.575
+The perpendicular fit exists
+
+72
+00:03:24.655 --> 00:03:27.302
+and here it gives one point eight
+
+73
+00:03:27.383 --> 00:03:29.950
+seven plus one point four two t
+
+74
+00:03:29.950 --> 00:03:33.480
+a different line, for a different question.
+
+75
+00:03:34.060 --> 00:03:36.646
+A third route, by calculus.
+
+76
+00:03:36.742 --> 00:03:39.903
+The squared error E is a function
+
+77
+00:03:39.998 --> 00:03:42.297
+of two numbers, C and D
+
+78
+00:03:42.297 --> 00:03:44.500
+a sum of four squares.
+
+79
+00:03:44.850 --> 00:03:47.595
+At the minimum both partial
+
+80
+00:03:47.696 --> 00:03:49.831
+derivatives are zero.
+
+81
+00:03:49.933 --> 00:03:52.982
+The derivative in C gives four
+
+82
+00:03:53.084 --> 00:03:55.930
+C plus six D equals sixteen.
+
+83
+00:03:56.280 --> 00:04:00.037
+The derivative in D gives six C plus
+
+84
+00:04:00.142 --> 00:04:03.168
+fourteen D equals thirty one.
+
+85
+00:04:03.168 --> 00:04:07.760
+Those are the normal equations, row by row.
+
+86
+00:04:08.110 --> 00:04:10.169
+Nudge C up by a tenth
+
+87
+00:04:10.169 --> 00:04:13.632
+and the error rises above point two.
+
+88
+00:04:13.632 --> 00:04:17.094
+Back to the best line: three routes
+
+89
+00:04:17.094 --> 00:04:18.030
+one line.
+
+90
+00:04:18.610 --> 00:04:23.072
+So when A x equals b has no solution
+
+91
+00:04:23.072 --> 00:04:26.930
+solve A x hat equals p instead.
+
+92
+00:04:27.280 --> 00:04:30.559
+The normal equations give the best line
+
+93
+00:04:30.559 --> 00:04:33.920
+and the residuals are the vertical gaps.
+
+94
+00:04:34.500 --> 00:04:36.658
+In part two: more columns
+
+95
+00:04:36.658 --> 00:04:40.062
+one wild week that pulls the whole line
+
+96
+00:04:40.145 --> 00:04:43.133
+and why training a linear regression
+
+97
+00:04:43.216 --> 00:04:45.540
+is exactly this computation.

@@ -1,0 +1,513 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:05.111
+The drone from lecture six
+
+2
+00:00:05.196 --> 00:00:07.237
+gets a fourth button, s.
+
+3
+00:00:07.237 --> 00:00:10.723
+It moves one step north and one step up.
+
+4
+00:00:10.808 --> 00:00:13.954
+The four buttons are the four columns
+
+5
+00:00:14.039 --> 00:00:16.420
+of a three by four matrix A.
+
+6
+00:00:16.770 --> 00:00:20.464
+Which presses bring the drone back home?
+
+7
+00:00:20.464 --> 00:00:24.342
+That is A x equals zero: three equations
+
+8
+00:00:24.342 --> 00:00:25.727
+four unknowns.
+
+9
+00:00:25.727 --> 00:00:29.052
+The old recipe two, one, minus one
+
+10
+00:00:29.052 --> 00:00:30.714
+zero still works.
+
+11
+00:00:30.714 --> 00:00:34.408
+East: two plus one minus three is zero.
+
+12
+00:00:34.408 --> 00:00:37.732
+North: four plus three minus seven.
+
+13
+00:00:37.732 --> 00:00:40.410
+Up: two plus two minus four.
+
+14
+00:00:40.760 --> 00:00:42.636
+With a fourth button
+
+15
+00:00:42.636 --> 00:00:45.405
+is the nullspace still a line
+
+16
+00:00:45.405 --> 00:00:47.281
+or something bigger?
+
+17
+00:00:47.281 --> 00:00:48.800
+Pause and guess.
+
+18
+00:00:52.380 --> 00:00:54.170
+Elimination answers for
+
+19
+00:00:54.248 --> 00:00:55.882
+every recipe at once.
+
+20
+00:00:55.882 --> 00:00:58.372
+It never changes the nullspace
+
+21
+00:00:58.372 --> 00:01:00.940
+because each step can be undone.
+
+22
+00:01:01.290 --> 00:01:05.963
+Row two minus two times row one is zero
+
+23
+00:01:05.963 --> 00:01:07.716
+one, one, one.
+
+24
+00:01:07.716 --> 00:01:12.506
+Row three minus row one is the same row.
+
+25
+00:01:12.506 --> 00:01:17.530
+Then row three minus row two is all zeros.
+
+26
+00:01:17.880 --> 00:01:20.092
+The result is U, a staircase.
+
+27
+00:01:20.168 --> 00:01:22.914
+Each row starts with a pivot further
+
+28
+00:01:22.991 --> 00:01:24.898
+right than the row above
+
+29
+00:01:24.898 --> 00:01:27.720
+and the zero row sits at the bottom.
+
+30
+00:01:28.300 --> 00:01:31.403
+Columns one and two hold the pivots
+
+31
+00:01:31.403 --> 00:01:33.816
+they are the pivot columns.
+
+32
+00:01:33.816 --> 00:01:36.918
+The rank r is the number of pivots
+
+33
+00:01:36.918 --> 00:01:37.780
+here two.
+
+34
+00:01:38.130 --> 00:01:41.045
+Columns three and four have no pivot.
+
+35
+00:01:41.045 --> 00:01:43.172
+They are the free columns
+
+36
+00:01:43.251 --> 00:01:45.300
+and x three and x four are
+
+37
+00:01:45.378 --> 00:01:48.530
+the free variables: you may choose them.
+
+38
+00:01:48.880 --> 00:01:50.829
+U says two things.
+
+39
+00:01:50.829 --> 00:01:55.700
+x one plus x two plus three x three is zero.
+
+40
+00:01:55.700 --> 00:02:00.030
+x two plus x three plus x four is zero.
+
+41
+00:02:00.030 --> 00:02:04.360
+Two equations cannot fix four unknowns.
+
+42
+00:02:04.940 --> 00:02:08.245
+So picture the free choices as a plane
+
+43
+00:02:08.245 --> 00:02:10.533
+x three across, x four up.
+
+44
+00:02:10.618 --> 00:02:12.906
+This arrow is one choice of
+
+45
+00:02:12.991 --> 00:02:14.940
+the two free variables.
+
+46
+00:02:15.290 --> 00:02:16.700
+Once you choose
+
+47
+00:02:16.788 --> 00:02:19.343
+back substitution has nothing
+
+48
+00:02:19.431 --> 00:02:20.753
+left to choose.
+
+49
+00:02:20.753 --> 00:02:23.837
+The second equation decides x two.
+
+50
+00:02:23.837 --> 00:02:26.480
+Then the first decides x one.
+
+51
+00:02:26.568 --> 00:02:29.476
+So each point of this plane gives
+
+52
+00:02:29.564 --> 00:02:33.000
+exactly one solution, and a new choice
+
+53
+00:02:33.000 --> 00:02:34.410
+a new solution.
+
+54
+00:02:34.990 --> 00:02:37.258
+The simplest choices are
+
+55
+00:02:37.352 --> 00:02:39.242
+the two unit points.
+
+56
+00:02:39.242 --> 00:02:43.210
+First, x three is one and x four is zero.
+
+57
+00:02:43.305 --> 00:02:45.856
+The second equation gives x
+
+58
+00:02:45.950 --> 00:02:48.124
+two equal to minus one.
+
+59
+00:02:48.218 --> 00:02:50.769
+The first gives x one equal
+
+60
+00:02:50.864 --> 00:02:53.698
+to one minus three, minus two.
+
+61
+00:02:53.698 --> 00:02:57.950
+So s one is minus two, minus one, one, zero.
+
+62
+00:02:58.300 --> 00:03:02.988
+Second, x three is zero and x four is one.
+
+63
+00:03:02.988 --> 00:03:05.779
+Then x two is minus one
+
+64
+00:03:05.779 --> 00:03:08.347
+and x one is plus one.
+
+65
+00:03:08.347 --> 00:03:12.700
+So s two is one, minus one, zero, one.
+
+66
+00:03:13.280 --> 00:03:16.724
+Check s one in the original A.
+
+67
+00:03:16.724 --> 00:03:17.413
+East
+
+68
+00:03:17.413 --> 00:03:22.004
+minus two minus one plus three is zero.
+
+69
+00:03:22.004 --> 00:03:22.808
+North
+
+70
+00:03:22.808 --> 00:03:27.744
+minus four minus three plus seven is zero.
+
+71
+00:03:27.744 --> 00:03:32.680
+Up: minus two minus two plus four is zero.
+
+72
+00:03:33.030 --> 00:03:34.516
+And s two.
+
+73
+00:03:34.516 --> 00:03:38.826
+East: one minus one is zero.
+
+74
+00:03:38.826 --> 00:03:44.920
+North: two minus three plus one is zero.
+
+75
+00:03:44.920 --> 00:03:50.270
+Up: one minus two plus one is zero.
+
+76
+00:03:50.620 --> 00:03:52.287
+In drone terms
+
+77
+00:03:52.398 --> 00:03:55.842
+s one presses w once and undoes
+
+78
+00:03:55.953 --> 00:03:58.620
+it with two u and one v
+
+79
+00:03:58.620 --> 00:04:01.620
+because w is two u plus v.
+
+80
+00:04:01.620 --> 00:04:04.064
+s two presses s once
+
+81
+00:04:04.064 --> 00:04:07.953
+then u once and v once in reverse
+
+82
+00:04:07.953 --> 00:04:10.620
+because s is v minus u.
+
+83
+00:04:11.200 --> 00:04:15.511
+The whole nullspace is every combination
+
+84
+00:04:15.511 --> 00:04:19.087
+c times s one plus d times s two.
+
+85
+00:04:19.087 --> 00:04:23.188
+On the free plane that is every point
+
+86
+00:04:23.188 --> 00:04:27.920
+so N of A is a plane, sitting inside R four.
+
+87
+00:04:28.270 --> 00:04:30.734
+Take c equal to three and
+
+88
+00:04:30.832 --> 00:04:32.902
+d equal to minus two.
+
+89
+00:04:32.902 --> 00:04:35.365
+Three steps along s one
+
+90
+00:04:35.365 --> 00:04:38.125
+two steps back along s two.
+
+91
+00:04:38.125 --> 00:04:42.066
+The solution is minus eight, minus one
+
+92
+00:04:42.066 --> 00:04:43.840
+three, minus two.
+
+93
+00:04:43.840 --> 00:04:44.432
+East
+
+94
+00:04:44.432 --> 00:04:48.472
+minus eight minus one plus nine is zero.
+
+95
+00:04:48.472 --> 00:04:52.217
+North: minus sixteen minus three plus
+
+96
+00:04:52.315 --> 00:04:55.173
+twenty one minus two is zero.
+
+97
+00:04:55.173 --> 00:04:58.228
+Up: minus eight minus two plus
+
+98
+00:04:58.326 --> 00:05:00.790
+twelve minus two is zero.
+
+99
+00:05:01.140 --> 00:05:04.463
+Why does every solution look like this?
+
+100
+00:05:04.463 --> 00:05:08.297
+Any solution has some free entries, c and d.
+
+101
+00:05:08.382 --> 00:05:11.109
+The combination c s one plus d s
+
+102
+00:05:11.194 --> 00:05:13.750
+two has the same free entries
+
+103
+00:05:13.835 --> 00:05:16.221
+and back substitution leaves
+
+104
+00:05:16.306 --> 00:05:18.266
+no choice for the rest.
+
+105
+00:05:18.266 --> 00:05:20.140
+So the two are equal.
+
+106
+00:05:20.720 --> 00:05:23.315
+A common slip: free means zero.
+
+107
+00:05:23.315 --> 00:05:26.076
+Set every free variable to zero
+
+108
+00:05:26.160 --> 00:05:28.420
+and back substitution gives
+
+109
+00:05:28.503 --> 00:05:31.600
+only the zero vector: a single point.
+
+110
+00:05:31.950 --> 00:05:34.030
+Free means chosen by you.
+
+111
+00:05:34.030 --> 00:05:37.275
+The special solutions set them to one
+
+112
+00:05:37.275 --> 00:05:38.524
+one at a time
+
+113
+00:05:38.524 --> 00:05:42.268
+and the nullspace is all their combinations
+
+114
+00:05:42.268 --> 00:05:45.430
+the whole plane, not just two arrows.
+
+115
+00:05:46.010 --> 00:05:49.213
+So: eliminate down to the staircase U.
+
+116
+00:05:49.213 --> 00:05:52.162
+The pivots mark the pivot columns
+
+117
+00:05:52.162 --> 00:05:54.690
+and their number is the rank.
+
+118
+00:05:54.690 --> 00:05:57.050
+The other columns are free.
+
+119
+00:05:57.400 --> 00:05:59.402
+Each free variable gives
+
+120
+00:05:59.486 --> 00:06:02.489
+one special solution: set it to one
+
+121
+00:06:02.489 --> 00:06:04.908
+the other free ones to zero
+
+122
+00:06:04.908 --> 00:06:06.660
+and back substitute.
+
+123
+00:06:06.660 --> 00:06:10.080
+The nullspace is all their combinations.
+
+124
+00:06:10.430 --> 00:06:11.320
+Your turn
+
+125
+00:06:11.320 --> 00:06:14.615
+a four by six matrix has rank three.
+
+126
+00:06:14.615 --> 00:06:18.266
+How many special solutions does it have?
+
+127
+00:06:18.355 --> 00:06:21.293
+In part two we read them straight
+
+128
+00:06:21.382 --> 00:06:23.430
+off the reduced form R.

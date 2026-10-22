@@ -1,0 +1,465 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:05.183
+Two hundred people, made-up data
+
+2
+00:00:05.183 --> 00:00:06.982
+and two numbers for each
+
+3
+00:00:06.982 --> 00:00:09.610
+how many minutes they exercise a day
+
+4
+00:00:09.610 --> 00:00:11.340
+and their resting pulse.
+
+5
+00:00:11.690 --> 00:00:13.570
+Each dot is one person
+
+6
+00:00:13.570 --> 00:00:15.450
+we draw forty of them.
+
+7
+00:00:15.532 --> 00:00:17.902
+People who exercise more tend
+
+8
+00:00:17.984 --> 00:00:19.782
+to have a lower pulse
+
+9
+00:00:19.782 --> 00:00:22.970
+so the dots form a long, tilted cloud.
+
+10
+00:00:23.320 --> 00:00:26.829
+Can one direction describe this cloud?
+
+11
+00:00:26.829 --> 00:00:30.983
+Last time, the SVD found the main directions
+
+12
+00:00:31.076 --> 00:00:32.091
+of a table.
+
+13
+00:00:32.091 --> 00:00:35.600
+Pause and guess where it points here.
+
+14
+00:00:39.180 --> 00:00:40.859
+Try the obvious thing
+
+15
+00:00:40.859 --> 00:00:43.224
+take the SVD of the raw table.
+
+16
+00:00:43.301 --> 00:00:45.514
+The first direction comes out
+
+17
+00:00:45.590 --> 00:00:47.498
+as zero point three nine
+
+18
+00:00:47.498 --> 00:00:49.100
+zero point nine two.
+
+19
+00:00:49.450 --> 00:00:51.130
+Draw it from the origin.
+
+20
+00:00:51.200 --> 00:00:52.950
+It points straight at the
+
+21
+00:00:53.020 --> 00:00:54.420
+middle of the cloud
+
+22
+00:00:54.420 --> 00:00:56.240
+along the average person.
+
+23
+00:00:56.310 --> 00:00:59.250
+It only says that people have about thirty
+
+24
+00:00:59.320 --> 00:01:01.630
+minutes and a pulse near seventy.
+
+25
+00:01:01.630 --> 00:01:02.610
+We knew that.
+
+26
+00:01:03.190 --> 00:01:06.997
+The fix is step one of PCA: centre the data.
+
+27
+00:01:06.997 --> 00:01:10.717
+Subtract the average person from everyone
+
+28
+00:01:10.804 --> 00:01:13.053
+so the middle of the cloud
+
+29
+00:01:13.140 --> 00:01:14.870
+moves to the origin.
+
+30
+00:01:15.220 --> 00:01:18.610
+Now every dot is measured from the centre.
+
+31
+00:01:18.610 --> 00:01:22.162
+Zoom in, using the same scale on both axes
+
+32
+00:01:22.162 --> 00:01:24.180
+so the angles stay true.
+
+33
+00:01:24.760 --> 00:01:28.805
+Step two: the SVD of the centred table.
+
+34
+00:01:28.805 --> 00:01:32.954
+The first right singular vector, v one
+
+35
+00:01:32.954 --> 00:01:35.443
+is zero point nine one
+
+36
+00:01:35.443 --> 00:01:38.244
+minus zero point four one.
+
+37
+00:01:38.244 --> 00:01:42.600
+It runs along the long axis of the cloud.
+
+38
+00:01:42.950 --> 00:01:45.330
+v two is at a right angle
+
+39
+00:01:45.330 --> 00:01:47.435
+across the short axis.
+
+40
+00:01:47.527 --> 00:01:50.547
+The singular values are about one
+
+41
+00:01:50.639 --> 00:01:53.110
+ninety one and forty three.
+
+42
+00:01:53.460 --> 00:01:54.418
+Step three
+
+43
+00:01:54.506 --> 00:01:58.339
+the share of the spread along v one is sigma
+
+44
+00:01:58.426 --> 00:02:01.912
+one squared over the sum of the squares.
+
+45
+00:02:01.912 --> 00:02:03.741
+Ninety five percent.
+
+46
+00:02:03.741 --> 00:02:04.961
+This ellipse
+
+47
+00:02:04.961 --> 00:02:07.749
+two typical distances each way
+
+48
+00:02:07.749 --> 00:02:11.060
+shows how long and thin the cloud is.
+
+49
+00:02:11.640 --> 00:02:14.245
+Each person also gets a score
+
+50
+00:02:14.245 --> 00:02:16.676
+their position along v one.
+
+51
+00:02:16.676 --> 00:02:18.673
+Take the first person
+
+52
+00:02:18.760 --> 00:02:21.278
+forty minutes of exercise and
+
+53
+00:02:21.365 --> 00:02:23.275
+a pulse of sixty four.
+
+54
+00:02:23.275 --> 00:02:25.880
+Drop them onto the long axis.
+
+55
+00:02:26.230 --> 00:02:28.236
+They land eleven point seven
+
+56
+00:02:28.308 --> 00:02:29.884
+units from the centre.
+
+57
+00:02:29.884 --> 00:02:32.606
+One number per person instead of two
+
+58
+00:02:32.606 --> 00:02:35.830
+and only five percent of the spread is lost.
+
+59
+00:02:36.410 --> 00:02:38.664
+Compare the simplest way to go
+
+60
+00:02:38.739 --> 00:02:40.542
+from two numbers to one
+
+61
+00:02:40.617 --> 00:02:42.871
+keep only the exercise minutes
+
+62
+00:02:42.946 --> 00:02:44.374
+and drop the pulse.
+
+63
+00:02:44.449 --> 00:02:46.552
+That squashes every dot onto
+
+64
+00:02:46.628 --> 00:02:48.130
+the horizontal axis.
+
+65
+00:02:48.480 --> 00:02:51.520
+That keeps eighty percent of the spread.
+
+66
+00:02:51.596 --> 00:02:53.572
+The direction found by PCA
+
+67
+00:02:53.648 --> 00:02:56.840
+mixes both columns, and keeps ninety five.
+
+68
+00:02:57.420 --> 00:03:00.455
+Many books do PCA another way
+
+69
+00:03:00.455 --> 00:03:03.491
+with the covariance matrix C.
+
+70
+00:03:03.491 --> 00:03:07.032
+C is the centred table transposed
+
+71
+00:03:07.032 --> 00:03:11.180
+times the table, divided by n minus one.
+
+72
+00:03:11.530 --> 00:03:13.433
+Its eigenvectors are the
+
+73
+00:03:13.512 --> 00:03:15.177
+same v one and v two.
+
+74
+00:03:15.257 --> 00:03:18.269
+Its eigenvalues are one hundred eighty
+
+75
+00:03:18.349 --> 00:03:20.489
+three and nine point three
+
+76
+00:03:20.569 --> 00:03:23.264
+exactly the squared sigmas divided
+
+77
+00:03:23.344 --> 00:03:24.850
+by one ninety nine.
+
+78
+00:03:25.200 --> 00:03:27.467
+And the long axis is the line
+
+79
+00:03:27.546 --> 00:03:29.109
+closest to the dots
+
+80
+00:03:29.109 --> 00:03:31.846
+in squared perpendicular distance.
+
+81
+00:03:31.924 --> 00:03:34.973
+That is the best rank one approximation
+
+82
+00:03:35.051 --> 00:03:37.240
+of the table, from part one.
+
+83
+00:03:37.820 --> 00:03:40.016
+A check for working with AI.
+
+84
+00:03:40.094 --> 00:03:42.996
+Suppose an assistant reports that the
+
+85
+00:03:43.074 --> 00:03:46.133
+first component explains sigma one over
+
+86
+00:03:46.211 --> 00:03:48.172
+sigma one plus sigma two
+
+87
+00:03:48.172 --> 00:03:49.740
+eighty two percent.
+
+88
+00:03:50.090 --> 00:03:52.535
+But spread is a sum of squares
+
+89
+00:03:52.535 --> 00:03:54.665
+so use the squared sigmas.
+
+90
+00:03:54.665 --> 00:03:57.820
+The right share is ninety five percent
+
+91
+00:03:57.820 --> 00:04:01.370
+the same as the covariance eigenvalues give.
+
+92
+00:04:01.950 --> 00:04:04.353
+Low rank also makes large AI
+
+93
+00:04:04.439 --> 00:04:06.498
+models cheaper to adapt.
+
+94
+00:04:06.584 --> 00:04:09.415
+One layer of a network multiplies
+
+95
+00:04:09.501 --> 00:04:11.303
+by a weight matrix W
+
+96
+00:04:11.303 --> 00:04:14.993
+four thousand and ninety six on each side
+
+97
+00:04:14.993 --> 00:04:17.910
+almost seventeen million numbers.
+
+98
+00:04:18.260 --> 00:04:21.387
+The method called LoRA keeps W fixed
+
+99
+00:04:21.473 --> 00:04:24.687
+and learns a small change, B times A.
+
+100
+00:04:24.687 --> 00:04:27.726
+B is tall with only eight columns
+
+101
+00:04:27.726 --> 00:04:30.853
+and A is wide with only eight rows.
+
+102
+00:04:30.853 --> 00:04:34.500
+Drawn to scale, they are just thin lines.
+
+103
+00:04:34.850 --> 00:04:36.759
+Together they hold sixty
+
+104
+00:04:36.838 --> 00:04:38.588
+five thousand numbers
+
+105
+00:04:38.588 --> 00:04:41.053
+less than half a percent of W.
+
+106
+00:04:41.053 --> 00:04:44.076
+And B times A has rank at most eight
+
+107
+00:04:44.155 --> 00:04:46.382
+exactly the kind of matrix a
+
+108
+00:04:46.461 --> 00:04:48.370
+few SVD pieces describe.
+
+109
+00:04:48.950 --> 00:04:53.245
+So, PCA in three steps: centre the table
+
+110
+00:04:53.245 --> 00:04:57.958
+take the SVD, read the long axis from v one
+
+111
+00:04:58.063 --> 00:05:00.891
+and measure the shares with
+
+112
+00:05:00.996 --> 00:05:03.510
+squared singular values.
+
+113
+00:05:03.860 --> 00:05:05.127
+Next lecture
+
+114
+00:05:05.127 --> 00:05:09.025
+the SVD solves any system A x equals b
+
+115
+00:05:09.025 --> 00:05:12.728
+even when there is no exact solution
+
+116
+00:05:12.728 --> 00:05:14.580
+the pseudoinverse.

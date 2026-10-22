@@ -1,0 +1,509 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:03.860
+In part one
+
+2
+00:00:03.860 --> 00:00:06.980
+we solved the rooms with eigenvectors.
+
+3
+00:00:07.060 --> 00:00:09.700
+Each part of the solution behaves
+
+4
+00:00:09.780 --> 00:00:11.620
+like e to the lambda t.
+
+5
+00:00:11.620 --> 00:00:14.340
+A negative lambda makes it decay.
+
+6
+00:00:14.690 --> 00:00:16.461
+A positive lambda makes
+
+7
+00:00:16.538 --> 00:00:18.231
+it grow without bound.
+
+8
+00:00:18.308 --> 00:00:20.618
+And lambda equal to zero makes
+
+9
+00:00:20.695 --> 00:00:22.850
+it stay exactly where it is.
+
+10
+00:00:23.200 --> 00:00:26.176
+So what decides whether every
+
+11
+00:00:26.278 --> 00:00:28.536
+solution settles down?
+
+12
+00:00:28.536 --> 00:00:30.280
+Pause and think.
+
+13
+00:00:34.100 --> 00:00:36.775
+Take away the outside walls.
+
+14
+00:00:36.775 --> 00:00:40.883
+The rooms only trade heat with each other
+
+15
+00:00:40.883 --> 00:00:43.940
+minus one, one, one, minus one.
+
+16
+00:00:44.290 --> 00:00:47.463
+Now one, one has eigenvalue zero
+
+17
+00:00:47.463 --> 00:00:50.828
+equal rooms have nothing to trade.
+
+18
+00:00:50.828 --> 00:00:54.290
+One, minus one still has minus two.
+
+19
+00:00:54.640 --> 00:00:57.872
+Start at ten, zero, and run the flow.
+
+20
+00:00:57.872 --> 00:01:01.016
+The difference dies, the sum stays
+
+21
+00:01:01.016 --> 00:01:04.946
+and the point comes to rest on the diagonal
+
+22
+00:01:04.946 --> 00:01:08.440
+at five and five: the average, forever.
+
+23
+00:01:09.020 --> 00:01:10.330
+A third design
+
+24
+00:01:10.417 --> 00:01:13.649
+room one gets a heater that adds heat
+
+25
+00:01:13.736 --> 00:01:16.619
+in proportion to its temperature.
+
+26
+00:01:16.619 --> 00:01:20.374
+The matrix is zero, one, one, minus three
+
+27
+00:01:20.374 --> 00:01:22.820
+with determinant minus one.
+
+28
+00:01:23.170 --> 00:01:26.215
+A negative determinant means eigenvalues
+
+29
+00:01:26.291 --> 00:01:29.108
+of opposite signs: about point three
+
+30
+00:01:29.108 --> 00:01:31.316
+and minus three point three.
+
+31
+00:01:31.316 --> 00:01:34.437
+Watch a point near the stable direction.
+
+32
+00:01:34.437 --> 00:01:36.797
+It first falls in, then turns
+
+33
+00:01:36.797 --> 00:01:39.690
+and runs away along the unstable one.
+
+34
+00:01:40.040 --> 00:01:41.986
+For a two by two matrix
+
+35
+00:01:42.071 --> 00:01:43.933
+there is a quick test
+
+36
+00:01:44.018 --> 00:01:47.487
+stable exactly when the trace is negative
+
+37
+00:01:47.572 --> 00:01:50.280
+and the determinant is positive.
+
+38
+00:01:50.860 --> 00:01:54.457
+A mass on a spring, with no friction
+
+39
+00:01:54.457 --> 00:01:57.762
+the acceleration of y is minus y.
+
+40
+00:01:57.859 --> 00:02:01.164
+Keep the position and the velocity
+
+41
+00:02:01.261 --> 00:02:03.497
+together in one vector.
+
+42
+00:02:03.497 --> 00:02:07.580
+The matrix is zero, one, minus one, zero.
+
+43
+00:02:07.930 --> 00:02:11.471
+Its eigenvalues are i and minus i.
+
+44
+00:02:11.471 --> 00:02:15.741
+Complex eigenvalues mean the flow turns.
+
+45
+00:02:15.741 --> 00:02:20.428
+Start at one, zero, and the point goes round
+
+46
+00:02:20.532 --> 00:02:25.010
+and round the circle, for ever: y is cos t.
+
+47
+00:02:26.423 --> 00:02:27.807
+Add friction.
+
+48
+00:02:27.807 --> 00:02:32.170
+The matrix becomes zero, one, minus two
+
+49
+00:02:32.170 --> 00:02:36.108
+minus two, and the eigenvalues minus
+
+50
+00:02:36.214 --> 00:02:38.343
+one plus or minus i.
+
+51
+00:02:38.693 --> 00:02:42.740
+The imaginary part still turns the point.
+
+52
+00:02:42.740 --> 00:02:46.589
+The real part, minus one, pulls it in.
+
+53
+00:02:46.589 --> 00:02:50.439
+Each half second it turns and shrinks
+
+54
+00:02:50.439 --> 00:02:52.413
+a spiral into rest.
+
+55
+00:02:52.763 --> 00:02:55.519
+The position is e to the minus t
+
+56
+00:02:55.519 --> 00:02:57.524
+times cos t plus sin t
+
+57
+00:02:57.524 --> 00:03:00.615
+point five zero eight at one second
+
+58
+00:03:00.615 --> 00:03:02.536
+and small steps agree.
+
+59
+00:03:02.536 --> 00:03:04.958
+The eigenvalues are complex
+
+60
+00:03:04.958 --> 00:03:06.963
+but the answer is real.
+
+61
+00:03:07.543 --> 00:03:12.076
+One matrix does all of this: e to the A t.
+
+62
+00:03:12.076 --> 00:03:16.933
+For a number, e to the a t is one, plus a t
+
+63
+00:03:16.933 --> 00:03:21.035
+plus a t squared over two, and so on.
+
+64
+00:03:21.035 --> 00:03:22.546
+For a matrix
+
+65
+00:03:22.546 --> 00:03:26.863
+take the same series as the definition.
+
+66
+00:03:27.213 --> 00:03:30.342
+When A is X lambda X inverse
+
+67
+00:03:30.342 --> 00:03:35.198
+every power is too, so the series becomes X
+
+68
+00:03:35.198 --> 00:03:38.435
+e to the lambda t, X inverse
+
+69
+00:03:38.435 --> 00:03:41.995
+exponentials of the eigenvalues
+
+70
+00:03:41.995 --> 00:03:44.693
+in the eigenvector grid.
+
+71
+00:03:45.043 --> 00:03:47.499
+For the rooms at half an hour
+
+72
+00:03:47.499 --> 00:03:49.791
+thirty terms of the series
+
+73
+00:03:49.791 --> 00:03:51.347
+the eigen-formula
+
+74
+00:03:51.347 --> 00:03:54.458
+and the computer's routine all agree.
+
+75
+00:03:54.458 --> 00:03:55.931
+It has moved ten
+
+76
+00:03:55.931 --> 00:03:58.223
+zero to two point five two
+
+77
+00:03:58.223 --> 00:04:00.843
+one point one six, in one step.
+
+78
+00:04:01.423 --> 00:04:04.143
+Here is a tempting shortcut
+
+79
+00:04:04.143 --> 00:04:08.223
+take e to the power of each entry of A t?
+
+80
+00:04:08.803 --> 00:04:11.954
+For the rooms at half an hour that gives
+
+81
+00:04:12.033 --> 00:04:15.026
+zero point two two on the diagonal and
+
+82
+00:04:15.105 --> 00:04:17.153
+one point six five off it.
+
+83
+00:04:17.153 --> 00:04:20.382
+Start with two degrees in room one only.
+
+84
+00:04:20.461 --> 00:04:22.982
+The fake matrix puts three point
+
+85
+00:04:23.061 --> 00:04:25.266
+three degrees into room two
+
+86
+00:04:25.266 --> 00:04:26.763
+heat from nowhere.
+
+87
+00:04:27.113 --> 00:04:30.196
+The true flow sends the same start to
+
+88
+00:04:30.280 --> 00:04:33.113
+about half a degree and a quarter.
+
+89
+00:04:33.113 --> 00:04:35.030
+Use the eigen-formula
+
+90
+00:04:35.113 --> 00:04:37.113
+or a library routine for
+
+91
+00:04:37.196 --> 00:04:39.113
+the matrix exponential.
+
+92
+00:04:39.693 --> 00:04:42.959
+Training a model moves its weights
+
+93
+00:04:43.055 --> 00:04:44.880
+downhill on a loss.
+
+94
+00:04:44.880 --> 00:04:48.338
+For a quadratic bowl with matrix H
+
+95
+00:04:48.434 --> 00:04:51.795
+moving continuously downhill is the
+
+96
+00:04:51.891 --> 00:04:54.773
+flow d w d t equals minus H w.
+
+97
+00:04:55.123 --> 00:04:59.598
+Our H has eigenvalue ten along one, one
+
+98
+00:04:59.598 --> 00:05:01.164
+a steep wall.
+
+99
+00:05:01.164 --> 00:05:06.199
+And one along one, minus one: a flat valley.
+
+100
+00:05:06.199 --> 00:05:09.555
+Run the flow from three, one.
+
+101
+00:05:09.555 --> 00:05:13.807
+It drops off the wall almost at once
+
+102
+00:05:13.807 --> 00:05:17.163
+then creeps along the valley.
+
+103
+00:05:17.513 --> 00:05:19.747
+Gradient descent is Euler's
+
+104
+00:05:19.830 --> 00:05:21.567
+method for this flow
+
+105
+00:05:21.567 --> 00:05:24.960
+with the learning rate as the time step.
+
+106
+00:05:24.960 --> 00:05:26.614
+At point zero five
+
+107
+00:05:26.614 --> 00:05:29.593
+the steps follow the valley safely.
+
+108
+00:05:29.943 --> 00:05:32.278
+But step factors are one minus
+
+109
+00:05:32.356 --> 00:05:34.380
+ten eta and one minus eta.
+
+110
+00:05:34.457 --> 00:05:36.792
+At point two one the steep one
+
+111
+00:05:36.870 --> 00:05:38.660
+is minus one point one
+
+112
+00:05:38.660 --> 00:05:41.929
+and the weights bounce from wall to wall
+
+113
+00:05:41.929 --> 00:05:43.408
+further each time.
+
+114
+00:05:43.486 --> 00:05:45.743
+The steepest direction limits
+
+115
+00:05:45.821 --> 00:05:48.623
+the learning rate: below two tenths.
+
+116
+00:05:49.203 --> 00:05:50.661
+So, to sum up
+
+117
+00:05:50.765 --> 00:05:54.202
+the real parts of the eigenvalues
+
+118
+00:05:54.306 --> 00:05:57.951
+decide in or out: negative settles
+
+119
+00:05:57.951 --> 00:06:01.283
+zero rests, positive runs away.
+
+120
+00:06:01.633 --> 00:06:05.315
+The imaginary parts make the flow turn.
+
+121
+00:06:05.315 --> 00:06:09.375
+And all of it is one matrix, e to the A t
+
+122
+00:06:09.375 --> 00:06:12.113
+built from the eigenvectors.
+
+123
+00:06:12.693 --> 00:06:13.737
+Next lecture
+
+124
+00:06:13.737 --> 00:06:17.108
+matrices whose columns are probabilities.
+
+125
+00:06:17.108 --> 00:06:20.400
+Their largest eigenvalue is exactly one
+
+126
+00:06:20.480 --> 00:06:22.728
+and its eigenvector is where
+
+127
+00:06:22.808 --> 00:06:24.333
+everything settles.

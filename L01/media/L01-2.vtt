@@ -1,0 +1,557 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:06.314
+In part one, the robot reached seven
+
+2
+00:00:06.314 --> 00:00:10.004
+zero with one a move and three b moves.
+
+3
+00:00:10.096 --> 00:00:12.679
+Now we pack the whole system
+
+4
+00:00:12.772 --> 00:00:14.340
+into one product.
+
+5
+00:00:14.690 --> 00:00:17.666
+Stand the two moves side by side
+
+6
+00:00:17.759 --> 00:00:20.455
+as the columns of a matrix A.
+
+7
+00:00:20.455 --> 00:00:23.524
+Stack the amounts in a vector x
+
+8
+00:00:23.524 --> 00:00:25.476
+and the target in b.
+
+9
+00:00:25.476 --> 00:00:29.010
+The system reads: A times x equals b.
+
+10
+00:00:29.360 --> 00:00:30.935
+Before we compute
+
+11
+00:00:30.935 --> 00:00:34.261
+what is the first entry of A times x
+
+12
+00:00:34.261 --> 00:00:36.187
+when x is one, three?
+
+13
+00:00:36.187 --> 00:00:38.200
+Pause and work it out.
+
+14
+00:00:41.780 --> 00:00:44.150
+The first way is by rows.
+
+15
+00:00:44.150 --> 00:00:46.709
+Take row one, one and two
+
+16
+00:00:46.709 --> 00:00:50.027
+and pair it with x: one times one
+
+17
+00:00:50.027 --> 00:00:53.060
+plus two times three, is seven.
+
+18
+00:00:53.410 --> 00:00:55.706
+Row two: three times one
+
+19
+00:00:55.706 --> 00:00:58.645
+minus one times three, is zero.
+
+20
+00:00:58.645 --> 00:01:02.777
+Each entry is a dot product of a row with x.
+
+21
+00:01:02.777 --> 00:01:04.890
+One row, one equation
+
+22
+00:01:04.890 --> 00:01:07.553
+one line in the row picture
+
+23
+00:01:07.553 --> 00:01:11.410
+and x is the point where the lines cross.
+
+24
+00:01:11.990 --> 00:01:14.832
+The second way is by columns.
+
+25
+00:01:14.832 --> 00:01:17.380
+Back on the robot's grid
+
+26
+00:01:17.478 --> 00:01:20.908
+A times x is x copies of column one
+
+27
+00:01:21.006 --> 00:01:23.750
+plus y copies of column two.
+
+28
+00:01:24.100 --> 00:01:26.393
+One copy of one, three.
+
+29
+00:01:26.393 --> 00:01:29.583
+Three copies of two, minus one
+
+30
+00:01:29.583 --> 00:01:32.275
+which is six, minus three.
+
+31
+00:01:32.275 --> 00:01:36.662
+Put them tip to tail, and we land on seven
+
+32
+00:01:36.662 --> 00:01:37.260
+zero.
+
+33
+00:01:37.610 --> 00:01:39.808
+The same vector as by rows.
+
+34
+00:01:39.808 --> 00:01:43.309
+Rows give the answer one number at a time
+
+35
+00:01:43.309 --> 00:01:46.810
+columns show where the whole vector lands.
+
+36
+00:01:47.390 --> 00:01:49.896
+A warning for when you type
+
+37
+00:01:49.988 --> 00:01:51.566
+this into Python.
+
+38
+00:01:51.566 --> 00:01:52.494
+In numpy
+
+39
+00:01:52.494 --> 00:01:56.670
+A star x is not the matrix times the vector.
+
+40
+00:01:57.020 --> 00:02:00.114
+The star multiplies entry by entry
+
+41
+00:02:00.205 --> 00:02:03.026
+and returns a two by two array.
+
+42
+00:02:03.026 --> 00:02:06.758
+Look at its columns: one a, and three b
+
+43
+00:02:06.758 --> 00:02:10.580
+the two pieces side by side, never added.
+
+44
+00:02:10.930 --> 00:02:14.065
+For the product, use the at sign.
+
+45
+00:02:14.065 --> 00:02:17.960
+A at x adds the pieces, and gives seven
+
+46
+00:02:17.960 --> 00:02:18.530
+zero.
+
+47
+00:02:19.110 --> 00:02:23.440
+Now three equations in three unknowns, x
+
+48
+00:02:23.440 --> 00:02:24.391
+y and z.
+
+49
+00:02:24.496 --> 00:02:27.876
+In the row picture each equation
+
+50
+00:02:27.981 --> 00:02:30.094
+is a plane in space
+
+51
+00:02:30.094 --> 00:02:33.790
+and three planes are hard to draw.
+
+52
+00:02:34.140 --> 00:02:36.269
+The column picture asks a
+
+53
+00:02:36.355 --> 00:02:38.399
+simple question instead
+
+54
+00:02:38.399 --> 00:02:41.380
+how much of each of three columns?
+
+55
+00:02:41.730 --> 00:02:45.298
+One of column one, two of column two
+
+56
+00:02:45.298 --> 00:02:49.252
+and three of column three add up to six
+
+57
+00:02:49.252 --> 00:02:50.409
+three, two.
+
+58
+00:02:50.409 --> 00:02:54.170
+So x is one, y is two, and z is three.
+
+59
+00:02:54.520 --> 00:02:58.299
+A number called the determinant is seven
+
+60
+00:02:58.299 --> 00:02:59.221
+not zero.
+
+61
+00:02:59.221 --> 00:03:01.894
+Lecture sixteen explains it.
+
+62
+00:03:01.894 --> 00:03:05.028
+For now, it says every right side
+
+63
+00:03:05.120 --> 00:03:07.240
+has exactly one answer.
+
+64
+00:03:07.820 --> 00:03:09.176
+Keep the matrix
+
+65
+00:03:09.176 --> 00:03:12.651
+but change the right side to two, three
+
+66
+00:03:12.651 --> 00:03:16.465
+zero, which is column one plus column three.
+
+67
+00:03:16.465 --> 00:03:18.329
+What is the solution?
+
+68
+00:03:18.329 --> 00:03:21.380
+Pause and answer without computing.
+
+69
+00:03:24.960 --> 00:03:28.923
+One of column one, none of column two
+
+70
+00:03:28.923 --> 00:03:31.114
+one of column three.
+
+71
+00:03:31.114 --> 00:03:35.077
+So x is one, y is zero, and z is one
+
+72
+00:03:35.077 --> 00:03:39.040
+the column picture gives it for free.
+
+73
+00:03:39.620 --> 00:03:43.623
+Now give the robot a bad second move
+
+74
+00:03:43.623 --> 00:03:46.219
+two east and six north.
+
+75
+00:03:46.219 --> 00:03:49.140
+That is just twice move a.
+
+76
+00:03:49.490 --> 00:03:52.285
+Every mix of the two moves stays
+
+77
+00:03:52.372 --> 00:03:55.080
+on one line through one, three.
+
+78
+00:03:55.080 --> 00:03:57.439
+Scale them by any amounts
+
+79
+00:03:57.439 --> 00:03:59.972
+even negative ones, and add
+
+80
+00:03:59.972 --> 00:04:02.330
+you never leave that line.
+
+81
+00:04:02.680 --> 00:04:05.823
+The target seven, five is off the line
+
+82
+00:04:05.823 --> 00:04:08.080
+so no amounts can reach it.
+
+83
+00:04:08.430 --> 00:04:10.059
+In the row picture
+
+84
+00:04:10.145 --> 00:04:12.718
+the two equations are parallel
+
+85
+00:04:12.803 --> 00:04:14.776
+lines that never cross.
+
+86
+00:04:14.776 --> 00:04:17.949
+The columns give only one direction
+
+87
+00:04:17.949 --> 00:04:20.950
+so M has rank one: it is singular.
+
+88
+00:04:21.530 --> 00:04:24.703
+If the target is on the line, say seven
+
+89
+00:04:24.703 --> 00:04:27.955
+twenty one, the second equation is three
+
+90
+00:04:28.034 --> 00:04:30.890
+times the first: the very same line.
+
+91
+00:04:31.240 --> 00:04:33.553
+Then seven, zero works.
+
+92
+00:04:33.553 --> 00:04:37.073
+So does five, one, and one, three
+
+93
+00:04:37.073 --> 00:04:39.185
+and minus one, four
+
+94
+00:04:39.185 --> 00:04:41.800
+and infinitely many more.
+
+95
+00:04:42.150 --> 00:04:45.370
+Zero, one, or infinitely many
+
+96
+00:04:45.478 --> 00:04:48.161
+a linear system never has
+
+97
+00:04:48.269 --> 00:04:50.630
+exactly two solutions.
+
+98
+00:04:51.210 --> 00:04:54.780
+Does three equations in three unknowns
+
+99
+00:04:54.874 --> 00:04:57.034
+always mean one answer?
+
+100
+00:04:57.034 --> 00:04:57.534
+No.
+
+101
+00:04:57.760 --> 00:04:58.890
+In this matrix
+
+102
+00:04:58.890 --> 00:05:02.206
+column three is column one plus column two.
+
+103
+00:05:02.206 --> 00:05:04.919
+All three columns lie in one plane
+
+104
+00:05:04.919 --> 00:05:06.426
+so the rank is two
+
+105
+00:05:06.426 --> 00:05:09.440
+and most right sides cannot be reached.
+
+106
+00:05:10.020 --> 00:05:12.413
+The same product sits inside
+
+107
+00:05:12.498 --> 00:05:14.293
+every neural network.
+
+108
+00:05:14.378 --> 00:05:16.856
+A linear layer takes an input
+
+109
+00:05:16.942 --> 00:05:18.993
+x and returns W times x
+
+110
+00:05:18.993 --> 00:05:21.300
+where W holds the weights.
+
+111
+00:05:21.650 --> 00:05:23.137
+Read it by columns
+
+112
+00:05:23.137 --> 00:05:25.954
+each input feature owns one column
+
+113
+00:05:25.954 --> 00:05:28.850
+scaled by the value of that feature.
+
+114
+00:05:29.200 --> 00:05:31.242
+Three times the first column
+
+115
+00:05:31.242 --> 00:05:33.142
+plus one times the second
+
+116
+00:05:33.142 --> 00:05:36.240
+plus one times the third, gives five, zero.
+
+117
+00:05:36.820 --> 00:05:39.599
+Last, a habit for working with AI.
+
+118
+00:05:39.680 --> 00:05:42.541
+Suppose an assistant says the three
+
+119
+00:05:42.623 --> 00:05:45.728
+by three system is solved by two, one
+
+120
+00:05:45.728 --> 00:05:46.300
+three.
+
+121
+00:05:46.650 --> 00:05:48.006
+Multiply back.
+
+122
+00:05:48.006 --> 00:05:51.493
+A times the claim is six, six, one
+
+123
+00:05:51.493 --> 00:05:54.012
+but b is six, three, two.
+
+124
+00:05:54.012 --> 00:05:57.499
+The first equation happens to hold
+
+125
+00:05:57.499 --> 00:06:00.793
+which makes the claim look right.
+
+126
+00:06:00.793 --> 00:06:02.730
+The other two fail.
+
+127
+00:06:03.080 --> 00:06:05.683
+Checking one equation is not enough.
+
+128
+00:06:05.683 --> 00:06:06.840
+Check them all.
+
+129
+00:06:07.420 --> 00:06:08.434
+To sum up.
+
+130
+00:06:08.434 --> 00:06:12.997
+By rows, each entry of A x is a dot product
+
+131
+00:06:12.997 --> 00:06:14.823
+one per equation.
+
+132
+00:06:14.823 --> 00:06:18.980
+By columns, A x is a mix of the columns.
+
+133
+00:06:19.330 --> 00:06:22.221
+And a system has zero, one
+
+134
+00:06:22.221 --> 00:06:26.610
+or infinitely many solutions, never two.
+
+135
+00:06:26.960 --> 00:06:30.871
+Now you try it both ways: the matrix two
+
+136
+00:06:30.871 --> 00:06:34.782
+zero, one, four, times the vector three
+
+137
+00:06:34.782 --> 00:06:35.831
+minus one.
+
+138
+00:06:35.831 --> 00:06:38.406
+Next lecture: elimination
+
+139
+00:06:38.406 --> 00:06:41.840
+a step by step method that finds x.

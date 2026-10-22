@@ -1,0 +1,437 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:06.317
+A basis of a space is a set of vectors
+
+2
+00:00:06.406 --> 00:00:08.834
+that does two jobs at once
+
+3
+00:00:08.834 --> 00:00:12.700
+it is independent, and it spans the space.
+
+4
+00:00:13.050 --> 00:00:15.444
+Back on the drone's plane
+
+5
+00:00:15.444 --> 00:00:18.298
+laid flat in steps of u and v.
+
+6
+00:00:18.298 --> 00:00:20.231
+u and v are a basis
+
+7
+00:00:20.231 --> 00:00:23.361
+their cell tiles the whole plane.
+
+8
+00:00:23.361 --> 00:00:26.031
+So are u and s, and w and s.
+
+9
+00:00:26.123 --> 00:00:28.333
+Every pair of buttons is
+
+10
+00:00:28.425 --> 00:00:30.450
+a basis of this plane.
+
+11
+00:00:30.800 --> 00:00:32.336
+Two near misses.
+
+12
+00:00:32.336 --> 00:00:34.928
+u, v and w span the plane
+
+13
+00:00:34.928 --> 00:00:38.576
+but they are dependent: one too many.
+
+14
+00:00:38.576 --> 00:00:42.416
+u, v and one, one, one are independent
+
+15
+00:00:42.416 --> 00:00:46.160
+but one, one, one is not in the plane
+
+16
+00:00:46.160 --> 00:00:49.232
+so they are a basis of R three
+
+17
+00:00:49.232 --> 00:00:50.960
+not of the plane.
+
+18
+00:00:51.540 --> 00:00:52.443
+In a basis
+
+19
+00:00:52.525 --> 00:00:55.971
+every vector of the space is a combination
+
+20
+00:00:56.053 --> 00:00:57.776
+of the basis vectors
+
+21
+00:00:57.776 --> 00:01:00.812
+and the amounts are its coordinates.
+
+22
+00:01:00.812 --> 00:01:04.340
+Take the delivery point, two, five, three.
+
+23
+00:01:04.690 --> 00:01:09.260
+In the basis u, v: one u, then one v.
+
+24
+00:01:09.260 --> 00:01:11.977
+Coordinates one, one.
+
+25
+00:01:11.977 --> 00:01:16.671
+In the basis u, s: one u, a second u
+
+26
+00:01:16.671 --> 00:01:18.153
+then one s.
+
+27
+00:01:18.153 --> 00:01:20.870
+Coordinates two, one.
+
+28
+00:01:20.870 --> 00:01:26.181
+Check: two times one, two, one, plus zero
+
+29
+00:01:26.181 --> 00:01:30.010
+one, one, is two, five, three.
+
+30
+00:01:30.360 --> 00:01:33.954
+In the basis w, s: two thirds of w
+
+31
+00:01:33.954 --> 00:01:36.110
+then one third of s.
+
+32
+00:01:36.110 --> 00:01:37.445
+Three bases
+
+33
+00:01:37.445 --> 00:01:40.936
+three different pairs of numbers
+
+34
+00:01:40.936 --> 00:01:43.400
+one and the same point.
+
+35
+00:01:43.980 --> 00:01:47.387
+Could the delivery point have two different
+
+36
+00:01:47.466 --> 00:01:50.953
+pairs of coordinates in the same basis u, v?
+
+37
+00:01:50.953 --> 00:01:52.300
+Pause and think.
+
+38
+00:01:52.850 --> 00:01:56.792
+Suppose a u plus b v and a prime u plus
+
+39
+00:01:56.893 --> 00:01:59.825
+b prime v are the same point.
+
+40
+00:01:59.825 --> 00:02:03.363
+Subtract: a minus a prime times u
+
+41
+00:02:03.363 --> 00:02:07.305
+plus b minus b prime times v, is zero.
+
+42
+00:02:07.305 --> 00:02:09.832
+u and v are independent
+
+43
+00:02:09.832 --> 00:02:12.461
+so both amounts are zero
+
+44
+00:02:12.461 --> 00:02:15.392
+the two pairs were the same.
+
+45
+00:02:15.392 --> 00:02:18.930
+Coordinates in a basis are unique.
+
+46
+00:02:22.510 --> 00:02:25.288
+Every basis we found for the drone's
+
+47
+00:02:25.365 --> 00:02:27.063
+plane had two vectors.
+
+48
+00:02:27.063 --> 00:02:28.684
+That is no accident
+
+49
+00:02:28.684 --> 00:02:31.848
+all bases of a space have the same size
+
+50
+00:02:31.848 --> 00:02:34.471
+and that number is its dimension.
+
+51
+00:02:34.549 --> 00:02:36.632
+The dimension of the column
+
+52
+00:02:36.709 --> 00:02:38.870
+space is the rank: here two.
+
+53
+00:02:39.220 --> 00:02:42.022
+The nullspace lives in R four.
+
+54
+00:02:42.022 --> 00:02:45.758
+Its basis is the two special solutions
+
+55
+00:02:45.758 --> 00:02:49.681
+minus two, minus one, one, zero, and one
+
+56
+00:02:49.681 --> 00:02:51.736
+minus one, zero, one
+
+57
+00:02:51.736 --> 00:02:54.632
+so its dimension is n minus r
+
+58
+00:02:54.632 --> 00:02:57.060
+four minus two, also two.
+
+59
+00:02:57.410 --> 00:02:58.972
+Careful with words
+
+60
+00:02:58.972 --> 00:03:02.426
+three by four is the shape of the matrix.
+
+61
+00:03:02.426 --> 00:03:04.810
+Dimensions belong to spaces.
+
+62
+00:03:05.390 --> 00:03:07.931
+Which columns give a basis
+
+63
+00:03:08.029 --> 00:03:09.983
+of the column space?
+
+64
+00:03:10.081 --> 00:03:13.110
+Elimination says the pivots are
+
+65
+00:03:13.208 --> 00:03:15.456
+in columns one and two.
+
+66
+00:03:15.456 --> 00:03:19.169
+The pivot columns of R are one, zero
+
+67
+00:03:19.169 --> 00:03:21.710
+zero and zero, one, zero.
+
+68
+00:03:22.060 --> 00:03:25.462
+But they are not even in the drone's plane
+
+69
+00:03:25.462 --> 00:03:28.072
+one minus zero plus zero is one
+
+70
+00:03:28.072 --> 00:03:31.474
+and zero minus one plus zero is minus one.
+
+71
+00:03:31.474 --> 00:03:34.480
+Elimination changed the column space.
+
+72
+00:03:34.480 --> 00:03:37.487
+Take the pivot columns from A itself
+
+73
+00:03:37.487 --> 00:03:40.730
+u and v: one minus two plus one is zero
+
+74
+00:03:40.730 --> 00:03:43.420
+one minus three plus two is zero.
+
+75
+00:03:44.000 --> 00:03:46.130
+A café records six days of
+
+76
+00:03:46.211 --> 00:03:48.013
+sales and the weather.
+
+77
+00:03:48.013 --> 00:03:51.535
+The model has an intercept column of ones
+
+78
+00:03:51.535 --> 00:03:54.730
+and one column each for sunny, cloudy
+
+79
+00:03:54.730 --> 00:03:56.040
+and rainy days.
+
+80
+00:03:56.390 --> 00:04:00.330
+Every day is exactly one kind of weather
+
+81
+00:04:00.426 --> 00:04:03.405
+so sunny plus cloudy plus rainy
+
+82
+00:04:03.501 --> 00:04:05.519
+equals the intercept.
+
+83
+00:04:05.519 --> 00:04:08.882
+X times one, minus one, minus one
+
+84
+00:04:08.882 --> 00:04:12.246
+minus one is zero in all six rows.
+
+85
+00:04:12.246 --> 00:04:15.801
+Four columns, rank three: dependent
+
+86
+00:04:15.897 --> 00:04:18.588
+and the model's coefficients
+
+87
+00:04:18.684 --> 00:04:20.510
+are not determined.
+
+88
+00:04:20.860 --> 00:04:24.054
+The fix: drop one category, say sunny
+
+89
+00:04:24.054 --> 00:04:26.407
+which becomes the baseline.
+
+90
+00:04:26.407 --> 00:04:29.517
+Now rank three equals three columns
+
+91
+00:04:29.517 --> 00:04:30.609
+independent.
+
+92
+00:04:30.609 --> 00:04:32.122
+One more warning
+
+93
+00:04:32.206 --> 00:04:36.240
+two columns that differ by only ten to the minus
+
+94
+00:04:36.324 --> 00:04:39.518
+thirteen count as rank two by default
+
+95
+00:04:39.602 --> 00:04:42.039
+and rank one with a tolerance
+
+96
+00:04:42.123 --> 00:04:44.140
+of ten to the minus six.
+
+97
+00:04:44.720 --> 00:04:48.103
+So: a basis is independent and spans.
+
+98
+00:04:48.194 --> 00:04:50.754
+Every vector has exactly one
+
+99
+00:04:50.846 --> 00:04:53.131
+set of coordinates in it
+
+100
+00:04:53.131 --> 00:04:56.789
+the delivery point is one, one in u, v
+
+101
+00:04:56.789 --> 00:04:58.800
+and two, one in u, s.
+
+102
+00:04:59.150 --> 00:05:02.789
+Every basis of a space has the same size
+
+103
+00:05:02.789 --> 00:05:04.120
+its dimension
+
+104
+00:05:04.120 --> 00:05:06.872
+the rank for the column space
+
+105
+00:05:06.872 --> 00:05:09.446
+n minus r for the nullspace.
+
+106
+00:05:09.446 --> 00:05:13.085
+Your turn: find the coordinates of four
+
+107
+00:05:13.085 --> 00:05:15.747
+nine, five in the basis v, s.
+
+108
+00:05:15.747 --> 00:05:16.990
+Next lecture
+
+109
+00:05:16.990 --> 00:05:19.830
+the four fundamental subspaces.

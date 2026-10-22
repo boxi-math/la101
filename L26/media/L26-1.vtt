@@ -1,0 +1,501 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:06.405
+Eigenvectors need a square matrix
+
+2
+00:00:06.405 --> 00:00:10.013
+and even then they can go missing.
+
+3
+00:00:10.013 --> 00:00:14.652
+This matrix A has the eigenvalue two, twice
+
+4
+00:00:14.652 --> 00:00:18.260
+and only one line of eigenvectors.
+
+5
+00:00:18.610 --> 00:00:20.850
+Today we ask a question that
+
+6
+00:00:20.930 --> 00:00:22.770
+works for every matrix.
+
+7
+00:00:22.770 --> 00:00:24.530
+Take the unit circle
+
+8
+00:00:24.530 --> 00:00:26.770
+every vector of length one.
+
+9
+00:00:26.770 --> 00:00:29.570
+Push each of its points through A.
+
+10
+00:00:30.150 --> 00:00:32.990
+A matrix keeps straight lines straight
+
+11
+00:00:33.062 --> 00:00:34.955
+so the circle comes out as
+
+12
+00:00:35.028 --> 00:00:36.630
+a smooth closed curve.
+
+13
+00:00:36.980 --> 00:00:38.331
+What shape is it
+
+14
+00:00:38.331 --> 00:00:41.909
+and how long is it in its longest direction?
+
+15
+00:00:41.909 --> 00:00:43.260
+Pause and guess.
+
+16
+00:00:46.840 --> 00:00:49.430
+Here is the answer: an ellipse.
+
+17
+00:00:49.430 --> 00:00:52.689
+Its longest half-axis has length four
+
+18
+00:00:52.689 --> 00:00:55.112
+its shortest has length one
+
+19
+00:00:55.112 --> 00:00:58.120
+and the two axes are perpendicular.
+
+20
+00:00:58.470 --> 00:01:00.973
+Which inputs land on those axes?
+
+21
+00:01:00.973 --> 00:01:03.085
+Run the picture backwards.
+
+22
+00:01:03.085 --> 00:01:04.258
+On the circle
+
+23
+00:01:04.258 --> 00:01:07.621
+the long axis comes from v one, along one
+
+24
+00:01:07.621 --> 00:01:08.012
+two.
+
+25
+00:01:08.012 --> 00:01:10.593
+The short axis comes from v two
+
+26
+00:01:10.593 --> 00:01:12.470
+at a right angle to it.
+
+27
+00:01:12.820 --> 00:01:14.520
+Now forward again.
+
+28
+00:01:14.520 --> 00:01:17.071
+A stretches v one by four
+
+29
+00:01:17.071 --> 00:01:20.661
+onto the long axis, and v two by one
+
+30
+00:01:20.661 --> 00:01:22.645
+onto the short axis.
+
+31
+00:01:22.645 --> 00:01:26.140
+Perpendicular in, perpendicular out.
+
+32
+00:01:26.720 --> 00:01:29.706
+Keep a faint copy of this picture.
+
+33
+00:01:29.706 --> 00:01:32.955
+A gets there in three simpler moves
+
+34
+00:01:33.043 --> 00:01:35.501
+read from right to left in A
+
+35
+00:01:35.589 --> 00:01:37.960
+equals U Sigma V transpose.
+
+36
+00:01:38.310 --> 00:01:41.865
+First, V transpose: a rotation.
+
+37
+00:01:41.865 --> 00:01:45.534
+It turns v one onto the x axis
+
+38
+00:01:45.534 --> 00:01:48.630
+and v two onto the y axis.
+
+39
+00:01:48.980 --> 00:01:52.914
+Then Sigma: a stretch along the axes
+
+40
+00:01:52.914 --> 00:01:57.061
+by four across and by one up and down.
+
+41
+00:01:57.061 --> 00:02:01.420
+Now the circle is an ellipse lying flat.
+
+42
+00:02:01.770 --> 00:02:04.307
+Last, U: another rotation.
+
+43
+00:02:04.307 --> 00:02:08.211
+It turns the axes onto u one and u two
+
+44
+00:02:08.211 --> 00:02:12.017
+and we land exactly on the faint copy.
+
+45
+00:02:12.017 --> 00:02:13.090
+That is A.
+
+46
+00:02:13.440 --> 00:02:16.321
+In symbols: A V equals U Sigma
+
+47
+00:02:16.321 --> 00:02:18.273
+and V is orthogonal
+
+48
+00:02:18.273 --> 00:02:21.341
+so its inverse is its transpose.
+
+49
+00:02:21.341 --> 00:02:25.337
+This works for every matrix, of any shape.
+
+50
+00:02:25.337 --> 00:02:28.033
+The stretches, four and one
+
+51
+00:02:28.033 --> 00:02:30.356
+are the singular values
+
+52
+00:02:30.356 --> 00:02:32.680
+sigma one and sigma two.
+
+53
+00:02:33.260 --> 00:02:37.404
+Where do v one and the four come from?
+
+54
+00:02:37.404 --> 00:02:40.348
+Multiply A transpose by A.
+
+55
+00:02:40.348 --> 00:02:43.620
+The U's in the middle cancel.
+
+56
+00:02:43.970 --> 00:02:46.713
+What is left is a symmetric matrix
+
+57
+00:02:46.713 --> 00:02:50.162
+diagonalized: its eigenvectors are the v's
+
+58
+00:02:50.162 --> 00:02:53.610
+and its eigenvalues are the sigmas squared.
+
+59
+00:02:53.960 --> 00:02:56.205
+See it on the picture.
+
+60
+00:02:56.205 --> 00:02:59.164
+A sends v one to four u one.
+
+61
+00:02:59.164 --> 00:03:03.449
+A transpose sends u one back along v one
+
+62
+00:03:03.449 --> 00:03:06.000
+stretched by four again.
+
+63
+00:03:06.350 --> 00:03:10.317
+Round trip: four times four is sixteen
+
+64
+00:03:10.317 --> 00:03:13.470
+and v one never left its line.
+
+65
+00:03:13.470 --> 00:03:18.047
+So v one is an eigenvector of A transpose A
+
+66
+00:03:18.047 --> 00:03:20.590
+with eigenvalue sixteen.
+
+67
+00:03:20.940 --> 00:03:25.345
+For our A, A transpose A has trace seventeen
+
+68
+00:03:25.446 --> 00:03:27.848
+and determinant sixteen
+
+69
+00:03:27.848 --> 00:03:31.853
+so its eigenvalues are sixteen and one.
+
+70
+00:03:31.853 --> 00:03:35.658
+Take square roots: sigma one is four
+
+71
+00:03:35.658 --> 00:03:37.460
+sigma two is one.
+
+72
+00:03:38.040 --> 00:03:41.308
+Then each u comes from its v.
+
+73
+00:03:41.308 --> 00:03:45.590
+u i equals A v i, divided by sigma i.
+
+74
+00:03:45.590 --> 00:03:49.760
+That one rule also fixes every sign.
+
+75
+00:03:50.340 --> 00:03:52.723
+Why not find U on its own
+
+76
+00:03:52.723 --> 00:03:54.555
+from A A transpose?
+
+77
+00:03:54.555 --> 00:03:57.671
+Its eigenvectors are the u's too
+
+78
+00:03:57.671 --> 00:04:00.420
+but each one only up to sign.
+
+79
+00:04:00.770 --> 00:04:03.157
+Take u two with the other sign
+
+80
+00:04:03.157 --> 00:04:04.928
+and build the product.
+
+81
+00:04:04.928 --> 00:04:07.085
+The ellipse looks the same
+
+82
+00:04:07.085 --> 00:04:09.626
+but the grid comes out mirrored
+
+83
+00:04:09.626 --> 00:04:12.090
+and v two lands on minus u two.
+
+84
+00:04:12.440 --> 00:04:16.684
+U Sigma V transpose is now this matrix
+
+85
+00:04:16.684 --> 00:04:17.446
+not A.
+
+86
+00:04:17.554 --> 00:04:20.601
+Taking u from A v over sigma
+
+87
+00:04:20.710 --> 00:04:22.560
+fixes every sign.
+
+88
+00:04:23.140 --> 00:04:26.153
+A common belief: the singular values are
+
+89
+00:04:26.228 --> 00:04:28.940
+just the eigenvalues, made positive.
+
+90
+00:04:29.290 --> 00:04:30.093
+Test it.
+
+91
+00:04:30.093 --> 00:04:34.512
+The eigenvectors of A lie along the x axis.
+
+92
+00:04:34.512 --> 00:04:35.416
+Under A
+
+93
+00:04:35.416 --> 00:04:39.633
+this one keeps its direction and doubles.
+
+94
+00:04:39.633 --> 00:04:43.650
+But v one turns, and stretches by four.
+
+95
+00:04:44.000 --> 00:04:47.154
+So the eigenvalues are two and two
+
+96
+00:04:47.154 --> 00:04:50.939
+but the singular values are four and one.
+
+97
+00:04:50.939 --> 00:04:54.184
+An eigenvector keeps its direction.
+
+98
+00:04:54.274 --> 00:04:57.158
+Sigma one is the largest stretch
+
+99
+00:04:57.248 --> 00:04:58.960
+of any unit vector.
+
+100
+00:04:59.310 --> 00:05:01.468
+They do agree in one way
+
+101
+00:05:01.468 --> 00:05:04.663
+four times one equals two times two
+
+102
+00:05:04.663 --> 00:05:06.130
+the determinant.
+
+103
+00:05:06.217 --> 00:05:08.461
+And for a symmetric matrix
+
+104
+00:05:08.547 --> 00:05:11.310
+the two lists match, up to sign.
+
+105
+00:05:11.890 --> 00:05:13.249
+One more test
+
+106
+00:05:13.346 --> 00:05:16.452
+a rotation by thirty degrees has
+
+107
+00:05:16.549 --> 00:05:19.170
+no real eigenvalues at all.
+
+108
+00:05:19.520 --> 00:05:22.332
+But it does have singular values.
+
+109
+00:05:22.332 --> 00:05:24.291
+It keeps every length
+
+110
+00:05:24.291 --> 00:05:28.040
+so the circle stays a circle: both are one.
+
+111
+00:05:28.620 --> 00:05:34.359
+So, for every matrix, the same three moves.
+
+112
+00:05:34.359 --> 00:05:37.696
+Rotate, stretch, rotate
+
+113
+00:05:37.696 --> 00:05:41.700
+A equals U Sigma V transpose.
+
+114
+00:05:42.050 --> 00:05:44.841
+The v's are the eigenvectors
+
+115
+00:05:44.941 --> 00:05:46.636
+of A transpose A
+
+116
+00:05:46.735 --> 00:05:49.826
+the sigmas are the square roots
+
+117
+00:05:49.925 --> 00:05:51.819
+of its eigenvalues
+
+118
+00:05:51.819 --> 00:05:54.810
+and each u is A v over sigma.
+
+119
+00:05:55.160 --> 00:05:58.230
+And sigma one, the largest stretch
+
+120
+00:05:58.230 --> 00:06:00.160
+is not an eigenvalue.
+
+121
+00:06:00.740 --> 00:06:01.874
+In part two
+
+122
+00:06:01.874 --> 00:06:04.992
+we split A into rank one pieces
+
+123
+00:06:04.992 --> 00:06:07.260
+in order of importance.
+
+124
+00:06:07.610 --> 00:06:11.117
+And we let the SVD find hidden tastes
+
+125
+00:06:11.211 --> 00:06:13.770
+in a table of film ratings.

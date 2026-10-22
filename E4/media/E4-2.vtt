@@ -1,0 +1,521 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:05.018
+Take the chain of springs
+
+2
+00:00:05.099 --> 00:00:07.869
+and let the springs grow in number
+
+3
+00:00:07.950 --> 00:00:09.661
+and shrink in length.
+
+4
+00:00:09.661 --> 00:00:13.082
+In the limit, it is an elastic bar on the
+
+5
+00:00:13.164 --> 00:00:15.282
+interval from zero to one
+
+6
+00:00:15.282 --> 00:00:18.540
+fixed at both ends, with a load f of x.
+
+7
+00:00:18.890 --> 00:00:21.582
+We will approximate it with
+
+8
+00:00:21.682 --> 00:00:23.576
+a hundred unknowns.
+
+9
+00:00:23.576 --> 00:00:27.265
+The matrix has ten thousand entries.
+
+10
+00:00:27.265 --> 00:00:30.355
+How many of them are not zero?
+
+11
+00:00:30.355 --> 00:00:32.050
+Pause and guess.
+
+12
+00:00:35.630 --> 00:00:38.720
+The three steps survive the limit.
+
+13
+00:00:38.720 --> 00:00:41.809
+The stretch is the slope u prime
+
+14
+00:00:41.809 --> 00:00:44.717
+the tension is c times u prime
+
+15
+00:00:44.808 --> 00:00:48.170
+and balance says minus the derivative
+
+16
+00:00:48.261 --> 00:00:50.260
+of c u prime equals f.
+
+17
+00:00:50.260 --> 00:00:53.350
+Minus d by d x plays A transpose.
+
+18
+00:00:53.700 --> 00:00:56.262
+The energy keeps its form
+
+19
+00:00:56.262 --> 00:00:59.513
+with sums turned into integrals
+
+20
+00:00:59.513 --> 00:01:03.355
+one half c u prime squared, minus f u.
+
+21
+00:01:03.453 --> 00:01:06.902
+The solution of the equation is the
+
+22
+00:01:07.000 --> 00:01:09.660
+function that minimises it.
+
+23
+00:01:10.010 --> 00:01:12.304
+With c and f equal to one
+
+24
+00:01:12.393 --> 00:01:15.217
+the solution is the parabola one
+
+25
+00:01:15.305 --> 00:01:17.511
+half x times one minus x
+
+26
+00:01:17.511 --> 00:01:21.306
+and its energy is minus one twenty fourth.
+
+27
+00:01:21.394 --> 00:01:25.277
+The best multiple of a single sine wave gets
+
+28
+00:01:25.365 --> 00:01:28.895
+minus zero point zero four one zero six
+
+29
+00:01:28.895 --> 00:01:32.690
+just above, as the minimum principle says.
+
+30
+00:01:33.270 --> 00:01:36.082
+We cannot search all functions
+
+31
+00:01:36.082 --> 00:01:39.529
+so we search a subspace, as Ritz did.
+
+32
+00:01:39.529 --> 00:01:43.520
+Split the interval into pieces of length h.
+
+33
+00:01:43.520 --> 00:01:47.238
+The hat function phi i is one at node i
+
+34
+00:01:47.238 --> 00:01:49.597
+zero at every other node
+
+35
+00:01:49.597 --> 00:01:52.590
+and straight in between: a tent.
+
+36
+00:01:52.940 --> 00:01:56.797
+Combinations of hats are exactly the broken
+
+37
+00:01:56.887 --> 00:01:59.848
+lines through chosen heights U i
+
+38
+00:01:59.848 --> 00:02:02.180
+which vanish at the ends.
+
+39
+00:02:02.530 --> 00:02:05.637
+Putting a broken line into the energy
+
+40
+00:02:05.721 --> 00:02:08.661
+gives the same kind of P as before
+
+41
+00:02:08.745 --> 00:02:10.676
+with a stiffness matrix
+
+42
+00:02:10.760 --> 00:02:12.608
+K and a load vector F.
+
+43
+00:02:12.692 --> 00:02:15.379
+K i j is the integral of c times
+
+44
+00:02:15.463 --> 00:02:17.395
+the slopes of two hats
+
+45
+00:02:17.395 --> 00:02:21.090
+and F i is the integral of f times one hat.
+
+46
+00:02:21.670 --> 00:02:24.405
+A hat's slope is plus or minus
+
+47
+00:02:24.496 --> 00:02:27.139
+one over h on its two pieces
+
+48
+00:02:27.139 --> 00:02:28.963
+and zero elsewhere.
+
+49
+00:02:29.054 --> 00:02:31.241
+Two hats overlap only if
+
+50
+00:02:31.333 --> 00:02:35.070
+they are neighbours, so K is tridiagonal.
+
+51
+00:02:35.420 --> 00:02:37.487
+On one piece, an element
+
+52
+00:02:37.570 --> 00:02:39.968
+the two hats there contribute
+
+53
+00:02:40.051 --> 00:02:43.441
+c over h times one, minus one, minus one
+
+54
+00:02:43.441 --> 00:02:43.937
+one.
+
+55
+00:02:43.937 --> 00:02:46.996
+That is the matrix of a single spring
+
+56
+00:02:47.079 --> 00:02:49.064
+with stiffness c over h.
+
+57
+00:02:49.146 --> 00:02:51.214
+Adding up the elements is
+
+58
+00:02:51.296 --> 00:02:52.867
+assembling springs
+
+59
+00:02:52.867 --> 00:02:55.100
+every element is a spring.
+
+60
+00:02:55.450 --> 00:02:59.681
+With three interior nodes, h is one quarter.
+
+61
+00:02:59.777 --> 00:03:02.278
+K is four times the second
+
+62
+00:03:02.374 --> 00:03:04.105
+difference matrix
+
+63
+00:03:04.105 --> 00:03:07.567
+and each load entry is one quarter
+
+64
+00:03:07.567 --> 00:03:09.490
+the area of a tent.
+
+65
+00:03:09.840 --> 00:03:12.683
+The solution is three thirty seconds
+
+66
+00:03:12.683 --> 00:03:15.295
+one eighth, three thirty seconds
+
+67
+00:03:15.295 --> 00:03:17.984
+exactly the parabola at the nodes.
+
+68
+00:03:17.984 --> 00:03:19.367
+In one dimension
+
+69
+00:03:19.367 --> 00:03:22.440
+that is a special gift of this problem.
+
+70
+00:03:23.020 --> 00:03:24.615
+Between the nodes
+
+71
+00:03:24.615 --> 00:03:28.336
+a straight line cannot follow a parabola.
+
+72
+00:03:28.336 --> 00:03:29.754
+On one element
+
+73
+00:03:29.754 --> 00:03:32.767
+the gap is one half of x minus a
+
+74
+00:03:32.767 --> 00:03:36.311
+times b minus x, largest in the middle
+
+75
+00:03:36.311 --> 00:03:38.260
+h squared over eight.
+
+76
+00:03:38.610 --> 00:03:42.539
+With one, three, seven and fifteen nodes
+
+77
+00:03:42.635 --> 00:03:45.030
+the largest error is zero
+
+78
+00:03:45.126 --> 00:03:47.139
+point zero three one
+
+79
+00:03:47.139 --> 00:03:50.876
+then zero point zero zero seven eight
+
+80
+00:03:50.876 --> 00:03:51.930
+and so on.
+
+81
+00:03:52.280 --> 00:03:54.376
+Each time h is halved
+
+82
+00:03:54.376 --> 00:03:57.235
+the error is divided by four.
+
+83
+00:03:57.235 --> 00:04:00.760
+The method is second order accurate.
+
+84
+00:04:01.340 --> 00:04:03.491
+Back to the opening question.
+
+85
+00:04:03.491 --> 00:04:06.310
+Pushing anywhere moves the whole bar
+
+86
+00:04:06.384 --> 00:04:08.312
+so surely every unknown is
+
+87
+00:04:08.386 --> 00:04:11.205
+coupled to every other, and K is full?
+
+88
+00:04:11.205 --> 00:04:12.540
+Pause and decide.
+
+89
+00:04:16.120 --> 00:04:18.058
+With ninety nine unknowns
+
+90
+00:04:18.132 --> 00:04:20.666
+K has only two hundred ninety five
+
+91
+00:04:20.741 --> 00:04:23.424
+nonzero entries out of nine thousand
+
+92
+00:04:23.499 --> 00:04:24.840
+eight hundred one.
+
+93
+00:04:25.190 --> 00:04:27.603
+The whole bar responds through
+
+94
+00:04:27.683 --> 00:04:29.051
+the inverse of K
+
+95
+00:04:29.051 --> 00:04:32.026
+and that inverse is completely full.
+
+96
+00:04:32.026 --> 00:04:35.485
+The matrix itself only couples neighbours.
+
+97
+00:04:35.565 --> 00:04:38.219
+That is why finite elements scale
+
+98
+00:04:38.300 --> 00:04:40.230
+to millions of unknowns.
+
+99
+00:04:40.580 --> 00:04:43.064
+And K is positive definite
+
+100
+00:04:43.064 --> 00:04:45.732
+as a sum of springs must be
+
+101
+00:04:45.732 --> 00:04:47.296
+for three nodes
+
+102
+00:04:47.296 --> 00:04:51.160
+its eigenvalues are two point three four
+
+103
+00:04:51.160 --> 00:04:54.380
+eight, and thirteen point six six.
+
+104
+00:04:54.960 --> 00:04:58.109
+Now make the bar from two materials.
+
+105
+00:04:58.109 --> 00:05:01.957
+The left half is soft, with c equal to one.
+
+106
+00:05:01.957 --> 00:05:05.280
+The right half is four times stiffer.
+
+107
+00:05:05.630 --> 00:05:09.443
+The element springs are four, four, sixteen
+
+108
+00:05:09.443 --> 00:05:10.223
+sixteen.
+
+109
+00:05:10.310 --> 00:05:12.737
+The middle node sits between
+
+110
+00:05:12.823 --> 00:05:15.163
+a soft and a stiff element
+
+111
+00:05:15.163 --> 00:05:18.977
+so its diagonal entry is four plus sixteen
+
+112
+00:05:18.977 --> 00:05:19.670
+twenty.
+
+113
+00:05:20.020 --> 00:05:23.181
+The solution sags more on the soft side
+
+114
+00:05:23.181 --> 00:05:26.580
+and it is still exact at every node point.
+
+115
+00:05:26.930 --> 00:05:30.333
+The true solution has a kink in the middle.
+
+116
+00:05:30.333 --> 00:05:33.261
+The tension c u prime is continuous
+
+117
+00:05:33.261 --> 00:05:36.584
+so where c jumps to four times its value
+
+118
+00:05:36.584 --> 00:05:39.671
+the slope shrinks by a factor of four.
+
+119
+00:05:39.671 --> 00:05:41.649
+With a node at the jump
+
+120
+00:05:41.649 --> 00:05:45.210
+the elements handle that with no extra work.
+
+121
+00:05:45.790 --> 00:05:49.377
+A differential equation has an energy.
+
+122
+00:05:49.472 --> 00:05:52.776
+Hat functions turn its minimisation
+
+123
+00:05:52.870 --> 00:05:54.569
+into K U equals F
+
+124
+00:05:54.569 --> 00:05:57.590
+where each element is a spring.
+
+125
+00:05:57.940 --> 00:06:01.301
+K is sparse and positive definite
+
+126
+00:06:01.301 --> 00:06:04.860
+and the error falls like h squared.
+
+127
+00:06:05.210 --> 00:06:07.486
+In two and three dimensions
+
+128
+00:06:07.567 --> 00:06:11.063
+the same assembly of small element matrices
+
+129
+00:06:11.144 --> 00:06:13.746
+runs the simulations of bridges
+
+130
+00:06:13.746 --> 00:06:15.290
+engines and bones.

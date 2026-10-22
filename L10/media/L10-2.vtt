@@ -1,0 +1,449 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:06.137
+The smallest nonzero rank is one.
+
+2
+00:00:06.137 --> 00:00:08.884
+Multiply a column by a row
+
+3
+00:00:08.884 --> 00:00:13.103
+the drone's first button u, one, two, one
+
+4
+00:00:13.103 --> 00:00:16.340
+times r one, the first row of R.
+
+5
+00:00:16.690 --> 00:00:19.688
+Each row of the product is an
+
+6
+00:00:19.791 --> 00:00:23.927
+entry of u times r one: one times r one
+
+7
+00:00:23.927 --> 00:00:28.579
+two times r one, two, zero, four, minus two
+
+8
+00:00:28.579 --> 00:00:31.370
+and one times r one again.
+
+9
+00:00:31.720 --> 00:00:34.765
+Every row is a multiple of r one and
+
+10
+00:00:34.850 --> 00:00:37.303
+every column a multiple of u
+
+11
+00:00:37.388 --> 00:00:39.757
+the row space and the column
+
+12
+00:00:39.841 --> 00:00:41.195
+space are lines.
+
+13
+00:00:41.195 --> 00:00:42.041
+Rank one.
+
+14
+00:00:42.041 --> 00:00:45.678
+In the plane you can see it: P three, two
+
+15
+00:00:45.678 --> 00:00:47.032
+four, one, two.
+
+16
+00:00:47.032 --> 00:00:50.162
+Its columns, two, one and four, two
+
+17
+00:00:50.162 --> 00:00:51.600
+lie on one line.
+
+18
+00:00:52.180 --> 00:00:54.935
+Every rank r matrix is a sum
+
+19
+00:00:55.033 --> 00:00:57.100
+of r rank one pieces.
+
+20
+00:00:57.100 --> 00:00:58.575
+For the drone
+
+21
+00:00:58.575 --> 00:01:02.609
+the second piece is the second button v
+
+22
+00:01:02.609 --> 00:01:06.348
+one, three, two, times the row r two
+
+23
+00:01:06.348 --> 00:01:09.300
+which is zero, one, one, one.
+
+24
+00:01:09.650 --> 00:01:12.930
+Add the two pieces row by row.
+
+25
+00:01:12.930 --> 00:01:15.663
+Row one: one, zero, two
+
+26
+00:01:15.663 --> 00:01:19.598
+minus one plus zero, one, one, one.
+
+27
+00:01:19.598 --> 00:01:22.441
+Row two: two, zero, four
+
+28
+00:01:22.441 --> 00:01:27.032
+minus two plus zero, three, three, three.
+
+29
+00:01:27.032 --> 00:01:29.984
+Row three: one, zero, two
+
+30
+00:01:29.984 --> 00:01:33.919
+minus one plus zero, two, two, two.
+
+31
+00:01:33.919 --> 00:01:35.450
+The sum is A.
+
+32
+00:01:35.800 --> 00:01:39.046
+This is A equals C times R zero
+
+33
+00:01:39.147 --> 00:01:41.987
+the pivot columns of A times
+
+34
+00:01:42.089 --> 00:01:44.320
+the nonzero rows of R
+
+35
+00:01:44.320 --> 00:01:46.957
+one piece for each pivot.
+
+36
+00:01:46.957 --> 00:01:51.319
+Now a question: is the sum of two rank one
+
+37
+00:01:51.420 --> 00:01:53.956
+matrices always rank two?
+
+38
+00:01:53.956 --> 00:01:55.680
+Pause and think.
+
+39
+00:01:59.260 --> 00:01:59.529
+No.
+
+40
+00:01:59.529 --> 00:02:03.387
+Take P one: its first column is one, zero
+
+41
+00:02:03.387 --> 00:02:06.168
+and its second column is zero.
+
+42
+00:02:06.168 --> 00:02:09.577
+Take P two: its first column is zero
+
+43
+00:02:09.577 --> 00:02:12.807
+and its second column is zero, one.
+
+44
+00:02:12.807 --> 00:02:14.512
+Each has rank one
+
+45
+00:02:14.512 --> 00:02:17.293
+but their sum is the identity
+
+46
+00:02:17.293 --> 00:02:20.523
+whose columns span the whole plane
+
+47
+00:02:20.523 --> 00:02:21.420
+rank two.
+
+48
+00:02:21.770 --> 00:02:24.537
+The sum can also stay rank one.
+
+49
+00:02:24.537 --> 00:02:28.464
+P three has columns two, one and four, two.
+
+50
+00:02:28.464 --> 00:02:32.391
+P four has columns one, zero and two, zero.
+
+51
+00:02:32.391 --> 00:02:36.140
+Their sum has columns three, one and six
+
+52
+00:02:36.140 --> 00:02:38.282
+two: again on one line.
+
+53
+00:02:38.372 --> 00:02:40.603
+And P three minus P three
+
+54
+00:02:40.692 --> 00:02:43.370
+is the zero matrix, rank zero.
+
+55
+00:02:43.720 --> 00:02:45.676
+So adding rank one matrices
+
+56
+00:02:45.749 --> 00:02:47.053
+can leave the set
+
+57
+00:02:47.053 --> 00:02:49.517
+and the zero matrix is not in it
+
+58
+00:02:49.517 --> 00:02:52.560
+the rank one matrices are not a subspace.
+
+59
+00:02:53.140 --> 00:02:55.459
+Matrices can be added and
+
+60
+00:02:55.552 --> 00:02:57.407
+scaled like vectors
+
+61
+00:02:57.499 --> 00:02:59.726
+so a set of matrices can
+
+62
+00:02:59.818 --> 00:03:01.859
+be a vector space too.
+
+63
+00:03:01.952 --> 00:03:04.178
+Read a two by two matrix
+
+64
+00:03:04.270 --> 00:03:07.146
+as its four entries a, b, c, d
+
+65
+00:03:07.239 --> 00:03:09.836
+all two by two matrices form
+
+66
+00:03:09.928 --> 00:03:12.340
+a space of dimension four.
+
+67
+00:03:12.690 --> 00:03:15.474
+Inside it, the symmetric matrices
+
+68
+00:03:15.474 --> 00:03:18.257
+with b equal to c: one condition
+
+69
+00:03:18.257 --> 00:03:21.778
+so three free numbers and dimension three.
+
+70
+00:03:21.778 --> 00:03:24.316
+The upper triangular matrices
+
+71
+00:03:24.316 --> 00:03:27.100
+with c equal to zero: also three.
+
+72
+00:03:27.100 --> 00:03:30.702
+And the diagonal matrices, both conditions
+
+73
+00:03:30.702 --> 00:03:31.930
+dimension two.
+
+74
+00:03:32.510 --> 00:03:34.210
+Back to the café.
+
+75
+00:03:34.210 --> 00:03:37.410
+Four regulars rate five drinks
+
+76
+00:03:37.510 --> 00:03:40.110
+and each rating comes from
+
+77
+00:03:40.210 --> 00:03:42.010
+two hidden tastes
+
+78
+00:03:42.010 --> 00:03:45.610
+how much a customer likes sweet, p
+
+79
+00:03:45.610 --> 00:03:49.710
+and likes bitter, q, times how sweet, g
+
+80
+00:03:49.710 --> 00:03:53.110
+and how bitter, h, each drink is.
+
+81
+00:03:53.460 --> 00:03:56.584
+So the table is p times g transpose
+
+82
+00:03:56.674 --> 00:03:58.905
+plus q times h transpose
+
+83
+00:03:58.905 --> 00:04:00.780
+two rank one pieces.
+
+84
+00:04:00.780 --> 00:04:02.833
+Ana likes sweet twice
+
+85
+00:04:02.833 --> 00:04:06.403
+so her row of the first piece is two g.
+
+86
+00:04:06.403 --> 00:04:09.171
+Ben likes bitter twice: two h.
+
+87
+00:04:09.171 --> 00:04:10.599
+Add the pieces
+
+88
+00:04:10.599 --> 00:04:13.991
+and the four by five table X appears.
+
+89
+00:04:13.991 --> 00:04:17.740
+Twenty numbers, but eighteen describe it.
+
+90
+00:04:18.090 --> 00:04:21.099
+All four subspaces mean something.
+
+91
+00:04:21.099 --> 00:04:25.082
+Ana plus Ben minus two Caro is the zero row
+
+92
+00:04:25.082 --> 00:04:27.294
+two plus two minus four
+
+93
+00:04:27.294 --> 00:04:30.657
+zero plus four minus four, and so on
+
+94
+00:04:30.657 --> 00:04:31.542
+all zero.
+
+95
+00:04:31.542 --> 00:04:35.436
+And cocoa's column is twice tea's, so zero
+
+96
+00:04:35.436 --> 00:04:36.941
+zero, zero, two
+
+97
+00:04:36.941 --> 00:04:39.684
+minus one is in the nullspace.
+
+98
+00:04:39.684 --> 00:04:42.959
+At scale, take a thousand customers
+
+99
+00:04:42.959 --> 00:04:46.145
+five hundred drinks and ten tastes.
+
+100
+00:04:46.145 --> 00:04:49.862
+The pieces need fifteen thousand numbers
+
+101
+00:04:49.862 --> 00:04:53.490
+and the full table needs half a million.
+
+102
+00:04:54.070 --> 00:04:54.337
+So
+
+103
+00:04:54.337 --> 00:04:58.166
+a rank one matrix is a column times a row
+
+104
+00:04:58.166 --> 00:05:01.105
+and its columns lie on one line.
+
+105
+00:05:01.105 --> 00:05:04.934
+A rank r matrix is a sum of r such pieces
+
+106
+00:05:04.934 --> 00:05:07.160
+A equals C times R zero
+
+107
+00:05:07.160 --> 00:05:09.030
+one piece per pivot.
+
+108
+00:05:09.380 --> 00:05:12.604
+Rank one matrices are not a subspace
+
+109
+00:05:12.604 --> 00:05:14.956
+one plus one can make two.
+
+110
+00:05:14.956 --> 00:05:18.790
+Your turn: write the matrix T from exercise
+
+111
+00:05:18.877 --> 00:05:21.491
+three as a column times a row.
+
+112
+00:05:21.491 --> 00:05:24.540
+Next lecture: graphs and networks.

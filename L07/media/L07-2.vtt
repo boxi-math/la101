@@ -1,0 +1,553 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:06.852
+Part one stopped at the staircase U.
+
+2
+00:00:06.852 --> 00:00:09.158
+Go one step further
+
+3
+00:00:09.158 --> 00:00:13.659
+row one minus row two is one, zero, two
+
+4
+00:00:13.659 --> 00:00:14.866
+minus one.
+
+5
+00:00:14.866 --> 00:00:17.940
+This is the reduced form R.
+
+6
+00:00:18.290 --> 00:00:21.078
+In R, each pivot column is a column
+
+7
+00:00:21.158 --> 00:00:24.583
+of the identity: one, zero, zero, and zero
+
+8
+00:00:24.583 --> 00:00:25.459
+one, zero.
+
+9
+00:00:25.459 --> 00:00:28.327
+Elimination did change the columns
+
+10
+00:00:28.327 --> 00:00:31.194
+A's first column was one, two, one.
+
+11
+00:00:31.194 --> 00:00:34.142
+But it did not change the nullspace
+
+12
+00:00:34.142 --> 00:00:36.850
+because every step can be undone.
+
+13
+00:00:37.430 --> 00:00:41.286
+Now the equations read off directly.
+
+14
+00:00:41.286 --> 00:00:45.999
+x one equals minus two x three plus x four.
+
+15
+00:00:45.999 --> 00:00:50.390
+x two equals minus x three minus x four.
+
+16
+00:00:50.740 --> 00:00:53.305
+So the special solutions sit
+
+17
+00:00:53.397 --> 00:00:55.687
+in the free columns of R
+
+18
+00:00:55.687 --> 00:00:57.886
+with the signs flipped.
+
+19
+00:00:57.886 --> 00:01:00.726
+Free column three is two, one
+
+20
+00:01:00.726 --> 00:01:03.932
+s one has pivot entries minus two
+
+21
+00:01:03.932 --> 00:01:04.940
+minus one.
+
+22
+00:01:04.940 --> 00:01:08.238
+Free column four is minus one, one
+
+23
+00:01:08.238 --> 00:01:10.620
+s two has one, minus one.
+
+24
+00:01:10.970 --> 00:01:13.402
+Stack them as the columns of
+
+25
+00:01:13.488 --> 00:01:16.875
+the nullspace matrix N: minus F on top
+
+26
+00:01:16.875 --> 00:01:18.612
+the identity below.
+
+27
+00:01:18.612 --> 00:01:21.825
+A times N is zero, column by column
+
+28
+00:01:21.825 --> 00:01:24.170
+as we checked in part one.
+
+29
+00:01:24.750 --> 00:01:27.603
+A two by two example we can draw.
+
+30
+00:01:27.603 --> 00:01:31.147
+The matrix with rows one, two and three
+
+31
+00:01:31.147 --> 00:01:31.579
+six.
+
+32
+00:01:31.579 --> 00:01:33.740
+Each row is an equation
+
+33
+00:01:33.740 --> 00:01:37.370
+so each row is a line through the origin
+
+34
+00:01:37.370 --> 00:01:39.964
+x one plus two x two is zero
+
+35
+00:01:39.964 --> 00:01:43.421
+and three x one plus six x two is zero
+
+36
+00:01:43.421 --> 00:01:45.150
+the very same line.
+
+37
+00:01:45.500 --> 00:01:50.017
+Eliminate: row two minus three times row
+
+38
+00:01:50.130 --> 00:01:53.292
+one leaves zero equals zero
+
+39
+00:01:53.292 --> 00:01:57.244
+an equation every point satisfies.
+
+40
+00:01:57.244 --> 00:02:02.100
+One pivot, so r is one, and x two is free.
+
+41
+00:02:02.450 --> 00:02:06.616
+Set x two to one: then x one is minus two.
+
+42
+00:02:06.616 --> 00:02:10.584
+The special solution is minus two, one
+
+43
+00:02:10.584 --> 00:02:13.857
+and its multiples fill the line
+
+44
+00:02:13.857 --> 00:02:16.634
+n minus r is two minus one
+
+45
+00:02:16.634 --> 00:02:19.610
+one special solution, a line.
+
+46
+00:02:20.190 --> 00:02:22.421
+Change the six to a five.
+
+47
+00:02:22.421 --> 00:02:24.296
+Now the second line
+
+48
+00:02:24.296 --> 00:02:27.955
+three x one plus five x two equals zero
+
+49
+00:02:27.955 --> 00:02:29.026
+tilts away.
+
+50
+00:02:29.026 --> 00:02:32.150
+The faint line is the old picture.
+
+51
+00:02:32.500 --> 00:02:33.445
+Eliminate
+
+52
+00:02:33.445 --> 00:02:36.845
+the second pivot is five minus six
+
+53
+00:02:36.845 --> 00:02:37.884
+minus one.
+
+54
+00:02:37.884 --> 00:02:42.040
+Two pivots, r is two, so n minus r is zero
+
+55
+00:02:42.040 --> 00:02:43.740
+no free variable.
+
+56
+00:02:43.740 --> 00:02:47.424
+The two lines meet only at the origin
+
+57
+00:02:47.424 --> 00:02:51.580
+and the nullspace is the zero vector alone.
+
+58
+00:02:52.160 --> 00:02:55.040
+A free column does not have
+
+59
+00:02:55.147 --> 00:02:57.173
+to be the last one.
+
+60
+00:02:57.173 --> 00:03:01.653
+Take B with rows one, three, one and two
+
+61
+00:03:01.653 --> 00:03:02.933
+six, three.
+
+62
+00:03:02.933 --> 00:03:07.307
+Row two minus two times row one is zero
+
+63
+00:03:07.307 --> 00:03:08.480
+zero, one.
+
+64
+00:03:08.830 --> 00:03:13.369
+So the pivots are in columns one and three.
+
+65
+00:03:13.369 --> 00:03:16.325
+The free variable is x two
+
+66
+00:03:16.325 --> 00:03:18.753
+the one in the middle.
+
+67
+00:03:18.753 --> 00:03:23.186
+Its special solution is minus three, one
+
+68
+00:03:23.186 --> 00:03:23.820
+zero.
+
+69
+00:03:23.820 --> 00:03:25.403
+Check row one
+
+70
+00:03:25.403 --> 00:03:28.992
+minus three plus three plus zero.
+
+71
+00:03:28.992 --> 00:03:33.109
+Row two: minus six plus six plus zero.
+
+72
+00:03:33.109 --> 00:03:34.270
+Both zero.
+
+73
+00:03:34.850 --> 00:03:35.731
+Now count.
+
+74
+00:03:35.819 --> 00:03:38.462
+Every column is either a pivot
+
+75
+00:03:38.550 --> 00:03:40.664
+column or a free column
+
+76
+00:03:40.752 --> 00:03:43.483
+so the number of free variables
+
+77
+00:03:43.571 --> 00:03:44.717
+is n minus r.
+
+78
+00:03:44.717 --> 00:03:48.505
+A matrix with m rows has at most m pivots
+
+79
+00:03:48.505 --> 00:03:49.650
+one per row.
+
+80
+00:03:50.000 --> 00:03:52.888
+So a wide matrix, three by five
+
+81
+00:03:52.979 --> 00:03:55.506
+has at most three pivots and
+
+82
+00:03:55.596 --> 00:03:57.943
+at least two free columns
+
+83
+00:03:57.943 --> 00:04:00.560
+a nonzero nullspace, always.
+
+84
+00:04:00.910 --> 00:04:04.493
+What about a tall matrix, five by three?
+
+85
+00:04:04.493 --> 00:04:07.538
+Must it have a nonzero nullspace?
+
+86
+00:04:07.538 --> 00:04:09.150
+Pause and decide.
+
+87
+00:04:09.700 --> 00:04:09.958
+No.
+
+88
+00:04:09.958 --> 00:04:13.143
+It can have a pivot in every column
+
+89
+00:04:13.143 --> 00:04:15.381
+and then nothing is free
+
+90
+00:04:15.381 --> 00:04:17.791
+the nullspace is just zero.
+
+91
+00:04:17.791 --> 00:04:20.975
+Tall matrices may have free columns
+
+92
+00:04:20.975 --> 00:04:22.180
+but need not.
+
+93
+00:04:25.760 --> 00:04:27.954
+Where this shows up
+
+94
+00:04:28.064 --> 00:04:32.672
+a linear model with weights theta predicts
+
+95
+00:04:32.782 --> 00:04:35.964
+X theta on its training data.
+
+96
+00:04:35.964 --> 00:04:40.681
+Here X has two examples and three weights
+
+97
+00:04:40.681 --> 00:04:45.289
+so it is wide, and its nullspace contains
+
+98
+00:04:45.399 --> 00:04:48.800
+n equal to minus two, one, two.
+
+99
+00:04:49.150 --> 00:04:52.026
+With theta equal to one, one, one
+
+100
+00:04:52.026 --> 00:04:55.749
+the predictions are one plus two plus zero
+
+101
+00:04:55.749 --> 00:04:59.133
+three, and one plus zero plus one, two.
+
+102
+00:04:59.133 --> 00:05:02.432
+Add n: theta plus n is minus one, two
+
+103
+00:05:02.432 --> 00:05:03.024
+three.
+
+104
+00:05:03.024 --> 00:05:06.493
+The predictions are minus one plus four
+
+105
+00:05:06.493 --> 00:05:09.707
+three, and minus one plus three, two.
+
+106
+00:05:09.707 --> 00:05:11.230
+Exactly the same.
+
+107
+00:05:11.580 --> 00:05:14.322
+The training data cannot tell the
+
+108
+00:05:14.405 --> 00:05:16.482
+two weight vectors apart.
+
+109
+00:05:16.482 --> 00:05:19.555
+But a new input, one, one, one, can
+
+110
+00:05:19.639 --> 00:05:21.799
+it gives three for one and
+
+111
+00:05:21.882 --> 00:05:23.460
+four for the other.
+
+112
+00:05:24.040 --> 00:05:27.319
+An assistant gives two special solutions
+
+113
+00:05:27.401 --> 00:05:29.122
+for the drone matrix.
+
+114
+00:05:29.122 --> 00:05:32.482
+Multiply the first, two, one, one, zero
+
+115
+00:05:32.482 --> 00:05:35.597
+by A: two plus one plus three is six
+
+116
+00:05:35.597 --> 00:05:38.876
+four plus three plus seven is fourteen
+
+117
+00:05:38.876 --> 00:05:41.580
+two plus two plus four is eight.
+
+118
+00:05:41.580 --> 00:05:42.400
+Not zero.
+
+119
+00:05:42.750 --> 00:05:47.637
+The second, minus one, one, zero, one
+
+120
+00:05:47.637 --> 00:05:50.981
+gives zero, two, and two.
+
+121
+00:05:50.981 --> 00:05:52.910
+Also not zero.
+
+122
+00:05:53.260 --> 00:05:56.631
+The count was right: four minus two is two.
+
+123
+00:05:56.710 --> 00:05:59.689
+But the pivot entries were copied from
+
+124
+00:05:59.767 --> 00:06:02.041
+R without flipping the signs.
+
+125
+00:06:02.041 --> 00:06:05.020
+Multiply every claimed solution by A.
+
+126
+00:06:05.600 --> 00:06:09.502
+So: in R, the special solutions are the free
+
+127
+00:06:09.591 --> 00:06:12.340
+columns with the signs flipped.
+
+128
+00:06:12.340 --> 00:06:14.912
+There are n minus r of them
+
+129
+00:06:14.912 --> 00:06:16.952
+one per free variable
+
+130
+00:06:17.041 --> 00:06:20.145
+and for the two by two example that
+
+131
+00:06:20.233 --> 00:06:23.160
+was one special solution, a line.
+
+132
+00:06:23.510 --> 00:06:27.173
+A wide matrix always has a free variable.
+
+133
+00:06:27.173 --> 00:06:28.960
+A tall one may not.
+
+134
+00:06:28.960 --> 00:06:30.657
+Your turn: find R
+
+135
+00:06:30.747 --> 00:06:33.784
+the rank and the special solutions
+
+136
+00:06:33.873 --> 00:06:37.358
+of the matrix with rows one, minus one
+
+137
+00:06:37.358 --> 00:06:40.485
+two and three, minus three, seven.
+
+138
+00:06:40.485 --> 00:06:43.790
+Next lecture adds a right hand side.

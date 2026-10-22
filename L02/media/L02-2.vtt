@@ -1,0 +1,625 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:03.796
+In part one
+
+2
+00:00:03.871 --> 00:00:06.559
+every step of elimination subtracted
+
+3
+00:00:06.633 --> 00:00:09.247
+a multiple of one row from another.
+
+4
+00:00:09.247 --> 00:00:12.084
+Take the small system from the check
+
+5
+00:00:12.084 --> 00:00:14.249
+three x plus y equals seven
+
+6
+00:00:14.249 --> 00:00:17.460
+and six x plus five y equals twenty three.
+
+7
+00:00:17.810 --> 00:00:20.589
+Its matrix has two columns.
+
+8
+00:00:20.589 --> 00:00:22.750
+Draw them as arrows.
+
+9
+00:00:22.750 --> 00:00:25.426
+Column one is three, six
+
+10
+00:00:25.426 --> 00:00:28.410
+and column two is one, five.
+
+11
+00:00:28.760 --> 00:00:32.597
+Elimination wants a zero below the pivot
+
+12
+00:00:32.597 --> 00:00:33.252
+three.
+
+13
+00:00:33.252 --> 00:00:36.902
+So where must the first column end up?
+
+14
+00:00:36.902 --> 00:00:38.680
+Pause and predict.
+
+15
+00:00:42.260 --> 00:00:45.341
+It must land on the horizontal axis
+
+16
+00:00:45.341 --> 00:00:48.080
+where the second entry is zero.
+
+17
+00:00:48.080 --> 00:00:51.932
+The step is row two minus two times row one.
+
+18
+00:00:51.932 --> 00:00:55.270
+As a matrix, that is the identity with
+
+19
+00:00:55.355 --> 00:00:58.180
+minus two in row two, column one.
+
+20
+00:00:58.530 --> 00:01:00.994
+Now watch the whole plane.
+
+21
+00:01:00.994 --> 00:01:04.311
+Every point keeps its first entry
+
+22
+00:01:04.311 --> 00:01:07.912
+and loses twice that from its second.
+
+23
+00:01:07.912 --> 00:01:10.850
+The grid shears straight down.
+
+24
+00:01:11.200 --> 00:01:14.536
+Column one, three, six, drops to three
+
+25
+00:01:14.536 --> 00:01:16.845
+zero, right onto the axis.
+
+26
+00:01:16.845 --> 00:01:20.608
+Column two, one, five, drops to one, three.
+
+27
+00:01:20.608 --> 00:01:24.200
+Those are the columns of the staircase U.
+
+28
+00:01:24.780 --> 00:01:28.233
+The right side takes the same step
+
+29
+00:01:28.233 --> 00:01:29.516
+seven stays
+
+30
+00:01:29.516 --> 00:01:33.561
+and twenty three minus fourteen is nine.
+
+31
+00:01:33.561 --> 00:01:38.001
+So the bottom row reads three y equals nine
+
+32
+00:01:38.001 --> 00:01:39.580
+and y is three.
+
+33
+00:01:39.930 --> 00:01:43.935
+Then three x plus three equals seven
+
+34
+00:01:43.935 --> 00:01:46.209
+so x is four thirds.
+
+35
+00:01:46.317 --> 00:01:49.348
+One step on the rows of A is
+
+36
+00:01:49.456 --> 00:01:51.946
+one matrix on its left
+
+37
+00:01:51.946 --> 00:01:55.410
+and in the plane it is a shear.
+
+38
+00:01:55.990 --> 00:01:59.133
+Back to the paint matrix, three by three.
+
+39
+00:01:59.133 --> 00:02:01.815
+Its first step has the same shape
+
+40
+00:02:01.815 --> 00:02:04.881
+the identity with minus two in row two
+
+41
+00:02:04.881 --> 00:02:05.801
+column one.
+
+42
+00:02:05.801 --> 00:02:07.488
+We call it E two one
+
+43
+00:02:07.488 --> 00:02:10.630
+because it removes the entry in row two
+
+44
+00:02:10.630 --> 00:02:11.550
+column one.
+
+45
+00:02:11.900 --> 00:02:13.937
+Multiply E two one times A.
+
+46
+00:02:13.937 --> 00:02:17.181
+Rows one and three come through unchanged.
+
+47
+00:02:17.181 --> 00:02:18.841
+Only row two changes
+
+48
+00:02:18.841 --> 00:02:21.180
+and it now starts with a zero.
+
+49
+00:02:21.530 --> 00:02:22.470
+Why rows?
+
+50
+00:02:22.470 --> 00:02:26.649
+Row two of E two one is minus two, one
+
+51
+00:02:26.649 --> 00:02:27.276
+zero.
+
+52
+00:02:27.380 --> 00:02:30.932
+So row two of the product is minus
+
+53
+00:02:31.037 --> 00:02:33.439
+two times row one of A
+
+54
+00:02:33.439 --> 00:02:35.947
+plus one times row two.
+
+55
+00:02:36.051 --> 00:02:38.663
+A matrix on the left of A
+
+56
+00:02:38.767 --> 00:02:41.170
+combines the rows of A.
+
+57
+00:02:41.750 --> 00:02:45.294
+The other two steps are matrices too.
+
+58
+00:02:45.294 --> 00:02:49.125
+E three one has minus one in row three
+
+59
+00:02:49.125 --> 00:02:52.765
+column one, and E three two has minus
+
+60
+00:02:52.861 --> 00:02:55.830
+three in row three, column two.
+
+61
+00:02:56.180 --> 00:02:58.316
+Multiply them in order
+
+62
+00:02:58.409 --> 00:03:00.732
+E three two times E three
+
+63
+00:03:00.824 --> 00:03:02.682
+one times E two one
+
+64
+00:03:02.682 --> 00:03:05.097
+and you get one matrix E.
+
+65
+00:03:05.097 --> 00:03:07.884
+E times A is the staircase U
+
+66
+00:03:07.884 --> 00:03:11.878
+and E times b is the new right side: five
+
+67
+00:03:11.878 --> 00:03:12.900
+five, two.
+
+68
+00:03:13.250 --> 00:03:17.000
+Look at the bottom left corner of E: a five.
+
+69
+00:03:17.000 --> 00:03:20.495
+The multipliers were two, one and three
+
+70
+00:03:20.495 --> 00:03:22.200
+yet a five appears.
+
+71
+00:03:22.200 --> 00:03:25.950
+The single matrix mixes the steps together
+
+72
+00:03:25.950 --> 00:03:29.530
+lecture four keeps the multipliers clean.
+
+73
+00:03:30.110 --> 00:03:31.394
+Order matters.
+
+74
+00:03:31.394 --> 00:03:35.247
+Put the step matrix on the right instead
+
+75
+00:03:35.247 --> 00:03:36.990
+A times E two one.
+
+76
+00:03:37.340 --> 00:03:40.376
+This product has no new zero at all.
+
+77
+00:03:40.376 --> 00:03:43.749
+A matrix on the right combines columns
+
+78
+00:03:43.749 --> 00:03:44.592
+not rows.
+
+79
+00:03:44.677 --> 00:03:47.122
+So an elimination step always
+
+80
+00:03:47.207 --> 00:03:50.917
+goes on the left, and in a product of steps
+
+81
+00:03:50.917 --> 00:03:53.700
+the one on the right acts first.
+
+82
+00:03:54.280 --> 00:03:57.466
+Elimination divides by every pivot.
+
+83
+00:03:57.466 --> 00:04:00.015
+So what if a pivot is zero?
+
+84
+00:04:00.015 --> 00:04:01.836
+Take this matrix B.
+
+85
+00:04:01.836 --> 00:04:03.839
+After the first step
+
+86
+00:04:03.839 --> 00:04:07.480
+the second pivot position holds a zero.
+
+87
+00:04:07.830 --> 00:04:11.238
+But row three has a one in that column.
+
+88
+00:04:11.238 --> 00:04:13.772
+Exchange rows two and three.
+
+89
+00:04:13.772 --> 00:04:16.482
+That exchange is a matrix too
+
+90
+00:04:16.482 --> 00:04:18.404
+a permutation matrix
+
+91
+00:04:18.404 --> 00:04:21.550
+the identity with two rows swapped.
+
+92
+00:04:21.900 --> 00:04:25.258
+Now the pivots are one, one and three.
+
+93
+00:04:25.258 --> 00:04:28.174
+The zero only meant a bad order.
+
+94
+00:04:28.174 --> 00:04:31.356
+B is fine, and every right side has
+
+95
+00:04:31.444 --> 00:04:33.300
+exactly one solution.
+
+96
+00:04:33.880 --> 00:04:35.847
+Now change one entry
+
+97
+00:04:35.847 --> 00:04:39.688
+the seven in the last row becomes a six.
+
+98
+00:04:39.688 --> 00:04:41.843
+Call the new matrix C
+
+99
+00:04:41.843 --> 00:04:44.560
+and do the first step again.
+
+100
+00:04:44.910 --> 00:04:48.695
+Both rows below have a zero in column two.
+
+101
+00:04:48.695 --> 00:04:51.488
+Can a row exchange still help?
+
+102
+00:04:51.488 --> 00:04:53.110
+Pause and decide.
+
+103
+00:04:56.690 --> 00:04:57.019
+No.
+
+104
+00:04:57.019 --> 00:04:59.156
+Swapping a zero for a zero
+
+105
+00:04:59.238 --> 00:05:00.882
+still leaves a zero
+
+106
+00:05:00.882 --> 00:05:03.265
+so there is no second pivot.
+
+107
+00:05:03.265 --> 00:05:04.991
+Look at the columns
+
+108
+00:05:04.991 --> 00:05:08.690
+column two of C is exactly twice column one.
+
+109
+00:05:09.040 --> 00:05:10.613
+In the paint story
+
+110
+00:05:10.696 --> 00:05:13.181
+one paint is a double strength
+
+111
+00:05:13.263 --> 00:05:14.588
+copy of another
+
+112
+00:05:14.588 --> 00:05:17.487
+and no recipe can tell them apart.
+
+113
+00:05:17.487 --> 00:05:20.799
+C is singular: fewer than three pivots
+
+114
+00:05:20.799 --> 00:05:24.360
+and either no solution or infinitely many.
+
+115
+00:05:24.940 --> 00:05:26.986
+For a big system you will
+
+116
+00:05:27.068 --> 00:05:28.705
+not do this by hand.
+
+117
+00:05:28.705 --> 00:05:31.815
+numpy's solve calls a LAPACK routine
+
+118
+00:05:31.897 --> 00:05:34.434
+and that routine is elimination
+
+119
+00:05:34.516 --> 00:05:36.071
+with row exchanges.
+
+120
+00:05:36.071 --> 00:05:39.509
+For the paint system it returns one, one
+
+121
+00:05:39.509 --> 00:05:40.900
+two, our answer.
+
+122
+00:05:41.250 --> 00:05:44.661
+It records the steps as a factorization
+
+123
+00:05:44.661 --> 00:05:48.498
+A equals P L U, the subject of lecture four.
+
+124
+00:05:48.584 --> 00:05:50.545
+And when a library says
+
+125
+00:05:50.630 --> 00:05:52.421
+a matrix is singular
+
+126
+00:05:52.421 --> 00:05:54.723
+it means what we just saw
+
+127
+00:05:54.723 --> 00:05:56.770
+a column with no pivot.
+
+128
+00:05:57.350 --> 00:06:00.668
+Last, a habit for working with AI.
+
+129
+00:06:00.668 --> 00:06:03.498
+Suppose an assistant writes
+
+130
+00:06:03.498 --> 00:06:07.694
+row two plus two times row one gives zero
+
+131
+00:06:07.694 --> 00:06:08.670
+one, two.
+
+132
+00:06:09.020 --> 00:06:12.613
+Build the matrix it named, and multiply.
+
+133
+00:06:12.613 --> 00:06:16.115
+Row two comes out as eight, five, six
+
+134
+00:06:16.115 --> 00:06:17.911
+not zero, one, two.
+
+135
+00:06:17.911 --> 00:06:19.708
+The sign was wrong
+
+136
+00:06:19.708 --> 00:06:23.300
+the row it showed belongs to minus two.
+
+137
+00:06:23.650 --> 00:06:25.490
+Every step is a matrix
+
+138
+00:06:25.570 --> 00:06:27.810
+so every step can be checked
+
+139
+00:06:27.890 --> 00:06:29.810
+with one multiplication.
+
+140
+00:06:30.390 --> 00:06:31.321
+To sum up.
+
+141
+00:06:31.414 --> 00:06:35.136
+An elimination step is the identity with
+
+142
+00:06:35.229 --> 00:06:38.672
+minus the multiplier in one position
+
+143
+00:06:38.672 --> 00:06:40.905
+multiplied on the left.
+
+144
+00:06:40.905 --> 00:06:43.790
+On the columns, it is a shear.
+
+145
+00:06:44.140 --> 00:06:47.661
+The steps combine into one matrix E
+
+146
+00:06:47.661 --> 00:06:49.715
+with E A equal to U.
+
+147
+00:06:49.813 --> 00:06:52.552
+And a zero pivot is repaired
+
+148
+00:06:52.650 --> 00:06:54.410
+by a row exchange
+
+149
+00:06:54.410 --> 00:06:57.540
+or else the matrix is singular.
+
+150
+00:06:57.890 --> 00:06:59.055
+Now you try
+
+151
+00:06:59.152 --> 00:07:02.646
+write the matrix that subtracts four
+
+152
+00:07:02.743 --> 00:07:05.558
+times row one from row three
+
+153
+00:07:05.558 --> 00:07:09.149
+and check it by computing E times A.
+
+154
+00:07:09.149 --> 00:07:10.508
+Next lecture
+
+155
+00:07:10.508 --> 00:07:13.905
+multiplying matrices in four ways
+
+156
+00:07:13.905 --> 00:07:17.690
+and undoing a matrix with its inverse.

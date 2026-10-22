@@ -1,0 +1,545 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:05.505
+A toy drone has three buttons.
+
+2
+00:00:05.505 --> 00:00:08.371
+Button u moves it one step east
+
+3
+00:00:08.371 --> 00:00:10.281
+two north and one up.
+
+4
+00:00:10.281 --> 00:00:13.320
+Button v moves it one, three, two.
+
+5
+00:00:13.320 --> 00:00:16.620
+Button w moves it three, seven, four.
+
+6
+00:00:16.970 --> 00:00:19.720
+Put the three moves side by side
+
+7
+00:00:19.806 --> 00:00:22.299
+as the columns of a matrix D.
+
+8
+00:00:22.299 --> 00:00:24.706
+Pressing the buttons x one
+
+9
+00:00:24.792 --> 00:00:27.284
+x two and x three times takes
+
+10
+00:00:27.370 --> 00:00:28.831
+the drone to D x
+
+11
+00:00:28.831 --> 00:00:31.410
+a combination of the columns.
+
+12
+00:00:31.760 --> 00:00:33.866
+This drone lives in space
+
+13
+00:00:33.866 --> 00:00:36.134
+three numbers per position
+
+14
+00:00:36.215 --> 00:00:38.888
+so we draw it in three dimensions
+
+15
+00:00:38.969 --> 00:00:41.480
+and check it with the matrix D.
+
+16
+00:00:42.060 --> 00:00:45.682
+The third button, w, is nothing new.
+
+17
+00:00:45.682 --> 00:00:47.695
+Is it two u plus v?
+
+18
+00:00:47.695 --> 00:00:49.607
+Check every entry.
+
+19
+00:00:49.607 --> 00:00:53.531
+East: two times one plus one is three.
+
+20
+00:00:53.531 --> 00:00:57.757
+North: two times two plus three is seven.
+
+21
+00:00:57.757 --> 00:01:01.380
+Up: two times one plus two is four.
+
+22
+00:01:01.730 --> 00:01:05.314
+So every place the drone can reach is
+
+23
+00:01:05.411 --> 00:01:08.413
+a combination of u and v alone.
+
+24
+00:01:08.510 --> 00:01:11.028
+The column space of D is a
+
+25
+00:01:11.125 --> 00:01:15.290
+plane through the origin, not all of space.
+
+26
+00:01:15.870 --> 00:01:17.104
+Which plane?
+
+27
+00:01:17.207 --> 00:01:19.777
+Run elimination on D with
+
+28
+00:01:19.880 --> 00:01:22.245
+a general right side b.
+
+29
+00:01:22.245 --> 00:01:25.638
+Row two minus two times row one
+
+30
+00:01:25.638 --> 00:01:28.620
+and row three minus row one
+
+31
+00:01:28.620 --> 00:01:32.630
+both leave zero, one, one on the left.
+
+32
+00:01:32.980 --> 00:01:36.069
+Now row three minus row two.
+
+33
+00:01:36.069 --> 00:01:39.710
+The left side becomes all zeros
+
+34
+00:01:39.821 --> 00:01:43.351
+and the right side becomes b one
+
+35
+00:01:43.462 --> 00:01:46.220
+minus b two plus b three.
+
+36
+00:01:46.570 --> 00:01:50.127
+That last row says zero equals b
+
+37
+00:01:50.238 --> 00:01:53.461
+one minus b two plus b three.
+
+38
+00:01:53.572 --> 00:01:57.351
+A target is reachable exactly when
+
+39
+00:01:57.462 --> 00:02:01.130
+east minus north plus up is zero.
+
+40
+00:02:01.710 --> 00:02:05.639
+Three targets: two, five, three; one, one
+
+41
+00:02:05.639 --> 00:02:08.165
+one; and zero, four, four.
+
+42
+00:02:08.165 --> 00:02:10.691
+Which can the drone reach?
+
+43
+00:02:10.691 --> 00:02:13.030
+Pause and test each one.
+
+44
+00:02:13.580 --> 00:02:17.352
+Two minus five plus three is zero
+
+45
+00:02:17.352 --> 00:02:18.572
+reachable.
+
+46
+00:02:18.572 --> 00:02:22.012
+One minus one plus one is one
+
+47
+00:02:22.012 --> 00:02:26.117
+not reachable, no presses get there.
+
+48
+00:02:26.117 --> 00:02:30.000
+Zero minus four plus four is zero
+
+49
+00:02:30.000 --> 00:02:31.220
+reachable.
+
+50
+00:02:31.570 --> 00:02:33.260
+And for two, five
+
+51
+00:02:33.260 --> 00:02:35.888
+three the recipe is simple
+
+52
+00:02:35.888 --> 00:02:38.610
+one press of u and one of v.
+
+53
+00:02:42.190 --> 00:02:44.021
+Now the nullspace
+
+54
+00:02:44.123 --> 00:02:47.073
+which presses bring the drone
+
+55
+00:02:47.174 --> 00:02:49.005
+back to the start?
+
+56
+00:02:49.005 --> 00:02:53.379
+Since w is two u plus v, two presses of u
+
+57
+00:02:53.379 --> 00:02:57.550
+one of v and one of w in reverse cancel.
+
+58
+00:02:57.550 --> 00:03:01.110
+The recipe is two, one, minus one.
+
+59
+00:03:01.460 --> 00:03:05.843
+Check every entry of D times it.
+
+60
+00:03:05.843 --> 00:03:10.227
+East: two plus one minus three.
+
+61
+00:03:10.227 --> 00:03:15.158
+North: four plus three minus seven.
+
+62
+00:03:15.158 --> 00:03:19.130
+Up: two plus two minus four.
+
+63
+00:03:19.130 --> 00:03:20.500
+All zero.
+
+64
+00:03:20.850 --> 00:03:23.089
+Every multiple works too
+
+65
+00:03:23.179 --> 00:03:25.328
+so the nullspace of D is
+
+66
+00:03:25.417 --> 00:03:28.731
+the line through two, one, minus one
+
+67
+00:03:28.731 --> 00:03:30.970
+in the space of recipes.
+
+68
+00:03:32.421 --> 00:03:36.297
+Fix a reachable target, two, five, three.
+
+69
+00:03:36.297 --> 00:03:39.134
+One recipe is one, one, zero.
+
+70
+00:03:39.134 --> 00:03:43.199
+Add any multiple of the do-nothing recipe
+
+71
+00:03:43.199 --> 00:03:46.981
+and the drone still ends at the target.
+
+72
+00:03:47.331 --> 00:03:49.779
+Do these solutions form a subspace
+
+73
+00:03:49.779 --> 00:03:51.178
+like the nullspace?
+
+74
+00:03:51.248 --> 00:03:53.067
+Let us draw the same thing
+
+75
+00:03:53.137 --> 00:03:54.396
+in two dimensions
+
+76
+00:03:54.396 --> 00:03:56.354
+with the robot of part one
+
+77
+00:03:56.424 --> 00:03:58.383
+whose do-nothing recipes are
+
+78
+00:03:58.453 --> 00:04:00.691
+the line through two, minus one.
+
+79
+00:04:01.041 --> 00:04:03.194
+The robot reaches seven
+
+80
+00:04:03.194 --> 00:04:05.795
+twenty one with seven, zero.
+
+81
+00:04:05.795 --> 00:04:09.742
+Slide the do-nothing line over to it: five
+
+82
+00:04:09.742 --> 00:04:12.881
+one and three, two land there too.
+
+83
+00:04:13.231 --> 00:04:16.100
+But this line misses the origin.
+
+84
+00:04:16.100 --> 00:04:18.879
+The zero recipe lands at zero
+
+85
+00:04:18.879 --> 00:04:20.582
+not at the target.
+
+86
+00:04:20.672 --> 00:04:23.720
+So the solutions are the nullspace
+
+87
+00:04:23.809 --> 00:04:26.678
+shifted by one solution: a line
+
+88
+00:04:26.678 --> 00:04:28.471
+but not a subspace.
+
+89
+00:04:29.051 --> 00:04:31.936
+The same two subspaces describe
+
+90
+00:04:32.029 --> 00:04:33.425
+a linear layer.
+
+91
+00:04:33.518 --> 00:04:35.751
+This layer W takes three
+
+92
+00:04:35.844 --> 00:04:37.891
+inputs to two outputs.
+
+93
+00:04:38.241 --> 00:04:40.446
+Feed it two, zero, one
+
+94
+00:04:40.446 --> 00:04:43.418
+the outputs are two plus zero
+
+95
+00:04:43.418 --> 00:04:46.485
+and zero plus one, so two, one.
+
+96
+00:04:46.485 --> 00:04:49.457
+Feed it three, minus one, two
+
+97
+00:04:49.457 --> 00:04:53.387
+three minus one, and minus one plus two.
+
+98
+00:04:53.387 --> 00:04:54.921
+Two, one again.
+
+99
+00:04:55.271 --> 00:04:58.354
+The difference, one, minus one, one
+
+100
+00:04:58.354 --> 00:05:00.580
+is in the nullspace of W
+
+101
+00:05:00.666 --> 00:05:02.893
+a change in the input that
+
+102
+00:05:02.978 --> 00:05:04.777
+the layer cannot see.
+
+103
+00:05:04.862 --> 00:05:07.517
+And the column space is the set
+
+104
+00:05:07.603 --> 00:05:09.572
+of outputs it can make
+
+105
+00:05:09.658 --> 00:05:12.484
+for a layer whose third output is
+
+106
+00:05:12.569 --> 00:05:16.166
+always the sum of the first two, one, one
+
+107
+00:05:16.166 --> 00:05:18.907
+two can come out, but one, one
+
+108
+00:05:18.907 --> 00:05:20.191
+one never can.
+
+109
+00:05:20.771 --> 00:05:23.620
+Last, a habit for working with AI.
+
+110
+00:05:23.620 --> 00:05:26.553
+Ask an assistant whether one, one
+
+111
+00:05:26.553 --> 00:05:29.318
+one is in the column space of D.
+
+112
+00:05:29.318 --> 00:05:32.587
+Suppose it says yes, with presses two
+
+113
+00:05:32.587 --> 00:05:34.011
+minus one, zero.
+
+114
+00:05:34.361 --> 00:05:36.414
+Check every entry.
+
+115
+00:05:36.414 --> 00:05:39.607
+East: two minus one is one.
+
+116
+00:05:39.607 --> 00:05:43.256
+North: four minus three is one.
+
+117
+00:05:43.256 --> 00:05:47.361
+Up: two minus two is zero, not one.
+
+118
+00:05:47.711 --> 00:05:50.565
+It checked only east and north.
+
+119
+00:05:50.565 --> 00:05:52.959
+And the test from before
+
+120
+00:05:52.959 --> 00:05:55.169
+one minus one plus one
+
+121
+00:05:55.169 --> 00:05:57.471
+says no recipe can work.
+
+122
+00:05:58.051 --> 00:06:00.711
+So, a button that is a combination
+
+123
+00:06:00.790 --> 00:06:02.902
+of the others adds nothing
+
+124
+00:06:02.902 --> 00:06:05.563
+the drone's targets fill a plane
+
+125
+00:06:05.563 --> 00:06:06.971
+the column space.
+
+126
+00:06:07.321 --> 00:06:10.868
+The recipes that go nowhere fill a line
+
+127
+00:06:10.868 --> 00:06:12.199
+the nullspace.
+
+128
+00:06:12.287 --> 00:06:14.416
+And the solutions of A x
+
+129
+00:06:14.504 --> 00:06:17.342
+equals b are that line, shifted
+
+130
+00:06:17.342 --> 00:06:18.761
+not a subspace.
+
+131
+00:06:19.111 --> 00:06:23.284
+Your turn: take three times the recipe two
+
+132
+00:06:23.284 --> 00:06:27.554
+one, minus one, minus two times minus four
+
+133
+00:06:27.554 --> 00:06:29.107
+minus two, two.
+
+134
+00:06:29.107 --> 00:06:31.922
+Is it in the nullspace of D?
+
+135
+00:06:32.019 --> 00:06:35.318
+Next lecture finds every nullspace
+
+136
+00:06:35.415 --> 00:06:36.871
+by elimination.

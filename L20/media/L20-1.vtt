@@ -1,0 +1,437 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:04.675
+Two rooms share a wall
+
+2
+00:00:04.675 --> 00:00:07.375
+and each has walls to the outside.
+
+3
+00:00:07.453 --> 00:00:09.845
+Measure both temperatures above
+
+4
+00:00:09.922 --> 00:00:11.774
+the outside temperature
+
+5
+00:00:11.774 --> 00:00:14.860
+and make the pair a point in the plane.
+
+6
+00:00:15.210 --> 00:00:18.888
+Each room loses heat outside at rate two
+
+7
+00:00:18.978 --> 00:00:21.310
+and heat flows through the
+
+8
+00:00:21.400 --> 00:00:25.257
+shared wall at rate one, from warm to cool.
+
+9
+00:00:25.257 --> 00:00:29.204
+That gives a matrix: minus three, one, one
+
+10
+00:00:29.204 --> 00:00:30.370
+minus three.
+
+11
+00:00:30.720 --> 00:00:32.654
+Room one is heated to ten
+
+12
+00:00:32.731 --> 00:00:34.433
+degrees above outside
+
+13
+00:00:34.433 --> 00:00:37.527
+room two is at the outside temperature
+
+14
+00:00:37.527 --> 00:00:40.080
+and the heating is switched off.
+
+15
+00:00:40.430 --> 00:00:43.855
+What does room two do first: warm up
+
+16
+00:00:43.855 --> 00:00:45.151
+or cool down?
+
+17
+00:00:45.151 --> 00:00:46.910
+Pause and predict.
+
+18
+00:00:50.490 --> 00:00:54.758
+The equation says how fast the point moves.
+
+19
+00:00:54.758 --> 00:00:57.437
+Its velocity is A times T.
+
+20
+00:00:57.437 --> 00:01:01.407
+At ten, zero that is minus thirty, ten
+
+21
+00:01:01.407 --> 00:01:03.690
+left, and a little up.
+
+22
+00:01:04.040 --> 00:01:06.176
+Up means room two warms.
+
+23
+00:01:06.265 --> 00:01:09.557
+Heat flows in through the wall before
+
+24
+00:01:09.646 --> 00:01:11.960
+the outside takes it away.
+
+25
+00:01:12.310 --> 00:01:14.674
+Now try the point four, four
+
+26
+00:01:14.755 --> 00:01:17.038
+its velocity points straight
+
+27
+00:01:17.119 --> 00:01:18.668
+back at the origin.
+
+28
+00:01:18.668 --> 00:01:22.092
+And three, minus three: also straight in
+
+29
+00:01:22.092 --> 00:01:23.070
+and faster.
+
+30
+00:01:23.650 --> 00:01:26.230
+Those are the eigenvectors.
+
+31
+00:01:26.230 --> 00:01:29.574
+One, one has eigenvalue minus two
+
+32
+00:01:29.669 --> 00:01:32.345
+equal rooms exchange nothing
+
+33
+00:01:32.440 --> 00:01:35.020
+and only lose heat outside.
+
+34
+00:01:35.020 --> 00:01:37.982
+One, minus one has minus four
+
+35
+00:01:37.982 --> 00:01:41.995
+a difference also leaks through the wall
+
+36
+00:01:41.995 --> 00:01:43.810
+so it dies faster.
+
+37
+00:01:44.160 --> 00:01:46.895
+On an eigenvector the solution
+
+38
+00:01:46.986 --> 00:01:49.721
+is e to the lambda t, times x.
+
+39
+00:01:49.721 --> 00:01:53.276
+Its derivative is lambda times itself
+
+40
+00:01:53.276 --> 00:01:55.920
+which is exactly A times it.
+
+41
+00:01:56.270 --> 00:01:58.112
+Let a quarter hour pass.
+
+42
+00:01:58.112 --> 00:02:00.492
+Both arrows slide straight in
+
+43
+00:02:00.492 --> 00:02:02.334
+the second much faster.
+
+44
+00:02:02.334 --> 00:02:04.023
+Another quarter hour
+
+45
+00:02:04.023 --> 00:02:06.710
+and the difference is almost gone.
+
+46
+00:02:07.290 --> 00:02:09.201
+Back to ten, zero.
+
+47
+00:02:09.201 --> 00:02:12.704
+Split it along the eigenvectors
+
+48
+00:02:12.704 --> 00:02:17.162
+five times one, one, plus five times one
+
+49
+00:02:17.162 --> 00:02:18.330
+minus one.
+
+50
+00:02:18.680 --> 00:02:21.277
+Each part shrinks at its own rate
+
+51
+00:02:21.277 --> 00:02:24.562
+five e to the minus two t along the first
+
+52
+00:02:24.562 --> 00:02:28.000
+five e to the minus four t along the second.
+
+53
+00:02:28.350 --> 00:02:29.686
+Run the clock.
+
+54
+00:02:29.686 --> 00:02:32.168
+After a tenth of an hour.
+
+55
+00:02:32.168 --> 00:02:34.268
+After a quarter hour.
+
+56
+00:02:34.268 --> 00:02:36.177
+After half an hour.
+
+57
+00:02:36.177 --> 00:02:37.990
+After a full hour.
+
+58
+00:02:38.340 --> 00:02:40.850
+The difference part dies first
+
+59
+00:02:40.850 --> 00:02:43.845
+so the path bends onto the diagonal
+
+60
+00:02:43.845 --> 00:02:46.274
+and both rooms cool together
+
+61
+00:02:46.274 --> 00:02:48.460
+like e to the minus two t.
+
+62
+00:02:49.040 --> 00:02:51.178
+When is room two warmest?
+
+63
+00:02:51.263 --> 00:02:54.085
+Its rate of change is zero when e
+
+64
+00:02:54.170 --> 00:02:56.821
+to the minus two t is one half
+
+65
+00:02:56.821 --> 00:03:00.497
+at a half of the natural log of two hours
+
+66
+00:03:00.497 --> 00:03:02.720
+about twenty-one minutes.
+
+67
+00:03:03.070 --> 00:03:06.558
+Start the clock again and stop it there.
+
+68
+00:03:06.645 --> 00:03:09.087
+Room one has fallen to three
+
+69
+00:03:09.174 --> 00:03:10.657
+point seven five
+
+70
+00:03:10.657 --> 00:03:14.319
+room two has risen to one point two five
+
+71
+00:03:14.319 --> 00:03:17.110
+and from now on both only cool.
+
+72
+00:03:17.690 --> 00:03:21.412
+A tempting shortcut: we have two solutions
+
+73
+00:03:21.412 --> 00:03:22.970
+so just add them?
+
+74
+00:03:23.550 --> 00:03:28.207
+At time zero that sum is one, one plus one
+
+75
+00:03:28.207 --> 00:03:30.590
+minus one: two, zero.
+
+76
+00:03:30.590 --> 00:03:34.488
+But the rooms started at ten, zero.
+
+77
+00:03:34.488 --> 00:03:37.087
+It solves the equation
+
+78
+00:03:37.087 --> 00:03:39.470
+just not our problem.
+
+79
+00:03:39.820 --> 00:03:42.999
+The coefficients come from the start
+
+80
+00:03:42.999 --> 00:03:46.521
+X inverse times T of zero is five, five.
+
+81
+00:03:46.521 --> 00:03:48.755
+Scale both parts by five
+
+82
+00:03:48.755 --> 00:03:51.504
+and the sum lands on ten, zero.
+
+83
+00:03:51.504 --> 00:03:54.940
+Always check the solution at time zero.
+
+84
+00:03:55.520 --> 00:03:57.443
+Without any formula
+
+85
+00:03:57.539 --> 00:03:59.942
+a computer can follow the
+
+86
+00:04:00.038 --> 00:04:02.345
+equation in small steps
+
+87
+00:04:02.345 --> 00:04:04.364
+over a short time h
+
+88
+00:04:04.364 --> 00:04:07.440
+T changes by about h times A T.
+
+89
+00:04:07.790 --> 00:04:09.647
+With h equal to a tenth
+
+90
+00:04:09.647 --> 00:04:11.659
+the steps are too coarse.
+
+91
+00:04:11.659 --> 00:04:14.676
+One step, a second step, a third step
+
+92
+00:04:14.753 --> 00:04:17.152
+the polygon cuts below the true
+
+93
+00:04:17.229 --> 00:04:19.550
+curve and drifts away from it.
+
+94
+00:04:19.900 --> 00:04:22.680
+With h equal to one ten-thousandth
+
+95
+00:04:22.759 --> 00:04:25.380
+ten thousand steps agree with the
+
+96
+00:04:25.460 --> 00:04:27.525
+formula to three decimals.
+
+97
+00:04:27.525 --> 00:04:30.940
+The eigenvectors simply skip the stepping.
+
+98
+00:04:31.520 --> 00:04:35.133
+So, to sum up: on an eigenvector the state
+
+99
+00:04:35.219 --> 00:04:38.746
+slides straight in, as e to the lambda t.
+
+100
+00:04:38.746 --> 00:04:42.187
+Split the start along the eigenvectors
+
+101
+00:04:42.187 --> 00:04:45.800
+and let each part shrink at its own rate.
+
+102
+00:04:46.150 --> 00:04:48.474
+The fast part dies first
+
+103
+00:04:48.567 --> 00:04:50.705
+and the path bends onto
+
+104
+00:04:50.798 --> 00:04:52.750
+the slow eigenvector.
+
+105
+00:04:53.330 --> 00:04:56.717
+In part two: when solutions grow instead
+
+106
+00:04:56.800 --> 00:04:58.865
+and what happens when the
+
+107
+00:04:58.948 --> 00:05:00.930
+eigenvalues are complex.
+
+108
+00:05:00.930 --> 00:05:03.739
+Then the point does not slide in
+
+109
+00:05:03.739 --> 00:05:04.730
+it spirals.

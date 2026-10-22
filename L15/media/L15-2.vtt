@@ -1,0 +1,485 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:05.863
+Part one turned a slanted basis
+
+2
+00:00:05.959 --> 00:00:08.062
+into orthonormal axes.
+
+3
+00:00:08.062 --> 00:00:11.121
+Now run Gram-Schmidt backwards
+
+4
+00:00:11.216 --> 00:00:13.606
+each original vector is a
+
+5
+00:00:13.701 --> 00:00:15.900
+combination of the q's.
+
+6
+00:00:16.250 --> 00:00:21.169
+Take a one, one point five, two, and a two
+
+7
+00:00:21.169 --> 00:00:23.000
+minus one, two.
+
+8
+00:00:23.000 --> 00:00:27.232
+Gram-Schmidt gives q one, point six
+
+9
+00:00:27.232 --> 00:00:32.152
+point eight, and q two, minus point eight
+
+10
+00:00:32.152 --> 00:00:33.410
+point six.
+
+11
+00:00:33.760 --> 00:00:37.505
+a one is two and a half q one.
+
+12
+00:00:37.505 --> 00:00:42.000
+a two is one q one, plus two q two.
+
+13
+00:00:42.350 --> 00:00:45.679
+Write those amounts into a matrix R.
+
+14
+00:00:45.679 --> 00:00:49.470
+One corner, below the diagonal, is zero.
+
+15
+00:00:49.820 --> 00:00:52.871
+Why must that corner be zero?
+
+16
+00:00:52.871 --> 00:00:54.660
+Pause and think.
+
+17
+00:00:58.240 --> 00:01:01.742
+Because a one is built first
+
+18
+00:01:01.742 --> 00:01:03.915
+from q one alone.
+
+19
+00:01:03.915 --> 00:01:08.866
+Column j of A only uses q one up to q j
+
+20
+00:01:08.866 --> 00:01:11.160
+never a later one.
+
+21
+00:01:11.510 --> 00:01:15.758
+So any matrix with independent columns
+
+22
+00:01:15.870 --> 00:01:18.553
+factors as A equals Q R.
+
+23
+00:01:18.553 --> 00:01:21.572
+Q has orthonormal columns
+
+24
+00:01:21.572 --> 00:01:24.590
+and R is upper triangular.
+
+25
+00:01:24.940 --> 00:01:28.378
+Watch the two moves on the unit square.
+
+26
+00:01:28.378 --> 00:01:31.817
+First R: stretch along the first axis
+
+27
+00:01:31.817 --> 00:01:33.668
+and lean the second.
+
+28
+00:01:33.668 --> 00:01:35.520
+Then Q: a pure turn
+
+29
+00:01:35.520 --> 00:01:37.900
+with no stretching at all.
+
+30
+00:01:38.250 --> 00:01:42.111
+The square lands exactly where A puts it
+
+31
+00:01:42.111 --> 00:01:45.690
+with its sides along a one and a two.
+
+32
+00:01:46.040 --> 00:01:49.697
+Elimination gave A equals L U.
+
+33
+00:01:49.697 --> 00:01:53.720
+Gram-Schmidt gives A equals Q R.
+
+34
+00:01:54.300 --> 00:01:56.874
+Now solve A x equals b.
+
+35
+00:01:56.874 --> 00:02:00.119
+Take b to be one half, four
+
+36
+00:02:00.119 --> 00:02:04.260
+the far corner of the warped square.
+
+37
+00:02:04.610 --> 00:02:06.712
+Multiply by Q transpose.
+
+38
+00:02:06.712 --> 00:02:09.776
+That turns the whole picture back
+
+39
+00:02:09.776 --> 00:02:12.316
+and b becomes Q transpose b
+
+40
+00:02:12.316 --> 00:02:14.330
+three and a half, two.
+
+41
+00:02:14.680 --> 00:02:17.652
+A turn changes no coordinates.
+
+42
+00:02:17.652 --> 00:02:20.525
+So R x equals Q transpose b
+
+43
+00:02:20.525 --> 00:02:22.605
+a triangular system
+
+44
+00:02:22.605 --> 00:02:25.280
+solved from the bottom up.
+
+45
+00:02:25.630 --> 00:02:29.172
+The last row says two x two is two
+
+46
+00:02:29.172 --> 00:02:30.892
+so x two is one.
+
+47
+00:02:30.892 --> 00:02:34.636
+The first says two and a half x one
+
+48
+00:02:34.636 --> 00:02:39.190
+plus one, is three and a half: x one is one.
+
+49
+00:02:39.540 --> 00:02:42.370
+Least squares goes the same way.
+
+50
+00:02:42.370 --> 00:02:45.466
+Put Q R into the normal equations.
+
+51
+00:02:45.466 --> 00:02:48.208
+Q transpose Q is the identity
+
+52
+00:02:48.208 --> 00:02:50.065
+R transpose cancels
+
+53
+00:02:50.065 --> 00:02:53.780
+and R x hat equals Q transpose b is left.
+
+54
+00:02:54.360 --> 00:02:57.347
+For the café of Lecture fourteen
+
+55
+00:02:57.347 --> 00:02:58.976
+A is four by two.
+
+56
+00:02:58.976 --> 00:03:01.872
+q one is a half times all ones
+
+57
+00:03:01.962 --> 00:03:04.858
+and the weeks minus their shadow
+
+58
+00:03:04.948 --> 00:03:08.840
+are the centred weeks, of length root five.
+
+59
+00:03:09.190 --> 00:03:13.385
+So R is two, three, zero, root five
+
+60
+00:03:13.502 --> 00:03:16.532
+and Q transpose b is eight
+
+61
+00:03:16.648 --> 00:03:19.561
+and seven over root five.
+
+62
+00:03:19.561 --> 00:03:23.990
+Back substitution: D is seven fifths
+
+63
+00:03:23.990 --> 00:03:27.019
+then C is one point nine.
+
+64
+00:03:27.019 --> 00:03:29.350
+The same best line.
+
+65
+00:03:29.930 --> 00:03:33.435
+The same R hides inside A transpose A.
+
+66
+00:03:33.435 --> 00:03:36.018
+Turn back with Q transpose
+
+67
+00:03:36.018 --> 00:03:37.770
+what is left is R.
+
+68
+00:03:38.120 --> 00:03:40.158
+Now apply R transpose
+
+69
+00:03:40.158 --> 00:03:42.659
+which is lower triangular.
+
+70
+00:03:42.752 --> 00:03:44.975
+The square lands where A
+
+71
+00:03:45.067 --> 00:03:46.920
+transpose A puts it.
+
+72
+00:03:47.270 --> 00:03:51.368
+So A transpose A equals R transpose R
+
+73
+00:03:51.368 --> 00:03:53.957
+the turn has cancelled.
+
+74
+00:03:53.957 --> 00:03:56.761
+Call L equal R transpose
+
+75
+00:03:56.761 --> 00:04:01.290
+and A transpose A is L times L transpose
+
+76
+00:04:01.290 --> 00:04:04.310
+the Cholesky factorization.
+
+77
+00:04:04.660 --> 00:04:08.860
+Cholesky needs a positive definite matrix
+
+78
+00:04:08.860 --> 00:04:11.260
+which A transpose A is.
+
+79
+00:04:11.260 --> 00:04:14.760
+One, two, two, one is not: at one
+
+80
+00:04:14.760 --> 00:04:17.860
+minus one, it gives minus two.
+
+81
+00:04:18.440 --> 00:04:21.852
+So why not always form A transpose A
+
+82
+00:04:21.852 --> 00:04:23.511
+and use Cholesky?
+
+83
+00:04:23.511 --> 00:04:27.476
+It is cheaper, and in exact arithmetic the
+
+84
+00:04:27.568 --> 00:04:29.320
+answer is the same.
+
+85
+00:04:29.900 --> 00:04:32.930
+On a computer it is not the same.
+
+86
+00:04:32.930 --> 00:04:36.787
+Here are two columns that nearly line up.
+
+87
+00:04:36.787 --> 00:04:40.827
+They squeeze the square into a thin sliver
+
+88
+00:04:40.827 --> 00:04:44.500
+about ten times longer than it is wide.
+
+89
+00:04:44.850 --> 00:04:47.231
+Forming A transpose A applies
+
+90
+00:04:47.313 --> 00:04:48.791
+the squeeze twice
+
+91
+00:04:48.791 --> 00:04:51.008
+now it is about a hundred.
+
+92
+00:04:51.008 --> 00:04:53.964
+That ratio is the condition number
+
+93
+00:04:53.964 --> 00:04:57.330
+how much small rounding errors can grow.
+
+94
+00:04:57.680 --> 00:05:00.057
+For a degree seven polynomial
+
+95
+00:05:00.139 --> 00:05:02.024
+fit to eleven readings
+
+96
+00:05:02.024 --> 00:05:05.057
+it is ten to the eight for the data
+
+97
+00:05:05.057 --> 00:05:08.499
+and ten to the sixteen for A transpose A.
+
+98
+00:05:08.581 --> 00:05:11.122
+That uses up all sixteen digits
+
+99
+00:05:11.204 --> 00:05:12.597
+a computer keeps.
+
+100
+00:05:12.597 --> 00:05:14.400
+Q R never squares it.
+
+101
+00:05:14.980 --> 00:05:18.576
+So stable regression has two habits.
+
+102
+00:05:18.576 --> 00:05:21.572
+Solve least squares with Q R
+
+103
+00:05:21.572 --> 00:05:25.668
+or with the S V D of Lecture twenty-six
+
+104
+00:05:25.668 --> 00:05:29.363
+as NumPy and statistics packages do.
+
+105
+00:05:29.363 --> 00:05:32.060
+Do not form X transpose X.
+
+106
+00:05:32.410 --> 00:05:34.777
+And standardise the features.
+
+107
+00:05:34.859 --> 00:05:37.716
+Centring makes the intercept column
+
+108
+00:05:37.797 --> 00:05:40.083
+perpendicular to the others
+
+109
+00:05:40.083 --> 00:05:43.675
+the first Gram-Schmidt step, done for free.
+
+110
+00:05:43.675 --> 00:05:46.450
+The squeezed grid opens up again.
+
+111
+00:05:47.030 --> 00:05:50.733
+So: A equals Q R records Gram-Schmidt
+
+112
+00:05:50.733 --> 00:05:54.143
+a turn after a triangular stretch.
+
+113
+00:05:54.143 --> 00:05:58.430
+Least squares becomes one triangular solve.
+
+114
+00:05:58.780 --> 00:06:01.511
+A transpose A equals R transpose
+
+115
+00:06:01.596 --> 00:06:03.303
+R is Cholesky: fast
+
+116
+00:06:03.303 --> 00:06:06.460
+but it squares the condition number.
+
+117
+00:06:07.040 --> 00:06:09.753
+Next lecture starts a new number
+
+118
+00:06:09.837 --> 00:06:12.974
+for a square matrix: the determinant.
+
+119
+00:06:12.974 --> 00:06:15.517
+This Q only turns the square
+
+120
+00:06:15.517 --> 00:06:17.467
+so its area stays one.
+
+121
+00:06:17.467 --> 00:06:19.840
+What does R do to the area?

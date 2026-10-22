@@ -1,0 +1,505 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:05.552
+A café keeps a record of five days
+
+2
+00:00:05.552 --> 00:00:06.840
+the temperature
+
+3
+00:00:06.840 --> 00:00:09.493
+and how many iced coffees it sold
+
+4
+00:00:09.493 --> 00:00:10.781
+in tens of cups.
+
+5
+00:00:10.781 --> 00:00:12.903
+Measured from the averages
+
+6
+00:00:12.978 --> 00:00:15.252
+the five days make this little
+
+7
+00:00:15.328 --> 00:00:16.540
+cloud of points.
+
+8
+00:00:16.890 --> 00:00:19.537
+Their covariance matrix C has five
+
+9
+00:00:19.615 --> 00:00:22.962
+and two on the diagonal, the two variances
+
+10
+00:00:22.962 --> 00:00:26.232
+and two off the diagonal, the covariance.
+
+11
+00:00:26.232 --> 00:00:27.555
+It is symmetric
+
+12
+00:00:27.633 --> 00:00:30.047
+flipping it across the diagonal
+
+13
+00:00:30.124 --> 00:00:31.370
+changes nothing.
+
+14
+00:00:31.720 --> 00:00:35.007
+Here is what C does to the unit circle.
+
+15
+00:00:35.007 --> 00:00:37.788
+It turns it into a long ellipse
+
+16
+00:00:37.788 --> 00:00:40.400
+lying along the cloud of days.
+
+17
+00:00:40.750 --> 00:00:43.357
+The two eigenvectors of C
+
+18
+00:00:43.357 --> 00:00:46.165
+at what angle do they meet?
+
+19
+00:00:46.165 --> 00:00:47.870
+Pause and guess.
+
+20
+00:00:51.450 --> 00:00:54.359
+Trace seven, determinant six
+
+21
+00:00:54.359 --> 00:00:57.670
+the eigenvalues are six and one.
+
+22
+00:00:57.670 --> 00:01:00.077
+Six goes with two, one
+
+23
+00:01:00.077 --> 00:01:03.087
+the long axis of the ellipse
+
+24
+00:01:03.087 --> 00:01:05.795
+warm days with more sales.
+
+25
+00:01:05.795 --> 00:01:08.805
+One goes with one, minus two
+
+26
+00:01:08.805 --> 00:01:10.410
+the short axis.
+
+27
+00:01:10.760 --> 00:01:14.527
+Their dot product is two minus two: zero.
+
+28
+00:01:14.527 --> 00:01:17.100
+They meet at a right angle
+
+29
+00:01:17.100 --> 00:01:20.040
+like the axes of every ellipse.
+
+30
+00:01:20.620 --> 00:01:23.164
+That picture is the theorem.
+
+31
+00:01:23.255 --> 00:01:25.708
+Every real symmetric matrix
+
+32
+00:01:25.799 --> 00:01:27.434
+does three things.
+
+33
+00:01:27.525 --> 00:01:30.614
+Turn the plane so the eigenvectors
+
+34
+00:01:30.705 --> 00:01:32.158
+lie on the axes.
+
+35
+00:01:32.158 --> 00:01:35.520
+Stretch each axis by its eigenvalue
+
+36
+00:01:35.520 --> 00:01:36.701
+six and one.
+
+37
+00:01:36.701 --> 00:01:37.700
+Turn back.
+
+38
+00:01:38.050 --> 00:01:41.947
+In symbols: S equals Q lambda Q transpose.
+
+39
+00:01:41.947 --> 00:01:46.029
+The columns of Q are the unit eigenvectors
+
+40
+00:01:46.029 --> 00:01:47.606
+at right angles
+
+41
+00:01:47.606 --> 00:01:51.410
+so undoing the turn is just Q transpose.
+
+42
+00:01:51.990 --> 00:01:54.879
+There is a second way to read it.
+
+43
+00:01:54.879 --> 00:01:56.367
+Take a vector x.
+
+44
+00:01:56.367 --> 00:01:59.081
+Project it onto the long axis
+
+45
+00:01:59.081 --> 00:02:01.270
+and onto the short axis.
+
+46
+00:02:01.620 --> 00:02:04.976
+Then S x is six times the first piece
+
+47
+00:02:05.067 --> 00:02:07.425
+plus one times the second.
+
+48
+00:02:07.516 --> 00:02:11.053
+A symmetric matrix is a weighted sum of
+
+49
+00:02:11.144 --> 00:02:14.500
+projections onto perpendicular lines.
+
+50
+00:02:15.080 --> 00:02:16.929
+Why perpendicular?
+
+51
+00:02:17.031 --> 00:02:20.112
+Take eigenvectors x and y with
+
+52
+00:02:20.215 --> 00:02:24.014
+different eigenvalues, lambda and mu
+
+53
+00:02:24.014 --> 00:02:28.225
+and compute x transpose S y in two ways.
+
+54
+00:02:28.225 --> 00:02:32.538
+Grouping S with y gives mu times x dot y.
+
+55
+00:02:32.538 --> 00:02:34.489
+Grouping S with x
+
+56
+00:02:34.489 --> 00:02:37.365
+using S transpose equals S
+
+57
+00:02:37.365 --> 00:02:40.240
+gives lambda times x dot y.
+
+58
+00:02:40.590 --> 00:02:42.468
+The eigenvalues differ
+
+59
+00:02:42.468 --> 00:02:45.161
+so the dot product must be zero.
+
+60
+00:02:45.161 --> 00:02:48.345
+Symmetry is used in exactly one place.
+
+61
+00:02:48.426 --> 00:02:51.610
+A similar argument with complex numbers
+
+62
+00:02:51.691 --> 00:02:54.630
+shows that the eigenvalues are real.
+
+63
+00:02:55.210 --> 00:02:58.414
+Without symmetry the picture breaks.
+
+64
+00:02:58.414 --> 00:03:02.241
+Lecture eighteen's matrix, four, one, two
+
+65
+00:03:02.241 --> 00:03:04.467
+three, is not symmetric.
+
+66
+00:03:04.467 --> 00:03:08.205
+It also turns the circle into an ellipse
+
+67
+00:03:08.205 --> 00:03:11.765
+but its eigenvectors, one, one and one
+
+68
+00:03:11.765 --> 00:03:15.770
+minus two, are not the axes of that ellipse.
+
+69
+00:03:16.120 --> 00:03:19.287
+They meet at an angle whose cosine is
+
+70
+00:03:19.373 --> 00:03:22.026
+minus zero point three one six
+
+71
+00:03:22.026 --> 00:03:24.080
+far from a right angle.
+
+72
+00:03:24.660 --> 00:03:27.159
+So, for a symmetric matrix
+
+73
+00:03:27.159 --> 00:03:30.860
+are any two eigenvectors perpendicular?
+
+74
+00:03:31.440 --> 00:03:33.886
+Not when an eigenvalue repeats.
+
+75
+00:03:33.886 --> 00:03:37.436
+The simplest case is two times the identity.
+
+76
+00:03:37.436 --> 00:03:40.355
+It stretches every direction by two
+
+77
+00:03:40.355 --> 00:03:43.116
+so every vector is an eigenvector.
+
+78
+00:03:43.116 --> 00:03:44.615
+One, zero and one
+
+79
+00:03:44.615 --> 00:03:46.746
+one are both eigenvectors
+
+80
+00:03:46.746 --> 00:03:48.560
+at forty five degrees.
+
+81
+00:03:48.910 --> 00:03:51.897
+The theorem only says that perpendicular
+
+82
+00:03:51.971 --> 00:03:53.987
+eigenvectors can be chosen.
+
+83
+00:03:53.987 --> 00:03:56.675
+Here, pick one, zero and zero, one.
+
+84
+00:03:56.675 --> 00:03:57.945
+NumPy's e i g h
+
+85
+00:03:57.945 --> 00:04:00.334
+written for symmetric matrices
+
+86
+00:04:00.334 --> 00:04:02.350
+makes that choice for you.
+
+87
+00:04:02.930 --> 00:04:05.114
+One symmetric matrix is a
+
+88
+00:04:05.201 --> 00:04:08.084
+favourite of computers: a mirror.
+
+89
+00:04:08.171 --> 00:04:10.704
+Take a unit vector u and form
+
+90
+00:04:10.792 --> 00:04:13.063
+I minus two u u transpose.
+
+91
+00:04:13.063 --> 00:04:15.072
+It sends u to minus u
+
+92
+00:04:15.159 --> 00:04:17.605
+and keeps every vector along
+
+93
+00:04:17.693 --> 00:04:19.090
+the mirror line.
+
+94
+00:04:19.440 --> 00:04:20.767
+It is symmetric
+
+95
+00:04:20.767 --> 00:04:23.918
+and reflecting twice changes nothing
+
+96
+00:04:23.918 --> 00:04:26.073
+so it is also orthogonal.
+
+97
+00:04:26.073 --> 00:04:29.224
+Put the mirror halfway between three
+
+98
+00:04:29.224 --> 00:04:30.966
+four and five, zero.
+
+99
+00:04:30.966 --> 00:04:33.204
+They have the same length
+
+100
+00:04:33.204 --> 00:04:35.360
+so the mirror swaps them.
+
+101
+00:04:35.710 --> 00:04:39.060
+A rotation can do the same job: turn three
+
+102
+00:04:39.060 --> 00:04:41.007
+four down onto the axis.
+
+103
+00:04:41.007 --> 00:04:42.487
+Mirrors and turns
+
+104
+00:04:42.487 --> 00:04:44.902
+clearing one column at a time
+
+105
+00:04:44.902 --> 00:04:47.083
+give the Q R factorization
+
+106
+00:04:47.083 --> 00:04:50.510
+and they stay orthogonal to the last digit.
+
+107
+00:04:50.860 --> 00:04:53.315
+Classical Gram Schmidt does not.
+
+108
+00:04:53.392 --> 00:04:55.463
+On columns that differ only
+
+109
+00:04:55.540 --> 00:04:57.228
+in the eighth decimal
+
+110
+00:04:57.304 --> 00:04:59.683
+it returns q's at sixty degrees
+
+111
+00:04:59.759 --> 00:05:01.140
+instead of ninety.
+
+112
+00:05:01.720 --> 00:05:02.586
+To sum up.
+
+113
+00:05:02.586 --> 00:05:04.835
+A symmetric matrix turns
+
+114
+00:05:04.835 --> 00:05:07.951
+stretches along perpendicular axes
+
+115
+00:05:07.951 --> 00:05:09.335
+and turns back.
+
+116
+00:05:09.422 --> 00:05:12.624
+It sends a circle to an ellipse whose
+
+117
+00:05:12.710 --> 00:05:14.960
+axes are the eigenvectors.
+
+118
+00:05:15.310 --> 00:05:17.512
+Its eigenvalues are real
+
+119
+00:05:17.600 --> 00:05:19.977
+and its eigenvectors can be
+
+120
+00:05:20.065 --> 00:05:21.914
+chosen perpendicular.
+
+121
+00:05:22.002 --> 00:05:25.701
+And mirrors and rotations build orthogonal
+
+122
+00:05:25.789 --> 00:05:28.430
+matrices that stay orthogonal.
+
+123
+00:05:29.010 --> 00:05:30.097
+In part two
+
+124
+00:05:30.097 --> 00:05:33.538
+what if every eigenvalue is positive?
+
+125
+00:05:33.538 --> 00:05:37.613
+Then the matrix is called positive definite
+
+126
+00:05:37.613 --> 00:05:40.330
+and it is everywhere in data.

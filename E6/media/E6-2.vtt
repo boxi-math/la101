@@ -1,0 +1,477 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:05.275
+Take two lines through the
+
+2
+00:00:05.366 --> 00:00:07.192
+origin of the plane.
+
+3
+00:00:07.192 --> 00:00:09.932
+Line V points along two, one.
+
+4
+00:00:09.932 --> 00:00:13.220
+Line W points along minus one, one.
+
+5
+00:00:13.570 --> 00:00:17.575
+Add any vector of V to any vector of W.
+
+6
+00:00:17.575 --> 00:00:21.784
+Which points of the plane can you reach?
+
+7
+00:00:21.784 --> 00:00:23.530
+Pause and guess.
+
+8
+00:00:27.110 --> 00:00:29.621
+The sum V plus W is the
+
+9
+00:00:29.731 --> 00:00:32.024
+set of all such sums.
+
+10
+00:00:32.024 --> 00:00:36.173
+For example, two, one plus minus one
+
+11
+00:00:36.173 --> 00:00:39.121
+one is the point one, two.
+
+12
+00:00:39.121 --> 00:00:43.270
+The parallelogram shows the addition.
+
+13
+00:00:43.620 --> 00:00:47.338
+Every point of the plane splits this way.
+
+14
+00:00:47.338 --> 00:00:51.147
+Minus three, zero is minus one times two
+
+15
+00:00:51.147 --> 00:00:54.412
+one, plus one times minus one, one.
+
+16
+00:00:54.412 --> 00:00:56.317
+The split is unique
+
+17
+00:00:56.317 --> 00:01:00.035
+because the two lines meet only at zero.
+
+18
+00:01:00.035 --> 00:01:02.030
+That is a direct sum
+
+19
+00:01:02.030 --> 00:01:04.660
+written with a circled plus.
+
+20
+00:01:05.010 --> 00:01:07.629
+Lecture ten gave the main examples.
+
+21
+00:01:07.629 --> 00:01:09.500
+For a one by two matrix
+
+22
+00:01:09.575 --> 00:01:11.895
+the row space and the nullspace
+
+23
+00:01:11.969 --> 00:01:13.017
+are two lines
+
+24
+00:01:13.017 --> 00:01:15.861
+they split the plane as a direct sum
+
+25
+00:01:15.861 --> 00:01:18.330
+and they are even perpendicular.
+
+26
+00:01:18.910 --> 00:01:22.139
+Dimensions follow a counting rule.
+
+27
+00:01:22.234 --> 00:01:26.223
+The dimension of V plus W is the dimension
+
+28
+00:01:26.318 --> 00:01:29.072
+of V plus the dimension of W
+
+29
+00:01:29.072 --> 00:01:32.492
+minus the dimension of the overlap.
+
+30
+00:01:32.492 --> 00:01:36.575
+Here that is one plus one minus zero: two
+
+31
+00:01:36.575 --> 00:01:38.190
+the whole plane.
+
+32
+00:01:38.540 --> 00:01:41.555
+Now let W be the same line as V.
+
+33
+00:01:41.555 --> 00:01:44.382
+Every sum stays on that line.
+
+34
+00:01:44.382 --> 00:01:47.303
+One plus one minus one is one
+
+35
+00:01:47.303 --> 00:01:50.224
+the overlap was counted twice
+
+36
+00:01:50.224 --> 00:01:52.580
+so we take it away once.
+
+37
+00:01:53.160 --> 00:01:54.648
+A tempting shortcut
+
+38
+00:01:54.722 --> 00:01:56.954
+the dimension of a sum is just
+
+39
+00:01:57.029 --> 00:01:58.889
+the two dimensions added.
+
+40
+00:01:58.889 --> 00:02:00.600
+Does that always work?
+
+41
+00:02:01.180 --> 00:02:05.645
+Take two planes in three-dimensional space.
+
+42
+00:02:05.645 --> 00:02:09.902
+V is spanned by one, zero, one and zero
+
+43
+00:02:09.902 --> 00:02:10.941
+one, one.
+
+44
+00:02:10.941 --> 00:02:15.198
+W is spanned by one, one, zero and zero
+
+45
+00:02:15.198 --> 00:02:16.340
+zero, one.
+
+46
+00:02:16.690 --> 00:02:19.101
+Put all four vectors as the
+
+47
+00:02:19.190 --> 00:02:21.155
+columns of one matrix.
+
+48
+00:02:21.155 --> 00:02:23.745
+Its rank is three, not four
+
+49
+00:02:23.834 --> 00:02:27.852
+so the sum is all of three-dimensional space.
+
+50
+00:02:27.852 --> 00:02:30.888
+The two planes must share a line
+
+51
+00:02:30.888 --> 00:02:33.746
+the line through one, one, two.
+
+52
+00:02:33.746 --> 00:02:37.050
+Three equals two plus two minus one.
+
+53
+00:02:37.630 --> 00:02:41.620
+Now a different way to build bigger objects
+
+54
+00:02:41.620 --> 00:02:44.068
+arrays with three indices.
+
+55
+00:02:44.068 --> 00:02:46.608
+Two users rate three films
+
+56
+00:02:46.608 --> 00:02:48.784
+in each of two seasons.
+
+57
+00:02:48.784 --> 00:02:50.960
+That is twelve numbers
+
+58
+00:02:50.960 --> 00:02:53.590
+a two by three by two array.
+
+59
+00:02:53.940 --> 00:02:55.399
+Fix the season
+
+60
+00:02:55.399 --> 00:02:58.512
+and you get an ordinary matrix
+
+61
+00:02:58.512 --> 00:03:00.069
+called a slice.
+
+62
+00:03:00.069 --> 00:03:04.057
+Season one is four, zero, two, over two
+
+63
+00:03:04.057 --> 00:03:05.127
+zero, one.
+
+64
+00:03:05.127 --> 00:03:09.407
+Season two is five, one, three, over three
+
+65
+00:03:09.407 --> 00:03:10.380
+one, two.
+
+66
+00:03:10.960 --> 00:03:14.442
+The simplest such array is called rank one.
+
+67
+00:03:14.442 --> 00:03:17.844
+Each entry is a product of three numbers
+
+68
+00:03:17.844 --> 00:03:19.787
+one from a user vector
+
+69
+00:03:19.787 --> 00:03:21.731
+one from a film vector
+
+70
+00:03:21.731 --> 00:03:24.160
+and one from a season vector.
+
+71
+00:03:24.510 --> 00:03:26.693
+Our ratings are the sum of
+
+72
+00:03:26.777 --> 00:03:28.456
+two of these pieces.
+
+73
+00:03:28.456 --> 00:03:31.562
+In the first, user weights two, one
+
+74
+00:03:31.562 --> 00:03:34.501
+times film weights two, zero, one
+
+75
+00:03:34.501 --> 00:03:36.600
+give these six products
+
+76
+00:03:36.600 --> 00:03:38.782
+the same in both seasons.
+
+77
+00:03:38.782 --> 00:03:42.392
+The second piece adds one to every rating
+
+78
+00:03:42.392 --> 00:03:44.407
+but only in season two.
+
+79
+00:03:44.407 --> 00:03:46.590
+So four plus one is five.
+
+80
+00:03:47.170 --> 00:03:50.594
+To use matrix tools, unfold the array.
+
+81
+00:03:50.685 --> 00:03:53.028
+Lay the columns of the two
+
+82
+00:03:53.118 --> 00:03:56.812
+slices side by side: film one season one
+
+83
+00:03:56.812 --> 00:03:59.696
+film one season two, and so on.
+
+84
+00:03:59.696 --> 00:04:02.850
+One row per user, and six columns.
+
+85
+00:04:03.200 --> 00:04:05.559
+This unfolding has rank two
+
+86
+00:04:05.643 --> 00:04:08.592
+because each rank-one piece unfolds
+
+87
+00:04:08.676 --> 00:04:10.698
+to a matrix of rank one.
+
+88
+00:04:10.698 --> 00:04:13.984
+Tensor rank in general is much harder
+
+89
+00:04:13.984 --> 00:04:16.680
+there is no elimination for it.
+
+90
+00:04:17.260 --> 00:04:20.761
+Contraction sums over a shared index.
+
+91
+00:04:20.856 --> 00:04:24.262
+Give the first season weight one and
+
+92
+00:04:24.356 --> 00:04:27.952
+the second season weight two, and add
+
+93
+00:04:27.952 --> 00:04:31.642
+the first slice plus twice the second.
+
+94
+00:04:31.642 --> 00:04:35.899
+That gives fourteen, two, eight, over eight
+
+95
+00:04:35.899 --> 00:04:36.940
+two, five.
+
+96
+00:04:37.290 --> 00:04:39.940
+Averaging over the two users as
+
+97
+00:04:40.025 --> 00:04:43.701
+well gives one score per film: eleven, two
+
+98
+00:04:43.701 --> 00:04:45.410
+and six and a half.
+
+99
+00:04:45.760 --> 00:04:47.350
+In index notation
+
+100
+00:04:47.350 --> 00:04:50.265
+the inputs are labelled by user
+
+101
+00:04:50.265 --> 00:04:53.622
+film and season, and by season alone
+
+102
+00:04:53.622 --> 00:04:56.448
+the output keeps user and film.
+
+103
+00:04:56.537 --> 00:04:59.187
+Any label that is missing from
+
+104
+00:04:59.275 --> 00:05:01.483
+the output gets added up.
+
+105
+00:05:01.572 --> 00:05:04.487
+Attention scores in a transformer
+
+106
+00:05:04.575 --> 00:05:06.783
+are the same kind of sum
+
+107
+00:05:06.872 --> 00:05:09.257
+one matrix product for each
+
+108
+00:05:09.345 --> 00:05:11.200
+example in the batch.
+
+109
+00:05:11.780 --> 00:05:14.696
+Sums of subspaces add dimensions
+
+110
+00:05:14.696 --> 00:05:16.375
+minus the overlap.
+
+111
+00:05:16.375 --> 00:05:18.672
+When the overlap is zero
+
+112
+00:05:18.761 --> 00:05:21.146
+the sum is direct and every
+
+113
+00:05:21.235 --> 00:05:23.267
+vector splits uniquely.
+
+114
+00:05:23.267 --> 00:05:26.625
+Arrays with more indices have slices
+
+115
+00:05:26.625 --> 00:05:29.452
+rank-one pieces and unfoldings
+
+116
+00:05:29.452 --> 00:05:33.340
+and a contraction sums over a shared index.
+
+117
+00:05:33.690 --> 00:05:34.773
+Next elective
+
+118
+00:05:34.773 --> 00:05:37.711
+Gaussians and weighted least squares
+
+119
+00:05:37.711 --> 00:05:40.650
+where a matrix describes uncertainty.

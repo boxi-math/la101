@@ -1,0 +1,517 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:03.734
+Now games.
+
+2
+00:00:03.734 --> 00:00:07.320
+A delivery driver picks one of two routes
+
+3
+00:00:07.320 --> 00:00:08.654
+North or South
+
+4
+00:00:08.654 --> 00:00:11.740
+and an inspector checks one of them.
+
+5
+00:00:12.090 --> 00:00:15.298
+The table gives the driver's gain
+
+6
+00:00:15.298 --> 00:00:17.941
+time saved, minus any fine.
+
+7
+00:00:17.941 --> 00:00:20.677
+North unchecked gains three
+
+8
+00:00:20.677 --> 00:00:23.414
+but North checked loses two.
+
+9
+00:00:23.414 --> 00:00:25.961
+South unchecked gains one
+
+10
+00:00:25.961 --> 00:00:28.321
+South checked loses one.
+
+11
+00:00:28.321 --> 00:00:30.868
+Whatever the driver gains
+
+12
+00:00:30.868 --> 00:00:32.850
+the inspector loses.
+
+13
+00:00:33.430 --> 00:00:36.580
+Suppose the driver commits to one route.
+
+14
+00:00:36.580 --> 00:00:38.549
+The inspector checks it.
+
+15
+00:00:38.628 --> 00:00:40.833
+The best the driver can then
+
+16
+00:00:40.911 --> 00:00:43.510
+guarantee is minus one, on South.
+
+17
+00:00:43.860 --> 00:00:46.740
+Suppose instead the inspector commits.
+
+18
+00:00:46.740 --> 00:00:49.014
+The driver avoids that route
+
+19
+00:00:49.089 --> 00:00:51.060
+and the inspector can hold
+
+20
+00:00:51.136 --> 00:00:52.500
+the driver to one.
+
+21
+00:00:52.850 --> 00:00:56.091
+Minus one against one: there is a gap.
+
+22
+00:00:56.091 --> 00:00:59.416
+No single cell is best for both sides
+
+23
+00:00:59.416 --> 00:01:02.231
+so the game has no saddle point
+
+24
+00:01:02.231 --> 00:01:05.130
+and whoever is predictable loses.
+
+25
+00:01:05.710 --> 00:01:08.926
+So the driver flips a weighted coin
+
+26
+00:01:08.926 --> 00:01:11.249
+North with probability p.
+
+27
+00:01:11.249 --> 00:01:14.019
+If the inspector checks North
+
+28
+00:01:14.019 --> 00:01:17.592
+the expected gain is one minus three p.
+
+29
+00:01:17.592 --> 00:01:20.630
+If South, it is four p minus one.
+
+30
+00:01:20.980 --> 00:01:22.964
+The inspector will choose
+
+31
+00:01:23.044 --> 00:01:24.869
+the smaller of the two
+
+32
+00:01:24.869 --> 00:01:27.409
+so the driver makes them equal.
+
+33
+00:01:27.409 --> 00:01:30.267
+That gives p equal to two sevenths
+
+34
+00:01:30.346 --> 00:01:32.172
+and an expected gain of
+
+35
+00:01:32.251 --> 00:01:33.918
+one seventh per trip
+
+36
+00:01:33.918 --> 00:01:36.220
+whatever the inspector does.
+
+37
+00:01:36.570 --> 00:01:37.726
+In the same way
+
+38
+00:01:37.798 --> 00:01:40.037
+the inspector checks North with
+
+39
+00:01:40.110 --> 00:01:41.988
+probability four sevenths
+
+40
+00:01:42.060 --> 00:01:43.866
+and that holds the driver
+
+41
+00:01:43.938 --> 00:01:45.599
+to exactly one seventh.
+
+42
+00:01:45.599 --> 00:01:48.850
+That common number is the value of the game.
+
+43
+00:01:49.430 --> 00:01:52.097
+Isn't mixing fifty fifty the safe
+
+44
+00:01:52.097 --> 00:01:53.430
+cautious choice?
+
+45
+00:01:53.780 --> 00:01:54.027
+No.
+
+46
+00:01:54.027 --> 00:01:56.493
+Against a fifty fifty driver
+
+47
+00:01:56.575 --> 00:01:59.123
+checking North gives the driver
+
+48
+00:01:59.206 --> 00:02:01.343
+minus one half on average.
+
+49
+00:02:01.343 --> 00:02:04.220
+The inspector simply checks North.
+
+50
+00:02:04.570 --> 00:02:07.805
+The mix of two sevenths and five sevenths
+
+51
+00:02:07.884 --> 00:02:10.961
+gives one seventh against both choices.
+
+52
+00:02:11.040 --> 00:02:13.723
+It is the only mix that leaves the
+
+53
+00:02:13.802 --> 00:02:16.090
+inspector nothing to exploit.
+
+54
+00:02:16.670 --> 00:02:18.248
+This is always so.
+
+55
+00:02:18.248 --> 00:02:21.403
+Von Neumann's minimax theorem says
+
+56
+00:02:21.403 --> 00:02:23.507
+once mixing is allowed
+
+57
+00:02:23.594 --> 00:02:27.363
+the best guarantee of one player equals the
+
+58
+00:02:27.451 --> 00:02:30.606
+tightest limit the other can impose.
+
+59
+00:02:30.606 --> 00:02:32.710
+Max min equals min max.
+
+60
+00:02:33.060 --> 00:02:35.229
+Like max flow and min cut
+
+61
+00:02:35.229 --> 00:02:38.900
+it is a case of linear programming duality.
+
+62
+00:02:39.250 --> 00:02:41.995
+And when the best mix uses every row
+
+63
+00:02:41.995 --> 00:02:45.334
+it has the same payoff against every column.
+
+64
+00:02:45.408 --> 00:02:48.079
+Together with the condition that the
+
+65
+00:02:48.153 --> 00:02:50.230
+probabilities add up to one
+
+66
+00:02:50.230 --> 00:02:52.604
+that is a square linear system.
+
+67
+00:02:52.679 --> 00:02:55.127
+Solving it gives the driver's mix
+
+68
+00:02:55.201 --> 00:02:57.130
+and the value of the game.
+
+69
+00:02:57.710 --> 00:03:01.033
+Now a game of our own: rock, paper
+
+70
+00:03:01.033 --> 00:03:03.786
+scissors with uneven prizes.
+
+71
+00:03:03.786 --> 00:03:07.014
+Rock beats scissors and wins one.
+
+72
+00:03:07.014 --> 00:03:10.337
+Scissors beats paper and wins two.
+
+73
+00:03:10.337 --> 00:03:13.470
+Paper beats rock and wins three.
+
+74
+00:03:13.820 --> 00:03:16.807
+The payoff matrix is antisymmetric
+
+75
+00:03:16.807 --> 00:03:20.220
+so the game is fair: its value is zero.
+
+76
+00:03:20.570 --> 00:03:23.300
+Paper's win is worth the most.
+
+77
+00:03:23.300 --> 00:03:26.303
+How often should you play paper?
+
+78
+00:03:26.303 --> 00:03:27.850
+Pause and guess.
+
+79
+00:03:31.430 --> 00:03:34.722
+Least often: one sixth of the time.
+
+80
+00:03:34.722 --> 00:03:38.390
+Rock one third, and scissors one half.
+
+81
+00:03:38.740 --> 00:03:42.279
+With this mix, every reply of the opponent
+
+82
+00:03:42.363 --> 00:03:44.216
+is worth exactly zero
+
+83
+00:03:44.301 --> 00:03:46.997
+so the mix lies in the nullspace
+
+84
+00:03:47.081 --> 00:03:48.345
+of G transpose.
+
+85
+00:03:48.345 --> 00:03:50.114
+Why so little paper?
+
+86
+00:03:50.198 --> 00:03:52.389
+The mix is set by what the
+
+87
+00:03:52.473 --> 00:03:56.180
+opponent could gain, not by your own prizes.
+
+88
+00:03:56.530 --> 00:03:59.099
+And the even mix, a third each
+
+89
+00:03:59.182 --> 00:04:02.746
+loses a third per round against an opponent
+
+90
+00:04:02.829 --> 00:04:05.730
+who answers with paper or scissors.
+
+91
+00:04:06.310 --> 00:04:08.720
+Not every game needs a mix.
+
+92
+00:04:08.720 --> 00:04:11.844
+In the game three, one, five, two
+
+93
+00:04:11.844 --> 00:04:14.700
+the row minima are one and two
+
+94
+00:04:14.700 --> 00:04:18.270
+and the column maxima are five and two.
+
+95
+00:04:18.620 --> 00:04:21.385
+Both meet at two: a saddle point.
+
+96
+00:04:21.469 --> 00:04:23.732
+Both players play one fixed
+
+97
+00:04:23.816 --> 00:04:25.324
+choice every time.
+
+98
+00:04:25.408 --> 00:04:28.173
+The equalising system now returns
+
+99
+00:04:28.257 --> 00:04:30.687
+a mix of three and minus two
+
+100
+00:04:30.687 --> 00:04:32.447
+which is impossible.
+
+101
+00:04:32.447 --> 00:04:35.716
+When some rows should never be played
+
+102
+00:04:35.716 --> 00:04:38.900
+a single linear system is not enough.
+
+103
+00:04:39.480 --> 00:04:41.015
+Working with AI.
+
+104
+00:04:41.111 --> 00:04:44.373
+Suppose an assistant averages each
+
+105
+00:04:44.469 --> 00:04:48.499
+row of the driver's table: North one half
+
+106
+00:04:48.499 --> 00:04:52.720
+South zero, and advises: always take North.
+
+107
+00:04:53.070 --> 00:04:55.205
+Averages assume the inspector
+
+108
+00:04:55.279 --> 00:04:56.604
+chooses at random.
+
+109
+00:04:56.678 --> 00:04:58.960
+A driver who always takes North
+
+110
+00:04:59.034 --> 00:05:00.654
+is checked every time
+
+111
+00:05:00.654 --> 00:05:02.421
+and loses two per trip.
+
+112
+00:05:02.494 --> 00:05:04.777
+Test any strategy against every
+
+113
+00:05:04.850 --> 00:05:06.470
+reply of the opponent.
+
+114
+00:05:07.050 --> 00:05:07.817
+To sum up.
+
+115
+00:05:07.817 --> 00:05:09.658
+Without a saddle point
+
+116
+00:05:09.735 --> 00:05:12.343
+the best plan is a mix that leaves
+
+117
+00:05:12.420 --> 00:05:14.338
+the opponent indifferent.
+
+118
+00:05:14.338 --> 00:05:16.179
+When every row is used
+
+119
+00:05:16.179 --> 00:05:18.250
+it solves a linear system.
+
+120
+00:05:18.600 --> 00:05:20.871
+Max min equals min max
+
+121
+00:05:20.969 --> 00:05:23.338
+just as the maximum flow
+
+122
+00:05:23.437 --> 00:05:25.708
+equals the minimum cut.
+
+123
+00:05:25.708 --> 00:05:29.360
+Both are linear programming duality.
+
+124
+00:05:29.710 --> 00:05:30.797
+Now you try
+
+125
+00:05:30.888 --> 00:05:34.420
+find the inspector's mix by solving the
+
+126
+00:05:34.511 --> 00:05:37.590
+same system for minus G transpose.
+
+127
+00:05:37.940 --> 00:05:40.319
+For linear programs in general
+
+128
+00:05:40.396 --> 00:05:42.621
+follow the link on page E2 to
+
+129
+00:05:42.698 --> 00:05:44.540
+the optimisation course.

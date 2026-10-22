@@ -1,0 +1,489 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:05.978
+A paint shop sells three base paints
+
+2
+00:00:05.978 --> 00:00:08.224
+Meadow, Harbour and Brick.
+
+3
+00:00:08.307 --> 00:00:10.969
+Each litre carries fixed amounts
+
+4
+00:00:11.052 --> 00:00:14.380
+of three pigments, yellow, blue and red.
+
+5
+00:00:14.730 --> 00:00:16.569
+A customer wants exactly
+
+6
+00:00:16.646 --> 00:00:19.558
+five grams of yellow, fifteen of blue
+
+7
+00:00:19.558 --> 00:00:21.321
+and twenty two of red.
+
+8
+00:00:21.321 --> 00:00:24.770
+How many litres of each paint should we mix?
+
+9
+00:00:25.120 --> 00:00:27.835
+Three unknowns at once is hard.
+
+10
+00:00:27.835 --> 00:00:31.162
+Which unknown would you remove first
+
+11
+00:00:31.162 --> 00:00:33.351
+and with which equation?
+
+12
+00:00:33.351 --> 00:00:34.840
+Pause and think.
+
+13
+00:00:38.420 --> 00:00:42.897
+Let x, y and z be the amounts of Meadow
+
+14
+00:00:42.897 --> 00:00:45.024
+Harbour and Brick.
+
+15
+00:00:45.136 --> 00:00:48.158
+Counting yellow gives two x
+
+16
+00:00:48.270 --> 00:00:51.180
+plus y plus z equals five.
+
+17
+00:00:51.292 --> 00:00:54.650
+Blue gives four x plus three y
+
+18
+00:00:54.762 --> 00:00:57.784
+plus four z equals fifteen.
+
+19
+00:00:57.896 --> 00:01:01.478
+Red gives two x plus four y plus
+
+20
+00:01:01.590 --> 00:01:04.500
+eight z equals twenty two.
+
+21
+00:01:04.850 --> 00:01:08.329
+The plan: use the first equation to remove
+
+22
+00:01:08.412 --> 00:01:10.400
+x from the two below it
+
+23
+00:01:10.483 --> 00:01:13.133
+then use the new second equation
+
+24
+00:01:13.216 --> 00:01:15.370
+to remove y from the last.
+
+25
+00:01:15.950 --> 00:01:18.625
+The two in front of x in the first
+
+26
+00:01:18.703 --> 00:01:20.906
+equation is the first pivot.
+
+27
+00:01:20.906 --> 00:01:23.266
+The blue equation has four x.
+
+28
+00:01:23.345 --> 00:01:25.626
+Four divided by the pivot two
+
+29
+00:01:25.705 --> 00:01:27.750
+gives the multiplier: two.
+
+30
+00:01:28.100 --> 00:01:31.746
+Subtract two times the whole first
+
+31
+00:01:31.853 --> 00:01:34.748
+equation from the blue one.
+
+32
+00:01:34.748 --> 00:01:37.858
+Four x minus four x is zero
+
+33
+00:01:37.858 --> 00:01:40.645
+three y minus two y is y
+
+34
+00:01:40.645 --> 00:01:44.184
+and four z minus two z is two z.
+
+35
+00:01:44.184 --> 00:01:48.580
+On the right, fifteen minus ten is five.
+
+36
+00:01:48.930 --> 00:01:51.730
+So the blue equation becomes
+
+37
+00:01:51.830 --> 00:01:54.330
+y plus two z equals five
+
+38
+00:01:54.330 --> 00:01:56.530
+and it has no x left.
+
+39
+00:01:57.110 --> 00:01:59.398
+The red equation has two x
+
+40
+00:01:59.398 --> 00:02:02.787
+so its multiplier is two over two: one.
+
+41
+00:02:02.787 --> 00:02:05.668
+Subtract the first equation once
+
+42
+00:02:05.753 --> 00:02:08.634
+and the red equation becomes three
+
+43
+00:02:08.719 --> 00:02:11.430
+y plus seven z equals seventeen.
+
+44
+00:02:11.780 --> 00:02:15.660
+Now x appears only in the first equation.
+
+45
+00:02:16.240 --> 00:02:18.547
+The bottom two equations
+
+46
+00:02:18.643 --> 00:02:22.777
+now hold only y and z, so we can draw them.
+
+47
+00:02:22.777 --> 00:02:25.276
+Across is y, and up is z.
+
+48
+00:02:25.276 --> 00:02:28.929
+y plus two z equals five is one line
+
+49
+00:02:29.025 --> 00:02:32.005
+and three y plus seven z equals
+
+50
+00:02:32.101 --> 00:02:34.120
+seventeen is another.
+
+51
+00:02:34.470 --> 00:02:36.675
+They cross at one, two.
+
+52
+00:02:36.675 --> 00:02:40.510
+That point is the y and z we are after.
+
+53
+00:02:41.090 --> 00:02:44.357
+The second pivot is the one in front
+
+54
+00:02:44.448 --> 00:02:47.443
+of y in y plus two z equals five.
+
+55
+00:02:47.443 --> 00:02:50.257
+The last equation has three y
+
+56
+00:02:50.257 --> 00:02:54.250
+so the multiplier is three over one: three.
+
+57
+00:02:54.600 --> 00:02:57.697
+Subtract three times the second
+
+58
+00:02:57.797 --> 00:03:00.094
+equation from the last
+
+59
+00:03:00.094 --> 00:03:02.591
+and watch its line turn.
+
+60
+00:03:02.591 --> 00:03:04.789
+Three y plus seven z
+
+61
+00:03:04.789 --> 00:03:07.986
+minus three times y plus two z
+
+62
+00:03:07.986 --> 00:03:09.484
+leaves just z.
+
+63
+00:03:09.484 --> 00:03:13.080
+And seventeen minus fifteen is two.
+
+64
+00:03:13.430 --> 00:03:16.535
+The line ends up flat: z equals two.
+
+65
+00:03:16.535 --> 00:03:19.640
+It turned about the crossing point
+
+66
+00:03:19.726 --> 00:03:22.573
+because an elimination step never
+
+67
+00:03:22.659 --> 00:03:24.470
+changes the solution.
+
+68
+00:03:25.050 --> 00:03:27.608
+The system is now a staircase
+
+69
+00:03:27.693 --> 00:03:30.166
+each equation has one unknown
+
+70
+00:03:30.251 --> 00:03:32.383
+fewer than the one above.
+
+71
+00:03:32.383 --> 00:03:34.855
+We call it upper triangular
+
+72
+00:03:34.855 --> 00:03:38.010
+and its pivots are two, one and one.
+
+73
+00:03:38.590 --> 00:03:41.954
+A common slip: subtract on the left side
+
+74
+00:03:42.038 --> 00:03:43.804
+and forget the right.
+
+75
+00:03:43.888 --> 00:03:46.579
+Then the blue equation comes out
+
+76
+00:03:46.663 --> 00:03:49.270
+as y plus two z equals fifteen.
+
+77
+00:03:49.620 --> 00:03:53.106
+On the picture that is a different line
+
+78
+00:03:53.106 --> 00:03:56.331
+and it misses the answer completely.
+
+79
+00:03:56.331 --> 00:03:59.207
+A step works on whole equations
+
+80
+00:03:59.207 --> 00:04:01.908
+so the right side changes too
+
+81
+00:04:01.908 --> 00:04:05.220
+fifteen minus two times five is five.
+
+82
+00:04:05.800 --> 00:04:09.234
+And not every subtraction eliminates.
+
+83
+00:04:09.234 --> 00:04:13.318
+Take the blue equation minus the first one
+
+84
+00:04:13.318 --> 00:04:14.339
+just once.
+
+85
+00:04:14.431 --> 00:04:17.123
+You get two x plus two y plus
+
+86
+00:04:17.216 --> 00:04:18.979
+three z equals ten.
+
+87
+00:04:18.979 --> 00:04:22.320
+That is true, but x is still there.
+
+88
+00:04:22.670 --> 00:04:25.264
+The multiplier is not a guess.
+
+89
+00:04:25.350 --> 00:04:27.511
+It is the entry to remove
+
+90
+00:04:27.598 --> 00:04:30.710
+divided by the pivot: four over two.
+
+91
+00:04:31.290 --> 00:04:32.840
+Back to the staircase.
+
+92
+00:04:32.840 --> 00:04:35.094
+We solve it from the bottom up
+
+93
+00:04:35.094 --> 00:04:37.770
+and that is called back substitution.
+
+94
+00:04:38.120 --> 00:04:41.804
+The last equation says z equals two.
+
+95
+00:04:41.804 --> 00:04:44.259
+Put it into the second
+
+96
+00:04:44.259 --> 00:04:48.557
+y plus four equals five, so y equals one.
+
+97
+00:04:48.557 --> 00:04:51.115
+Put both into the first
+
+98
+00:04:51.115 --> 00:04:54.901
+two x plus one plus two equals five
+
+99
+00:04:54.901 --> 00:04:56.640
+so x equals one.
+
+100
+00:04:56.990 --> 00:04:58.919
+One litre of Meadow
+
+101
+00:04:58.919 --> 00:05:02.102
+one of Harbour and two of Brick.
+
+102
+00:05:02.102 --> 00:05:04.128
+Multiply back: five
+
+103
+00:05:04.128 --> 00:05:07.021
+fifteen and twenty two grams
+
+104
+00:05:07.021 --> 00:05:08.950
+exactly the target.
+
+105
+00:05:09.530 --> 00:05:12.831
+So elimination comes down to three ideas.
+
+106
+00:05:12.911 --> 00:05:15.327
+The multiplier is the entry to
+
+107
+00:05:15.407 --> 00:05:17.661
+remove divided by the pivot
+
+108
+00:05:17.742 --> 00:05:20.318
+and we subtract that many copies
+
+109
+00:05:20.398 --> 00:05:22.250
+of the whole pivot row.
+
+110
+00:05:22.600 --> 00:05:23.640
+Step by step
+
+111
+00:05:23.640 --> 00:05:26.200
+the system becomes a staircase
+
+112
+00:05:26.200 --> 00:05:28.920
+and no step changes the solution
+
+113
+00:05:28.920 --> 00:05:31.880
+the line turns about the same point.
+
+114
+00:05:32.230 --> 00:05:34.926
+Back substitution then solves the
+
+115
+00:05:35.008 --> 00:05:37.377
+staircase from the bottom up.
+
+116
+00:05:37.377 --> 00:05:39.828
+Each step divides by a pivot
+
+117
+00:05:39.828 --> 00:05:41.870
+so no pivot may be zero.
+
+118
+00:05:42.450 --> 00:05:45.494
+Each of our steps changed one row
+
+119
+00:05:45.586 --> 00:05:47.985
+and left the others alone.
+
+120
+00:05:47.985 --> 00:05:51.490
+That is exactly what a matrix can do.
+
+121
+00:05:51.840 --> 00:05:55.380
+In part two we write each step as a matrix
+
+122
+00:05:55.380 --> 00:05:58.920
+and see what happens when a pivot is zero.

@@ -1,0 +1,469 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:04.808
+Here are a café's days.
+
+2
+00:00:04.891 --> 00:00:07.131
+Temperature runs across and
+
+3
+00:00:07.214 --> 00:00:09.288
+iced coffee sales run up
+
+4
+00:00:09.288 --> 00:00:12.192
+both measured from their averages.
+
+5
+00:00:12.275 --> 00:00:14.515
+Day A is two degrees warmer
+
+6
+00:00:14.598 --> 00:00:16.257
+and ten cups busier.
+
+7
+00:00:16.257 --> 00:00:18.663
+Day B is two degrees colder
+
+8
+00:00:18.663 --> 00:00:20.820
+and also ten cups busier.
+
+9
+00:00:21.170 --> 00:00:23.868
+Both days are the same ordinary
+
+10
+00:00:23.955 --> 00:00:27.174
+distance from the average: root five.
+
+11
+00:00:27.174 --> 00:00:29.524
+Which day is more unusual?
+
+12
+00:00:29.524 --> 00:00:31.090
+Pause and decide.
+
+13
+00:00:34.670 --> 00:00:36.975
+Start with one measurement.
+
+14
+00:00:36.975 --> 00:00:40.732
+The bell curve has exponent minus one half
+
+15
+00:00:40.732 --> 00:00:42.952
+times x minus mu squared
+
+16
+00:00:42.952 --> 00:00:44.660
+over sigma squared
+
+17
+00:00:44.660 --> 00:00:47.905
+a squared distance in units of sigma.
+
+18
+00:00:47.905 --> 00:00:50.466
+A wider bell, with sigma two
+
+19
+00:00:50.466 --> 00:00:52.430
+falls off more slowly.
+
+20
+00:00:52.780 --> 00:00:55.206
+For a vector of measurements
+
+21
+00:00:55.290 --> 00:00:57.382
+sigma squared becomes the
+
+22
+00:00:57.465 --> 00:00:59.473
+covariance matrix Sigma
+
+23
+00:00:59.557 --> 00:01:02.234
+and dividing becomes multiplying
+
+24
+00:01:02.318 --> 00:01:03.740
+by Sigma inverse.
+
+25
+00:01:03.740 --> 00:01:07.422
+For the café, Sigma is five, two, two, two
+
+26
+00:01:07.422 --> 00:01:10.517
+and its inverse is one sixth of two
+
+27
+00:01:10.517 --> 00:01:12.860
+minus two, minus two, five.
+
+28
+00:01:13.210 --> 00:01:15.517
+The factor in front makes the
+
+29
+00:01:15.596 --> 00:01:17.346
+total probability one.
+
+30
+00:01:17.346 --> 00:01:20.209
+There, the square root of det Sigma
+
+31
+00:01:20.289 --> 00:01:22.197
+plays the role of sigma
+
+32
+00:01:22.277 --> 00:01:24.663
+a wider cloud spreads the same
+
+33
+00:01:24.743 --> 00:01:26.890
+probability over more area.
+
+34
+00:01:27.470 --> 00:01:29.087
+Back to the two days.
+
+35
+00:01:29.087 --> 00:01:30.704
+The tempting answer
+
+36
+00:01:30.781 --> 00:01:32.784
+the same ordinary distance
+
+37
+00:01:32.861 --> 00:01:34.555
+means equally unusual.
+
+38
+00:01:34.555 --> 00:01:35.710
+Is that right?
+
+39
+00:01:36.290 --> 00:01:39.494
+Measure with Sigma inverse instead.
+
+40
+00:01:39.494 --> 00:01:41.965
+For day A, the offset two
+
+41
+00:01:41.965 --> 00:01:45.901
+one gives one sixth of eight, minus eight
+
+42
+00:01:45.901 --> 00:01:48.098
+plus five: five sixths.
+
+43
+00:01:48.098 --> 00:01:50.111
+For day B, minus two
+
+44
+00:01:50.111 --> 00:01:53.956
+one gives one sixth of eight, plus eight
+
+45
+00:01:53.956 --> 00:01:56.610
+plus five: three and a half.
+
+46
+00:01:56.960 --> 00:02:00.139
+So day B is about four times as far
+
+47
+00:02:00.139 --> 00:02:03.583
+in the distance that matches the data.
+
+48
+00:02:03.583 --> 00:02:05.437
+It is cold and busy
+
+49
+00:02:05.437 --> 00:02:08.263
+against the trend of the cloud
+
+50
+00:02:08.263 --> 00:02:11.000
+while day A follows the trend.
+
+51
+00:02:11.350 --> 00:02:14.075
+Two more days make the same point.
+
+52
+00:02:14.075 --> 00:02:17.201
+Three degrees warmer, at normal sales
+
+53
+00:02:17.201 --> 00:02:19.605
+has d squared equal to three.
+
+54
+00:02:19.605 --> 00:02:23.132
+Twenty extra cups, at a normal temperature
+
+55
+00:02:23.132 --> 00:02:25.456
+has three point three three
+
+56
+00:02:25.456 --> 00:02:28.822
+although that day is only two units away.
+
+57
+00:02:28.822 --> 00:02:30.826
+Temperature varies more
+
+58
+00:02:30.826 --> 00:02:33.150
+so its units count for less.
+
+59
+00:02:33.730 --> 00:02:36.815
+The points at one fixed distance
+
+60
+00:02:36.912 --> 00:02:38.455
+form an ellipse.
+
+61
+00:02:38.455 --> 00:02:42.794
+Its axes are the eigenvectors of Sigma, two
+
+62
+00:02:42.794 --> 00:02:45.108
+one and one, minus two
+
+63
+00:02:45.204 --> 00:02:48.290
+and its half axes are the square
+
+64
+00:02:48.386 --> 00:02:52.050
+roots of the eigenvalues, six and one.
+
+65
+00:02:52.400 --> 00:02:54.867
+Day A lies on the long axis
+
+66
+00:02:54.867 --> 00:02:57.158
+inside the first ellipse.
+
+67
+00:02:57.158 --> 00:03:01.034
+Day B lies outside it, close to the second.
+
+68
+00:03:01.034 --> 00:03:02.708
+In two dimensions
+
+69
+00:03:02.708 --> 00:03:05.352
+the ellipses of distance one
+
+70
+00:03:05.352 --> 00:03:08.171
+two and three hold thirty nine
+
+71
+00:03:08.259 --> 00:03:10.550
+eighty six and ninety nine
+
+72
+00:03:10.638 --> 00:03:12.400
+percent of the days.
+
+73
+00:03:12.980 --> 00:03:16.215
+Every Gaussian is a stretched white one.
+
+74
+00:03:16.215 --> 00:03:19.207
+Factor Sigma as L times L transpose
+
+75
+00:03:19.207 --> 00:03:22.684
+the Cholesky factor of Lecture twenty two.
+
+76
+00:03:22.684 --> 00:03:26.242
+The squares of L's diagonal are the pivots
+
+77
+00:03:26.242 --> 00:03:27.940
+five and six fifths.
+
+78
+00:03:28.290 --> 00:03:31.580
+Start with white noise z: a round cloud
+
+79
+00:03:31.580 --> 00:03:34.047
+whose level sets are circles.
+
+80
+00:03:34.047 --> 00:03:35.281
+Multiply by L
+
+81
+00:03:35.281 --> 00:03:38.818
+and the circle becomes the café's ellipse.
+
+82
+00:03:38.818 --> 00:03:42.108
+Going back, L inverse whitens the data
+
+83
+00:03:42.108 --> 00:03:45.562
+and the distance becomes ordinary length
+
+84
+00:03:45.644 --> 00:03:47.947
+day A whitens to a vector of
+
+85
+00:03:48.029 --> 00:03:50.250
+squared length five sixths.
+
+86
+00:03:50.600 --> 00:03:53.008
+This is also how computers
+
+87
+00:03:53.101 --> 00:03:57.177
+draw Gaussian samples: take white numbers z
+
+88
+00:03:57.177 --> 00:03:59.400
+and return mu plus L z.
+
+89
+00:03:59.980 --> 00:04:03.318
+Suppose tomorrow will be twenty degrees
+
+90
+00:04:03.318 --> 00:04:05.070
+three above average.
+
+91
+00:04:05.070 --> 00:04:08.158
+What should the café expect to sell?
+
+92
+00:04:08.241 --> 00:04:10.411
+The best guess follows the
+
+93
+00:04:10.495 --> 00:04:12.581
+line of slope two fifths
+
+94
+00:04:12.664 --> 00:04:14.834
+so sales are five plus two
+
+95
+00:04:14.917 --> 00:04:17.755
+fifths times three: six point two
+
+96
+00:04:17.755 --> 00:04:19.340
+or sixty two cups.
+
+97
+00:04:19.690 --> 00:04:21.793
+The spread that remains is
+
+98
+00:04:21.874 --> 00:04:24.624
+two minus four fifths: six fifths.
+
+99
+00:04:24.705 --> 00:04:26.970
+Two fifths is the multiplier
+
+100
+00:04:27.051 --> 00:04:28.992
+of elimination on Sigma
+
+101
+00:04:28.992 --> 00:04:31.904
+and six fifths is its second pivot.
+
+102
+00:04:31.904 --> 00:04:34.250
+Conditioning is elimination.
+
+103
+00:04:34.600 --> 00:04:36.220
+A simulation agrees
+
+104
+00:04:36.301 --> 00:04:39.459
+simulated days near twenty degrees sell
+
+105
+00:04:39.540 --> 00:04:42.050
+six point one eight on average
+
+106
+00:04:42.050 --> 00:04:44.560
+with spread one point two one.
+
+107
+00:04:45.140 --> 00:04:48.477
+The Gaussian's exponent is minus one half
+
+108
+00:04:48.558 --> 00:04:51.732
+of a quadratic form with Sigma inverse
+
+109
+00:04:51.732 --> 00:04:54.499
+the squared Mahalanobis distance.
+
+110
+00:04:54.581 --> 00:04:56.778
+Its level sets are ellipses
+
+111
+00:04:56.859 --> 00:04:58.731
+along the eigenvectors.
+
+112
+00:04:58.813 --> 00:05:01.661
+A Cholesky factor turns white noise
+
+113
+00:05:01.742 --> 00:05:03.696
+into the cloud and back
+
+114
+00:05:03.777 --> 00:05:06.381
+and conditioning on one variable
+
+115
+00:05:06.463 --> 00:05:08.660
+is one step of elimination.
+
+116
+00:05:09.010 --> 00:05:11.864
+Next: the same Sigma inverse
+
+117
+00:05:11.864 --> 00:05:15.210
+used as weights in least squares.

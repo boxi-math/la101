@@ -1,0 +1,449 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:05.931
+Three thermometers read the same room
+
+2
+00:00:05.931 --> 00:00:07.527
+twenty, twenty one
+
+3
+00:00:07.527 --> 00:00:09.601
+and twenty three degrees.
+
+4
+00:00:09.601 --> 00:00:12.074
+But they are not equally good.
+
+5
+00:00:12.153 --> 00:00:14.068
+Their noise has standard
+
+6
+00:00:14.148 --> 00:00:16.860
+deviations one half, one, and two.
+
+7
+00:00:17.210 --> 00:00:19.259
+The plain average is twenty
+
+8
+00:00:19.335 --> 00:00:21.005
+one point three three.
+
+9
+00:00:21.081 --> 00:00:23.662
+Should the cheap thermometer count
+
+10
+00:00:23.738 --> 00:00:25.560
+as much as the good one?
+
+11
+00:00:25.560 --> 00:00:26.850
+Pause and think.
+
+12
+00:00:30.430 --> 00:00:32.306
+Measure each residual in
+
+13
+00:00:32.384 --> 00:00:34.182
+its own units of noise
+
+14
+00:00:34.182 --> 00:00:36.762
+as the Mahalanobis distance did.
+
+15
+00:00:36.762 --> 00:00:40.123
+Minimise the sum of each residual squared
+
+16
+00:00:40.123 --> 00:00:41.999
+over its sigma squared.
+
+17
+00:00:41.999 --> 00:00:44.578
+The weight matrix W is diagonal
+
+18
+00:00:44.578 --> 00:00:47.471
+with entries one over sigma squared
+
+19
+00:00:47.471 --> 00:00:50.910
+a weight of four, then one, then a quarter.
+
+20
+00:00:51.260 --> 00:00:54.599
+Setting the gradient to zero gives
+
+21
+00:00:54.698 --> 00:00:57.644
+the weighted normal equations
+
+22
+00:00:57.644 --> 00:01:00.591
+A transpose W A, times x hat
+
+23
+00:01:00.591 --> 00:01:02.948
+equals A transpose W b.
+
+24
+00:01:02.948 --> 00:01:06.876
+When W is the inverse noise covariance
+
+25
+00:01:06.876 --> 00:01:11.296
+the estimate has covariance A transpose W A
+
+26
+00:01:11.296 --> 00:01:12.180
+inverse.
+
+27
+00:01:12.760 --> 00:01:15.330
+Here A is a column of ones.
+
+28
+00:01:15.330 --> 00:01:18.280
+So x hat is four times twenty
+
+29
+00:01:18.280 --> 00:01:19.898
+plus twenty one
+
+30
+00:01:19.898 --> 00:01:22.943
+plus a quarter of twenty three
+
+31
+00:01:22.943 --> 00:01:26.846
+divided by four plus one plus a quarter
+
+32
+00:01:26.846 --> 00:01:29.320
+twenty point three three.
+
+33
+00:01:29.670 --> 00:01:31.665
+Its variance is one over
+
+34
+00:01:31.748 --> 00:01:35.157
+five point two five: zero point one nine.
+
+35
+00:01:35.157 --> 00:01:36.487
+Precisions add
+
+36
+00:01:36.570 --> 00:01:39.064
+and the combined reading beats
+
+37
+00:01:39.147 --> 00:01:41.308
+even the best thermometer
+
+38
+00:01:41.308 --> 00:01:44.550
+whose variance is zero point two five.
+
+39
+00:01:45.130 --> 00:01:46.625
+A natural shortcut
+
+40
+00:01:46.703 --> 00:01:49.535
+trust each thermometer in proportion
+
+41
+00:01:49.613 --> 00:01:50.872
+to its accuracy
+
+42
+00:01:50.872 --> 00:01:53.153
+with weights one over sigma.
+
+43
+00:01:53.153 --> 00:01:54.490
+Is that as good?
+
+44
+00:01:55.070 --> 00:01:58.053
+With weights two, one, and one half
+
+45
+00:01:58.053 --> 00:02:01.367
+the estimate is twenty point seven one
+
+46
+00:02:01.450 --> 00:02:03.439
+and its variance is zero
+
+47
+00:02:03.521 --> 00:02:05.179
+point two four five
+
+48
+00:02:05.179 --> 00:02:07.830
+worse than zero point one nine.
+
+49
+00:02:08.180 --> 00:02:10.735
+Equal weights are worse still
+
+50
+00:02:10.735 --> 00:02:13.886
+with variance zero point five eight.
+
+51
+00:02:13.886 --> 00:02:17.463
+The squared residual is in squared units
+
+52
+00:02:17.548 --> 00:02:19.677
+so its weight must be one
+
+53
+00:02:19.762 --> 00:02:21.380
+over sigma squared.
+
+54
+00:02:21.960 --> 00:02:23.445
+Now fit a line.
+
+55
+00:02:23.445 --> 00:02:27.505
+A sensor is calibrated at five settings
+
+56
+00:02:27.505 --> 00:02:30.971
+zero to four, and its noise grows
+
+57
+00:02:31.070 --> 00:02:33.645
+from zero point two at the
+
+58
+00:02:33.744 --> 00:02:36.120
+start to two at the end.
+
+59
+00:02:36.470 --> 00:02:38.878
+Ordinary least squares is pulled
+
+60
+00:02:38.953 --> 00:02:41.136
+up by the noisy last reading
+
+61
+00:02:41.136 --> 00:02:43.468
+intercept zero point six four
+
+62
+00:02:43.468 --> 00:02:45.500
+slope two point three two.
+
+63
+00:02:45.575 --> 00:02:47.683
+The weighted fit follows the
+
+64
+00:02:47.758 --> 00:02:50.994
+precise early readings: one point zero two
+
+65
+00:02:50.994 --> 00:02:52.950
+and one point nine three.
+
+66
+00:02:53.300 --> 00:02:56.070
+The columns of A are all ones
+
+67
+00:02:56.166 --> 00:02:57.981
+and the settings t.
+
+68
+00:02:57.981 --> 00:03:02.089
+With the weights, the normal equations are
+
+69
+00:03:02.184 --> 00:03:04.095
+a two by two system
+
+70
+00:03:04.095 --> 00:03:07.820
+and its solution is the weighted line.
+
+71
+00:03:08.400 --> 00:03:12.462
+A good solver does not form A transpose W A.
+
+72
+00:03:12.462 --> 00:03:16.617
+It divides each row of A and b by its sigma
+
+73
+00:03:16.617 --> 00:03:19.295
+which makes the noise white
+
+74
+00:03:19.295 --> 00:03:23.080
+and then it runs ordinary least squares
+
+75
+00:03:23.080 --> 00:03:24.280
+through Q R.
+
+76
+00:03:24.630 --> 00:03:26.413
+Both fits are unbiased
+
+77
+00:03:26.413 --> 00:03:29.203
+on average they find the true line.
+
+78
+00:03:29.280 --> 00:03:32.535
+But the slope's standard deviation is zero
+
+79
+00:03:32.613 --> 00:03:35.403
+point four one five without weights
+
+80
+00:03:35.403 --> 00:03:38.580
+and zero point one eight five with them
+
+81
+00:03:38.580 --> 00:03:40.750
+more than twice as precise.
+
+82
+00:03:41.330 --> 00:03:43.545
+Why one over sigma squared?
+
+83
+00:03:43.545 --> 00:03:45.186
+For Gaussian noise
+
+84
+00:03:45.268 --> 00:03:48.714
+the log of the probability of the readings
+
+85
+00:03:48.796 --> 00:03:51.585
+is minus one half of the residual
+
+86
+00:03:51.585 --> 00:03:54.949
+times Sigma inverse, times the residual.
+
+87
+00:03:55.031 --> 00:03:57.903
+So the most likely x is exactly the
+
+88
+00:03:57.985 --> 00:04:00.610
+weighted least squares solution.
+
+89
+00:04:00.960 --> 00:04:03.783
+One quadratic form does four jobs
+
+90
+00:04:03.783 --> 00:04:06.191
+the exponent of the density
+
+91
+00:04:06.191 --> 00:04:08.018
+the squared distance
+
+92
+00:04:08.018 --> 00:04:10.343
+the length after whitening
+
+93
+00:04:10.343 --> 00:04:13.664
+and the loss of weighted least squares.
+
+94
+00:04:13.664 --> 00:04:17.400
+Its matrix is always the inverse covariance.
+
+95
+00:04:17.750 --> 00:04:20.475
+Machine learning uses the same idea.
+
+96
+00:04:20.551 --> 00:04:22.821
+A model can predict a mean and
+
+97
+00:04:22.897 --> 00:04:24.865
+a variance for each input
+
+98
+00:04:24.941 --> 00:04:27.665
+and minimise one half of the squared
+
+99
+00:04:27.741 --> 00:04:29.558
+error over the variance
+
+100
+00:04:29.558 --> 00:04:31.828
+plus the log of the variance
+
+101
+00:04:31.828 --> 00:04:33.645
+weighted least squares
+
+102
+00:04:33.645 --> 00:04:35.310
+with learned weights.
+
+103
+00:04:35.890 --> 00:04:38.308
+Weight each measurement by
+
+104
+00:04:38.401 --> 00:04:40.446
+one over its variance.
+
+105
+00:04:40.539 --> 00:04:43.235
+The weighted normal equations
+
+106
+00:04:43.328 --> 00:04:45.839
+are A transpose W A, x hat
+
+107
+00:04:45.839 --> 00:04:48.070
+equals A transpose W b.
+
+108
+00:04:48.070 --> 00:04:49.558
+Precisions add
+
+109
+00:04:49.651 --> 00:04:53.370
+and dividing the rows by sigma turns the
+
+110
+00:04:53.463 --> 00:04:56.810
+problem into ordinary least squares.
+
+111
+00:04:57.160 --> 00:05:00.788
+The inverse covariance is the right matrix
+
+112
+00:05:00.788 --> 00:05:01.800
+every time.

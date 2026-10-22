@@ -1,0 +1,457 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:03.860
+In part one
+
+2
+00:00:03.940 --> 00:00:07.060
+the café's four weeks gave the line one
+
+3
+00:00:07.140 --> 00:00:09.780
+point nine plus one point four t.
+
+4
+00:00:10.130 --> 00:00:12.851
+The recipe was the normal equations.
+
+5
+00:00:12.851 --> 00:00:15.648
+Nothing in it needs a straight line
+
+6
+00:00:15.648 --> 00:00:19.050
+only a model that is linear in its unknowns.
+
+7
+00:00:19.400 --> 00:00:22.270
+So add a term, t squared.
+
+8
+00:00:22.270 --> 00:00:26.288
+Will the best parabola fit better?
+
+9
+00:00:26.288 --> 00:00:28.240
+Pause and guess.
+
+10
+00:00:31.820 --> 00:00:36.445
+A parabola, C plus D t plus E t squared
+
+11
+00:00:36.445 --> 00:00:38.874
+adds a third column
+
+12
+00:00:38.874 --> 00:00:43.846
+the squares of the weeks, zero, one, four
+
+13
+00:00:43.846 --> 00:00:44.540
+nine.
+
+14
+00:00:44.890 --> 00:00:47.281
+And here is the surprise.
+
+15
+00:00:47.281 --> 00:00:49.194
+The best E is zero
+
+16
+00:00:49.194 --> 00:00:52.829
+the best parabola is the line itself
+
+17
+00:00:52.829 --> 00:00:55.890
+with the same error, point two.
+
+18
+00:00:56.240 --> 00:00:56.577
+Why?
+
+19
+00:00:56.577 --> 00:00:59.109
+Look at the line's residuals.
+
+20
+00:00:59.193 --> 00:01:01.387
+Their dot product with the
+
+21
+00:01:01.471 --> 00:01:03.074
+new column is zero
+
+22
+00:01:03.074 --> 00:01:06.280
+they are already perpendicular to it.
+
+23
+00:01:06.630 --> 00:01:09.563
+So that column has nothing to add.
+
+24
+00:01:09.650 --> 00:01:11.979
+Usually a new column lowers
+
+25
+00:01:12.065 --> 00:01:13.705
+the error a little.
+
+26
+00:01:13.705 --> 00:01:15.430
+It never raises it.
+
+27
+00:01:16.010 --> 00:01:17.394
+Now go further.
+
+28
+00:01:17.394 --> 00:01:19.885
+A cubic has four unknowns
+
+29
+00:01:19.885 --> 00:01:22.283
+and there are four weeks.
+
+30
+00:01:22.283 --> 00:01:26.250
+So the cubic can pass through every point.
+
+31
+00:01:26.600 --> 00:01:29.513
+The error is zero: a perfect fit.
+
+32
+00:01:29.513 --> 00:01:32.956
+But continue both curves to week four.
+
+33
+00:01:32.956 --> 00:01:36.840
+The line says seven hundred and fifty cups.
+
+34
+00:01:37.190 --> 00:01:40.574
+The cubic turns down and says four hundred.
+
+35
+00:01:40.653 --> 00:01:42.620
+It has bent itself to the
+
+36
+00:01:42.699 --> 00:01:44.430
+noise in four numbers.
+
+37
+00:01:45.010 --> 00:01:47.640
+So it is tempting to think
+
+38
+00:01:47.640 --> 00:01:49.881
+more terms fit better
+
+39
+00:01:49.881 --> 00:01:53.290
+so more terms make a better model.
+
+40
+00:01:53.870 --> 00:01:54.370
+Wrong.
+
+41
+00:01:54.415 --> 00:01:56.907
+Adding a column can only enlarge
+
+42
+00:01:56.985 --> 00:01:58.308
+the column space
+
+43
+00:01:58.308 --> 00:02:00.722
+so the error can only go down
+
+44
+00:02:00.800 --> 00:02:03.448
+all the way to zero once there are
+
+45
+00:02:03.525 --> 00:02:05.550
+as many columns as points.
+
+46
+00:02:05.900 --> 00:02:07.540
+That is overfitting
+
+47
+00:02:07.622 --> 00:02:10.575
+the cubic's forecast of four hundred
+
+48
+00:02:10.657 --> 00:02:12.379
+is the noise talking.
+
+49
+00:02:12.379 --> 00:02:15.578
+Judge a model on data it has not seen
+
+50
+00:02:15.578 --> 00:02:18.940
+in machine learning, the validation set.
+
+51
+00:02:19.520 --> 00:02:22.184
+Squares also magnify big errors.
+
+52
+00:02:22.184 --> 00:02:25.681
+Suppose week three had a street festival
+
+53
+00:02:25.764 --> 00:02:28.262
+and the café sold one thousand
+
+54
+00:02:28.345 --> 00:02:29.760
+two hundred cups.
+
+55
+00:02:30.110 --> 00:02:32.798
+Keep a faint copy of the old line.
+
+56
+00:02:32.798 --> 00:02:35.882
+Refit with the festival week included
+
+57
+00:02:35.961 --> 00:02:38.333
+the slope jumps from one point
+
+58
+00:02:38.412 --> 00:02:40.310
+four to three point two.
+
+59
+00:02:40.660 --> 00:02:42.903
+And the line now misses the
+
+60
+00:02:42.986 --> 00:02:46.392
+ordinary weeks too: too low at week zero
+
+61
+00:02:46.392 --> 00:02:48.220
+too high at week two
+
+62
+00:02:48.220 --> 00:02:51.460
+by more than a hundred cups each time.
+
+63
+00:02:51.810 --> 00:02:54.060
+Least squares has no idea the
+
+64
+00:02:54.138 --> 00:02:55.768
+festival was special.
+
+65
+00:02:55.768 --> 00:02:58.251
+An outlier should be explained
+
+66
+00:02:58.251 --> 00:02:59.570
+not averaged in.
+
+67
+00:03:00.150 --> 00:03:03.123
+Least squares is not only for curves.
+
+68
+00:03:03.203 --> 00:03:06.497
+The surveyor from Lecture eleven measured
+
+69
+00:03:06.577 --> 00:03:09.550
+six climbs between five landing pads.
+
+70
+00:03:09.900 --> 00:03:11.796
+They fit no heights
+
+71
+00:03:11.891 --> 00:03:14.262
+around the right loop the
+
+72
+00:03:14.356 --> 00:03:17.580
+climbs add to minus one, not zero.
+
+73
+00:03:17.930 --> 00:03:20.090
+Ground pad one at zero.
+
+74
+00:03:20.090 --> 00:03:23.563
+Six equations, four unknown heights
+
+75
+00:03:23.563 --> 00:03:27.601
+and the normal equations give four, three
+
+76
+00:03:27.601 --> 00:03:31.450
+thirty one thirds and twenty six thirds.
+
+77
+00:03:31.800 --> 00:03:34.952
+The left triangle's climbs are kept exactly.
+
+78
+00:03:34.952 --> 00:03:38.032
+On the right loop, each reading moves by a
+
+79
+00:03:38.104 --> 00:03:39.680
+third of the mismatch.
+
+80
+00:03:40.030 --> 00:03:43.289
+The residual is a multiple of the loop
+
+81
+00:03:43.289 --> 00:03:45.880
+it lies in the left nullspace
+
+82
+00:03:45.880 --> 00:03:48.470
+so the blame is spread evenly.
+
+83
+00:03:49.050 --> 00:03:51.357
+Finally, machine learning.
+
+84
+00:03:51.357 --> 00:03:55.350
+A linear regression predicts y as X times w
+
+85
+00:03:55.350 --> 00:03:58.810
+with the features in the columns of X.
+
+86
+00:03:59.160 --> 00:04:02.855
+Training on the mean squared error minimises
+
+87
+00:04:02.939 --> 00:04:05.877
+the length of y minus X w, squared.
+
+88
+00:04:05.877 --> 00:04:09.320
+Dividing by m does not move the minimum.
+
+89
+00:04:09.670 --> 00:04:11.824
+So training is least squares
+
+90
+00:04:11.824 --> 00:04:15.093
+and the weights solve the normal equations.
+
+91
+00:04:15.167 --> 00:04:18.139
+NumPy's least squares solver returns the
+
+92
+00:04:18.213 --> 00:04:21.110
+same one point nine and one point four.
+
+93
+00:04:21.460 --> 00:04:23.538
+Neural networks use gradient
+
+94
+00:04:23.612 --> 00:04:24.799
+descent instead
+
+95
+00:04:24.799 --> 00:04:27.397
+small steps downhill on the error.
+
+96
+00:04:27.397 --> 00:04:28.732
+On the café data
+
+97
+00:04:28.807 --> 00:04:30.810
+the line walks step by step
+
+98
+00:04:30.884 --> 00:04:32.220
+to the same place.
+
+99
+00:04:32.570 --> 00:04:34.270
+Two habits carry over.
+
+100
+00:04:34.270 --> 00:04:35.738
+With an intercept
+
+101
+00:04:35.738 --> 00:04:37.825
+the residuals add to zero.
+
+102
+00:04:37.902 --> 00:04:40.452
+And look at the largest residuals
+
+103
+00:04:40.529 --> 00:04:42.770
+before you trust the weights.
+
+104
+00:04:43.350 --> 00:04:46.596
+So: for any model that is linear
+
+105
+00:04:46.698 --> 00:04:50.958
+in its unknowns, solve A transpose A x hat
+
+106
+00:04:51.060 --> 00:04:53.190
+equals A transpose b.
+
+107
+00:04:53.540 --> 00:04:57.364
+The error is perpendicular to every column.
+
+108
+00:04:57.364 --> 00:04:59.855
+And before you trust a fit
+
+109
+00:04:59.855 --> 00:05:01.900
+look at its residuals.
+
+110
+00:05:02.480 --> 00:05:03.507
+Next lecture
+
+111
+00:05:03.586 --> 00:05:06.193
+if the columns were perpendicular
+
+112
+00:05:06.272 --> 00:05:07.378
+to begin with
+
+113
+00:05:07.378 --> 00:05:10.222
+the normal equations would be easy.
+
+114
+00:05:10.222 --> 00:05:11.960
+We will make them so.

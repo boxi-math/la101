@@ -1,0 +1,473 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:03.846
+In part one
+
+2
+00:00:03.924 --> 00:00:06.840
+the signs of the Fiedler vector split
+
+3
+00:00:06.919 --> 00:00:09.126
+a graph into its two groups.
+
+4
+00:00:09.126 --> 00:00:11.096
+Now add a ninth student
+
+5
+00:00:11.096 --> 00:00:13.460
+who knows only student eight.
+
+6
+00:00:13.810 --> 00:00:16.743
+There are now two ways to cut a single edge
+
+7
+00:00:16.743 --> 00:00:19.010
+the bridge between four and five
+
+8
+00:00:19.010 --> 00:00:21.143
+or the edge from eight to nine
+
+9
+00:00:21.143 --> 00:00:23.010
+which cuts off one student.
+
+10
+00:00:23.590 --> 00:00:24.894
+A natural rule
+
+11
+00:00:24.981 --> 00:00:27.590
+the best split is the one that
+
+12
+00:00:27.677 --> 00:00:29.590
+cuts the fewest edges.
+
+13
+00:00:29.940 --> 00:00:33.127
+But here both cuts remove one edge
+
+14
+00:00:33.218 --> 00:00:36.495
+and in larger graphs this rule loves
+
+15
+00:00:36.586 --> 00:00:39.500
+to cut off a single lonely node.
+
+16
+00:00:39.850 --> 00:00:42.962
+A better measure is the ratio cut
+
+17
+00:00:42.962 --> 00:00:44.335
+the cut edges
+
+18
+00:00:44.335 --> 00:00:48.454
+times one over the size of each side, added.
+
+19
+00:00:48.545 --> 00:00:51.291
+Cutting off student nine costs
+
+20
+00:00:51.383 --> 00:00:55.410
+one plus one eighth: one point one two five.
+
+21
+00:00:55.760 --> 00:00:57.928
+Splitting at the bridge costs
+
+22
+00:00:58.003 --> 00:00:59.723
+a quarter plus a fifth
+
+23
+00:00:59.723 --> 00:01:01.367
+zero point four five.
+
+24
+00:01:01.367 --> 00:01:03.760
+Balanced sides make it cheaper.
+
+25
+00:01:04.340 --> 00:01:06.802
+Minimising x transpose L x
+
+26
+00:01:06.802 --> 00:01:10.540
+with x perpendicular to the ones vector
+
+27
+00:01:10.540 --> 00:01:12.728
+is a relaxed ratio cut
+
+28
+00:01:12.728 --> 00:01:16.740
+real numbers instead of plus and minus one.
+
+29
+00:01:17.090 --> 00:01:19.373
+So the Fiedler vector does not
+
+30
+00:01:19.450 --> 00:01:21.352
+fall for the lonely node.
+
+31
+00:01:21.352 --> 00:01:24.778
+Student nine gets minus zero point four six
+
+32
+00:01:24.778 --> 00:01:27.061
+on the side of five to eight
+
+33
+00:01:27.061 --> 00:01:30.410
+and the sign change is still at the bridge.
+
+34
+00:01:30.990 --> 00:01:31.817
+Now data.
+
+35
+00:01:31.908 --> 00:01:34.113
+Thirty made-up points on
+
+36
+00:01:34.204 --> 00:01:36.133
+a ring of radius one
+
+37
+00:01:36.225 --> 00:01:38.980
+and ninety on a ring of radius
+
+38
+00:01:39.072 --> 00:01:42.470
+three around it, with a little noise.
+
+39
+00:01:42.820 --> 00:01:45.269
+Data does not come as a graph
+
+40
+00:01:45.269 --> 00:01:46.657
+so we build one.
+
+41
+00:01:46.738 --> 00:01:49.024
+Two points get a weight near
+
+42
+00:01:49.106 --> 00:01:50.902
+one if they are close
+
+43
+00:01:50.902 --> 00:01:53.187
+and near zero if far apart.
+
+44
+00:01:53.187 --> 00:01:54.983
+Sigma sets the width.
+
+45
+00:01:54.983 --> 00:01:57.922
+Then form the Laplacian, D minus W
+
+46
+00:01:57.922 --> 00:01:58.820
+as before.
+
+47
+00:01:59.400 --> 00:02:00.832
+First try k means.
+
+48
+00:02:00.832 --> 00:02:02.899
+It looks for two centres
+
+49
+00:02:02.899 --> 00:02:06.080
+and gives each point to the nearer one.
+
+50
+00:02:06.430 --> 00:02:08.788
+But both rings have the same centre.
+
+51
+00:02:08.853 --> 00:02:10.622
+Two centres split the plane
+
+52
+00:02:10.687 --> 00:02:11.932
+by a straight line
+
+53
+00:02:11.997 --> 00:02:14.682
+and k means agrees with the rings on only
+
+54
+00:02:14.748 --> 00:02:16.844
+fifty two percent of the points
+
+55
+00:02:16.844 --> 00:02:18.350
+no better than a coin.
+
+56
+00:02:18.930 --> 00:02:21.250
+Now take the similarity graph
+
+57
+00:02:21.330 --> 00:02:22.930
+with sigma one half.
+
+58
+00:02:23.010 --> 00:02:25.890
+Will the signs of its Fiedler vector
+
+59
+00:02:25.970 --> 00:02:27.810
+separate the two rings?
+
+60
+00:02:27.810 --> 00:02:29.170
+Pause and guess.
+
+61
+00:02:32.750 --> 00:02:34.187
+Yes, perfectly
+
+62
+00:02:34.187 --> 00:02:37.730
+every point lands with its own ring.
+
+63
+00:02:37.730 --> 00:02:41.178
+The Laplacian looks at connections
+
+64
+00:02:41.178 --> 00:02:42.710
+not at centres.
+
+65
+00:02:43.060 --> 00:02:44.943
+The eigenvalues show why.
+
+66
+00:02:44.943 --> 00:02:47.730
+Lambda two, about seven thousandths
+
+67
+00:02:47.730 --> 00:02:49.764
+is far below lambda three
+
+68
+00:02:49.764 --> 00:02:51.496
+about four hundredths
+
+69
+00:02:51.496 --> 00:02:54.660
+the rings are two almost separate pieces.
+
+70
+00:02:55.240 --> 00:02:57.343
+Now widen the weights to
+
+71
+00:02:57.431 --> 00:02:59.446
+sigma zero point eight.
+
+72
+00:02:59.533 --> 00:03:02.250
+Points on different rings still
+
+73
+00:03:02.337 --> 00:03:04.440
+count as fairly similar.
+
+74
+00:03:04.790 --> 00:03:07.720
+Lambda two and lambda three are close
+
+75
+00:03:07.797 --> 00:03:09.724
+zero point four eight and
+
+76
+00:03:09.801 --> 00:03:11.497
+zero point five three.
+
+77
+00:03:11.497 --> 00:03:12.808
+There is no gap
+
+78
+00:03:12.885 --> 00:03:15.506
+and the sign split agrees with the
+
+79
+00:03:15.583 --> 00:03:18.127
+rings on only fifty four percent.
+
+80
+00:03:18.204 --> 00:03:20.980
+So look at the eigenvalue gap before
+
+81
+00:03:21.057 --> 00:03:22.830
+you trust the clusters.
+
+82
+00:03:23.410 --> 00:03:27.037
+For k groups, take the eigenvectors of the
+
+83
+00:03:27.124 --> 00:03:29.110
+k smallest eigenvalues.
+
+84
+00:03:29.110 --> 00:03:32.650
+They give every point k new coordinates
+
+85
+00:03:32.650 --> 00:03:36.450
+and k means on those coordinates now works.
+
+86
+00:03:36.800 --> 00:03:38.656
+Libraries usually use the
+
+87
+00:03:38.731 --> 00:03:40.290
+normalised Laplacian
+
+88
+00:03:40.290 --> 00:03:43.408
+which balances groups of different sizes.
+
+89
+00:03:43.483 --> 00:03:46.007
+The same tools find communities in
+
+90
+00:03:46.081 --> 00:03:48.160
+networks and segment images.
+
+91
+00:03:48.740 --> 00:03:50.326
+Working with AI.
+
+92
+00:03:50.326 --> 00:03:52.704
+Asked for three groups
+
+93
+00:03:52.704 --> 00:03:56.767
+an assistant calls numpy's eig function
+
+94
+00:03:56.767 --> 00:03:59.740
+and uses columns one and two.
+
+95
+00:04:00.090 --> 00:04:02.600
+But eig returns the eigenvalues
+
+96
+00:04:02.681 --> 00:04:04.542
+in no particular order.
+
+97
+00:04:04.542 --> 00:04:06.647
+Column one is lambda two
+
+98
+00:04:06.647 --> 00:04:09.804
+but column two belongs to the largest
+
+99
+00:04:09.804 --> 00:04:12.961
+four point nine: the roughest pattern.
+
+100
+00:04:12.961 --> 00:04:15.713
+For a symmetric matrix, use eigh
+
+101
+00:04:15.713 --> 00:04:17.170
+which sorts them.
+
+102
+00:04:17.750 --> 00:04:18.554
+To sum up.
+
+103
+00:04:18.634 --> 00:04:20.644
+The Fiedler vector solves
+
+104
+00:04:20.724 --> 00:04:22.332
+a relaxed ratio cut
+
+105
+00:04:22.332 --> 00:04:24.662
+so it finds balanced splits
+
+106
+00:04:24.662 --> 00:04:26.350
+not just small cuts.
+
+107
+00:04:26.700 --> 00:04:29.350
+For data, build a similarity graph
+
+108
+00:04:29.426 --> 00:04:31.924
+and use the smallest eigenvectors
+
+109
+00:04:32.000 --> 00:04:34.953
+of its Laplacian: groups by connection
+
+110
+00:04:34.953 --> 00:04:36.089
+not by centre.
+
+111
+00:04:36.089 --> 00:04:39.420
+Trust them when the eigenvalues show a gap.
+
+112
+00:04:39.770 --> 00:04:40.772
+Now you try
+
+113
+00:04:40.772 --> 00:04:44.361
+find the eigenvalues of the path one, two
+
+114
+00:04:44.361 --> 00:04:44.945
+three
+
+115
+00:04:44.945 --> 00:04:48.450
+and say how its Fiedler vector splits it.
+
+116
+00:04:48.800 --> 00:04:52.258
+Next elective: flows through networks
+
+117
+00:04:52.349 --> 00:04:54.714
+and games where one side's
+
+118
+00:04:54.805 --> 00:04:57.080
+gain is the other's loss.

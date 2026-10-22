@@ -1,0 +1,497 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:04.007
+In part one
+
+2
+00:00:04.100 --> 00:00:07.053
+a zero dot product meant a right
+
+3
+00:00:07.145 --> 00:00:09.544
+angle between two vectors.
+
+4
+00:00:09.544 --> 00:00:13.420
+Now whole subspaces can be perpendicular.
+
+5
+00:00:13.770 --> 00:00:16.043
+Here is the drone's plane
+
+6
+00:00:16.134 --> 00:00:19.043
+of reachable places, in R three.
+
+7
+00:00:19.043 --> 00:00:21.588
+Stand a second plane on it
+
+8
+00:00:21.588 --> 00:00:23.770
+like a wall on a floor.
+
+9
+00:00:23.861 --> 00:00:26.406
+The arrows normal to the two
+
+10
+00:00:26.497 --> 00:00:28.770
+planes are perpendicular
+
+11
+00:00:28.770 --> 00:00:31.770
+one minus one plus zero is zero.
+
+12
+00:00:32.120 --> 00:00:35.054
+So are the wall and the floor
+
+13
+00:00:35.155 --> 00:00:37.280
+orthogonal subspaces?
+
+14
+00:00:37.280 --> 00:00:39.000
+Pause and think.
+
+15
+00:00:42.580 --> 00:00:45.718
+Two subspaces are orthogonal when every
+
+16
+00:00:45.798 --> 00:00:48.936
+vector in one is perpendicular to every
+
+17
+00:00:49.017 --> 00:00:50.626
+vector in the other.
+
+18
+00:00:50.626 --> 00:00:54.166
+The drone's plane and the line through one
+
+19
+00:00:54.166 --> 00:00:56.580
+minus one, one are like that.
+
+20
+00:00:56.930 --> 00:01:00.770
+Now read A x equals zero one row at a time
+
+21
+00:01:00.770 --> 00:01:04.254
+x has dot product zero with every row.
+
+22
+00:01:04.343 --> 00:01:07.112
+So it is perpendicular to every
+
+23
+00:01:07.201 --> 00:01:09.702
+combination of the rows too
+
+24
+00:01:09.791 --> 00:01:12.202
+the nullspace is orthogonal
+
+25
+00:01:12.292 --> 00:01:13.810
+to the row space.
+
+26
+00:01:14.160 --> 00:01:17.795
+Check it for the drone with basis vectors
+
+27
+00:01:17.795 --> 00:01:21.343
+the rows of R and the special solutions.
+
+28
+00:01:21.343 --> 00:01:24.804
+Row one dot the first special solution
+
+29
+00:01:24.804 --> 00:01:28.266
+minus two plus zero plus two plus zero
+
+30
+00:01:28.266 --> 00:01:28.785
+zero.
+
+31
+00:01:28.785 --> 00:01:30.862
+Row one dot the second
+
+32
+00:01:30.862 --> 00:01:34.410
+one plus zero plus zero minus one, zero.
+
+33
+00:01:34.410 --> 00:01:36.401
+Row two dot the first
+
+34
+00:01:36.401 --> 00:01:39.949
+zero minus one plus one plus zero, zero.
+
+35
+00:01:39.949 --> 00:01:42.372
+And row two dot the second
+
+36
+00:01:42.372 --> 00:01:45.920
+zero minus one plus zero plus one, zero.
+
+37
+00:01:46.500 --> 00:01:49.513
+The nullspace is more than orthogonal
+
+38
+00:01:49.594 --> 00:01:50.979
+to the row space
+
+39
+00:01:51.060 --> 00:01:53.910
+it holds every vector perpendicular
+
+40
+00:01:53.991 --> 00:01:54.969
+to the rows.
+
+41
+00:01:55.050 --> 00:01:57.574
+It is the orthogonal complement
+
+42
+00:01:57.656 --> 00:01:59.040
+of the row space.
+
+43
+00:01:59.040 --> 00:02:01.239
+And the dimensions add up
+
+44
+00:02:01.239 --> 00:02:04.740
+two plus two is four, the whole of R four.
+
+45
+00:02:05.090 --> 00:02:06.079
+In R three
+
+46
+00:02:06.079 --> 00:02:10.035
+the drone's plane and the line through one
+
+47
+00:02:10.035 --> 00:02:13.271
+minus one, one are complements too
+
+48
+00:02:13.271 --> 00:02:15.339
+two plus one is three.
+
+49
+00:02:15.429 --> 00:02:18.935
+So a target b is reachable exactly when
+
+50
+00:02:19.025 --> 00:02:21.992
+it is perpendicular to that line.
+
+51
+00:02:21.992 --> 00:02:23.340
+One, two, one
+
+52
+00:02:23.340 --> 00:02:27.206
+one minus two plus one is zero, reachable.
+
+53
+00:02:27.206 --> 00:02:28.554
+One, one, one
+
+54
+00:02:28.554 --> 00:02:31.341
+one minus one plus one is one
+
+55
+00:02:31.341 --> 00:02:32.690
+not reachable.
+
+56
+00:02:33.270 --> 00:02:34.720
+Back to the puzzle.
+
+57
+00:02:34.720 --> 00:02:36.780
+It is tempting to say yes
+
+58
+00:02:36.857 --> 00:02:38.841
+because the wall meets the
+
+59
+00:02:38.917 --> 00:02:40.672
+floor at a right angle.
+
+60
+00:02:40.748 --> 00:02:43.038
+But two planes through zero in
+
+61
+00:02:43.114 --> 00:02:45.251
+R three always share a line.
+
+62
+00:02:45.251 --> 00:02:48.608
+Here it is the line through minus one, one
+
+63
+00:02:48.608 --> 00:02:49.108
+two.
+
+64
+00:02:49.340 --> 00:02:51.857
+That vector lies in both planes
+
+65
+00:02:51.936 --> 00:02:54.374
+and its dot product with itself
+
+66
+00:02:54.453 --> 00:02:57.678
+is one plus one plus four: six, not zero.
+
+67
+00:02:57.757 --> 00:03:00.667
+A vector in both subspaces would have
+
+68
+00:03:00.746 --> 00:03:03.106
+to be perpendicular to itself
+
+69
+00:03:03.106 --> 00:03:05.780
+so the planes are not orthogonal.
+
+70
+00:03:05.780 --> 00:03:07.904
+The dimensions say it too
+
+71
+00:03:07.904 --> 00:03:10.500
+two plus two is more than three.
+
+72
+00:03:11.080 --> 00:03:15.045
+Every recipe of button presses splits into
+
+73
+00:03:15.140 --> 00:03:18.727
+a row space part and a nullspace part.
+
+74
+00:03:18.727 --> 00:03:22.881
+Take one press of u and one of v: x is one
+
+75
+00:03:22.881 --> 00:03:24.486
+one, zero, zero
+
+76
+00:03:24.486 --> 00:03:28.640
+and it flies the drone to two, five, three.
+
+77
+00:03:28.990 --> 00:03:32.569
+Its row space part is two, five, nine
+
+78
+00:03:32.569 --> 00:03:34.735
+three, over seventeen.
+
+79
+00:03:34.735 --> 00:03:38.408
+Its nullspace part is fifteen, twelve
+
+80
+00:03:38.408 --> 00:03:42.269
+minus nine, minus three, over seventeen.
+
+81
+00:03:42.269 --> 00:03:45.377
+The nullspace part does nothing
+
+82
+00:03:45.377 --> 00:03:49.615
+A times x equals A times the row space part
+
+83
+00:03:49.615 --> 00:03:51.310
+two, five, three.
+
+84
+00:03:51.660 --> 00:03:54.924
+Draw the flat plane through the two parts
+
+85
+00:03:54.924 --> 00:03:57.099
+they meet at a right angle.
+
+86
+00:03:57.099 --> 00:03:58.265
+By Pythagoras
+
+87
+00:03:58.343 --> 00:04:00.674
+seven seventeenths plus twenty
+
+88
+00:04:00.752 --> 00:04:02.772
+seven seventeenths is two
+
+89
+00:04:02.772 --> 00:04:04.715
+the length squared of x.
+
+90
+00:04:04.715 --> 00:04:06.502
+So the row space part
+
+91
+00:04:06.502 --> 00:04:09.144
+with length about point six four
+
+92
+00:04:09.144 --> 00:04:12.330
+is the shortest recipe that reaches two
+
+93
+00:04:12.330 --> 00:04:13.340
+five, three.
+
+94
+00:04:13.920 --> 00:04:15.515
+In machine learning
+
+95
+00:04:15.515 --> 00:04:17.906
+things are stored as vectors
+
+96
+00:04:17.906 --> 00:04:20.537
+and similar means a small angle.
+
+97
+00:04:20.617 --> 00:04:23.487
+Cosine similarity is the dot product
+
+98
+00:04:23.567 --> 00:04:25.480
+divided by both lengths.
+
+99
+00:04:25.830 --> 00:04:29.825
+Each café drink is its column of ratings.
+
+100
+00:04:29.825 --> 00:04:32.553
+Tea is two, zero, one, one
+
+101
+00:04:32.553 --> 00:04:35.963
+and cocoa is four, zero, two, two
+
+102
+00:04:35.963 --> 00:04:39.081
+cosine one, the same direction.
+
+103
+00:04:39.081 --> 00:04:42.881
+Latte and mocha: point nine seven six
+
+104
+00:04:42.881 --> 00:04:43.563
+close.
+
+105
+00:04:43.563 --> 00:04:47.558
+Espresso and tea: point four zero eight
+
+106
+00:04:47.558 --> 00:04:48.630
+far apart.
+
+107
+00:04:48.980 --> 00:04:52.126
+But cocoa is twice as long as tea.
+
+108
+00:04:52.126 --> 00:04:55.272
+Cosine similarity ignores length
+
+109
+00:04:55.364 --> 00:04:57.585
+a cosine of one does not
+
+110
+00:04:57.677 --> 00:04:59.620
+mean the same vector.
+
+111
+00:05:00.200 --> 00:05:02.677
+So: the row space and the nullspace
+
+112
+00:05:02.748 --> 00:05:04.659
+are orthogonal complements
+
+113
+00:05:04.729 --> 00:05:06.640
+and so are the column space
+
+114
+00:05:06.711 --> 00:05:08.339
+and the left nullspace.
+
+115
+00:05:08.339 --> 00:05:11.382
+Every recipe splits into a row space part
+
+116
+00:05:11.382 --> 00:05:14.425
+which does the work, and a nullspace part
+
+117
+00:05:14.425 --> 00:05:15.840
+which does nothing.
+
+118
+00:05:16.190 --> 00:05:19.068
+Two planes in R three are never
+
+119
+00:05:19.160 --> 00:05:22.873
+orthogonal subspaces: they share a line.
+
+120
+00:05:22.873 --> 00:05:26.772
+And cosine similarity measures direction
+
+121
+00:05:26.772 --> 00:05:27.886
+not length.
+
+122
+00:05:27.886 --> 00:05:32.063
+Your turn: split the recipe zero, two, zero
+
+123
+00:05:32.063 --> 00:05:33.084
+minus one.
+
+124
+00:05:33.084 --> 00:05:35.590
+Next lecture: projections.

@@ -1,0 +1,509 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:05.711
+Part one projected onto a line.
+
+2
+00:00:05.802 --> 00:00:08.069
+Now the drone can reach a
+
+3
+00:00:08.160 --> 00:00:10.064
+whole plane in space.
+
+4
+00:00:10.064 --> 00:00:12.876
+We look at that plane face on
+
+5
+00:00:12.876 --> 00:00:14.780
+from straight above.
+
+6
+00:00:15.130 --> 00:00:18.528
+Its buttons u and v span the plane.
+
+7
+00:00:18.625 --> 00:00:21.343
+Put them into the columns of
+
+8
+00:00:21.440 --> 00:00:23.770
+a three by two matrix A.
+
+9
+00:00:24.120 --> 00:00:27.498
+A customer waits at one, one, one.
+
+10
+00:00:27.498 --> 00:00:30.478
+It hovers just off the plane
+
+11
+00:00:30.478 --> 00:00:32.167
+above this spot
+
+12
+00:00:32.167 --> 00:00:36.240
+one minus one plus one is one, not zero.
+
+13
+00:00:36.590 --> 00:00:38.640
+Now turn to a side view
+
+14
+00:00:38.640 --> 00:00:40.862
+the plane becomes a line
+
+15
+00:00:40.862 --> 00:00:43.596
+and the customer sits above it.
+
+16
+00:00:43.681 --> 00:00:46.671
+We want the gap to be perpendicular
+
+17
+00:00:46.757 --> 00:00:48.380
+to the whole plane.
+
+18
+00:00:48.380 --> 00:00:50.858
+How many conditions is that?
+
+19
+00:00:50.858 --> 00:00:52.310
+Pause and think.
+
+20
+00:00:55.890 --> 00:00:58.031
+Two conditions are enough.
+
+21
+00:00:58.031 --> 00:01:01.653
+If the gap is perpendicular to u, and to v
+
+22
+00:01:01.736 --> 00:01:04.041
+it is perpendicular to every
+
+23
+00:01:04.123 --> 00:01:05.770
+combination of them.
+
+24
+00:01:06.120 --> 00:01:09.965
+Stack both conditions: A transpose
+
+25
+00:01:09.965 --> 00:01:13.480
+times b minus A x hat, is zero.
+
+26
+00:01:13.830 --> 00:01:14.953
+Multiply out
+
+27
+00:01:14.953 --> 00:01:17.889
+and you get the normal equations.
+
+28
+00:01:17.889 --> 00:01:20.307
+Normal means perpendicular
+
+29
+00:01:20.307 --> 00:01:23.070
+the gap is normal to the plane.
+
+30
+00:01:23.420 --> 00:01:28.497
+For the drone, A transpose A is six, nine
+
+31
+00:01:28.497 --> 00:01:33.696
+nine, fourteen, and A transpose b is four
+
+32
+00:01:33.696 --> 00:01:34.300
+six.
+
+33
+00:01:34.650 --> 00:01:37.944
+The solution is two thirds, zero.
+
+34
+00:01:37.944 --> 00:01:42.037
+So the closest point is two thirds of u
+
+35
+00:01:42.037 --> 00:01:45.730
+two thirds, four thirds, two thirds.
+
+36
+00:01:46.080 --> 00:01:49.861
+The gap is one third of one, minus one, one.
+
+37
+00:01:49.861 --> 00:01:53.041
+It meets the plane at a right angle
+
+38
+00:01:53.041 --> 00:01:54.760
+in both directions.
+
+39
+00:01:55.340 --> 00:01:59.083
+Solve for x hat and multiply by A.
+
+40
+00:01:59.083 --> 00:02:02.165
+The projection matrix is A
+
+41
+00:02:02.165 --> 00:02:06.128
+times the inverse of A transpose A
+
+42
+00:02:06.128 --> 00:02:08.220
+times A transpose.
+
+43
+00:02:08.570 --> 00:02:11.245
+For the drone, P has rank two
+
+44
+00:02:11.245 --> 00:02:14.010
+everything lands in the plane.
+
+45
+00:02:14.360 --> 00:02:17.559
+Project twice and nothing changes
+
+46
+00:02:17.559 --> 00:02:19.440
+and P is symmetric.
+
+47
+00:02:19.790 --> 00:02:22.595
+P depends only on the plane.
+
+48
+00:02:22.595 --> 00:02:25.900
+Use another basis, like w and s
+
+49
+00:02:25.900 --> 00:02:28.805
+and you get the same matrix.
+
+50
+00:02:28.805 --> 00:02:31.910
+Only the amounts x hat change.
+
+51
+00:02:32.260 --> 00:02:35.311
+But the columns must be independent.
+
+52
+00:02:35.311 --> 00:02:37.770
+Put all four buttons into A
+
+53
+00:02:37.854 --> 00:02:39.973
+and A transpose A is four
+
+54
+00:02:40.058 --> 00:02:42.940
+by four with rank two: no inverse.
+
+55
+00:02:43.808 --> 00:02:45.137
+A classic slip
+
+56
+00:02:45.225 --> 00:02:48.679
+split the inverse of A transpose A into
+
+57
+00:02:48.768 --> 00:02:51.957
+A inverse times A transpose inverse.
+
+58
+00:02:51.957 --> 00:02:54.171
+Then everything cancels
+
+59
+00:02:54.171 --> 00:02:56.208
+and P is the identity.
+
+60
+00:02:56.788 --> 00:02:59.584
+But the drone's A is three by two.
+
+61
+00:02:59.584 --> 00:03:01.723
+It has no inverse at all
+
+62
+00:03:01.723 --> 00:03:04.108
+so the split is not allowed.
+
+63
+00:03:04.458 --> 00:03:07.579
+And P is clearly not the identity.
+
+64
+00:03:07.579 --> 00:03:11.618
+It moves one, one, one down onto the plane.
+
+65
+00:03:11.968 --> 00:03:14.895
+Only for a square invertible A is
+
+66
+00:03:14.984 --> 00:03:17.468
+the column space everything.
+
+67
+00:03:17.468 --> 00:03:20.307
+Then every target is reachable
+
+68
+00:03:20.307 --> 00:03:22.968
+and P really is the identity.
+
+69
+00:03:23.548 --> 00:03:25.985
+Now the promised proof that
+
+70
+00:03:26.075 --> 00:03:28.150
+p is the closest point.
+
+71
+00:03:28.150 --> 00:03:30.948
+Take any point q of the plane.
+
+72
+00:03:31.298 --> 00:03:35.509
+Cut a slice through b, p and q.
+
+73
+00:03:35.509 --> 00:03:40.942
+b minus q is the gap e, plus p minus q
+
+74
+00:03:40.942 --> 00:03:44.338
+which lies in the plane.
+
+75
+00:03:44.688 --> 00:03:47.859
+The gap is perpendicular to the plane
+
+76
+00:03:47.859 --> 00:03:51.446
+so these two pieces meet at a right angle.
+
+77
+00:03:51.446 --> 00:03:54.450
+Pythagoras: the squared distance to
+
+78
+00:03:54.533 --> 00:03:56.286
+q is the gap squared
+
+79
+00:03:56.286 --> 00:03:58.288
+plus p minus q squared.
+
+80
+00:03:58.638 --> 00:04:01.264
+So it can only be bigger.
+
+81
+00:04:01.264 --> 00:04:05.571
+Check: at u the squared distance is one
+
+82
+00:04:05.571 --> 00:04:10.087
+at v it is five, and at p it is one third
+
+83
+00:04:10.087 --> 00:04:11.558
+the smallest.
+
+84
+00:04:11.908 --> 00:04:14.388
+Minimising a sum of squares by
+
+85
+00:04:14.471 --> 00:04:17.281
+projecting is exactly what Lecture
+
+86
+00:04:17.364 --> 00:04:19.348
+fourteen does with data.
+
+87
+00:04:19.928 --> 00:04:22.916
+I minus P keeps the other part
+
+88
+00:04:22.916 --> 00:04:25.134
+it sends b to the gap.
+
+89
+00:04:25.230 --> 00:04:27.640
+That is how you remove an
+
+90
+00:04:27.736 --> 00:04:29.568
+unwanted direction.
+
+91
+00:04:29.918 --> 00:04:32.281
+A well-known study of word embeddings
+
+92
+00:04:32.344 --> 00:04:34.643
+removed a gender direction this way
+
+93
+00:04:34.643 --> 00:04:36.878
+from words that should be neutral.
+
+94
+00:04:37.228 --> 00:04:39.601
+A small made-up café example
+
+95
+00:04:39.683 --> 00:04:41.975
+a recommender describes each
+
+96
+00:04:42.056 --> 00:04:44.266
+menu item by three numbers
+
+97
+00:04:44.266 --> 00:04:46.557
+and the direction one, one
+
+98
+00:04:46.557 --> 00:04:48.112
+zero tracks price.
+
+99
+00:04:48.112 --> 00:04:50.404
+To compare by flavour only
+
+100
+00:04:50.404 --> 00:04:53.268
+keep the part perpendicular to it.
+
+101
+00:04:53.618 --> 00:04:56.605
+Before, the gold latte and the truffle
+
+102
+00:04:56.683 --> 00:04:58.020
+mocha look alike
+
+103
+00:04:58.020 --> 00:05:00.771
+mostly because both are expensive.
+
+104
+00:05:00.771 --> 00:05:01.321
+After
+
+105
+00:05:01.321 --> 00:05:04.858
+their cosine is minus zero point five eight.
+
+106
+00:05:05.208 --> 00:05:06.606
+Without its price
+
+107
+00:05:06.606 --> 00:05:09.947
+the gold latte is almost the house coffee.
+
+108
+00:05:09.947 --> 00:05:13.288
+The coffee and the iced tea barely change.
+
+109
+00:05:13.638 --> 00:05:16.594
+One caution: only what lies along that
+
+110
+00:05:16.671 --> 00:05:18.305
+direction is removed.
+
+111
+00:05:18.382 --> 00:05:20.638
+Information spread over other
+
+112
+00:05:20.716 --> 00:05:22.038
+directions stays.
+
+113
+00:05:24.618 --> 00:05:27.488
+So, to project onto a subspace
+
+114
+00:05:27.488 --> 00:05:31.561
+make the gap perpendicular to every column.
+
+115
+00:05:31.561 --> 00:05:34.338
+That is the normal equations.
+
+116
+00:05:34.688 --> 00:05:37.059
+The projection matrix needs
+
+117
+00:05:37.147 --> 00:05:38.903
+independent columns
+
+118
+00:05:38.903 --> 00:05:41.888
+and depends only on the subspace.
+
+119
+00:05:42.238 --> 00:05:43.820
+And by Pythagoras
+
+120
+00:05:43.820 --> 00:05:47.598
+no point of the subspace is closer than p.
+
+121
+00:05:48.178 --> 00:05:52.785
+Try one: move the customer to three, six
+
+122
+00:05:52.785 --> 00:05:53.459
+four.
+
+123
+00:05:53.459 --> 00:05:55.818
+What is the gap now?
+
+124
+00:05:56.168 --> 00:05:57.284
+Next lecture
+
+125
+00:05:57.370 --> 00:06:01.149
+the same normal equations fit a line through
+
+126
+00:06:01.234 --> 00:06:04.240
+data points that do not lie on one
+
+127
+00:06:04.240 --> 00:06:05.528
+least squares.

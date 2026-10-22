@@ -1,0 +1,445 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:05.318
+For least squares we learned
+
+2
+00:00:05.404 --> 00:00:07.217
+the normal equations
+
+3
+00:00:07.217 --> 00:00:10.844
+A transpose A x hat equals A transpose b.
+
+4
+00:00:10.844 --> 00:00:12.398
+They are correct.
+
+5
+00:00:12.398 --> 00:00:15.420
+But are they safe to compute with?
+
+6
+00:00:15.770 --> 00:00:19.174
+Take a matrix with stretches four and one
+
+7
+00:00:19.255 --> 00:00:21.281
+its ellipse is four times
+
+8
+00:00:21.362 --> 00:00:23.226
+longer than it is wide.
+
+9
+00:00:23.226 --> 00:00:26.792
+What happens to the shape of A transpose A?
+
+10
+00:00:26.792 --> 00:00:28.170
+Pause and think.
+
+11
+00:00:31.750 --> 00:00:34.008
+A transpose A has the squared
+
+12
+00:00:34.086 --> 00:00:36.656
+singular values: sixteen and one.
+
+13
+00:00:36.656 --> 00:00:38.680
+Drawn to the same length
+
+14
+00:00:38.758 --> 00:00:40.939
+its ellipse is sixteen times
+
+15
+00:00:41.017 --> 00:00:42.340
+longer than wide.
+
+16
+00:00:42.340 --> 00:00:44.910
+The condition number is squared.
+
+17
+00:00:45.260 --> 00:00:48.727
+So the normal equations, correct on paper
+
+18
+00:00:48.727 --> 00:00:51.368
+can be far worse in a computer.
+
+19
+00:00:51.368 --> 00:00:54.587
+A problem with kappa ten to the eight
+
+20
+00:00:54.587 --> 00:00:57.063
+harmless in double precision
+
+21
+00:00:57.063 --> 00:01:00.117
+becomes one with ten to the sixteen
+
+22
+00:01:00.117 --> 00:01:02.180
+and every digit is lost.
+
+23
+00:01:02.760 --> 00:01:03.997
+Here it happens.
+
+24
+00:01:03.997 --> 00:01:06.547
+Three equations in two unknowns
+
+25
+00:01:06.547 --> 00:01:10.026
+with a tiny epsilon, ten to the minus eight
+
+26
+00:01:10.026 --> 00:01:13.040
+built so the exact answer is one, one.
+
+27
+00:01:13.118 --> 00:01:16.055
+The condition number of T is about one
+
+28
+00:01:16.132 --> 00:01:18.760
+point four times ten to the eight.
+
+29
+00:01:19.110 --> 00:01:22.093
+T transpose T has one plus epsilon
+
+30
+00:01:22.181 --> 00:01:24.287
+squared on the diagonal.
+
+31
+00:01:24.374 --> 00:01:26.655
+But epsilon squared is ten
+
+32
+00:01:26.743 --> 00:01:28.586
+to the minus sixteen
+
+33
+00:01:28.586 --> 00:01:32.183
+and one plus that rounds to exactly one.
+
+34
+00:01:32.183 --> 00:01:35.780
+The stored matrix is all ones: singular.
+
+35
+00:01:35.780 --> 00:01:38.324
+It squashes the circle flat.
+
+36
+00:01:38.412 --> 00:01:41.308
+The small entries are lost before
+
+37
+00:01:41.395 --> 00:01:43.150
+solving even starts.
+
+38
+00:01:43.500 --> 00:01:46.420
+A solver that works on T itself
+
+39
+00:01:46.420 --> 00:01:48.519
+through the SVD or QR
+
+40
+00:01:48.519 --> 00:01:52.444
+never forms that product, and returns one
+
+41
+00:01:52.444 --> 00:01:52.944
+one.
+
+42
+00:01:53.480 --> 00:01:56.506
+The same trouble appears in regression.
+
+43
+00:01:56.506 --> 00:01:58.290
+Fifty made-up samples
+
+44
+00:01:58.368 --> 00:02:00.928
+with a second feature that is the
+
+45
+00:02:01.006 --> 00:02:03.255
+first plus one percent noise.
+
+46
+00:02:03.333 --> 00:02:05.505
+The condition number of X is
+
+47
+00:02:05.583 --> 00:02:07.600
+about two hundred fifteen.
+
+48
+00:02:07.950 --> 00:02:11.363
+Fit the weights, with a little noise in y.
+
+49
+00:02:11.363 --> 00:02:13.963
+Fit again with different noise
+
+50
+00:02:13.963 --> 00:02:15.425
+the weights jump.
+
+51
+00:02:15.425 --> 00:02:18.350
+And again: they jump the other way.
+
+52
+00:02:18.700 --> 00:02:20.728
+But look where they land
+
+53
+00:02:20.809 --> 00:02:23.000
+all three on the line w one
+
+54
+00:02:23.081 --> 00:02:24.866
+plus w two equals two.
+
+55
+00:02:24.866 --> 00:02:28.355
+The data pins down the sum, the long axis.
+
+56
+00:02:28.436 --> 00:02:30.302
+It hardly says anything
+
+57
+00:02:30.383 --> 00:02:33.385
+about the difference, the short axis
+
+58
+00:02:33.385 --> 00:02:35.900
+so the weights slide along it.
+
+59
+00:02:36.480 --> 00:02:37.792
+Ridge regression
+
+60
+00:02:37.792 --> 00:02:39.953
+with lambda zero point one
+
+61
+00:02:40.030 --> 00:02:42.269
+raises the denominator of the
+
+62
+00:02:42.346 --> 00:02:44.198
+smallest singular value.
+
+63
+00:02:44.198 --> 00:02:47.440
+Fit the same three noisy data sets again.
+
+64
+00:02:47.790 --> 00:02:51.463
+Now all three answers stay close to one
+
+65
+00:02:51.463 --> 00:02:51.922
+one.
+
+66
+00:02:51.922 --> 00:02:56.054
+Standardising features, merging near copies
+
+67
+00:02:56.054 --> 00:02:59.910
+and ridge all lower the condition number.
+
+68
+00:03:00.490 --> 00:03:02.800
+Machine learning often computes
+
+69
+00:03:02.875 --> 00:03:04.290
+in lower precision.
+
+70
+00:03:04.365 --> 00:03:06.228
+Take the two nearly equal
+
+71
+00:03:06.302 --> 00:03:07.793
+lines from part one.
+
+72
+00:03:07.793 --> 00:03:10.848
+In single precision, about seven digits
+
+73
+00:03:10.848 --> 00:03:13.754
+the answer is off in the fourth digit
+
+74
+00:03:13.754 --> 00:03:15.170
+as kappa predicts.
+
+75
+00:03:15.520 --> 00:03:18.653
+In half precision, about three digits
+
+76
+00:03:18.653 --> 00:03:21.457
+even storing the data changes it.
+
+77
+00:03:21.539 --> 00:03:24.425
+One point zero zero one becomes one
+
+78
+00:03:24.507 --> 00:03:27.146
+point zero zero zero nine eight
+
+79
+00:03:27.228 --> 00:03:30.114
+and two point zero zero one becomes
+
+80
+00:03:30.197 --> 00:03:33.000
+two point zero zero one nine five.
+
+81
+00:03:33.350 --> 00:03:35.197
+The exact solution of the
+
+82
+00:03:35.271 --> 00:03:37.266
+stored system is zero, two.
+
+83
+00:03:37.266 --> 00:03:39.188
+Once the data is rounded
+
+84
+00:03:39.188 --> 00:03:42.365
+no careful solver can bring back one, one.
+
+85
+00:03:42.439 --> 00:03:45.912
+This is also why mixed precision training keeps
+
+86
+00:03:45.986 --> 00:03:48.868
+a single precision copy of the weights
+
+87
+00:03:48.942 --> 00:03:51.306
+tiny updates would simply vanish
+
+88
+00:03:51.380 --> 00:03:52.710
+in half precision.
+
+89
+00:03:53.290 --> 00:03:55.691
+A check for working with AI.
+
+90
+00:03:55.691 --> 00:03:58.007
+Suppose an assistant says
+
+91
+00:03:58.007 --> 00:04:00.665
+the determinant of M is small
+
+92
+00:04:00.751 --> 00:04:03.066
+so multiply M by a thousand
+
+93
+00:04:03.152 --> 00:04:05.210
+to fix the conditioning.
+
+94
+00:04:05.560 --> 00:04:09.171
+The determinant does grow, to one thousand.
+
+95
+00:04:09.171 --> 00:04:12.866
+But every stretch grows by the same factor
+
+96
+00:04:12.866 --> 00:04:16.142
+so kappa is still about four thousand.
+
+97
+00:04:16.226 --> 00:04:19.333
+And the same change in the last digit
+
+98
+00:04:19.417 --> 00:04:22.440
+still sends the answer to zero, two.
+
+99
+00:04:22.790 --> 00:04:25.035
+Rescaling changes nothing.
+
+100
+00:04:25.035 --> 00:04:27.539
+To help, change the problem
+
+101
+00:04:27.539 --> 00:04:29.611
+better features, ridge
+
+102
+00:04:29.611 --> 00:04:31.510
+or more precise data.
+
+103
+00:04:32.090 --> 00:04:35.088
+So: solve least squares on A itself
+
+104
+00:04:35.088 --> 00:04:37.086
+never on A transpose A
+
+105
+00:04:37.086 --> 00:04:40.084
+which squares the condition number.
+
+106
+00:04:40.084 --> 00:04:42.748
+With nearly collinear features
+
+107
+00:04:42.831 --> 00:04:45.079
+the data pins down the long
+
+108
+00:04:45.163 --> 00:04:48.410
+axis of the weights, not the short one.
+
+109
+00:04:48.760 --> 00:04:50.038
+Next lecture
+
+110
+00:04:50.038 --> 00:04:53.480
+solving huge systems step by step
+
+111
+00:04:53.480 --> 00:04:55.840
+with iterative methods.

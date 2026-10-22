@@ -1,0 +1,441 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:04.137
+In lecture one
+
+2
+00:00:04.137 --> 00:00:07.601
+a matrix times a vector combined columns.
+
+3
+00:00:07.601 --> 00:00:10.900
+Today we multiply a matrix by a matrix.
+
+4
+00:00:11.250 --> 00:00:15.058
+Here is A, with two rows and three columns
+
+5
+00:00:15.058 --> 00:00:18.600
+and B, with three rows and two columns.
+
+6
+00:00:18.688 --> 00:00:20.990
+The three columns of A are
+
+7
+00:00:21.079 --> 00:00:22.850
+arrows in the plane.
+
+8
+00:00:23.200 --> 00:00:27.679
+Before any rule: the entry in row two
+
+9
+00:00:27.679 --> 00:00:29.918
+column one of A B.
+
+10
+00:00:29.918 --> 00:00:34.396
+Which numbers of A and B does it use?
+
+11
+00:00:34.396 --> 00:00:36.400
+Pause and guess.
+
+12
+00:00:39.980 --> 00:00:41.764
+First, the shapes.
+
+13
+00:00:41.764 --> 00:00:45.925
+A is two by three, and B is three by two.
+
+14
+00:00:45.925 --> 00:00:48.601
+The product is two by two
+
+15
+00:00:48.601 --> 00:00:53.060
+it keeps the rows of A and the columns of B.
+
+16
+00:00:53.410 --> 00:00:55.875
+The inner sizes must match
+
+17
+00:00:55.875 --> 00:00:59.710
+A has three columns and B has three rows.
+
+18
+00:00:59.710 --> 00:01:03.635
+B A also exists, but it is three by three
+
+19
+00:01:03.635 --> 00:01:05.370
+a different shape.
+
+20
+00:01:05.950 --> 00:01:08.604
+Way one: entry by entry.
+
+21
+00:01:08.604 --> 00:01:11.037
+The entry in row two
+
+22
+00:01:11.037 --> 00:01:15.129
+column one uses row two of A: three
+
+23
+00:01:15.129 --> 00:01:16.898
+minus one, two.
+
+24
+00:01:16.898 --> 00:01:20.990
+And column one of B: two, zero, one.
+
+25
+00:01:21.340 --> 00:01:25.795
+Three times two, plus minus one times zero
+
+26
+00:01:25.795 --> 00:01:28.904
+plus two times one, is eight.
+
+27
+00:01:28.904 --> 00:01:32.012
+Do that for all four entries
+
+28
+00:01:32.012 --> 00:01:36.260
+and A B is two, seven, eight, minus two.
+
+29
+00:01:36.840 --> 00:01:38.876
+Way two: by columns.
+
+30
+00:01:38.978 --> 00:01:41.829
+Column one of A B is A times
+
+31
+00:01:41.931 --> 00:01:45.189
+column one of B: two, zero, one.
+
+32
+00:01:45.189 --> 00:01:49.771
+By lecture one, that mixes the columns of A
+
+33
+00:01:49.771 --> 00:01:53.640
+two of the first, none of the second
+
+34
+00:01:53.640 --> 00:01:55.880
+and one of the third.
+
+35
+00:01:56.230 --> 00:01:59.900
+Tip to tail, they land on two, eight
+
+36
+00:01:59.900 --> 00:02:02.380
+the first column of A B.
+
+37
+00:02:02.479 --> 00:02:06.347
+So every column of A B is a combination
+
+38
+00:02:06.446 --> 00:02:08.430
+of the columns of A.
+
+39
+00:02:09.010 --> 00:02:10.937
+Way three: by rows.
+
+40
+00:02:10.937 --> 00:02:15.195
+Row one of A B is row one of A, one, two
+
+41
+00:02:15.195 --> 00:02:16.716
+zero, times B.
+
+42
+00:02:16.716 --> 00:02:19.352
+That mixes the rows of B
+
+43
+00:02:19.352 --> 00:02:21.583
+one of the first row
+
+44
+00:02:21.583 --> 00:02:24.017
+plus two of the second
+
+45
+00:02:24.017 --> 00:02:26.450
+plus none of the third.
+
+46
+00:02:26.800 --> 00:02:31.195
+One of two, one, plus two of zero, three
+
+47
+00:02:31.195 --> 00:02:35.161
+lands on two, seven: row one of A B.
+
+48
+00:02:35.161 --> 00:02:39.663
+That is how elimination worked last time
+
+49
+00:02:39.663 --> 00:02:43.200
+a matrix on the left mixes rows.
+
+50
+00:02:43.780 --> 00:02:47.225
+Way four is the surprising one.
+
+51
+00:02:47.225 --> 00:02:51.891
+Multiply column one of A by row one of B.
+
+52
+00:02:51.891 --> 00:02:56.891
+A column times a row is a whole matrix: two
+
+53
+00:02:56.891 --> 00:02:58.780
+one, six, three.
+
+54
+00:02:59.130 --> 00:03:02.186
+Do the same with column two and row two
+
+55
+00:03:02.186 --> 00:03:05.012
+and with column three and row three.
+
+56
+00:03:05.012 --> 00:03:08.450
+Add the three pieces, and you get A B again.
+
+57
+00:03:08.800 --> 00:03:12.291
+Now look at the first piece in the plane.
+
+58
+00:03:12.291 --> 00:03:15.526
+Its columns, two, six and one, three
+
+59
+00:03:15.526 --> 00:03:16.974
+lie on one line.
+
+60
+00:03:16.974 --> 00:03:20.550
+Every column is a multiple of one column
+
+61
+00:03:20.550 --> 00:03:23.360
+so the piece is called rank one.
+
+62
+00:03:23.360 --> 00:03:26.680
+A product is a sum of rank one pieces.
+
+63
+00:03:27.260 --> 00:03:29.293
+Careful with the order.
+
+64
+00:03:29.293 --> 00:03:32.652
+A column times a row is not a number.
+
+65
+00:03:32.652 --> 00:03:36.099
+Column one, three, times row two, one
+
+66
+00:03:36.099 --> 00:03:38.220
+is a two by two matrix.
+
+67
+00:03:38.570 --> 00:03:41.883
+Row two, one, times column one, three
+
+68
+00:03:41.883 --> 00:03:43.626
+is the number five.
+
+69
+00:03:43.626 --> 00:03:46.241
+Same numbers, opposite order
+
+70
+00:03:46.241 --> 00:03:47.810
+different shapes.
+
+71
+00:03:48.390 --> 00:03:52.560
+Order matters even for square matrices.
+
+72
+00:03:52.560 --> 00:03:56.516
+Take two shears: G pushes points up
+
+73
+00:03:56.516 --> 00:03:59.510
+and F pushes them sideways.
+
+74
+00:03:59.860 --> 00:04:03.345
+F G means G acts first, and then F.
+
+75
+00:04:03.345 --> 00:04:07.428
+The unit square ends with columns three
+
+76
+00:04:07.428 --> 00:04:09.220
+two and one, one.
+
+77
+00:04:09.570 --> 00:04:13.746
+Now the other order: F first, and then G.
+
+78
+00:04:13.746 --> 00:04:17.005
+The square ends somewhere else
+
+79
+00:04:17.005 --> 00:04:20.875
+with columns one, two and one, three.
+
+80
+00:04:20.875 --> 00:04:22.810
+So F G is not G F.
+
+81
+00:04:23.160 --> 00:04:27.179
+What does not matter is the grouping.
+
+82
+00:04:27.179 --> 00:04:31.416
+A B, then times C, equals A times B C
+
+83
+00:04:31.416 --> 00:04:34.240
+so we simply write A B C.
+
+84
+00:04:34.820 --> 00:04:36.894
+The grouping rule matters
+
+85
+00:04:36.977 --> 00:04:38.637
+for neural networks.
+
+86
+00:04:38.637 --> 00:04:40.628
+The first layer, W one
+
+87
+00:04:40.628 --> 00:04:44.030
+takes three inputs to two hidden values.
+
+88
+00:04:44.030 --> 00:04:46.104
+The second layer, W two
+
+89
+00:04:46.104 --> 00:04:49.340
+takes those two values to two outputs.
+
+90
+00:04:49.690 --> 00:04:53.014
+Feed in x equal to one, one, one.
+
+91
+00:04:53.014 --> 00:04:56.539
+The hidden values are three, four.
+
+92
+00:04:56.539 --> 00:05:00.467
+Then W two mixes its own columns, one
+
+93
+00:05:00.467 --> 00:05:02.884
+two and one, minus one.
+
+94
+00:05:02.985 --> 00:05:06.107
+Three of the first plus four of
+
+95
+00:05:06.208 --> 00:05:09.330
+the second lands on seven, two.
+
+96
+00:05:09.680 --> 00:05:13.544
+The single matrix W two W one gives seven
+
+97
+00:05:13.544 --> 00:05:14.832
+two directly.
+
+98
+00:05:14.832 --> 00:05:18.512
+Two linear layers are one linear layer.
+
+99
+00:05:18.604 --> 00:05:21.916
+That is why networks put a nonlinear
+
+100
+00:05:22.008 --> 00:05:24.400
+step between their layers.
+
+101
+00:05:24.980 --> 00:05:28.219
+So, four views of one product.
+
+102
+00:05:28.219 --> 00:05:32.106
+Each entry is a row times a column.
+
+103
+00:05:32.106 --> 00:05:36.749
+Each column of A B mixes the columns of A
+
+104
+00:05:36.749 --> 00:05:40.420
+and each row mixes the rows of B.
+
+105
+00:05:40.770 --> 00:05:43.438
+The whole product is a sum of
+
+106
+00:05:43.530 --> 00:05:47.394
+column times row pieces, each of rank one.
+
+107
+00:05:47.394 --> 00:05:50.430
+And order matters: B acts first
+
+108
+00:05:50.430 --> 00:05:52.730
+so it sits on the right.
+
+109
+00:05:53.080 --> 00:05:56.461
+In part two we undo a matrix
+
+110
+00:05:56.461 --> 00:05:58.560
+with its inverse.

@@ -1,0 +1,441 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:06.220
+In a strategy game you hold gold and gems.
+
+2
+00:00:06.220 --> 00:00:09.618
+Each turn, every gold coin stays and earns
+
+3
+00:00:09.697 --> 00:00:11.831
+two more gold and two gems
+
+4
+00:00:11.910 --> 00:00:14.202
+every gem stays and earns one
+
+5
+00:00:14.281 --> 00:00:16.020
+gold and one more gem.
+
+6
+00:00:16.370 --> 00:00:20.929
+That is a matrix: three, one, two, two.
+
+7
+00:00:20.929 --> 00:00:23.968
+Start with one gold coin.
+
+8
+00:00:23.968 --> 00:00:28.410
+After one turn: three gold, two gems.
+
+9
+00:00:28.760 --> 00:00:30.551
+Then eleven and ten
+
+10
+00:00:30.551 --> 00:00:32.970
+forty-three and forty-two
+
+11
+00:00:33.059 --> 00:00:35.477
+one hundred seventy-one and
+
+12
+00:00:35.567 --> 00:00:37.358
+one hundred seventy.
+
+13
+00:00:37.448 --> 00:00:39.777
+Every turn multiplies your
+
+14
+00:00:39.866 --> 00:00:41.747
+wealth by about four
+
+15
+00:00:41.747 --> 00:00:45.240
+and gold and gems become almost equal.
+
+16
+00:00:45.590 --> 00:00:48.566
+Why four, and why one to one?
+
+17
+00:00:48.668 --> 00:00:51.541
+And what will you hold after
+
+18
+00:00:51.644 --> 00:00:53.286
+a hundred turns?
+
+19
+00:00:53.286 --> 00:00:55.030
+Pause and think.
+
+20
+00:00:58.690 --> 00:01:01.619
+Both answers are eigenvalue facts.
+
+21
+00:01:01.619 --> 00:01:05.410
+The trace is five and the determinant four
+
+22
+00:01:05.410 --> 00:01:07.650
+so lambda is four or one.
+
+23
+00:01:08.000 --> 00:01:10.650
+Four belongs to one, one
+
+24
+00:01:10.650 --> 00:01:15.102
+equal gold and gems grow four times over.
+
+25
+00:01:15.102 --> 00:01:18.812
+One belongs to one, minus two, or
+
+26
+00:01:18.812 --> 00:01:22.416
+on the same line, minus one, two
+
+27
+00:01:22.416 --> 00:01:24.960
+that mix never changes.
+
+28
+00:01:25.310 --> 00:01:28.623
+Now play one turn with both vectors.
+
+29
+00:01:28.623 --> 00:01:32.029
+One, one is stretched to four, four.
+
+30
+00:01:32.029 --> 00:01:34.790
+Minus one, two does not move.
+
+31
+00:01:35.370 --> 00:01:37.403
+Here is the key picture.
+
+32
+00:01:37.487 --> 00:01:39.774
+Use the eigenvectors as the
+
+33
+00:01:39.859 --> 00:01:41.468
+axes of a new grid.
+
+34
+00:01:41.468 --> 00:01:44.178
+Put them into the columns of X
+
+35
+00:01:44.178 --> 00:01:47.566
+and the eigenvalues, in the same order
+
+36
+00:01:47.566 --> 00:01:50.530
+on the diagonal of capital lambda.
+
+37
+00:01:50.880 --> 00:01:54.345
+In that grid, A does nothing but stretch
+
+38
+00:01:54.345 --> 00:01:57.134
+four times along the first axis
+
+39
+00:01:57.134 --> 00:01:59.584
+not at all along the second.
+
+40
+00:01:59.584 --> 00:02:02.880
+Column by column, A X equals X lambda.
+
+41
+00:02:03.230 --> 00:02:06.535
+Now take one turn in three moves.
+
+42
+00:02:06.535 --> 00:02:08.337
+First, X inverse
+
+43
+00:02:08.337 --> 00:02:12.744
+read the vector in eigenvector coordinates.
+
+44
+00:02:12.744 --> 00:02:16.950
+The skewed axes become the ordinary ones.
+
+45
+00:02:17.300 --> 00:02:18.911
+Second, lambda
+
+46
+00:02:18.911 --> 00:02:22.347
+stretch the first axis by four.
+
+47
+00:02:22.347 --> 00:02:26.213
+Third, X: go back to gold and gems.
+
+48
+00:02:26.213 --> 00:02:30.830
+The start, one, zero, lands on three, two
+
+49
+00:02:30.830 --> 00:02:33.300
+exactly one turn of A.
+
+50
+00:02:33.650 --> 00:02:37.154
+A equals X lambda X inverse.
+
+51
+00:02:37.154 --> 00:02:42.410
+Change coordinates, stretch, change back.
+
+52
+00:02:42.990 --> 00:02:44.992
+Now a hundred turns.
+
+53
+00:02:44.992 --> 00:02:48.295
+A squared is X lambda X inverse
+
+54
+00:02:48.295 --> 00:02:50.297
+X lambda X inverse
+
+55
+00:02:50.297 --> 00:02:53.500
+the middle X inverse X cancels.
+
+56
+00:02:53.500 --> 00:02:57.204
+So A to the k is X, lambda to the k
+
+57
+00:02:57.204 --> 00:02:58.305
+X inverse
+
+58
+00:02:58.305 --> 00:03:02.609
+and lambda to the k is just four to the k
+
+59
+00:03:02.609 --> 00:03:03.510
+and one.
+
+60
+00:03:03.860 --> 00:03:06.418
+Split the start along the axes
+
+61
+00:03:06.418 --> 00:03:08.150
+two thirds of x one
+
+62
+00:03:08.150 --> 00:03:10.295
+minus one third of x two.
+
+63
+00:03:10.295 --> 00:03:11.780
+To see the shape
+
+64
+00:03:11.780 --> 00:03:14.503
+divide by four after every turn.
+
+65
+00:03:14.503 --> 00:03:16.813
+The first part holds still
+
+66
+00:03:16.813 --> 00:03:20.030
+the second shrinks by four, and again
+
+67
+00:03:20.030 --> 00:03:23.660
+so the arrow swings onto the line of x one.
+
+68
+00:03:24.010 --> 00:03:26.337
+Gold after k turns is two
+
+69
+00:03:26.430 --> 00:03:30.339
+times four to the k, plus one, over three.
+
+70
+00:03:30.339 --> 00:03:32.200
+After twenty turns
+
+71
+00:03:32.200 --> 00:03:35.737
+more than seven hundred billion gold
+
+72
+00:03:35.737 --> 00:03:38.250
+and exactly one gem fewer.
+
+73
+00:03:38.830 --> 00:03:42.968
+Here is a tempting shortcut: to square A
+
+74
+00:03:42.968 --> 00:03:45.390
+just square each entry?
+
+75
+00:03:45.970 --> 00:03:49.404
+That gives nine, one, four, four.
+
+76
+00:03:49.404 --> 00:03:53.878
+The true square is eleven, five, ten, six.
+
+77
+00:03:53.878 --> 00:03:56.271
+Test them on one, one
+
+78
+00:03:56.271 --> 00:04:00.849
+which A squared must stretch sixteen times
+
+79
+00:04:00.849 --> 00:04:02.930
+along its own line.
+
+80
+00:04:03.280 --> 00:04:07.351
+The squared entries throw it off the line.
+
+81
+00:04:07.448 --> 00:04:09.871
+Only a diagonal matrix is
+
+82
+00:04:09.968 --> 00:04:12.197
+powered entry by entry
+
+83
+00:04:12.197 --> 00:04:16.074
+which is why we power lambda and not A.
+
+84
+00:04:16.074 --> 00:04:17.043
+In numpy
+
+85
+00:04:17.043 --> 00:04:20.629
+A star star two squares the entries
+
+86
+00:04:20.629 --> 00:04:23.440
+A at A is the matrix square.
+
+87
+00:04:24.020 --> 00:04:25.407
+One more trap.
+
+88
+00:04:25.506 --> 00:04:29.173
+The eigenvalue in place one of lambda
+
+89
+00:04:29.272 --> 00:04:32.344
+must belong to column one of X.
+
+90
+00:04:32.344 --> 00:04:33.136
+Keep X
+
+91
+00:04:33.136 --> 00:04:37.100
+but write the four in the second place.
+
+92
+00:04:37.450 --> 00:04:39.652
+Into eigen coordinates
+
+93
+00:04:39.652 --> 00:04:43.386
+stretch the wrong axis, and come back.
+
+94
+00:04:43.386 --> 00:04:47.216
+Now the gem-heavy mix grows four times
+
+95
+00:04:47.216 --> 00:04:49.514
+and one, one stays put.
+
+96
+00:04:49.514 --> 00:04:53.727
+That is a different matrix: two, minus one
+
+97
+00:04:53.727 --> 00:04:55.450
+minus two, three.
+
+98
+00:04:56.030 --> 00:04:59.716
+So, to sum up: the eigenvectors give the
+
+99
+00:04:59.809 --> 00:05:02.020
+right grid for a matrix.
+
+100
+00:05:02.113 --> 00:05:04.877
+In that grid it only stretches
+
+101
+00:05:04.970 --> 00:05:07.550
+each axis by its eigenvalue.
+
+102
+00:05:07.900 --> 00:05:11.500
+That is A equals X lambda X inverse
+
+103
+00:05:11.600 --> 00:05:14.500
+and powers of A become powers
+
+104
+00:05:14.600 --> 00:05:16.500
+of the eigenvalues.
+
+105
+00:05:16.500 --> 00:05:18.700
+The largest one wins.
+
+106
+00:05:19.280 --> 00:05:20.207
+In part two
+
+107
+00:05:20.207 --> 00:05:23.143
+matrices without enough eigenvectors
+
+108
+00:05:23.143 --> 00:05:26.079
+and three places where powers matter
+
+109
+00:05:26.079 --> 00:05:28.629
+a number sequence, a population
+
+110
+00:05:28.629 --> 00:05:30.560
+and a recurrent network.

@@ -1,0 +1,489 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:06.028
+Part one gave three rules, and a picture
+
+2
+00:00:06.104 --> 00:00:08.316
+the determinant is the signed
+
+3
+00:00:08.393 --> 00:00:10.300
+area spanned by the rows.
+
+4
+00:00:10.300 --> 00:00:13.580
+Leaning the shape never changes that area.
+
+5
+00:00:13.930 --> 00:00:17.723
+Here is the matrix two, one, four, five.
+
+6
+00:00:17.723 --> 00:00:20.948
+Its rows span this parallelogram
+
+7
+00:00:20.948 --> 00:00:22.370
+with area six.
+
+8
+00:00:22.720 --> 00:00:25.292
+But how would you find the determinant of
+
+9
+00:00:25.355 --> 00:00:27.613
+a one hundred by one hundred matrix?
+
+10
+00:00:27.613 --> 00:00:28.680
+Pause and think.
+
+11
+00:00:32.260 --> 00:00:33.707
+Run elimination.
+
+12
+00:00:33.707 --> 00:00:37.415
+Subtract two times row one from row two
+
+13
+00:00:37.415 --> 00:00:39.676
+the parallelogram leans
+
+14
+00:00:39.676 --> 00:00:42.660
+and row two becomes zero, three.
+
+15
+00:00:43.010 --> 00:00:45.717
+Now the matrix is triangular
+
+16
+00:00:45.810 --> 00:00:47.957
+with the pivots two and
+
+17
+00:00:48.050 --> 00:00:50.103
+three on its diagonal.
+
+18
+00:00:50.103 --> 00:00:54.303
+One more lean, and the shape is a rectangle
+
+19
+00:00:54.303 --> 00:00:56.357
+two wide, three high.
+
+20
+00:00:56.357 --> 00:00:57.290
+Area six.
+
+21
+00:00:57.640 --> 00:01:00.020
+That works for every size.
+
+22
+00:01:00.020 --> 00:01:03.132
+Elimination steps change nothing
+
+23
+00:01:03.132 --> 00:01:06.243
+each row exchange flips the sign
+
+24
+00:01:06.243 --> 00:01:08.074
+and you end with U.
+
+25
+00:01:08.165 --> 00:01:11.369
+So the determinant is plus or minus
+
+26
+00:01:11.460 --> 00:01:13.840
+the product of the pivots.
+
+27
+00:01:14.190 --> 00:01:17.647
+One more: three, one, three, five.
+
+28
+00:01:17.647 --> 00:01:20.800
+Subtract row one from row two
+
+29
+00:01:20.800 --> 00:01:24.054
+and row two becomes zero, four.
+
+30
+00:01:24.054 --> 00:01:27.206
+The pivots are three and four
+
+31
+00:01:27.206 --> 00:01:31.070
+with no exchange: determinant twelve.
+
+32
+00:01:31.650 --> 00:01:34.182
+Now a matrix with a zero in
+
+33
+00:01:34.276 --> 00:01:38.309
+the first pivot position: zero, two, three
+
+34
+00:01:38.309 --> 00:01:38.778
+one.
+
+35
+00:01:38.778 --> 00:01:41.123
+Its rows turn clockwise
+
+36
+00:01:41.123 --> 00:01:45.250
+so elimination must start with an exchange.
+
+37
+00:01:45.600 --> 00:01:50.164
+After the swap the pivots are three and two.
+
+38
+00:01:50.164 --> 00:01:51.617
+One exchange
+
+39
+00:01:51.617 --> 00:01:55.040
+so the determinant is minus six.
+
+40
+00:01:55.390 --> 00:01:58.979
+And if the rows are one, two and two, four
+
+41
+00:01:58.979 --> 00:02:01.566
+the second is twice the first.
+
+42
+00:02:01.566 --> 00:02:03.819
+The parallelogram is flat
+
+43
+00:02:03.819 --> 00:02:06.490
+elimination runs out of pivots
+
+44
+00:02:06.490 --> 00:02:08.910
+and the determinant is zero.
+
+45
+00:02:09.260 --> 00:02:11.334
+That is consequence eight
+
+46
+00:02:11.413 --> 00:02:13.886
+the determinant is zero exactly
+
+47
+00:02:13.965 --> 00:02:16.198
+when the matrix is singular.
+
+48
+00:02:16.198 --> 00:02:19.229
+NumPy computes determinants this way
+
+49
+00:02:19.229 --> 00:02:22.020
+in about n cubed over three steps.
+
+50
+00:02:22.600 --> 00:02:25.671
+Two rules you will use all the time.
+
+51
+00:02:25.671 --> 00:02:26.268
+First
+
+52
+00:02:26.268 --> 00:02:29.680
+the transpose has the same determinant.
+
+53
+00:02:30.030 --> 00:02:32.116
+Take two, one, zero, one.
+
+54
+00:02:32.116 --> 00:02:35.786
+The parallelogram of its rows has area two.
+
+55
+00:02:35.870 --> 00:02:38.539
+The parallelogram of its columns
+
+56
+00:02:38.622 --> 00:02:40.458
+has a different shape
+
+57
+00:02:40.458 --> 00:02:42.710
+but its area is two again.
+
+58
+00:02:43.060 --> 00:02:45.156
+So every rule about rows
+
+59
+00:02:45.243 --> 00:02:47.252
+also holds for columns
+
+60
+00:02:47.252 --> 00:02:49.785
+two equal columns give zero
+
+61
+00:02:49.785 --> 00:02:53.540
+and exchanging two columns flips the sign.
+
+62
+00:02:54.120 --> 00:02:57.127
+Second: a matrix multiplies every
+
+63
+00:02:57.218 --> 00:02:59.404
+area by its determinant.
+
+64
+00:02:59.496 --> 00:03:02.593
+So the determinant of a product is
+
+65
+00:03:02.684 --> 00:03:05.600
+the product of the determinants.
+
+66
+00:03:05.950 --> 00:03:09.399
+Start again from the unit square.
+
+67
+00:03:09.399 --> 00:03:13.684
+Apply B, one, zero, one, one and a half
+
+68
+00:03:13.684 --> 00:03:17.238
+the area grows by one and a half.
+
+69
+00:03:17.238 --> 00:03:20.896
+Then apply A, two, one, zero, one
+
+70
+00:03:20.896 --> 00:03:22.150
+it doubles.
+
+71
+00:03:22.500 --> 00:03:26.010
+Together, A B multiplies area by three.
+
+72
+00:03:26.010 --> 00:03:28.440
+B A is a different matrix
+
+73
+00:03:28.440 --> 00:03:31.860
+but its determinant is three as well.
+
+74
+00:03:32.210 --> 00:03:35.441
+Undo it all, and the square comes back
+
+75
+00:03:35.441 --> 00:03:38.920
+the inverse has one over the determinant.
+
+76
+00:03:38.920 --> 00:03:41.322
+A rotation keeps every area
+
+77
+00:03:41.405 --> 00:03:44.636
+so an orthogonal matrix has determinant
+
+78
+00:03:44.719 --> 00:03:46.210
+plus or minus one.
+
+79
+00:03:46.790 --> 00:03:48.227
+What not to do
+
+80
+00:03:48.227 --> 00:03:51.388
+the determinant is not additive.
+
+81
+00:03:51.388 --> 00:03:53.208
+Two I is I plus I
+
+82
+00:03:53.208 --> 00:03:55.986
+yet its determinant is four
+
+83
+00:03:55.986 --> 00:03:57.710
+not one plus one.
+
+84
+00:03:58.060 --> 00:03:59.717
+And a second trap.
+
+85
+00:03:59.717 --> 00:04:02.754
+Determinant zero means singular
+
+86
+00:04:02.846 --> 00:04:05.423
+so surely a tiny determinant
+
+87
+00:04:05.515 --> 00:04:07.540
+means nearly singular?
+
+88
+00:04:08.120 --> 00:04:08.387
+No.
+
+89
+00:04:08.387 --> 00:04:12.389
+Take a tenth of the fifty by fifty identity.
+
+90
+00:04:12.389 --> 00:04:15.858
+Each of fifty rows shrinks by a tenth
+
+91
+00:04:15.947 --> 00:04:18.170
+so the determinant is ten
+
+92
+00:04:18.259 --> 00:04:19.949
+to the minus fifty.
+
+93
+00:04:19.949 --> 00:04:23.329
+Yet it only shrinks the space evenly.
+
+94
+00:04:23.329 --> 00:04:26.531
+Zoom back out, and nothing is lost
+
+95
+00:04:26.531 --> 00:04:29.110
+its condition number is one
+
+96
+00:04:29.110 --> 00:04:30.800
+the best possible.
+
+97
+00:04:31.150 --> 00:04:34.908
+In the opposite direction: the shear one
+
+98
+00:04:34.908 --> 00:04:39.032
+one thousand, zero, one has determinant one.
+
+99
+00:04:39.124 --> 00:04:42.240
+Even a much milder shear stretches
+
+100
+00:04:42.331 --> 00:04:45.631
+the square into a long, thin sliver.
+
+101
+00:04:45.723 --> 00:04:48.197
+This one's condition number
+
+102
+00:04:48.289 --> 00:04:50.030
+is about a million.
+
+103
+00:04:50.380 --> 00:04:52.655
+So the size of the determinant
+
+104
+00:04:52.731 --> 00:04:53.792
+is no warning.
+
+105
+00:04:53.792 --> 00:04:56.597
+To test invertibility, count pivots
+
+106
+00:04:56.673 --> 00:04:58.720
+or use the condition number
+
+107
+00:04:58.796 --> 00:05:00.540
+of Lecture twenty-nine.
+
+108
+00:05:01.120 --> 00:05:04.547
+So, to compute a determinant: eliminate
+
+109
+00:05:04.547 --> 00:05:06.688
+count the row exchanges
+
+110
+00:05:06.688 --> 00:05:08.830
+and multiply the pivots.
+
+111
+00:05:08.830 --> 00:05:11.400
+Each exchange flips the sign.
+
+112
+00:05:11.750 --> 00:05:15.122
+It is zero exactly for singular matrices
+
+113
+00:05:15.122 --> 00:05:16.685
+and it multiplies
+
+114
+00:05:16.767 --> 00:05:19.646
+the determinant of a product is the
+
+115
+00:05:19.728 --> 00:05:22.031
+product of the determinants
+
+116
+00:05:22.031 --> 00:05:24.910
+and the transpose changes nothing.
+
+117
+00:05:25.490 --> 00:05:26.631
+Next lecture
+
+118
+00:05:26.631 --> 00:05:29.792
+the formula behind the three rules
+
+119
+00:05:29.792 --> 00:05:32.865
+and what the determinant measures
+
+120
+00:05:32.865 --> 00:05:34.709
+an area with a sign
+
+121
+00:05:34.797 --> 00:05:37.606
+and the factor by which a matrix
+
+122
+00:05:37.694 --> 00:05:39.450
+scales every region.

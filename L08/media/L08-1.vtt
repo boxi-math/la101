@@ -1,0 +1,493 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:05.657
+The four button drone is back
+
+2
+00:00:05.657 --> 00:00:07.403
+with buttons u, v
+
+3
+00:00:07.403 --> 00:00:10.068
+w and s as the columns of A.
+
+4
+00:00:10.068 --> 00:00:13.652
+A delivery is due at two, five, three.
+
+5
+00:00:13.652 --> 00:00:17.420
+Another customer asks for one, one, one.
+
+6
+00:00:17.770 --> 00:00:20.803
+One recipe for the delivery
+
+7
+00:00:20.803 --> 00:00:22.644
+one u and one v.
+
+8
+00:00:22.644 --> 00:00:25.568
+East: one plus one is two.
+
+9
+00:00:25.568 --> 00:00:28.926
+North: two plus three is five.
+
+10
+00:00:28.926 --> 00:00:31.850
+Up: one plus two is three.
+
+11
+00:00:32.200 --> 00:00:36.247
+Another recipe: two v and minus one s.
+
+12
+00:00:36.247 --> 00:00:39.549
+Two minus zero, six minus one
+
+13
+00:00:39.549 --> 00:00:43.809
+four minus one: two, five, three again.
+
+14
+00:00:43.809 --> 00:00:46.152
+We want every recipe
+
+15
+00:00:46.152 --> 00:00:49.880
+and a test for the other customer.
+
+16
+00:00:50.460 --> 00:00:52.982
+Eliminate on A with b attached
+
+17
+00:00:52.982 --> 00:00:54.284
+carrying b one
+
+18
+00:00:54.284 --> 00:00:56.725
+b two and b three as letters.
+
+19
+00:00:56.725 --> 00:00:59.980
+The steps are the same three as before.
+
+20
+00:01:00.330 --> 00:01:01.687
+After two steps
+
+21
+00:01:01.687 --> 00:01:05.418
+rows two and three are zero, one, one, one
+
+22
+00:01:05.503 --> 00:01:08.217
+with b two minus two b one and b
+
+23
+00:01:08.302 --> 00:01:10.931
+three minus b one on the right.
+
+24
+00:01:11.016 --> 00:01:13.984
+Then row three minus row two leaves
+
+25
+00:01:14.069 --> 00:01:15.934
+all zeros on the left
+
+26
+00:01:16.019 --> 00:01:18.224
+and b one minus b two plus
+
+27
+00:01:18.309 --> 00:01:20.090
+b three on the right.
+
+28
+00:01:20.440 --> 00:01:23.189
+That row says zero equals b one
+
+29
+00:01:23.278 --> 00:01:25.494
+minus b two plus b three.
+
+30
+00:01:25.583 --> 00:01:28.509
+So the system is solvable exactly
+
+31
+00:01:28.598 --> 00:01:30.815
+when that number is zero
+
+32
+00:01:30.904 --> 00:01:33.209
+the target must lie in the
+
+33
+00:01:33.298 --> 00:01:35.160
+plane of lecture six.
+
+34
+00:01:35.740 --> 00:01:37.614
+Test the delivery
+
+35
+00:01:37.614 --> 00:01:41.259
+two minus five plus three is zero.
+
+36
+00:01:41.259 --> 00:01:42.300
+Solvable.
+
+37
+00:01:42.650 --> 00:01:45.164
+Test one, one, one
+
+38
+00:01:45.164 --> 00:01:49.265
+one minus one plus one is one.
+
+39
+00:01:49.265 --> 00:01:54.028
+The last row reads zero equals one
+
+40
+00:01:54.028 --> 00:01:56.410
+no recipe at all.
+
+41
+00:01:56.760 --> 00:01:59.950
+The new button s also passes
+
+42
+00:01:59.950 --> 00:02:03.580
+zero minus one plus one is zero.
+
+43
+00:02:03.580 --> 00:02:06.440
+So s reaches nothing new.
+
+44
+00:02:06.790 --> 00:02:11.176
+Without eliminating again: is three, four
+
+45
+00:02:11.176 --> 00:02:12.742
+one reachable?
+
+46
+00:02:12.742 --> 00:02:15.039
+And zero, zero, five?
+
+47
+00:02:15.039 --> 00:02:16.710
+Pause and test.
+
+48
+00:02:17.260 --> 00:02:22.340
+Three minus four plus one is zero: yes.
+
+49
+00:02:22.340 --> 00:02:27.420
+Zero minus zero plus five is five: no.
+
+50
+00:02:31.000 --> 00:02:33.127
+Here is the same test in
+
+51
+00:02:33.215 --> 00:02:35.165
+a picture we can draw.
+
+52
+00:02:35.165 --> 00:02:39.153
+Take the two by two matrix with columns one
+
+53
+00:02:39.153 --> 00:02:40.925
+two and three, six.
+
+54
+00:02:41.014 --> 00:02:43.495
+Both columns lie on one line
+
+55
+00:02:43.583 --> 00:02:45.267
+through the origin
+
+56
+00:02:45.267 --> 00:02:48.280
+so the column space is that line.
+
+57
+00:02:48.630 --> 00:02:51.888
+The target four, eight is on the line
+
+58
+00:02:51.974 --> 00:02:54.032
+elimination leaves eight
+
+59
+00:02:54.118 --> 00:02:56.433
+minus two times four, zero.
+
+60
+00:02:56.433 --> 00:02:57.290
+Solvable.
+
+61
+00:02:57.290 --> 00:03:00.634
+The target four, nine is off the line
+
+62
+00:03:00.634 --> 00:03:02.778
+nine minus eight is one
+
+63
+00:03:02.778 --> 00:03:05.950
+and zero equals one has no solution.
+
+64
+00:03:06.530 --> 00:03:08.508
+Back to the drone.
+
+65
+00:03:08.508 --> 00:03:13.452
+For a solvable target, the reduced rows say
+
+66
+00:03:13.452 --> 00:03:18.286
+x one plus two x three minus x four is one
+
+67
+00:03:18.286 --> 00:03:23.010
+and x two plus x three plus x four is one.
+
+68
+00:03:23.360 --> 00:03:26.049
+For a particular solution
+
+69
+00:03:26.049 --> 00:03:29.359
+set the free variables to zero.
+
+70
+00:03:29.359 --> 00:03:33.082
+Then x one is one and x two is one
+
+71
+00:03:33.082 --> 00:03:36.082
+x p is one, one, zero, zero
+
+72
+00:03:36.082 --> 00:03:37.840
+one u and one v.
+
+73
+00:03:38.190 --> 00:03:40.119
+In the small example
+
+74
+00:03:40.211 --> 00:03:42.968
+the one equation left is x one
+
+75
+00:03:43.060 --> 00:03:45.724
+plus three x two equals four.
+
+76
+00:03:45.724 --> 00:03:49.491
+Set the free x two to zero: x p is four
+
+77
+00:03:49.491 --> 00:03:53.350
+zero, drawn here in the plane of amounts.
+
+78
+00:03:53.930 --> 00:03:55.725
+Now add the nullspace.
+
+79
+00:03:55.807 --> 00:03:58.907
+For the small matrix it is this orange
+
+80
+00:03:58.989 --> 00:04:01.436
+line through minus three, one.
+
+81
+00:04:01.436 --> 00:04:03.476
+Keep it as a faint copy
+
+82
+00:04:03.476 --> 00:04:05.598
+and slide it over to x p
+
+83
+00:04:05.679 --> 00:04:08.209
+every point of the shifted gold
+
+84
+00:04:08.290 --> 00:04:10.330
+line solves the equation.
+
+85
+00:04:10.680 --> 00:04:11.190
+Why?
+
+86
+00:04:11.190 --> 00:04:16.288
+A times x minus x p is b minus b, zero
+
+87
+00:04:16.415 --> 00:04:19.601
+so any solution minus x p
+
+88
+00:04:19.729 --> 00:04:22.533
+lies in the nullspace
+
+89
+00:04:22.660 --> 00:04:26.356
+and adding a nullspace vector
+
+90
+00:04:26.484 --> 00:04:29.160
+keeps A x equal to b.
+
+91
+00:04:29.510 --> 00:04:31.083
+For the drone
+
+92
+00:04:31.083 --> 00:04:35.129
+x is x p plus c s one plus d s two.
+
+93
+00:04:35.129 --> 00:04:39.961
+c equal to one gives minus one, zero, one
+
+94
+00:04:39.961 --> 00:04:40.636
+zero.
+
+95
+00:04:40.636 --> 00:04:44.457
+Check: minus one plus three, two
+
+96
+00:04:44.457 --> 00:04:47.603
+minus two plus seven, five
+
+97
+00:04:47.603 --> 00:04:50.750
+minus one plus four, three.
+
+98
+00:04:51.100 --> 00:04:53.790
+c equal to zero and d equal
+
+99
+00:04:53.890 --> 00:04:57.377
+to minus one gives zero, two, zero
+
+100
+00:04:57.377 --> 00:05:01.860
+minus one: the second recipe from the start.
+
+101
+00:05:02.440 --> 00:05:05.010
+Infinitely many solutions does
+
+102
+00:05:05.096 --> 00:05:07.152
+not mean anything works.
+
+103
+00:05:07.152 --> 00:05:10.237
+Try one, zero in the small example
+
+104
+00:05:10.237 --> 00:05:12.978
+one plus zero is one, not four.
+
+105
+00:05:12.978 --> 00:05:15.720
+The point is off the gold line.
+
+106
+00:05:16.070 --> 00:05:18.783
+For the drone, one, zero, zero
+
+107
+00:05:18.783 --> 00:05:21.320
+zero lands at one, two, one
+
+108
+00:05:21.320 --> 00:05:23.158
+not at the delivery.
+
+109
+00:05:23.158 --> 00:05:26.220
+Only x p plus the nullspace works
+
+110
+00:05:26.308 --> 00:05:29.283
+and a single answer from a library
+
+111
+00:05:29.370 --> 00:05:31.470
+is only one point of it.
+
+112
+00:05:32.050 --> 00:05:36.015
+So: eliminate on A with b attached.
+
+113
+00:05:36.015 --> 00:05:40.320
+Each zero row gives a condition on b
+
+114
+00:05:40.433 --> 00:05:44.058
+and zero equals a nonzero number
+
+115
+00:05:44.171 --> 00:05:46.210
+means no solution.
+
+116
+00:05:46.560 --> 00:05:50.526
+When b passes, the complete solution is
+
+117
+00:05:50.627 --> 00:05:54.491
+x p plus the nullspace: the null line
+
+118
+00:05:54.491 --> 00:05:57.440
+shifted to pass through x p.
+
+119
+00:05:57.790 --> 00:06:01.638
+Your turn: can the drone reach four, nine
+
+120
+00:06:01.638 --> 00:06:02.187
+five?
+
+121
+00:06:02.187 --> 00:06:03.378
+In part two
+
+122
+00:06:03.378 --> 00:06:07.501
+the rank tells how many solutions there are
+
+123
+00:06:07.501 --> 00:06:09.150
+before you solve.

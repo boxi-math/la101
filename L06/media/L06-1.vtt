@@ -1,0 +1,361 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:06.055
+The robot from lecture one is back.
+
+2
+00:00:06.145 --> 00:00:09.299
+Its matrix M turns how many of each
+
+3
+00:00:09.390 --> 00:00:12.274
+move into where the robot lands.
+
+4
+00:00:12.274 --> 00:00:15.969
+Move a is one, three, and move b is two
+
+5
+00:00:15.969 --> 00:00:16.469
+six.
+
+6
+00:00:16.770 --> 00:00:19.594
+Two moves a, then one move b backwards
+
+7
+00:00:19.594 --> 00:00:22.490
+and the robot is back where it started.
+
+8
+00:00:22.840 --> 00:00:26.396
+Two questions, for every target at once.
+
+9
+00:00:26.396 --> 00:00:28.884
+Which targets can it reach?
+
+10
+00:00:28.884 --> 00:00:31.551
+And which recipes go nowhere?
+
+11
+00:00:31.551 --> 00:00:34.840
+Pause and picture the targets first.
+
+12
+00:00:38.420 --> 00:00:42.230
+Take x moves a and y moves b
+
+13
+00:00:42.230 --> 00:00:48.143
+the robot lands at x times a plus y times b.
+
+14
+00:00:48.143 --> 00:00:50.508
+But b is twice a
+
+15
+00:00:50.508 --> 00:00:56.420
+so that is the same as x plus two y moves a.
+
+16
+00:00:56.770 --> 00:01:00.333
+Every target is a multiple of one, three.
+
+17
+00:01:00.333 --> 00:01:04.070
+Stretch the arrow forwards, and backwards
+
+18
+00:01:04.157 --> 00:01:06.503
+and the targets fill a line
+
+19
+00:01:06.590 --> 00:01:08.241
+through the origin.
+
+20
+00:01:08.241 --> 00:01:11.370
+That line is the column space of M.
+
+21
+00:01:11.720 --> 00:01:15.105
+The target seven, twenty one is on it
+
+22
+00:01:15.105 --> 00:01:16.975
+further up the line.
+
+23
+00:01:16.975 --> 00:01:19.737
+The target seven, five is not
+
+24
+00:01:19.737 --> 00:01:22.320
+no recipe at all reaches it.
+
+25
+00:01:22.900 --> 00:01:26.270
+A numerical test: put b next to the columns
+
+26
+00:01:26.348 --> 00:01:29.562
+as an extra column, and compute the rank
+
+27
+00:01:29.562 --> 00:01:32.540
+the number of independent directions.
+
+28
+00:01:32.890 --> 00:01:36.990
+For seven, twenty one, and for minus two
+
+29
+00:01:36.990 --> 00:01:40.090
+minus six, the rank stays one
+
+30
+00:01:40.090 --> 00:01:41.790
+they are inside.
+
+31
+00:01:41.790 --> 00:01:45.790
+For seven, five, the rank rises to two
+
+32
+00:01:45.790 --> 00:01:47.290
+it is outside.
+
+33
+00:01:47.640 --> 00:01:50.429
+And the origin is always inside.
+
+34
+00:01:50.429 --> 00:01:52.520
+Take every amount zero.
+
+35
+00:01:53.100 --> 00:01:55.761
+A common slip is to think the
+
+36
+00:01:55.852 --> 00:01:58.421
+column space is the columns.
+
+37
+00:01:58.421 --> 00:02:01.265
+Here are the two columns, one
+
+38
+00:02:01.265 --> 00:02:04.660
+three and two, six: just two arrows.
+
+39
+00:02:05.010 --> 00:02:07.439
+That is not the column space.
+
+40
+00:02:07.523 --> 00:02:09.952
+It is the whole infinite line
+
+41
+00:02:10.036 --> 00:02:12.800
+of their combinations: half of a
+
+42
+00:02:12.800 --> 00:02:15.396
+minus one a, two and a half a
+
+43
+00:02:15.396 --> 00:02:17.490
+and every point between.
+
+44
+00:02:18.070 --> 00:02:20.770
+Now the second question
+
+45
+00:02:20.770 --> 00:02:23.358
+and a different plane.
+
+46
+00:02:23.358 --> 00:02:26.058
+Its points are amounts
+
+47
+00:02:26.058 --> 00:02:28.870
+x moves a and y moves b.
+
+48
+00:02:29.220 --> 00:02:32.397
+The recipes seven, zero and five
+
+49
+00:02:32.397 --> 00:02:35.864
+one both land at seven, twenty one.
+
+50
+00:02:35.864 --> 00:02:39.330
+Their difference is two, minus one
+
+51
+00:02:39.330 --> 00:02:42.700
+two a minus b, which goes nowhere.
+
+52
+00:02:43.050 --> 00:02:47.394
+M x equal to zero says x plus two y is zero.
+
+53
+00:02:47.394 --> 00:02:51.638
+So every multiple of two, minus one works
+
+54
+00:02:51.638 --> 00:02:55.192
+three times it, minus two times it.
+
+55
+00:02:55.192 --> 00:02:58.450
+That line is the nullspace of M.
+
+56
+00:02:58.800 --> 00:03:01.683
+The recipe one, one is not on it
+
+57
+00:03:01.683 --> 00:03:05.440
+it lands at three, nine, not at the start.
+
+58
+00:03:06.020 --> 00:03:06.686
+Careful
+
+59
+00:03:06.686 --> 00:03:09.768
+both answers are lines in the plane
+
+60
+00:03:09.768 --> 00:03:12.183
+but in two different planes.
+
+61
+00:03:12.267 --> 00:03:14.599
+The column space lives where
+
+62
+00:03:14.682 --> 00:03:18.180
+the robot moves: its points are positions.
+
+63
+00:03:18.530 --> 00:03:22.505
+The nullspace lives where the recipes live
+
+64
+00:03:22.505 --> 00:03:24.723
+its points are amounts.
+
+65
+00:03:24.723 --> 00:03:28.421
+For a matrix with m rows and n columns
+
+66
+00:03:28.421 --> 00:03:32.580
+the column space has one entry per equation
+
+67
+00:03:32.580 --> 00:03:36.370
+and the nullspace one entry per unknown.
+
+68
+00:03:36.950 --> 00:03:40.984
+Is the zero recipe always in the nullspace?
+
+69
+00:03:40.984 --> 00:03:43.516
+Yes: A times zero is zero.
+
+70
+00:03:43.516 --> 00:03:47.550
+Can the nullspace be only the zero vector?
+
+71
+00:03:47.900 --> 00:03:48.297
+Yes.
+
+72
+00:03:48.297 --> 00:03:50.442
+The paint matrix of lecture
+
+73
+00:03:50.522 --> 00:03:52.190
+two has three pivots
+
+74
+00:03:52.269 --> 00:03:54.494
+so its only recipe that goes
+
+75
+00:03:54.573 --> 00:03:56.400
+nowhere is zero itself.
+
+76
+00:03:56.400 --> 00:03:59.260
+The line shrinks to a single point.
+
+77
+00:03:59.840 --> 00:04:03.087
+So, the column space is every A x
+
+78
+00:04:03.087 --> 00:04:05.474
+a subspace of positions.
+
+79
+00:04:05.570 --> 00:04:08.053
+A x equals b can be solved
+
+80
+00:04:08.148 --> 00:04:10.440
+exactly when b is in it.
+
+81
+00:04:10.790 --> 00:04:13.149
+The nullspace is every x
+
+82
+00:04:13.247 --> 00:04:15.507
+with A x equal to zero
+
+83
+00:04:15.507 --> 00:04:17.767
+a subspace of amounts.
+
+84
+00:04:17.767 --> 00:04:20.813
+For the robot, both are lines
+
+85
+00:04:20.813 --> 00:04:23.270
+in two different planes.
+
+86
+00:04:23.620 --> 00:04:26.448
+Your turn: is the target three
+
+87
+00:04:26.540 --> 00:04:28.729
+nine in the column space
+
+88
+00:04:28.820 --> 00:04:30.827
+of the robot's matrix?
+
+89
+00:04:30.827 --> 00:04:34.203
+In part two, a drone flies in space
+
+90
+00:04:34.203 --> 00:04:36.940
+and the lines become a plane.

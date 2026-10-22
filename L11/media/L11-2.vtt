@@ -1,0 +1,429 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:06.587
+In part one, the numbers sat on the pads
+
+2
+00:00:06.587 --> 00:00:07.397
+heights.
+
+3
+00:00:07.397 --> 00:00:10.184
+Now put numbers on the routes
+
+4
+00:00:10.184 --> 00:00:13.962
+crates per hour, negative when the crates
+
+5
+00:00:14.051 --> 00:00:15.940
+go against the arrow.
+
+6
+00:00:16.290 --> 00:00:18.201
+Here is a delivery job
+
+7
+00:00:18.201 --> 00:00:21.524
+pad one sends out three crates an hour
+
+8
+00:00:21.524 --> 00:00:23.850
+and pad five receives them.
+
+9
+00:00:24.200 --> 00:00:26.961
+How many different flows along
+
+10
+00:00:27.053 --> 00:00:29.170
+the routes do this job?
+
+11
+00:00:29.170 --> 00:00:32.115
+One, a few, or infinitely many?
+
+12
+00:00:32.115 --> 00:00:33.680
+Pause and think.
+
+13
+00:00:37.260 --> 00:00:40.053
+Multiply by A transpose.
+
+14
+00:00:40.170 --> 00:00:44.825
+Entry j of A transpose y is what arrives
+
+15
+00:00:44.941 --> 00:00:48.433
+at pad j minus what leaves it.
+
+16
+00:00:48.433 --> 00:00:53.437
+The job is a list f of net crates per pad
+
+17
+00:00:53.437 --> 00:00:57.860
+minus three, zero, zero, zero, three.
+
+18
+00:00:58.210 --> 00:00:59.956
+One flow that works
+
+19
+00:00:59.956 --> 00:01:02.400
+three crates along e three
+
+20
+00:01:02.400 --> 00:01:04.757
+from pad one to pad three
+
+21
+00:01:04.757 --> 00:01:07.638
+and on along e six, to pad five.
+
+22
+00:01:07.638 --> 00:01:10.955
+Pad three gets three and sends three
+
+23
+00:01:10.955 --> 00:01:12.090
+it balances.
+
+24
+00:01:12.670 --> 00:01:15.079
+The left nullspace holds the flows
+
+25
+00:01:15.150 --> 00:01:17.488
+with A transpose y equal to zero
+
+26
+00:01:17.559 --> 00:01:19.331
+what arrives at every pad
+
+27
+00:01:19.401 --> 00:01:20.748
+equals what leaves.
+
+28
+00:01:20.819 --> 00:01:22.944
+One crate going round the left
+
+29
+00:01:23.015 --> 00:01:24.716
+triangle is such a flow
+
+30
+00:01:24.716 --> 00:01:27.550
+and so is one round the right triangle.
+
+31
+00:01:27.900 --> 00:01:30.134
+So the flow is not unique.
+
+32
+00:01:30.220 --> 00:01:32.627
+Add two of the left loop and
+
+33
+00:01:32.713 --> 00:01:35.033
+take away one of the right
+
+34
+00:01:35.033 --> 00:01:38.127
+and the flow becomes two, two, one
+
+35
+00:01:38.127 --> 00:01:40.533
+minus one, minus one, four.
+
+36
+00:01:40.533 --> 00:01:42.424
+It does the same job.
+
+37
+00:01:42.424 --> 00:01:45.088
+The answer is infinitely many
+
+38
+00:01:45.088 --> 00:01:47.580
+one flow plus any loop flow.
+
+39
+00:01:47.930 --> 00:01:50.843
+Which jobs are possible at all?
+
+40
+00:01:50.843 --> 00:01:53.568
+Every row of A adds to zero
+
+41
+00:01:53.568 --> 00:01:57.515
+so the entries of f must add to zero too
+
+42
+00:01:57.515 --> 00:02:01.650
+crates are not created or lost at the pads.
+
+43
+00:02:02.230 --> 00:02:03.014
+Now count.
+
+44
+00:02:03.014 --> 00:02:04.425
+The rank is four
+
+45
+00:02:04.503 --> 00:02:07.246
+so the left nullspace has dimension
+
+46
+00:02:07.325 --> 00:02:10.382
+six minus four: two, the two triangles.
+
+47
+00:02:10.382 --> 00:02:13.752
+A loop round the whole bow tie is not new
+
+48
+00:02:13.752 --> 00:02:15.790
+it is the sum of the two.
+
+49
+00:02:16.140 --> 00:02:18.567
+For any connected network
+
+50
+00:02:18.660 --> 00:02:21.553
+the number of independent loops
+
+51
+00:02:21.647 --> 00:02:24.447
+is edges minus nodes plus one.
+
+52
+00:02:24.447 --> 00:02:27.527
+Remove routes e three and e six
+
+53
+00:02:27.527 --> 00:02:31.727
+and the network becomes a tree: four routes
+
+54
+00:02:31.727 --> 00:02:32.660
+no loops.
+
+55
+00:02:33.010 --> 00:02:36.913
+Put them back and add a route e seven
+
+56
+00:02:36.913 --> 00:02:39.584
+from pad two to pad four.
+
+57
+00:02:39.584 --> 00:02:42.357
+Now there are three loops
+
+58
+00:02:42.357 --> 00:02:45.130
+seven minus five plus one.
+
+59
+00:02:45.710 --> 00:02:48.512
+Now multiply in the other order
+
+60
+00:02:48.512 --> 00:02:50.351
+A transpose times A.
+
+61
+00:02:50.438 --> 00:02:52.802
+This five by five matrix is
+
+62
+00:02:52.890 --> 00:02:54.816
+the graph Laplacian L.
+
+63
+00:02:54.904 --> 00:02:57.443
+Its diagonal holds the degree
+
+64
+00:02:57.530 --> 00:02:59.281
+of each landing pad
+
+65
+00:02:59.281 --> 00:03:02.871
+the number of arrows that touch it: two
+
+66
+00:03:02.871 --> 00:03:04.710
+two, four, two, two.
+
+67
+00:03:05.060 --> 00:03:08.671
+Off the diagonal it has minus one for every
+
+68
+00:03:08.755 --> 00:03:11.779
+two landing pads joined by an arrow.
+
+69
+00:03:11.779 --> 00:03:14.214
+The arrows have disappeared
+
+70
+00:03:14.214 --> 00:03:17.909
+L only knows which landing pads are joined.
+
+71
+00:03:17.909 --> 00:03:21.688
+Every row adds to zero, so L sends one, one
+
+72
+00:03:21.688 --> 00:03:23.620
+one, one, one to zero.
+
+73
+00:03:23.970 --> 00:03:27.580
+The key fact: x transpose L x is the sum
+
+74
+00:03:27.670 --> 00:03:29.655
+of the squared climbs.
+
+75
+00:03:29.655 --> 00:03:32.272
+For the heights of part one
+
+76
+00:03:32.272 --> 00:03:36.153
+the squared climbs are sixteen, one, nine
+
+77
+00:03:36.153 --> 00:03:39.221
+forty nine, four and twenty five
+
+78
+00:03:39.221 --> 00:03:42.650
+and they add to one hundred and four.
+
+79
+00:03:43.230 --> 00:03:45.164
+In machine learning
+
+80
+00:03:45.261 --> 00:03:47.581
+a value on every node is
+
+81
+00:03:47.678 --> 00:03:49.612
+a signal on a graph
+
+82
+00:03:49.709 --> 00:03:52.416
+and x transpose L x measures
+
+83
+00:03:52.513 --> 00:03:54.060
+how rough it is.
+
+84
+00:03:54.060 --> 00:03:57.928
+Say the pads have noise sensors: forty
+
+85
+00:03:57.928 --> 00:04:02.279
+forty two, forty one, sixty and forty three.
+
+86
+00:04:02.279 --> 00:04:04.310
+Pad four reads high.
+
+87
+00:04:04.660 --> 00:04:06.779
+One smoothing step subtracts
+
+88
+00:04:06.855 --> 00:04:08.671
+a small multiple of L x
+
+89
+00:04:08.746 --> 00:04:10.941
+which pulls every pad towards
+
+90
+00:04:11.016 --> 00:04:12.152
+its neighbours.
+
+91
+00:04:12.152 --> 00:04:15.254
+Pad four drops to fifty two point eight
+
+92
+00:04:15.254 --> 00:04:18.357
+pad three rises to forty five point two
+
+93
+00:04:18.432 --> 00:04:21.762
+and the roughness falls from six hundred and
+
+94
+00:04:21.837 --> 00:04:24.940
+sixty to about one hundred and forty one.
+
+95
+00:04:25.290 --> 00:04:29.066
+The total stays two hundred and twenty six
+
+96
+00:04:29.066 --> 00:04:32.490
+because L sends the constants to zero.
+
+97
+00:04:33.070 --> 00:04:36.923
+So: A transpose y is arrivals minus
+
+98
+00:04:37.033 --> 00:04:39.564
+departures at each pad
+
+99
+00:04:39.564 --> 00:04:43.747
+and the balanced flows are the loops
+
+100
+00:04:43.747 --> 00:04:47.710
+edges minus nodes plus one of them.
+
+101
+00:04:48.060 --> 00:04:50.590
+The Laplacian, A transpose A
+
+102
+00:04:50.590 --> 00:04:53.121
+is degrees minus neighbours
+
+103
+00:04:53.208 --> 00:04:56.611
+and x transpose L x adds up the squared
+
+104
+00:04:56.698 --> 00:04:59.229
+differences along the routes.
+
+105
+00:04:59.229 --> 00:05:00.188
+Your turn
+
+106
+00:05:00.188 --> 00:05:03.853
+send two crates from pad two to pad four
+
+107
+00:05:03.853 --> 00:05:05.860
+in two different ways.

@@ -1,0 +1,473 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:06.687
+Lecture eighteen's matrix K takes second
+
+2
+00:00:06.782 --> 00:00:09.812
+differences on a line of points.
+
+3
+00:00:09.812 --> 00:00:13.315
+For two points it is two, minus one
+
+4
+00:00:13.315 --> 00:00:14.830
+minus one, two
+
+5
+00:00:14.830 --> 00:00:17.860
+with eigenvalues one and three.
+
+6
+00:00:18.210 --> 00:00:21.301
+Now take a two by two grid of points.
+
+7
+00:00:21.385 --> 00:00:24.476
+Second differences in both directions
+
+8
+00:00:24.559 --> 00:00:27.066
+give this four by four matrix
+
+9
+00:00:27.066 --> 00:00:28.904
+four on the diagonal
+
+10
+00:00:28.904 --> 00:00:31.410
+minus one for each neighbour.
+
+11
+00:00:31.760 --> 00:00:34.411
+Can you guess its four eigenvalues
+
+12
+00:00:34.489 --> 00:00:36.594
+from the one and the three?
+
+13
+00:00:36.594 --> 00:00:37.920
+Pause and guess.
+
+14
+00:00:41.500 --> 00:00:45.107
+The tool is the Kronecker product.
+
+15
+00:00:45.107 --> 00:00:48.608
+A Kronecker B is a block matrix
+
+16
+00:00:48.608 --> 00:00:50.836
+in every entry of A
+
+17
+00:00:50.836 --> 00:00:55.186
+put that entry times the whole matrix B.
+
+18
+00:00:55.186 --> 00:00:58.581
+If A is m by n and B is p by q
+
+19
+00:00:58.581 --> 00:01:01.340
+the result is m p by n q.
+
+20
+00:01:01.690 --> 00:01:04.691
+For example, one, two, three, four
+
+21
+00:01:04.691 --> 00:01:07.350
+Kronecker zero, one, one, one.
+
+22
+00:01:07.350 --> 00:01:10.351
+The top left block is one times B
+
+23
+00:01:10.351 --> 00:01:13.438
+the top right block is two times B
+
+24
+00:01:13.438 --> 00:01:14.810
+and so on down.
+
+25
+00:01:15.624 --> 00:01:18.697
+One rule does most of the work.
+
+26
+00:01:18.697 --> 00:01:22.267
+A Kronecker B, times C Kronecker D
+
+27
+00:01:22.267 --> 00:01:24.844
+equals A C Kronecker B D.
+
+28
+00:01:24.943 --> 00:01:27.521
+It is block multiplication
+
+29
+00:01:27.620 --> 00:01:29.504
+from Lecture three.
+
+30
+00:01:29.854 --> 00:01:32.492
+It gives the inverse at once
+
+31
+00:01:32.583 --> 00:01:35.403
+the inverse of A Kronecker B is
+
+32
+00:01:35.494 --> 00:01:38.223
+A inverse Kronecker B inverse.
+
+33
+00:01:38.223 --> 00:01:41.134
+Transposes factor the same way.
+
+34
+00:01:41.484 --> 00:01:44.247
+This matters because sizes multiply.
+
+35
+00:01:44.324 --> 00:01:46.779
+Two matrices of size one hundred
+
+36
+00:01:46.856 --> 00:01:49.466
+by one hundred give a product with
+
+37
+00:01:49.542 --> 00:01:51.691
+one hundred million entries.
+
+38
+00:01:51.768 --> 00:01:53.610
+The rules let us compute
+
+39
+00:01:53.687 --> 00:01:55.375
+with the small pieces
+
+40
+00:01:55.375 --> 00:01:57.524
+and never form the big one.
+
+41
+00:01:58.104 --> 00:02:01.599
+The partner of the Kronecker product is vec
+
+42
+00:02:01.678 --> 00:02:03.982
+which stacks the columns of a
+
+43
+00:02:04.061 --> 00:02:06.286
+matrix into one long vector.
+
+44
+00:02:06.286 --> 00:02:09.304
+First column on top, then the second.
+
+45
+00:02:09.654 --> 00:02:13.943
+Then any product A X B, as a long vector
+
+46
+00:02:13.943 --> 00:02:18.232
+is B transpose Kronecker A, times vec X.
+
+47
+00:02:18.337 --> 00:02:22.731
+A matrix acting on both sides of X becomes
+
+48
+00:02:22.836 --> 00:02:25.974
+one matrix acting on a vector.
+
+49
+00:02:26.324 --> 00:02:28.041
+Why B transpose?
+
+50
+00:02:28.148 --> 00:02:31.260
+Column j of the product A X B
+
+51
+00:02:31.367 --> 00:02:34.049
+mixes the columns of A X
+
+52
+00:02:34.049 --> 00:02:37.590
+with weights from column j of B.
+
+53
+00:02:37.590 --> 00:02:42.204
+And column j of B is row j of B transpose.
+
+54
+00:02:42.784 --> 00:02:46.069
+The formula people remember instead
+
+55
+00:02:46.160 --> 00:02:48.623
+the product A times X times
+
+56
+00:02:48.715 --> 00:02:52.455
+B gives A Kronecker B, in the same order.
+
+57
+00:02:52.455 --> 00:02:53.824
+Is that right?
+
+58
+00:02:54.404 --> 00:02:58.424
+Take X equal to one, zero, two, one.
+
+59
+00:02:58.424 --> 00:03:03.002
+Then A X B is two, seven, four, fifteen
+
+60
+00:03:03.002 --> 00:03:07.691
+and its vec is two, four, seven, fifteen.
+
+61
+00:03:07.691 --> 00:03:12.604
+B transpose Kronecker A gives exactly that.
+
+62
+00:03:12.954 --> 00:03:17.767
+A Kronecker B gives four, five, ten
+
+63
+00:03:17.767 --> 00:03:19.103
+thirteen.
+
+64
+00:03:19.103 --> 00:03:23.114
+Wrong, with no error message.
+
+65
+00:03:23.464 --> 00:03:24.726
+One more trap
+
+66
+00:03:24.726 --> 00:03:27.701
+NumPy flattens a matrix by rows
+
+67
+00:03:27.701 --> 00:03:28.873
+not columns.
+
+68
+00:03:28.873 --> 00:03:30.586
+With rows stacked
+
+69
+00:03:30.586 --> 00:03:34.553
+the factor becomes A Kronecker B transpose.
+
+70
+00:03:34.643 --> 00:03:37.077
+Both formulas are right for
+
+71
+00:03:37.167 --> 00:03:39.060
+their own convention.
+
+72
+00:03:39.060 --> 00:03:41.224
+Mixing them is the bug.
+
+73
+00:03:41.804 --> 00:03:43.835
+Here is what vec buys.
+
+74
+00:03:43.927 --> 00:03:47.805
+The Sylvester equation A X plus X B equals
+
+75
+00:03:47.897 --> 00:03:50.483
+C appears in control theory.
+
+76
+00:03:50.575 --> 00:03:53.068
+X is multiplied on the left
+
+77
+00:03:53.160 --> 00:03:54.730
+and on the right
+
+78
+00:03:54.730 --> 00:03:57.684
+so it is not a standard system.
+
+79
+00:03:58.034 --> 00:04:02.648
+With vec, A X is I Kronecker A times vec X
+
+80
+00:04:02.756 --> 00:04:06.190
+and X B is B transpose Kronecker
+
+81
+00:04:06.297 --> 00:04:07.799
+I times vec X.
+
+82
+00:04:07.799 --> 00:04:08.872
+Add them
+
+83
+00:04:08.872 --> 00:04:13.594
+and it is one ordinary four by four system.
+
+84
+00:04:13.944 --> 00:04:15.807
+For these matrices
+
+85
+00:04:15.807 --> 00:04:19.924
+solving it gives X equals one, two, zero
+
+86
+00:04:19.924 --> 00:04:21.002
+minus one.
+
+87
+00:04:21.002 --> 00:04:23.845
+We built C from that answer
+
+88
+00:04:23.845 --> 00:04:25.904
+so you can check it.
+
+89
+00:04:26.484 --> 00:04:28.558
+Now the eigenvalues.
+
+90
+00:04:28.558 --> 00:04:33.121
+If A x equals lambda x and B y equals mu y
+
+91
+00:04:33.121 --> 00:04:37.579
+the mixed product rule says A Kronecker B
+
+92
+00:04:37.579 --> 00:04:39.757
+times x Kronecker y
+
+93
+00:04:39.757 --> 00:04:43.283
+is lambda mu times x Kronecker y.
+
+94
+00:04:43.283 --> 00:04:45.564
+Eigenvalues multiply.
+
+95
+00:04:45.914 --> 00:04:48.068
+For the Kronecker sum
+
+96
+00:04:48.068 --> 00:04:51.398
+A Kronecker I plus I Kronecker B
+
+97
+00:04:51.398 --> 00:04:55.609
+the same eigenvectors give lambda plus mu.
+
+98
+00:04:55.609 --> 00:04:57.274
+Eigenvalues add.
+
+99
+00:04:57.624 --> 00:05:01.157
+And the grid matrix from the start is exactly
+
+100
+00:05:01.235 --> 00:05:03.826
+K Kronecker I plus I Kronecker K
+
+101
+00:05:03.904 --> 00:05:06.495
+differences down the columns plus
+
+102
+00:05:06.574 --> 00:05:08.772
+differences across the rows.
+
+103
+00:05:08.850 --> 00:05:10.891
+So its eigenvalues are the
+
+104
+00:05:10.970 --> 00:05:14.424
+sums of one and three: two, four, four, six.
+
+105
+00:05:14.774 --> 00:05:16.814
+On a three by three grid
+
+106
+00:05:16.895 --> 00:05:20.240
+the nine eigenvalues are all the pairwise
+
+107
+00:05:20.322 --> 00:05:23.177
+sums of the three line eigenvalues.
+
+108
+00:05:23.177 --> 00:05:25.706
+Fast Poisson solvers use this
+
+109
+00:05:25.706 --> 00:05:29.214
+they only ever work with the small matrix.
+
+110
+00:05:29.794 --> 00:05:32.509
+A Kronecker product is a matrix
+
+111
+00:05:32.597 --> 00:05:34.085
+of scaled copies.
+
+112
+00:05:34.173 --> 00:05:36.800
+The mixed product rule factors
+
+113
+00:05:36.888 --> 00:05:39.077
+inverses and eigenvalues
+
+114
+00:05:39.077 --> 00:05:42.668
+vec turns matrix equations into systems
+
+115
+00:05:42.668 --> 00:05:46.434
+and the grid Laplacian is a Kronecker sum.
+
+116
+00:05:46.784 --> 00:05:50.292
+Next: other ways to combine spaces.
+
+117
+00:05:50.292 --> 00:05:52.196
+Sums of subspaces
+
+118
+00:05:52.196 --> 00:05:56.104
+and arrays with more than two indices.

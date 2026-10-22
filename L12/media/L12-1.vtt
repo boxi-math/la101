@@ -1,0 +1,369 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:05.659
+The drone's first button, u
+
+2
+00:00:05.659 --> 00:00:08.122
+moves it one metre east
+
+3
+00:00:08.122 --> 00:00:10.290
+two north and one up.
+
+4
+00:00:10.290 --> 00:00:14.527
+Its second button, v, moves it one, three
+
+5
+00:00:14.527 --> 00:00:15.027
+two.
+
+6
+00:00:15.370 --> 00:00:16.716
+They look alike.
+
+7
+00:00:16.716 --> 00:00:17.642
+How alike?
+
+8
+00:00:17.642 --> 00:00:20.251
+Today one number answers that
+
+9
+00:00:20.251 --> 00:00:21.681
+the dot product
+
+10
+00:00:21.765 --> 00:00:25.131
+and it also tells us when two directions
+
+11
+00:00:25.215 --> 00:00:26.730
+are perpendicular.
+
+12
+00:00:27.080 --> 00:00:29.302
+Here is a puzzle.
+
+13
+00:00:29.302 --> 00:00:34.139
+u dot v is nine, and u dot w is ten
+
+14
+00:00:34.139 --> 00:00:38.322
+for w equal to ten, zero, zero.
+
+15
+00:00:38.322 --> 00:00:42.898
+Which pair points closer together?
+
+16
+00:00:42.898 --> 00:00:45.120
+Pause and think.
+
+17
+00:00:48.700 --> 00:00:51.775
+The dot product multiplies matching
+
+18
+00:00:51.863 --> 00:00:55.377
+entries and adds them up: one times one
+
+19
+00:00:55.377 --> 00:00:59.067
+plus two times three, plus one times two
+
+20
+00:00:59.067 --> 00:00:59.594
+nine.
+
+21
+00:00:59.594 --> 00:01:03.460
+It is a single number, a transpose times b.
+
+22
+00:01:03.810 --> 00:01:07.956
+A matrix product is a table of dot products.
+
+23
+00:01:07.956 --> 00:01:11.066
+Put u and v as the columns of A
+
+24
+00:01:11.160 --> 00:01:13.893
+A transpose A holds their dot
+
+25
+00:01:13.987 --> 00:01:17.380
+products with each other, six, nine
+
+26
+00:01:17.380 --> 00:01:19.170
+nine and fourteen.
+
+27
+00:01:19.750 --> 00:01:22.925
+The dot product of a vector with
+
+28
+00:01:23.024 --> 00:01:25.902
+itself is its length squared.
+
+29
+00:01:25.902 --> 00:01:30.169
+Walk along u: one east, two north, one up.
+
+30
+00:01:30.169 --> 00:01:34.237
+Pythagoras gives one plus four plus one
+
+31
+00:01:34.237 --> 00:01:37.710
+six, so u is root six metres long.
+
+32
+00:01:38.060 --> 00:01:41.905
+In the same way, v has length root fourteen.
+
+33
+00:01:41.992 --> 00:01:44.963
+Divide u by its length and you get
+
+34
+00:01:45.051 --> 00:01:47.934
+the unit vector in its direction
+
+35
+00:01:47.934 --> 00:01:49.420
+with length one.
+
+36
+00:01:50.000 --> 00:01:53.607
+The angle comes from the dot product too
+
+37
+00:01:53.695 --> 00:01:57.213
+a dot b equals the two lengths times the
+
+38
+00:01:57.301 --> 00:02:00.204
+cosine of the angle between them.
+
+39
+00:02:00.204 --> 00:02:03.899
+For u and v, the cosine is nine over root
+
+40
+00:02:03.987 --> 00:02:06.098
+six times root fourteen
+
+41
+00:02:06.098 --> 00:02:08.649
+about zero point nine eight
+
+42
+00:02:08.649 --> 00:02:11.640
+an angle of about eleven degrees.
+
+43
+00:02:11.990 --> 00:02:14.893
+Turn the picture, and you can see how close
+
+44
+00:02:14.960 --> 00:02:16.310
+the two buttons are.
+
+45
+00:02:16.890 --> 00:02:19.604
+A cosine is never more than one
+
+46
+00:02:19.689 --> 00:02:22.658
+so a dot product is never more than
+
+47
+00:02:22.743 --> 00:02:25.033
+the two lengths multiplied
+
+48
+00:02:25.033 --> 00:02:28.256
+nine is at most nine point one seven.
+
+49
+00:02:28.256 --> 00:02:30.970
+That is the Schwarz inequality.
+
+50
+00:02:31.320 --> 00:02:32.815
+Now the puzzle.
+
+51
+00:02:32.815 --> 00:02:37.001
+w is ten, zero, zero, and u dot w is ten
+
+52
+00:02:37.001 --> 00:02:38.596
+more than nine.
+
+53
+00:02:38.596 --> 00:02:41.187
+But w is ten metres long
+
+54
+00:02:41.187 --> 00:02:45.174
+the cosine is only zero point four one
+
+55
+00:02:45.174 --> 00:02:48.263
+an angle of sixty six degrees.
+
+56
+00:02:48.263 --> 00:02:52.250
+A big dot product is not a small angle
+
+57
+00:02:52.250 --> 00:02:55.240
+always divide by the lengths.
+
+58
+00:02:55.820 --> 00:02:58.030
+When the dot product is zero
+
+59
+00:02:58.030 --> 00:03:00.698
+the cosine is zero: a right angle.
+
+60
+00:03:00.698 --> 00:03:03.290
+That is what perpendicular means
+
+61
+00:03:03.290 --> 00:03:05.500
+in any number of dimensions.
+
+62
+00:03:05.850 --> 00:03:10.164
+Back to the robot matrix M, with rows one
+
+63
+00:03:10.164 --> 00:03:12.218
+two and three, six.
+
+64
+00:03:12.218 --> 00:03:16.634
+Its rows lie on the line through one, two.
+
+65
+00:03:16.634 --> 00:03:20.639
+Its nullspace is the line through two
+
+66
+00:03:20.639 --> 00:03:21.769
+minus one.
+
+67
+00:03:21.769 --> 00:03:23.618
+One, two dot two
+
+68
+00:03:23.618 --> 00:03:27.110
+minus one is two minus two: zero.
+
+69
+00:03:27.110 --> 00:03:28.650
+Perpendicular.
+
+70
+00:03:29.000 --> 00:03:32.596
+And Pythagoras holds: their sum, three, one
+
+71
+00:03:32.596 --> 00:03:34.557
+has length squared ten
+
+72
+00:03:34.557 --> 00:03:36.600
+which is five plus five.
+
+73
+00:03:37.180 --> 00:03:39.070
+This is no accident.
+
+74
+00:03:39.070 --> 00:03:43.228
+M x equals zero says row one dot x is zero
+
+75
+00:03:43.228 --> 00:03:45.779
+and row two dot x is zero.
+
+76
+00:03:45.873 --> 00:03:48.519
+So every nullspace vector is
+
+77
+00:03:48.614 --> 00:03:51.165
+perpendicular to every row
+
+78
+00:03:51.165 --> 00:03:54.756
+and to every combination of the rows
+
+79
+00:03:54.756 --> 00:03:56.740
+the whole row space.
+
+80
+00:03:57.090 --> 00:03:59.724
+Part two shows the same for the drone
+
+81
+00:03:59.793 --> 00:04:02.357
+where the row space and the nullspace
+
+82
+00:04:02.427 --> 00:04:04.090
+live in four dimensions.
+
+83
+00:04:04.670 --> 00:04:05.035
+So
+
+84
+00:04:05.035 --> 00:04:10.150
+a dot b adds the products of the entries.
+
+85
+00:04:10.150 --> 00:04:13.924
+a dot a is the length squared.
+
+86
+00:04:14.046 --> 00:04:17.942
+The cosine of the angle is a dot
+
+87
+00:04:18.064 --> 00:04:21.230
+b divided by both lengths.
+
+88
+00:04:21.580 --> 00:04:25.237
+A zero dot product means perpendicular
+
+89
+00:04:25.331 --> 00:04:29.270
+and the rows of a matrix are perpendicular
+
+90
+00:04:29.363 --> 00:04:30.958
+to its nullspace.
+
+91
+00:04:30.958 --> 00:04:34.240
+Your turn: find the length of two
+
+92
+00:04:34.240 --> 00:04:35.740
+minus one, two.

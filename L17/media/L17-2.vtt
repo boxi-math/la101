@@ -1,0 +1,513 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:07.660
+Lecture one's robot has two moves: a, one
+
+2
+00:00:07.660 --> 00:00:11.060
+three, and b, two, minus one.
+
+3
+00:00:11.410 --> 00:00:15.434
+Amounts between zero and one of each
+
+4
+00:00:15.545 --> 00:00:18.451
+move fill a parallelogram
+
+5
+00:00:18.451 --> 00:00:22.810
+with corners zero, a, b, and a plus b.
+
+6
+00:00:23.160 --> 00:00:24.860
+What is its area?
+
+7
+00:00:24.860 --> 00:00:26.560
+Pause and guess.
+
+8
+00:00:30.140 --> 00:00:33.730
+Put a and b in the columns of a matrix.
+
+9
+00:00:33.730 --> 00:00:37.413
+Its determinant is minus one minus six
+
+10
+00:00:37.413 --> 00:00:38.609
+minus seven.
+
+11
+00:00:38.609 --> 00:00:42.660
+The area is the size of that number: seven.
+
+12
+00:00:43.010 --> 00:00:43.385
+Why?
+
+13
+00:00:43.385 --> 00:00:47.317
+Read the three rules as facts about area.
+
+14
+00:00:47.317 --> 00:00:50.126
+The unit square has area one.
+
+15
+00:00:50.126 --> 00:00:52.280
+Stretch one side by t
+
+16
+00:00:52.280 --> 00:00:55.369
+and the area is multiplied by t.
+
+17
+00:00:55.369 --> 00:00:58.366
+Slide one side along the other
+
+18
+00:00:58.366 --> 00:01:02.017
+like a stack of cards pushed sideways
+
+19
+00:01:02.017 --> 00:01:03.890
+and the area stays.
+
+20
+00:01:04.240 --> 00:01:07.753
+Those slides are the elimination steps.
+
+21
+00:01:07.843 --> 00:01:10.815
+One slide turns the parallelogram
+
+22
+00:01:10.905 --> 00:01:13.877
+into a rectangle: base root five
+
+23
+00:01:13.877 --> 00:01:16.399
+height a little over three.
+
+24
+00:01:16.399 --> 00:01:17.480
+Area seven.
+
+25
+00:01:18.060 --> 00:01:20.574
+So what does the minus sign mean?
+
+26
+00:01:20.574 --> 00:01:22.860
+Is the area somehow negative?
+
+27
+00:01:23.440 --> 00:01:24.475
+Not at all.
+
+28
+00:01:24.475 --> 00:01:26.639
+Take a small letter L.
+
+29
+00:01:26.639 --> 00:01:29.837
+The robot's matrix sends it here
+
+30
+00:01:29.837 --> 00:01:33.036
+seven times bigger, and mirrored
+
+31
+00:01:33.036 --> 00:01:35.952
+as if seen in a looking glass.
+
+32
+00:01:35.952 --> 00:01:38.680
+That flip is the minus sign.
+
+33
+00:01:39.030 --> 00:01:42.310
+List the columns the other way, b then a
+
+34
+00:01:42.310 --> 00:01:45.110
+and the determinant is plus seven
+
+35
+00:01:45.110 --> 00:01:47.030
+the same parallelogram
+
+36
+00:01:47.030 --> 00:01:49.910
+and now the L keeps its handedness.
+
+37
+00:01:50.260 --> 00:01:52.909
+So the sign records orientation
+
+38
+00:01:52.991 --> 00:01:55.723
+plus when the second column turns
+
+39
+00:01:55.806 --> 00:01:58.454
+counterclockwise from the first
+
+40
+00:01:58.454 --> 00:02:01.020
+minus when it turns clockwise.
+
+41
+00:02:01.600 --> 00:02:04.016
+Signed areas add up nicely.
+
+42
+00:02:04.016 --> 00:02:07.237
+A triangle is half a parallelogram
+
+43
+00:02:07.237 --> 00:02:09.205
+the triangle zero, a
+
+44
+00:02:09.205 --> 00:02:11.800
+b has area three and a half.
+
+45
+00:02:12.150 --> 00:02:13.435
+For any polygon
+
+46
+00:02:13.516 --> 00:02:16.086
+add half the determinant of each
+
+47
+00:02:16.167 --> 00:02:18.496
+pair of neighbouring corners.
+
+48
+00:02:18.496 --> 00:02:20.906
+That is the shoelace formula.
+
+49
+00:02:20.906 --> 00:02:22.995
+Measured from the origin
+
+50
+00:02:22.995 --> 00:02:25.967
+three triangles count plus, and one
+
+51
+00:02:25.967 --> 00:02:28.618
+outside the field, counts minus.
+
+52
+00:02:28.618 --> 00:02:31.510
+This four-sided field has area ten.
+
+53
+00:02:32.090 --> 00:02:35.671
+What does a zero determinant look like?
+
+54
+00:02:35.671 --> 00:02:38.793
+Start again from the unit square
+
+55
+00:02:38.793 --> 00:02:41.731
+and send its sides to one, two
+
+56
+00:02:41.731 --> 00:02:44.485
+and to one point four, three.
+
+57
+00:02:44.485 --> 00:02:48.250
+The square becomes a thin parallelogram.
+
+58
+00:02:48.600 --> 00:02:52.251
+Its area is three minus two point eight
+
+59
+00:02:52.251 --> 00:02:54.168
+which is two tenths.
+
+60
+00:02:54.168 --> 00:02:56.085
+Small, but not zero
+
+61
+00:02:56.085 --> 00:02:59.280
+so the matrix can still be undone.
+
+62
+00:02:59.630 --> 00:03:03.109
+Now push the second column the last bit
+
+63
+00:03:03.109 --> 00:03:06.762
+to one and a half times the first column
+
+64
+00:03:06.762 --> 00:03:08.762
+one and a half, three.
+
+65
+00:03:08.762 --> 00:03:11.371
+Both columns lie on one line
+
+66
+00:03:11.371 --> 00:03:14.937
+and the whole plane is squashed onto it.
+
+67
+00:03:14.937 --> 00:03:17.808
+Every region loses all its area
+
+68
+00:03:17.808 --> 00:03:19.373
+determinant zero.
+
+69
+00:03:19.460 --> 00:03:21.895
+Nothing can unflatten a line
+
+70
+00:03:21.982 --> 00:03:23.722
+back into the plane
+
+71
+00:03:23.722 --> 00:03:26.070
+so the matrix is singular.
+
+72
+00:03:26.650 --> 00:03:30.045
+Back to the plane, for the bigger statement
+
+73
+00:03:30.122 --> 00:03:32.668
+a matrix multiplies every area by
+
+74
+00:03:32.745 --> 00:03:34.906
+the size of its determinant.
+
+75
+00:03:34.906 --> 00:03:35.909
+Take a disk.
+
+76
+00:03:35.909 --> 00:03:38.918
+Under the matrix with columns b and a
+
+77
+00:03:38.918 --> 00:03:42.389
+it becomes an ellipse, seven times the area
+
+78
+00:03:42.467 --> 00:03:44.318
+every tiny square inside
+
+79
+00:03:44.395 --> 00:03:46.170
+it was scaled by seven.
+
+80
+00:03:46.520 --> 00:03:49.142
+A curved map is not one matrix.
+
+81
+00:03:49.142 --> 00:03:52.526
+But near each point it is close to one
+
+82
+00:03:52.526 --> 00:03:55.656
+the matrix of its first derivatives
+
+83
+00:03:55.656 --> 00:03:56.840
+the Jacobian.
+
+84
+00:03:57.190 --> 00:04:00.345
+Polar coordinates send r and theta to
+
+85
+00:04:00.430 --> 00:04:03.159
+r cosine theta and r sine theta.
+
+86
+00:04:03.159 --> 00:04:05.803
+Its Jacobian determinant is r.
+
+87
+00:04:05.803 --> 00:04:08.446
+A small patch near the centre
+
+88
+00:04:08.446 --> 00:04:12.113
+and the same steps of r and theta far out
+
+89
+00:04:12.113 --> 00:04:15.950
+the far patch is bigger, in proportion to r.
+
+90
+00:04:16.300 --> 00:04:20.260
+Add up the patches, r delta r delta theta
+
+91
+00:04:20.260 --> 00:04:23.560
+over the whole disk of radius two
+
+92
+00:04:23.560 --> 00:04:27.426
+and the sum is four pi, as it should be.
+
+93
+00:04:27.520 --> 00:04:30.443
+That is the change of variables
+
+94
+00:04:30.537 --> 00:04:32.140
+rule of calculus.
+
+95
+00:04:32.720 --> 00:04:34.988
+Machine learning meets this
+
+96
+00:04:35.072 --> 00:04:36.752
+through probability.
+
+97
+00:04:36.752 --> 00:04:40.112
+A density is probability per unit area.
+
+98
+00:04:40.112 --> 00:04:42.464
+Push data through a matrix
+
+99
+00:04:42.464 --> 00:04:45.908
+a patch's area grows by the determinant
+
+100
+00:04:45.908 --> 00:04:49.268
+but the probability inside it does not.
+
+101
+00:04:49.268 --> 00:04:52.040
+So the density is divided by it.
+
+102
+00:04:52.390 --> 00:04:55.264
+Send two hundred thousand random points
+
+103
+00:04:55.337 --> 00:04:57.327
+through the robot's matrix.
+
+104
+00:04:57.401 --> 00:04:59.980
+The share landing in a small square
+
+105
+00:05:00.053 --> 00:05:02.116
+is point zero zero five one
+
+106
+00:05:02.116 --> 00:05:04.990
+the formula says point zero zero five.
+
+107
+00:05:05.340 --> 00:05:08.722
+In logs, the log-determinant is subtracted.
+
+108
+00:05:08.722 --> 00:05:12.183
+Normalizing flows are models built on this
+
+109
+00:05:12.183 --> 00:05:14.306
+with triangular Jacobians
+
+110
+00:05:14.385 --> 00:05:16.745
+so the log-determinant is just
+
+111
+00:05:16.823 --> 00:05:18.790
+a sum along the diagonal.
+
+112
+00:05:18.790 --> 00:05:20.756
+And compute it as a log
+
+113
+00:05:20.835 --> 00:05:23.902
+take one half times the identity in one
+
+114
+00:05:23.981 --> 00:05:26.498
+thousand two hundred dimensions
+
+115
+00:05:26.576 --> 00:05:29.093
+its determinant is so small that
+
+116
+00:05:29.172 --> 00:05:31.060
+the computer shows zero
+
+117
+00:05:31.138 --> 00:05:33.812
+but its log is minus eight hundred
+
+118
+00:05:33.891 --> 00:05:35.700
+thirty-one point eight.
+
+119
+00:05:36.280 --> 00:05:39.471
+So: the determinant is a signed area
+
+120
+00:05:39.557 --> 00:05:42.316
+and the factor by which a matrix
+
+121
+00:05:42.402 --> 00:05:44.127
+scales every region.
+
+122
+00:05:44.127 --> 00:05:46.800
+The Jacobian makes that local.
+
+123
+00:05:47.380 --> 00:05:48.206
+Next unit
+
+124
+00:05:48.206 --> 00:05:51.591
+directions that a matrix only stretches
+
+125
+00:05:51.591 --> 00:05:53.407
+without turning them.
+
+126
+00:05:53.407 --> 00:05:55.389
+Those are eigenvectors
+
+127
+00:05:55.471 --> 00:05:57.948
+and the product of the stretch
+
+128
+00:05:58.031 --> 00:06:00.260
+factors is the determinant.

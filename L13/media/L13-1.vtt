@@ -1,0 +1,425 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:06.318
+Twice now, a target has been out of reach
+
+2
+00:00:06.318 --> 00:00:08.841
+and we stopped at no solution.
+
+3
+00:00:08.841 --> 00:00:11.445
+Today we ask a better question
+
+4
+00:00:11.445 --> 00:00:14.700
+what is the closest place we can reach?
+
+5
+00:00:15.050 --> 00:00:18.226
+Our robot's moves both point along one
+
+6
+00:00:18.226 --> 00:00:18.796
+three.
+
+7
+00:00:18.878 --> 00:00:21.484
+So every place it can reach lies
+
+8
+00:00:21.565 --> 00:00:24.090
+on one line through the origin.
+
+9
+00:00:24.440 --> 00:00:27.533
+A customer waits at seven, five
+
+10
+00:00:27.533 --> 00:00:28.887
+off the line.
+
+11
+00:00:28.887 --> 00:00:31.690
+Where should the robot stop
+
+12
+00:00:31.690 --> 00:00:34.397
+to be as close as possible?
+
+13
+00:00:34.397 --> 00:00:36.040
+Pause and guess.
+
+14
+00:00:39.620 --> 00:00:44.335
+Name the stopping point p: some amount
+
+15
+00:00:44.335 --> 00:00:45.906
+x hat, of a.
+
+16
+00:00:45.906 --> 00:00:50.500
+The gap e is what is left, b minus p.
+
+17
+00:00:50.850 --> 00:00:52.798
+Slide the stop along the
+
+18
+00:00:52.879 --> 00:00:54.745
+line and watch the gap.
+
+19
+00:00:54.827 --> 00:00:57.099
+It is shortest when it meets
+
+20
+00:00:57.180 --> 00:00:59.290
+the line at a right angle.
+
+21
+00:00:59.640 --> 00:01:03.540
+Right angle means a dot e is zero.
+
+22
+00:01:03.540 --> 00:01:06.751
+Write e as b minus x hat a
+
+23
+00:01:06.751 --> 00:01:09.160
+and solve for x hat.
+
+24
+00:01:09.510 --> 00:01:12.749
+x hat is a dot b over a dot a
+
+25
+00:01:12.749 --> 00:01:17.067
+seven plus fifteen, over one plus nine.
+
+26
+00:01:17.067 --> 00:01:19.550
+That is eleven fifths.
+
+27
+00:01:19.900 --> 00:01:24.129
+So p is two point two, six point six
+
+28
+00:01:24.129 --> 00:01:27.900
+and the gap is four point eight
+
+29
+00:01:27.900 --> 00:01:30.300
+minus one point six.
+
+30
+00:01:30.650 --> 00:01:32.367
+Check the right angle
+
+31
+00:01:32.445 --> 00:01:34.552
+four point eight minus four
+
+32
+00:01:34.630 --> 00:01:36.190
+point eight is zero.
+
+33
+00:01:36.268 --> 00:01:38.219
+The robot ends about five
+
+34
+00:01:38.297 --> 00:01:40.170
+units from the customer.
+
+35
+00:01:40.750 --> 00:01:42.827
+Is it really the closest?
+
+36
+00:01:42.827 --> 00:01:44.655
+Test two other stops.
+
+37
+00:01:44.738 --> 00:01:47.147
+Stopping at a itself leaves a
+
+38
+00:01:47.230 --> 00:01:49.390
+squared distance of forty.
+
+39
+00:01:49.740 --> 00:01:52.001
+Three moves, at three, nine
+
+40
+00:01:52.001 --> 00:01:53.454
+leave thirty two.
+
+41
+00:01:53.454 --> 00:01:56.360
+And p leaves twenty five point six
+
+42
+00:01:56.360 --> 00:01:58.540
+the smallest of the three.
+
+43
+00:01:58.890 --> 00:02:00.783
+Look at the pattern.
+
+44
+00:02:00.877 --> 00:02:03.716
+Forty is twenty five point six
+
+45
+00:02:03.811 --> 00:02:06.176
+plus fourteen point four.
+
+46
+00:02:06.271 --> 00:02:09.204
+Thirty two is twenty five point
+
+47
+00:02:09.299 --> 00:02:11.570
+six plus six point four.
+
+48
+00:02:11.920 --> 00:02:15.086
+Each triangle has a right angle at p.
+
+49
+00:02:15.086 --> 00:02:16.797
+The gap is one leg
+
+50
+00:02:16.797 --> 00:02:20.049
+the walk along the line is the other
+
+51
+00:02:20.049 --> 00:02:21.760
+that is Pythagoras.
+
+52
+00:02:22.110 --> 00:02:26.130
+So any other stop adds a positive piece.
+
+53
+00:02:26.130 --> 00:02:30.350
+Part two turns this picture into a proof.
+
+54
+00:02:30.930 --> 00:02:34.438
+Now look at the formula again.
+
+55
+00:02:34.438 --> 00:02:35.373
+p is a
+
+56
+00:02:35.373 --> 00:02:40.050
+times a transpose b over a transpose a.
+
+57
+00:02:40.400 --> 00:02:41.976
+Move b to the end.
+
+58
+00:02:42.063 --> 00:02:44.164
+The matrix in front of b
+
+59
+00:02:44.251 --> 00:02:47.840
+does the projecting, for every b at once.
+
+60
+00:02:48.190 --> 00:02:53.235
+For the robot it is one tenth of one, three
+
+61
+00:02:53.235 --> 00:02:54.726
+three, nine.
+
+62
+00:02:54.726 --> 00:02:57.937
+It is a column times a row
+
+63
+00:02:57.937 --> 00:03:00.230
+so its rank is one.
+
+64
+00:03:00.580 --> 00:03:04.094
+A customer already on the line, at three
+
+65
+00:03:04.094 --> 00:03:07.009
+nine, is their own closest point.
+
+66
+00:03:07.094 --> 00:03:09.837
+A customer twice as far out gets
+
+67
+00:03:09.923 --> 00:03:11.980
+a stop twice as far out.
+
+68
+00:03:12.330 --> 00:03:15.866
+And projecting twice changes nothing
+
+69
+00:03:15.866 --> 00:03:19.114
+because p is already on the line.
+
+70
+00:03:19.114 --> 00:03:20.930
+So P squared is P.
+
+71
+00:03:21.280 --> 00:03:24.749
+I minus P keeps the other part, the gap.
+
+72
+00:03:24.836 --> 00:03:27.871
+Every gap lies on the perpendicular
+
+73
+00:03:27.958 --> 00:03:30.560
+line through three, minus one.
+
+74
+00:03:31.140 --> 00:03:33.848
+The robot has a second move, two, six
+
+75
+00:03:33.848 --> 00:03:35.131
+on the same line.
+
+76
+00:03:35.202 --> 00:03:37.553
+Would describing the line with it
+
+77
+00:03:37.625 --> 00:03:39.620
+give a different projection?
+
+78
+00:03:40.200 --> 00:03:42.449
+Use the second move instead.
+
+79
+00:03:42.529 --> 00:03:44.377
+The top of the fraction
+
+80
+00:03:44.457 --> 00:03:46.224
+gets a factor of four
+
+81
+00:03:46.224 --> 00:03:48.152
+and so does the bottom.
+
+82
+00:03:48.152 --> 00:03:50.160
+They cancel: the same P.
+
+83
+00:03:50.510 --> 00:03:53.234
+What changes is the amount.
+
+84
+00:03:53.234 --> 00:03:55.454
+Eleven fifths of one
+
+85
+00:03:55.454 --> 00:03:59.590
+three becomes eleven tenths of two, six.
+
+86
+00:03:59.940 --> 00:04:03.993
+Both land on the same point, two point two
+
+87
+00:04:03.993 --> 00:04:05.407
+six point six.
+
+88
+00:04:05.407 --> 00:04:06.916
+p is the point.
+
+89
+00:04:07.010 --> 00:04:10.403
+x hat is only an amount of whichever
+
+90
+00:04:10.498 --> 00:04:12.100
+vector you chose.
+
+91
+00:04:12.680 --> 00:04:14.866
+So, to project onto a line
+
+92
+00:04:14.947 --> 00:04:17.294
+drop the gap so that it meets
+
+93
+00:04:17.375 --> 00:04:19.480
+the line at a right angle.
+
+94
+00:04:19.830 --> 00:04:23.930
+The amount is a dot b over a dot a
+
+95
+00:04:23.930 --> 00:04:28.030
+and the point is that amount of a.
+
+96
+00:04:28.380 --> 00:04:32.372
+The matrix a a transpose over a transpose
+
+97
+00:04:32.469 --> 00:04:34.611
+a does it for every b
+
+98
+00:04:34.611 --> 00:04:38.700
+and projecting twice is the same as once.
+
+99
+00:04:39.280 --> 00:04:41.928
+Try one yourself: project five
+
+100
+00:04:41.928 --> 00:04:44.063
+five onto the same line
+
+101
+00:04:44.148 --> 00:04:46.283
+and check that the gap is
+
+102
+00:04:46.369 --> 00:04:48.760
+perpendicular to one, three.
+
+103
+00:04:49.110 --> 00:04:51.698
+In part two the drone has a whole
+
+104
+00:04:51.777 --> 00:04:53.424
+plane to choose from
+
+105
+00:04:53.502 --> 00:04:55.385
+and one division becomes
+
+106
+00:04:55.463 --> 00:04:57.110
+the normal equations.

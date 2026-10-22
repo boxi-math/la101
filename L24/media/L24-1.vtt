@@ -1,0 +1,509 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:05.838
+A rotation by ninety degrees has
+
+2
+00:00:05.930 --> 00:00:08.592
+eigenvalues plus and minus i
+
+3
+00:00:08.684 --> 00:00:11.438
+so complex numbers are already
+
+4
+00:00:11.530 --> 00:00:12.815
+in the course.
+
+5
+00:00:12.815 --> 00:00:15.293
+Here is the complex plane
+
+6
+00:00:15.293 --> 00:00:17.864
+one is a step to the right
+
+7
+00:00:17.864 --> 00:00:19.700
+and i is a step up.
+
+8
+00:00:20.050 --> 00:00:23.737
+Now take the vector with entries one and i.
+
+9
+00:00:23.823 --> 00:00:26.309
+The usual length squared adds
+
+10
+00:00:26.395 --> 00:00:28.710
+the squares of the entries.
+
+11
+00:00:28.710 --> 00:00:30.425
+One squared is one.
+
+12
+00:00:30.425 --> 00:00:31.711
+And i squared
+
+13
+00:00:31.711 --> 00:00:34.797
+multiplying by i is a quarter turn
+
+14
+00:00:34.797 --> 00:00:37.112
+so i times i is minus one.
+
+15
+00:00:37.112 --> 00:00:38.570
+The sum is zero.
+
+16
+00:00:38.920 --> 00:00:42.320
+A vector that is clearly not zero
+
+17
+00:00:42.320 --> 00:00:44.120
+with length zero?
+
+18
+00:00:44.120 --> 00:00:47.520
+Pause and think: what went wrong?
+
+19
+00:00:51.100 --> 00:00:54.269
+The fix is to conjugate one side.
+
+20
+00:00:54.365 --> 00:00:57.247
+The conjugate mirrors a number
+
+21
+00:00:57.343 --> 00:01:00.800
+in the real axis: i becomes minus i.
+
+22
+00:01:00.800 --> 00:01:04.546
+Then i bar times i is minus i times i
+
+23
+00:01:04.642 --> 00:01:07.043
+a quarter turn from minus
+
+24
+00:01:07.139 --> 00:01:09.060
+i lands on plus one.
+
+25
+00:01:09.410 --> 00:01:13.586
+So z H z, the conjugate transpose times z
+
+26
+00:01:13.586 --> 00:01:15.773
+is one plus one: two.
+
+27
+00:01:15.773 --> 00:01:19.948
+It adds the squared sizes of the entries
+
+28
+00:01:19.948 --> 00:01:22.533
+and it is never negative.
+
+29
+00:01:22.533 --> 00:01:26.808
+For three plus four i and one minus two i
+
+30
+00:01:26.808 --> 00:01:29.890
+twenty-five plus five, thirty.
+
+31
+00:01:30.240 --> 00:01:32.501
+The inner product becomes
+
+32
+00:01:32.592 --> 00:01:35.395
+x conjugate transpose, times y
+
+33
+00:01:35.486 --> 00:01:38.199
+and orthogonal means that this
+
+34
+00:01:38.290 --> 00:01:40.279
+inner product is zero.
+
+35
+00:01:40.279 --> 00:01:41.184
+In NumPy
+
+36
+00:01:41.184 --> 00:01:44.530
+v dot conjugates its first argument
+
+37
+00:01:44.530 --> 00:01:46.520
+the at sign does not.
+
+38
+00:01:47.100 --> 00:01:50.066
+The complex version of a symmetric
+
+39
+00:01:50.153 --> 00:01:53.119
+matrix is Hermitian: A H equals A.
+
+40
+00:01:53.119 --> 00:01:53.642
+Here
+
+41
+00:01:53.642 --> 00:01:57.567
+the entry above the diagonal is one minus i
+
+42
+00:01:57.567 --> 00:02:01.144
+and the entry below is its mirror image
+
+43
+00:02:01.144 --> 00:02:02.191
+one plus i.
+
+44
+00:02:02.191 --> 00:02:05.418
+The diagonal entries, two and three
+
+45
+00:02:05.418 --> 00:02:08.820
+must be their own mirror images: real.
+
+46
+00:02:09.170 --> 00:02:13.332
+Trace five, determinant six minus two: four.
+
+47
+00:02:13.332 --> 00:02:16.832
+So the eigenvalues are one and four
+
+48
+00:02:16.832 --> 00:02:19.008
+both on the real axis
+
+49
+00:02:19.008 --> 00:02:22.130
+although the matrix is not real.
+
+50
+00:02:22.480 --> 00:02:26.957
+The eigenvectors are one minus i, minus one
+
+51
+00:02:26.957 --> 00:02:29.196
+and one minus i, two.
+
+52
+00:02:29.196 --> 00:02:31.231
+With the conjugate
+
+53
+00:02:31.231 --> 00:02:35.708
+their inner product is two minus two: zero
+
+54
+00:02:35.708 --> 00:02:36.929
+orthogonal.
+
+55
+00:02:36.929 --> 00:02:41.203
+Without it you get minus two minus two i
+
+56
+00:02:41.203 --> 00:02:45.680
+and would wrongly call them not orthogonal.
+
+57
+00:02:46.260 --> 00:02:49.409
+The complex version of an orthogonal
+
+58
+00:02:49.496 --> 00:02:52.470
+matrix is unitary: U H U equals I.
+
+59
+00:02:52.470 --> 00:02:54.045
+It keeps lengths
+
+60
+00:02:54.132 --> 00:02:56.931
+so every eigenvalue has size one
+
+61
+00:02:57.019 --> 00:02:59.468
+and sits on the unit circle.
+
+62
+00:02:59.468 --> 00:03:02.529
+The ninety degree rotation is one
+
+63
+00:03:02.617 --> 00:03:05.416
+its eigenvalues plus i and minus
+
+64
+00:03:05.503 --> 00:03:07.340
+i are on that circle.
+
+65
+00:03:07.920 --> 00:03:11.442
+The most important unitary matrix
+
+66
+00:03:11.442 --> 00:03:15.483
+up to a factor, is the Fourier matrix.
+
+67
+00:03:15.483 --> 00:03:19.109
+Let w be e to the two pi i over n
+
+68
+00:03:19.212 --> 00:03:21.595
+a point one n-th of the
+
+69
+00:03:21.699 --> 00:03:23.978
+way around the circle.
+
+70
+00:03:23.978 --> 00:03:28.640
+Entry j, k of F is w to the power j times k.
+
+71
+00:03:28.990 --> 00:03:31.561
+For n equals four, w is i.
+
+72
+00:03:31.561 --> 00:03:34.033
+Column zero is all ones.
+
+73
+00:03:34.132 --> 00:03:37.494
+Column one walks around the circle
+
+74
+00:03:37.593 --> 00:03:41.943
+a quarter turn at a time: one, i, minus one
+
+75
+00:03:41.943 --> 00:03:42.833
+minus i.
+
+76
+00:03:42.833 --> 00:03:46.591
+Column two jumps back and forth: one
+
+77
+00:03:46.591 --> 00:03:49.261
+minus one, one, minus one
+
+78
+00:03:49.360 --> 00:03:51.634
+the fastest oscillation
+
+79
+00:03:51.733 --> 00:03:53.908
+four samples can show.
+
+80
+00:03:53.908 --> 00:03:57.270
+Column three walks the other way.
+
+81
+00:03:57.620 --> 00:03:59.915
+The columns are orthogonal
+
+82
+00:03:59.915 --> 00:04:03.740
+each of length two, the square root of four.
+
+83
+00:04:03.740 --> 00:04:05.950
+So F H F is four times I
+
+84
+00:04:06.035 --> 00:04:08.330
+and the inverse of F is its
+
+85
+00:04:08.415 --> 00:04:10.625
+conjugate divided by four.
+
+86
+00:04:10.625 --> 00:04:12.580
+No elimination needed.
+
+87
+00:04:13.160 --> 00:04:13.892
+Why care?
+
+88
+00:04:13.973 --> 00:04:16.493
+Take four readings of something
+
+89
+00:04:16.574 --> 00:04:19.826
+that repeats every four hours: two, one
+
+90
+00:04:19.826 --> 00:04:20.721
+zero, one.
+
+91
+00:04:20.721 --> 00:04:23.973
+Multiply by the inverse Fourier matrix
+
+92
+00:04:23.973 --> 00:04:27.387
+the coefficients are one, one half, zero
+
+93
+00:04:27.387 --> 00:04:28.200
+one half.
+
+94
+00:04:28.550 --> 00:04:31.113
+That says: an average of one
+
+95
+00:04:31.113 --> 00:04:32.704
+plus a slow wave
+
+96
+00:04:32.793 --> 00:04:35.179
+a cosine that completes one
+
+97
+00:04:35.267 --> 00:04:38.626
+cycle in four hours, and nothing fast.
+
+98
+00:04:38.626 --> 00:04:41.896
+Multiplying by F, or by its inverse
+
+99
+00:04:41.896 --> 00:04:44.990
+is the discrete Fourier transform.
+
+100
+00:04:45.570 --> 00:04:47.659
+Now check with NumPy.
+
+101
+00:04:47.758 --> 00:04:51.339
+Surely its f f t function multiplies
+
+102
+00:04:51.438 --> 00:04:52.930
+by this same F?
+
+103
+00:04:53.510 --> 00:04:54.559
+Not quite.
+
+104
+00:04:54.559 --> 00:04:58.439
+Take a single spike in position one.
+
+105
+00:04:58.439 --> 00:05:03.159
+F times it is column one: one, i, minus one
+
+106
+00:05:03.159 --> 00:05:06.830
+minus i, walking counterclockwise.
+
+107
+00:05:07.180 --> 00:05:10.932
+NumPy returns one, minus i, minus one, i
+
+108
+00:05:10.932 --> 00:05:14.044
+the conjugate, walking clockwise.
+
+109
+00:05:14.044 --> 00:05:17.705
+It uses e to the minus two pi i over n
+
+110
+00:05:17.705 --> 00:05:21.366
+and puts the one over n in its inverse.
+
+111
+00:05:21.366 --> 00:05:25.301
+Both are correct for their own convention
+
+112
+00:05:25.393 --> 00:05:28.413
+check the sign before you compare
+
+113
+00:05:28.504 --> 00:05:30.060
+a book with code.
+
+114
+00:05:30.640 --> 00:05:31.574
+To sum up.
+
+115
+00:05:31.574 --> 00:05:34.937
+Complex vectors need the conjugate
+
+116
+00:05:34.937 --> 00:05:37.365
+z H z adds squared sizes.
+
+117
+00:05:37.365 --> 00:05:41.288
+Hermitian matrices have real eigenvalues
+
+118
+00:05:41.288 --> 00:05:44.184
+and unitary ones keep lengths
+
+119
+00:05:44.184 --> 00:05:47.640
+with eigenvalues on the unit circle.
+
+120
+00:05:47.990 --> 00:05:49.996
+And the Fourier matrix walks
+
+121
+00:05:50.068 --> 00:05:51.429
+around that circle
+
+122
+00:05:51.500 --> 00:05:53.936
+with orthogonal columns that split
+
+123
+00:05:54.008 --> 00:05:55.870
+a signal into frequencies.
+
+124
+00:05:56.450 --> 00:05:57.609
+In part two
+
+125
+00:05:57.609 --> 00:06:01.471
+multiplying by F costs n squared steps.
+
+126
+00:06:01.568 --> 00:06:04.079
+The fast Fourier transform
+
+127
+00:06:04.175 --> 00:06:06.010
+does it in n log n.

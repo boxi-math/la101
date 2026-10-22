@@ -1,0 +1,593 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:04.593
+In Lecture eighteen
+
+2
+00:00:04.677 --> 00:00:07.470
+eigenvalues were the roots of the
+
+3
+00:00:07.555 --> 00:00:10.263
+determinant of A minus lambda I.
+
+4
+00:00:10.263 --> 00:00:12.802
+Here is a symmetric matrix S
+
+5
+00:00:12.887 --> 00:00:14.918
+and the ellipse it makes
+
+6
+00:00:15.003 --> 00:00:16.780
+from the unit circle.
+
+7
+00:00:17.130 --> 00:00:20.252
+Its eigenvalues are the half axes
+
+8
+00:00:20.252 --> 00:00:22.731
+about three point six two
+
+9
+00:00:22.731 --> 00:00:25.210
+and one point three eight.
+
+10
+00:00:25.560 --> 00:00:28.630
+For a matrix with thousands of rows
+
+11
+00:00:28.630 --> 00:00:31.870
+does a library solve that polynomial?
+
+12
+00:00:31.870 --> 00:00:33.320
+Pause and guess.
+
+13
+00:00:36.900 --> 00:00:38.042
+It does not.
+
+14
+00:00:38.138 --> 00:00:41.469
+Take a symmetric sixteen by sixteen
+
+15
+00:00:41.564 --> 00:00:44.991
+matrix with eigenvalues ten, eleven
+
+16
+00:00:44.991 --> 00:00:49.180
+up to twenty five, evenly spaced on a line.
+
+17
+00:00:49.530 --> 00:00:52.330
+Form its characteristic polynomial
+
+18
+00:00:52.330 --> 00:00:54.170
+and ask for the roots.
+
+19
+00:00:54.250 --> 00:00:56.650
+Eight of the sixteen leave the
+
+20
+00:00:56.730 --> 00:00:58.810
+line and come out complex
+
+21
+00:00:58.890 --> 00:01:01.210
+and the real parts are off by
+
+22
+00:01:01.290 --> 00:01:03.130
+up to zero point seven.
+
+23
+00:01:03.480 --> 00:01:05.593
+Polynomial roots are extremely
+
+24
+00:01:05.664 --> 00:01:07.214
+sensitive to rounding.
+
+25
+00:01:07.214 --> 00:01:10.032
+The library never forms the polynomial
+
+26
+00:01:10.032 --> 00:01:12.920
+and gets all sixteen to fourteen digits.
+
+27
+00:01:13.500 --> 00:01:16.100
+It uses the QR algorithm.
+
+28
+00:01:16.100 --> 00:01:18.700
+Factor A into Q times R
+
+29
+00:01:18.700 --> 00:01:23.276
+then multiply them back in the other order
+
+30
+00:01:23.276 --> 00:01:24.420
+R times Q.
+
+31
+00:01:24.770 --> 00:01:28.744
+R Q equals Q transpose A Q: the same map
+
+32
+00:01:28.744 --> 00:01:31.071
+seen in a turned frame.
+
+33
+00:01:31.071 --> 00:01:34.463
+On the picture, the ellipse turns
+
+34
+00:01:34.463 --> 00:01:38.147
+but its half axes keep their lengths
+
+35
+00:01:38.147 --> 00:01:40.570
+so the eigenvalues stay.
+
+36
+00:01:40.920 --> 00:01:44.437
+What changes is the off diagonal entry
+
+37
+00:01:44.437 --> 00:01:46.963
+from one to minus one half.
+
+38
+00:01:46.963 --> 00:01:50.480
+It measures how tilted the ellipse is.
+
+39
+00:01:51.060 --> 00:01:52.112
+Now repeat.
+
+40
+00:01:52.208 --> 00:01:54.982
+The tilt goes from thirty two
+
+41
+00:01:55.077 --> 00:01:58.617
+degrees to minus thirteen, then five
+
+42
+00:01:58.617 --> 00:02:02.060
+then minus two, then less than one.
+
+43
+00:02:02.410 --> 00:02:05.536
+Each step, the off diagonal entry shrinks by
+
+44
+00:02:05.607 --> 00:02:07.668
+the ratio of the eigenvalues
+
+45
+00:02:07.739 --> 00:02:09.586
+one point three eight over
+
+46
+00:02:09.657 --> 00:02:11.078
+three point six two
+
+47
+00:02:11.078 --> 00:02:13.210
+about zero point three eight.
+
+48
+00:02:13.560 --> 00:02:17.105
+On the three by three matrix in the notes
+
+49
+00:02:17.105 --> 00:02:19.974
+the ratio is zero point four two
+
+50
+00:02:19.974 --> 00:02:23.350
+and the corner needs thirty four steps.
+
+51
+00:02:23.350 --> 00:02:25.207
+Like power iteration
+
+52
+00:02:25.207 --> 00:02:28.920
+it is only as fast as its eigenvalue ratio.
+
+53
+00:02:29.500 --> 00:02:31.300
+The cure is a shift.
+
+54
+00:02:31.390 --> 00:02:34.180
+Subtract the corner entry times
+
+55
+00:02:34.270 --> 00:02:35.980
+I before factoring
+
+56
+00:02:35.980 --> 00:02:38.500
+and add it back afterwards.
+
+57
+00:02:38.500 --> 00:02:41.830
+The result is still Q transpose A Q
+
+58
+00:02:41.830 --> 00:02:44.620
+so the ellipse keeps its axes.
+
+59
+00:02:44.970 --> 00:02:46.727
+Start again from S.
+
+60
+00:02:46.727 --> 00:02:50.057
+One shifted step: thirteen degrees
+
+61
+00:02:50.057 --> 00:02:52.184
+no better than before.
+
+62
+00:02:52.184 --> 00:02:54.959
+The second: under one degree
+
+63
+00:02:54.959 --> 00:02:57.641
+as good as four plain steps.
+
+64
+00:02:57.733 --> 00:03:00.323
+The third leaves a corner of
+
+65
+00:03:00.415 --> 00:03:02.450
+about five millionths.
+
+66
+00:03:03.030 --> 00:03:06.187
+Back to the three by three matrix.
+
+67
+00:03:06.187 --> 00:03:07.765
+Without a shift
+
+68
+00:03:07.765 --> 00:03:11.201
+the corner needed thirty four steps.
+
+69
+00:03:11.201 --> 00:03:14.172
+How many with the corner shift?
+
+70
+00:03:14.172 --> 00:03:15.750
+Pause and guess.
+
+71
+00:03:19.330 --> 00:03:19.790
+Five.
+
+72
+00:03:19.790 --> 00:03:23.381
+The corner goes zero point seven five
+
+73
+00:03:23.381 --> 00:03:27.155
+zero point two seven, seven thousandths
+
+74
+00:03:27.155 --> 00:03:28.720
+a ten millionth
+
+75
+00:03:28.720 --> 00:03:31.850
+then ten to the minus twenty one.
+
+76
+00:03:32.200 --> 00:03:34.104
+Each bar counts the zeros
+
+77
+00:03:34.180 --> 00:03:36.007
+after the decimal point.
+
+78
+00:03:36.007 --> 00:03:37.987
+Once the corner is small
+
+79
+00:03:37.987 --> 00:03:40.880
+each step roughly triples that count.
+
+80
+00:03:41.230 --> 00:03:43.867
+The corner entry is now an eigenvalue
+
+81
+00:03:43.867 --> 00:03:45.463
+three plus root three.
+
+82
+00:03:45.463 --> 00:03:48.308
+The algorithm drops that row and column
+
+83
+00:03:48.308 --> 00:03:50.390
+and carries on with the rest.
+
+84
+00:03:50.970 --> 00:03:54.365
+One more idea makes each step cheap.
+
+85
+00:03:54.365 --> 00:03:57.289
+On a full five by five matrix
+
+86
+00:03:57.289 --> 00:04:01.250
+a QR step costs about n cubed operations.
+
+87
+00:04:01.600 --> 00:04:03.304
+So first, just once
+
+88
+00:04:03.390 --> 00:04:06.969
+Householder reflections on both sides zero
+
+89
+00:04:07.054 --> 00:04:10.377
+everything below the first subdiagonal
+
+90
+00:04:10.377 --> 00:04:11.911
+six entries here.
+
+91
+00:04:11.911 --> 00:04:15.320
+This Hessenberg form H is similar to A.
+
+92
+00:04:15.670 --> 00:04:17.739
+QR steps keep this shape
+
+93
+00:04:17.739 --> 00:04:21.463
+and on it a step costs only about n squared.
+
+94
+00:04:21.546 --> 00:04:23.698
+For a symmetric matrix the
+
+95
+00:04:23.780 --> 00:04:25.518
+shape is tridiagonal
+
+96
+00:04:25.518 --> 00:04:27.670
+and a step costs about n.
+
+97
+00:04:28.250 --> 00:04:30.729
+But H is not triangular.
+
+98
+00:04:30.729 --> 00:04:35.377
+Its diagonal starts minus four, almost zero
+
+99
+00:04:35.377 --> 00:04:37.650
+one point eight four.
+
+100
+00:04:38.000 --> 00:04:40.857
+The eigenvalues are somewhere else
+
+101
+00:04:40.857 --> 00:04:42.408
+two complex pairs
+
+102
+00:04:42.408 --> 00:04:44.612
+and zero point nine three.
+
+103
+00:04:44.693 --> 00:04:47.142
+Only the shifted QR steps that
+
+104
+00:04:47.224 --> 00:04:49.591
+follow clear the subdiagonal
+
+105
+00:04:49.672 --> 00:04:52.039
+and each complex pair settles
+
+106
+00:04:52.121 --> 00:04:54.080
+into a two by two block.
+
+107
+00:04:54.430 --> 00:04:57.797
+This is what NumPy does, through LAPACK
+
+108
+00:04:57.797 --> 00:04:59.734
+Hessenberg form first
+
+109
+00:04:59.734 --> 00:05:01.670
+then shifted QR steps.
+
+110
+00:05:02.250 --> 00:05:05.418
+Now the whole course on one page.
+
+111
+00:05:05.418 --> 00:05:08.970
+Each question has its factorization.
+
+112
+00:05:09.320 --> 00:05:11.690
+To solve A x equals b: L U
+
+113
+00:05:11.690 --> 00:05:14.149
+or for huge sparse systems
+
+114
+00:05:14.149 --> 00:05:15.992
+conjugate gradients.
+
+115
+00:05:15.992 --> 00:05:18.889
+When there is no exact solution
+
+116
+00:05:18.889 --> 00:05:22.840
+Q R and the pseudoinverse give the best one.
+
+117
+00:05:23.190 --> 00:05:25.869
+What a matrix does to directions
+
+118
+00:05:25.869 --> 00:05:27.330
+its eigenvectors.
+
+119
+00:05:27.330 --> 00:05:29.359
+What it does to lengths
+
+120
+00:05:29.359 --> 00:05:32.119
+the singular value decomposition.
+
+121
+00:05:32.200 --> 00:05:34.797
+And the four subspaces say which
+
+122
+00:05:34.878 --> 00:05:37.070
+right sides can be reached.
+
+123
+00:05:37.650 --> 00:05:38.982
+Working with AI.
+
+124
+00:05:39.065 --> 00:05:42.977
+An assistant claims that two conjugate gradient
+
+125
+00:05:43.060 --> 00:05:45.890
+steps solve any two by two system.
+
+126
+00:05:45.890 --> 00:05:48.055
+Test it on this matrix N
+
+127
+00:05:48.055 --> 00:05:50.052
+which is not symmetric.
+
+128
+00:05:50.052 --> 00:05:52.050
+The answer is one, one.
+
+129
+00:05:52.400 --> 00:05:55.500
+Two steps give about two point eight
+
+130
+00:05:55.586 --> 00:05:57.997
+five and one point four six.
+
+131
+00:05:57.997 --> 00:05:58.599
+Wrong.
+
+132
+00:05:58.685 --> 00:06:02.043
+Conjugate gradients rely on a symmetric
+
+133
+00:06:02.130 --> 00:06:04.282
+positive definite matrix
+
+134
+00:06:04.282 --> 00:06:07.640
+check that before you trust the claim.
+
+135
+00:06:08.220 --> 00:06:09.040
+To sum up.
+
+136
+00:06:09.122 --> 00:06:11.499
+Every QR step turns the frame
+
+137
+00:06:11.581 --> 00:06:13.713
+and keeps the eigenvalues.
+
+138
+00:06:13.795 --> 00:06:16.254
+Shifting by the corner removes
+
+139
+00:06:16.336 --> 00:06:18.303
+the tilt in a few steps
+
+140
+00:06:18.385 --> 00:06:21.255
+and a one time Hessenberg reduction
+
+141
+00:06:21.337 --> 00:06:23.140
+makes each step cheap.
+
+142
+00:06:23.490 --> 00:06:24.708
+Now you try
+
+143
+00:06:24.708 --> 00:06:28.972
+do one QR step by hand on the matrix two
+
+144
+00:06:28.972 --> 00:06:30.494
+one, one, two
+
+145
+00:06:30.494 --> 00:06:34.250
+and check that the trace stays four.
+
+146
+00:06:34.600 --> 00:06:36.859
+That completes the core course.
+
+147
+00:06:36.859 --> 00:06:38.389
+Next, the electives
+
+148
+00:06:38.389 --> 00:06:40.720
+starting with graph Laplacians.

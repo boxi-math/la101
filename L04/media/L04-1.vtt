@@ -1,0 +1,445 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:06.177
+In lecture two, elimination turned a matrix
+
+2
+00:00:06.254 --> 00:00:07.549
+into a staircase.
+
+3
+00:00:07.549 --> 00:00:10.979
+Take the small matrix three, one, six, five.
+
+4
+00:00:10.979 --> 00:00:14.180
+Its columns are three, six and one, five.
+
+5
+00:00:14.530 --> 00:00:18.020
+One step, row two minus two times row one
+
+6
+00:00:18.020 --> 00:00:20.762
+sheared the plane straight down
+
+7
+00:00:20.762 --> 00:00:22.923
+and gave the staircase U
+
+8
+00:00:22.923 --> 00:00:26.330
+with columns three, zero and one, three.
+
+9
+00:00:26.680 --> 00:00:29.582
+Which matrix undoes that step?
+
+10
+00:00:29.582 --> 00:00:32.000
+Pause and write it down.
+
+11
+00:00:35.580 --> 00:00:38.600
+To undo a subtraction, add it back
+
+12
+00:00:38.600 --> 00:00:41.361
+row two plus two times row one.
+
+13
+00:00:41.361 --> 00:00:44.122
+The inverse is the same matrix
+
+14
+00:00:44.122 --> 00:00:47.660
+with the sign of the multiplier changed.
+
+15
+00:00:48.010 --> 00:00:49.426
+Watch the plane.
+
+16
+00:00:49.426 --> 00:00:51.462
+The shear runs upward
+
+17
+00:00:51.462 --> 00:00:54.383
+and the columns return to three
+
+18
+00:00:54.383 --> 00:00:56.065
+six and one, five.
+
+19
+00:00:56.065 --> 00:00:57.570
+That is A again.
+
+20
+00:00:58.150 --> 00:01:01.252
+Now the paint matrix from lecture two
+
+21
+00:01:01.252 --> 00:01:04.926
+with three steps and three multipliers: two
+
+22
+00:01:04.926 --> 00:01:06.150
+one and three.
+
+23
+00:01:06.500 --> 00:01:09.264
+Elimination was E three two
+
+24
+00:01:09.264 --> 00:01:13.706
+times E three one, times E two one, times A
+
+25
+00:01:13.706 --> 00:01:14.891
+equal to U.
+
+26
+00:01:14.891 --> 00:01:18.938
+To get A back, multiply by the inverses
+
+27
+00:01:18.938 --> 00:01:21.900
+and undo the last step first.
+
+28
+00:01:22.250 --> 00:01:24.910
+Multiply those three inverses
+
+29
+00:01:24.910 --> 00:01:27.659
+and you get a matrix called L.
+
+30
+00:01:27.659 --> 00:01:31.472
+Below its diagonal sit two, one and three
+
+31
+00:01:31.472 --> 00:01:33.689
+exactly the multipliers
+
+32
+00:01:33.689 --> 00:01:36.970
+each in the place where it was used.
+
+33
+00:01:37.550 --> 00:01:40.342
+Compare the matrix E from lecture two
+
+34
+00:01:40.342 --> 00:01:43.060
+the product of the steps themselves.
+
+35
+00:01:43.060 --> 00:01:45.190
+It has a five in its corner.
+
+36
+00:01:45.540 --> 00:01:47.671
+No multiplier was five.
+
+37
+00:01:47.671 --> 00:01:50.449
+In E the steps mix, but in L
+
+38
+00:01:50.449 --> 00:01:53.414
+the reverse order, they do not.
+
+39
+00:01:53.414 --> 00:01:56.100
+So L costs nothing to build
+
+40
+00:01:56.100 --> 00:01:59.620
+write down each multiplier as you go.
+
+41
+00:02:00.200 --> 00:02:02.267
+So A equals L times U.
+
+42
+00:02:02.267 --> 00:02:04.428
+L is lower triangular
+
+43
+00:02:04.522 --> 00:02:07.247
+with ones on the diagonal and
+
+44
+00:02:07.341 --> 00:02:09.409
+the multipliers below.
+
+45
+00:02:09.409 --> 00:02:12.979
+U is upper triangular: the staircase
+
+46
+00:02:12.979 --> 00:02:16.080
+with the pivots on its diagonal.
+
+47
+00:02:16.430 --> 00:02:20.588
+Back in the plane, with the small matrix.
+
+48
+00:02:20.588 --> 00:02:24.949
+A times x is L times U x, so U goes first.
+
+49
+00:02:24.949 --> 00:02:28.397
+It stretches and leans the plane
+
+50
+00:02:28.397 --> 00:02:32.960
+the unit arrows land on three, zero and one
+
+51
+00:02:32.960 --> 00:02:33.670
+three.
+
+52
+00:02:34.020 --> 00:02:37.380
+Then L shears it upward, onto three
+
+53
+00:02:37.380 --> 00:02:40.833
+six and one, five: the columns of A.
+
+54
+00:02:40.833 --> 00:02:44.940
+Multiply L by U, and you always get A back.
+
+55
+00:02:45.520 --> 00:02:46.706
+A common slip
+
+56
+00:02:46.791 --> 00:02:49.334
+putting the minus signs of the
+
+57
+00:02:49.418 --> 00:02:51.791
+elimination matrices into L.
+
+58
+00:02:51.791 --> 00:02:55.520
+Here is that wrong L, for the paint matrix.
+
+59
+00:02:55.870 --> 00:02:57.590
+Multiply it by U.
+
+60
+00:02:57.590 --> 00:03:02.042
+Row two comes out as minus four, minus one
+
+61
+00:03:02.042 --> 00:03:04.976
+zero, not four, three, four.
+
+62
+00:03:04.976 --> 00:03:07.910
+The wrong L fails the check.
+
+63
+00:03:08.260 --> 00:03:11.202
+The rule: E gets minus the multiplier
+
+64
+00:03:11.202 --> 00:03:13.371
+L gets plus the multiplier.
+
+65
+00:03:13.371 --> 00:03:16.700
+Multiplying back catches the slip at once.
+
+66
+00:03:17.280 --> 00:03:18.602
+One more form.
+
+67
+00:03:18.602 --> 00:03:20.680
+U has the pivots two
+
+68
+00:03:20.680 --> 00:03:23.419
+one and one on its diagonal.
+
+69
+00:03:23.419 --> 00:03:26.724
+Divide each row of U by its pivot
+
+70
+00:03:26.724 --> 00:03:30.880
+and keep the pivots in a diagonal matrix D.
+
+71
+00:03:31.230 --> 00:03:34.009
+Now A is L times D times U
+
+72
+00:03:34.112 --> 00:03:36.891
+and both triangular factors
+
+73
+00:03:36.994 --> 00:03:39.670
+have ones on the diagonal.
+
+74
+00:03:40.250 --> 00:03:42.992
+What is L U good for?
+
+75
+00:03:42.992 --> 00:03:44.167
+Solving.
+
+76
+00:03:44.167 --> 00:03:49.127
+A x equals b is L times U x equals b.
+
+77
+00:03:49.127 --> 00:03:52.130
+Call U x the vector c.
+
+78
+00:03:52.480 --> 00:03:56.472
+First solve L c equals b, from the top down.
+
+79
+00:03:56.472 --> 00:03:59.648
+For the paint order five, fifteen
+
+80
+00:03:59.648 --> 00:04:02.098
+twenty two, c one is five.
+
+81
+00:04:02.098 --> 00:04:05.092
+Two c one plus c two is fifteen
+
+82
+00:04:05.092 --> 00:04:06.726
+so c two is five.
+
+83
+00:04:06.816 --> 00:04:09.629
+And c one plus three c two plus
+
+84
+00:04:09.720 --> 00:04:13.440
+c three is twenty two, so c three is two.
+
+85
+00:04:13.790 --> 00:04:17.041
+That is the right side elimination
+
+86
+00:04:17.137 --> 00:04:19.049
+gave in lecture two
+
+87
+00:04:19.049 --> 00:04:22.778
+the forward solve is elimination on b
+
+88
+00:04:22.778 --> 00:04:23.926
+done later.
+
+89
+00:04:24.022 --> 00:04:26.986
+Back substitution on U x equals
+
+90
+00:04:27.081 --> 00:04:29.950
+c then gives one, one and two.
+
+91
+00:04:30.530 --> 00:04:33.909
+A second customer orders four, eleven
+
+92
+00:04:33.909 --> 00:04:34.798
+fourteen.
+
+93
+00:04:34.798 --> 00:04:38.266
+Which parts of the work can you reuse
+
+94
+00:04:38.266 --> 00:04:40.489
+and which must you redo?
+
+95
+00:04:40.489 --> 00:04:42.090
+Pause and decide.
+
+96
+00:04:45.670 --> 00:04:47.979
+Keep L and U as they are
+
+97
+00:04:47.979 --> 00:04:51.767
+and redo only the two triangular solves.
+
+98
+00:04:51.767 --> 00:04:55.369
+The answer is one litre of each paint.
+
+99
+00:04:55.369 --> 00:04:58.510
+The expensive part was done once.
+
+100
+00:04:59.090 --> 00:05:02.095
+So, two records of elimination.
+
+101
+00:05:02.095 --> 00:05:05.101
+E is the product of the steps
+
+102
+00:05:05.101 --> 00:05:07.136
+and its numbers mix.
+
+103
+00:05:07.136 --> 00:05:08.881
+L is its inverse
+
+104
+00:05:08.881 --> 00:05:13.050
+and it holds the multipliers as they came.
+
+105
+00:05:13.400 --> 00:05:17.630
+A equals L U: in the plane, U acts first
+
+106
+00:05:17.630 --> 00:05:18.867
+and then L.
+
+107
+00:05:18.867 --> 00:05:23.200
+Factor once, then solve forward and back.
+
+108
+00:05:23.550 --> 00:05:27.878
+Now you try: solve A x equals three, eight
+
+109
+00:05:27.878 --> 00:05:30.696
+ten with the paint L and U.
+
+110
+00:05:30.696 --> 00:05:33.816
+In part two we count the work
+
+111
+00:05:33.816 --> 00:05:36.030
+and meet zero pivots.

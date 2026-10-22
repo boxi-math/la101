@@ -1,0 +1,441 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:05.093
+This is the first elective.
+
+2
+00:00:05.093 --> 00:00:08.505
+A graph records who is connected to whom
+
+3
+00:00:08.505 --> 00:00:11.754
+friends in a network, linked web pages
+
+4
+00:00:11.754 --> 00:00:13.460
+neighbouring pixels.
+
+5
+00:00:13.810 --> 00:00:16.192
+Graphs often hide groups.
+
+6
+00:00:16.192 --> 00:00:18.670
+Can one matrix find them?
+
+7
+00:00:18.670 --> 00:00:20.290
+Pause and guess.
+
+8
+00:00:23.870 --> 00:00:26.683
+Eight students form two study groups.
+
+9
+00:00:26.759 --> 00:00:29.344
+Students four and five are friends
+
+10
+00:00:29.420 --> 00:00:30.789
+across the groups
+
+11
+00:00:30.789 --> 00:00:33.830
+that one friendship is the only bridge.
+
+12
+00:00:34.180 --> 00:00:36.917
+The adjacency matrix W has a
+
+13
+00:00:37.015 --> 00:00:39.361
+one for each friendship
+
+14
+00:00:39.458 --> 00:00:42.391
+and the degree matrix D counts
+
+15
+00:00:42.489 --> 00:00:44.737
+each student's friends.
+
+16
+00:00:44.737 --> 00:00:48.940
+The graph Laplacian is L equals D minus W.
+
+17
+00:00:49.290 --> 00:00:51.756
+Student four has three friends
+
+18
+00:00:51.756 --> 00:00:53.745
+a three on the diagonal
+
+19
+00:00:53.745 --> 00:00:56.370
+and a minus one for each friend.
+
+20
+00:00:56.950 --> 00:00:59.062
+Every row adds to zero
+
+21
+00:00:59.062 --> 00:01:02.734
+so L times the all ones vector is zero.
+
+22
+00:01:02.734 --> 00:01:06.590
+The constant pattern has eigenvalue zero.
+
+23
+00:01:06.940 --> 00:01:08.599
+In Lecture eleven
+
+24
+00:01:08.599 --> 00:01:11.457
+this matrix was A transpose A
+
+25
+00:01:11.457 --> 00:01:14.037
+for the incidence matrix A.
+
+26
+00:01:14.037 --> 00:01:18.093
+So x transpose L x adds up, over all edges
+
+27
+00:01:18.093 --> 00:01:21.872
+the squared change of x across the edge.
+
+28
+00:01:21.872 --> 00:01:23.900
+It is never negative.
+
+29
+00:01:24.250 --> 00:01:26.613
+Put plus one on one group
+
+30
+00:01:26.613 --> 00:01:29.158
+and minus one on the other.
+
+31
+00:01:29.158 --> 00:01:32.248
+Edges inside a group add nothing.
+
+32
+00:01:32.248 --> 00:01:36.247
+The bridge adds two squared, which is four
+
+33
+00:01:36.247 --> 00:01:38.610
+one edge cut, total four.
+
+34
+00:01:39.190 --> 00:01:42.276
+When is x transpose L x zero?
+
+35
+00:01:42.276 --> 00:01:46.852
+Only when x is the same across every edge
+
+36
+00:01:46.852 --> 00:01:50.470
+constant on each connected piece.
+
+37
+00:01:50.820 --> 00:01:52.846
+Remove the friendship.
+
+38
+00:01:52.846 --> 00:01:56.623
+Now the eigenvalues are zero, zero, two
+
+39
+00:01:56.623 --> 00:01:58.557
+two, and then fours
+
+40
+00:01:58.557 --> 00:02:00.860
+one zero for each piece.
+
+41
+00:02:01.210 --> 00:02:03.486
+Put the friendship back.
+
+42
+00:02:03.486 --> 00:02:05.668
+Only one zero remains
+
+43
+00:02:05.668 --> 00:02:09.841
+but lambda two is just zero point two nine.
+
+44
+00:02:09.841 --> 00:02:14.014
+Almost two pieces: lambda two is called the
+
+45
+00:02:14.109 --> 00:02:16.290
+algebraic connectivity.
+
+46
+00:02:16.870 --> 00:02:19.620
+Which pattern makes x transpose
+
+47
+00:02:19.709 --> 00:02:23.258
+L x smallest, if it may not be constant?
+
+48
+00:02:23.258 --> 00:02:27.162
+Ask for x perpendicular to the ones vector
+
+49
+00:02:27.162 --> 00:02:28.670
+with length one.
+
+50
+00:02:29.020 --> 00:02:31.045
+By the Rayleigh quotient
+
+51
+00:02:31.045 --> 00:02:33.231
+the minimum is lambda two
+
+52
+00:02:33.231 --> 00:02:35.499
+reached at its eigenvector
+
+53
+00:02:35.499 --> 00:02:37.118
+the Fiedler vector.
+
+54
+00:02:37.199 --> 00:02:39.953
+It is the smoothest pattern on the
+
+55
+00:02:40.034 --> 00:02:42.220
+graph that is not constant.
+
+56
+00:02:42.570 --> 00:02:45.064
+Which students get positive entries
+
+57
+00:02:45.064 --> 00:02:47.072
+and which get negative ones?
+
+58
+00:02:47.072 --> 00:02:48.250
+Pause and guess.
+
+59
+00:02:51.830 --> 00:02:52.747
+Here it is.
+
+60
+00:02:52.747 --> 00:02:55.666
+Students one to four are positive
+
+61
+00:02:55.666 --> 00:02:58.334
+and five to eight are negative
+
+62
+00:02:58.334 --> 00:03:01.670
+the signs recover the two study groups.
+
+63
+00:03:02.020 --> 00:03:03.458
+The sizes say more.
+
+64
+00:03:03.458 --> 00:03:05.275
+Students four and five
+
+65
+00:03:05.275 --> 00:03:07.319
+at the ends of the bridge
+
+66
+00:03:07.319 --> 00:03:09.363
+have the smallest entries
+
+67
+00:03:09.363 --> 00:03:11.937
+and one and eight, farthest away
+
+68
+00:03:11.937 --> 00:03:13.300
+have the largest.
+
+69
+00:03:13.650 --> 00:03:14.780
+Why it works
+
+70
+00:03:14.780 --> 00:03:18.694
+the plus and minus one labels have zero sum
+
+71
+00:03:18.694 --> 00:03:22.346
+so lambda two is at most four over eight
+
+72
+00:03:22.346 --> 00:03:23.215
+one half.
+
+73
+00:03:23.302 --> 00:03:25.476
+The Fiedler vector is the
+
+74
+00:03:25.563 --> 00:03:27.563
+best relaxed labelling
+
+75
+00:03:27.563 --> 00:03:29.650
+and its signs round it.
+
+76
+00:03:30.230 --> 00:03:31.686
+A tempting shortcut
+
+77
+00:03:31.759 --> 00:03:34.306
+take the eigenvector of the largest
+
+78
+00:03:34.379 --> 00:03:35.762
+eigenvalue instead.
+
+79
+00:03:35.762 --> 00:03:38.310
+Large means important, doesn't it?
+
+80
+00:03:38.660 --> 00:03:41.447
+Here the largest is four point nine
+
+81
+00:03:41.447 --> 00:03:44.930
+and its eigenvector is the roughest pattern
+
+82
+00:03:45.007 --> 00:03:47.175
+changing as much as possible
+
+83
+00:03:47.252 --> 00:03:48.491
+along the edges.
+
+84
+00:03:48.491 --> 00:03:50.039
+Split by its signs
+
+85
+00:03:50.039 --> 00:03:52.980
+and nine of the eleven edges are cut.
+
+86
+00:03:53.330 --> 00:03:54.633
+For the Laplacian
+
+87
+00:03:54.633 --> 00:03:57.890
+the groups live in the smallest eigenvalues.
+
+88
+00:03:58.470 --> 00:04:01.331
+Now a graph with no groups at all
+
+89
+00:04:01.331 --> 00:04:04.361
+all eight students know each other.
+
+90
+00:04:04.361 --> 00:04:07.896
+Its eigenvalues are zero, and then eight
+
+91
+00:04:07.896 --> 00:04:08.990
+seven times.
+
+92
+00:04:09.340 --> 00:04:11.133
+Lambda two is large
+
+93
+00:04:11.133 --> 00:04:13.553
+so there is no near split.
+
+94
+00:04:13.553 --> 00:04:15.435
+It is also repeated
+
+95
+00:04:15.435 --> 00:04:18.841
+so there is no single Fiedler vector
+
+96
+00:04:18.841 --> 00:04:20.992
+and signs mean nothing.
+
+97
+00:04:21.082 --> 00:04:24.040
+A gap after the small eigenvalues
+
+98
+00:04:24.130 --> 00:04:26.460
+is what says groups exist.
+
+99
+00:04:27.040 --> 00:04:30.734
+So: the Laplacian is D minus W
+
+100
+00:04:30.853 --> 00:04:35.501
+and x transpose L x adds up the squared
+
+101
+00:04:35.620 --> 00:04:38.480
+changes along the edges.
+
+102
+00:04:38.830 --> 00:04:42.176
+Its zero eigenvalues count the pieces
+
+103
+00:04:42.176 --> 00:04:45.611
+a small lambda two means almost split
+
+104
+00:04:45.699 --> 00:04:48.165
+and the signs of the Fiedler
+
+105
+00:04:48.253 --> 00:04:50.190
+vector give the split.
+
+106
+00:04:50.540 --> 00:04:51.573
+In part two
+
+107
+00:04:51.659 --> 00:04:55.017
+why the Fiedler vector prefers balanced
+
+108
+00:04:55.103 --> 00:04:57.341
+cuts to merely small ones
+
+109
+00:04:57.427 --> 00:05:00.010
+and how the same idea clusters
+
+110
+00:05:00.096 --> 00:05:02.420
+points that k means cannot.

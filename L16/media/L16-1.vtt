@@ -1,0 +1,449 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:05.379
+Elimination tells us whether a
+
+2
+00:00:05.461 --> 00:00:07.775
+square matrix is invertible
+
+3
+00:00:07.775 --> 00:00:09.262
+count the pivots.
+
+4
+00:00:09.262 --> 00:00:12.815
+Today we pack that answer into one number
+
+5
+00:00:12.815 --> 00:00:14.220
+the determinant.
+
+6
+00:00:14.570 --> 00:00:16.635
+Start with the unit square
+
+7
+00:00:16.635 --> 00:00:19.770
+spanned by the two rows of the identity.
+
+8
+00:00:20.120 --> 00:00:23.920
+Now take the matrix three, one, one, two.
+
+9
+00:00:23.920 --> 00:00:27.350
+Draw its rows as arrows, three, one
+
+10
+00:00:27.350 --> 00:00:28.647
+and one, two.
+
+11
+00:00:28.740 --> 00:00:31.521
+The square leans and stretches
+
+12
+00:00:31.614 --> 00:00:33.560
+into a parallelogram.
+
+13
+00:00:33.910 --> 00:00:36.144
+How much area does it have?
+
+14
+00:00:36.144 --> 00:00:37.550
+Pause and think.
+
+15
+00:00:41.130 --> 00:00:42.595
+The area is five.
+
+16
+00:00:42.595 --> 00:00:45.870
+The determinant is exactly this area
+
+17
+00:00:45.870 --> 00:00:49.490
+with a sign, and three rules pin it down.
+
+18
+00:00:49.840 --> 00:00:53.584
+Rule one: the identity has determinant one.
+
+19
+00:00:53.584 --> 00:00:55.760
+That is the unit square.
+
+20
+00:00:56.110 --> 00:00:56.952
+Rule two
+
+21
+00:00:56.952 --> 00:01:00.600
+exchanging two rows reverses the sign.
+
+22
+00:01:00.600 --> 00:01:03.688
+The robot's moves have rows one
+
+23
+00:01:03.688 --> 00:01:06.120
+two and three, minus one.
+
+24
+00:01:06.214 --> 00:01:08.927
+Turning from the first row to
+
+25
+00:01:09.020 --> 00:01:11.452
+the second goes clockwise
+
+26
+00:01:11.452 --> 00:01:15.569
+so the area of seven counts as minus seven.
+
+27
+00:01:15.569 --> 00:01:19.030
+Swap the rows, and it is plus seven.
+
+28
+00:01:19.380 --> 00:01:20.366
+Rule three
+
+29
+00:01:20.366 --> 00:01:23.860
+the determinant is linear in each row
+
+30
+00:01:23.860 --> 00:01:26.728
+with the other rows held fixed.
+
+31
+00:01:26.728 --> 00:01:29.147
+Back to our parallelogram.
+
+32
+00:01:29.147 --> 00:01:32.732
+Double the first row: the area doubles
+
+33
+00:01:32.732 --> 00:01:33.449
+to ten.
+
+34
+00:01:33.449 --> 00:01:35.420
+Halve it again: five.
+
+35
+00:01:35.770 --> 00:01:38.386
+Linear also means sums split
+
+36
+00:01:38.386 --> 00:01:40.281
+if one row is a sum
+
+37
+00:01:40.371 --> 00:01:42.717
+the determinant is the sum
+
+38
+00:01:42.807 --> 00:01:44.611
+of two determinants.
+
+39
+00:01:44.611 --> 00:01:46.957
+And here is the surprise
+
+40
+00:01:46.957 --> 00:01:50.927
+exactly one function obeys all three rules
+
+41
+00:01:50.927 --> 00:01:52.370
+for every size.
+
+42
+00:01:52.950 --> 00:01:56.254
+Test the rules on a d minus b c.
+
+43
+00:01:56.254 --> 00:01:58.731
+The identity gives one.
+
+44
+00:01:58.731 --> 00:02:02.964
+Exchanging the rows gives c b minus d a
+
+45
+00:02:02.964 --> 00:02:04.410
+the negative.
+
+46
+00:02:04.513 --> 00:02:08.023
+And multiplying the first row by t
+
+47
+00:02:08.126 --> 00:02:11.430
+multiplies the whole thing by t.
+
+48
+00:02:12.010 --> 00:02:14.236
+Rule three is easy to misread.
+
+49
+00:02:14.236 --> 00:02:17.575
+If doubling one row doubles the determinant
+
+50
+00:02:17.649 --> 00:02:19.504
+surely doubling the whole
+
+51
+00:02:19.578 --> 00:02:21.210
+matrix doubles it too?
+
+52
+00:02:21.790 --> 00:02:23.847
+Double the whole matrix
+
+53
+00:02:23.847 --> 00:02:25.733
+and both rows double.
+
+54
+00:02:25.819 --> 00:02:27.961
+The parallelogram doubles
+
+55
+00:02:28.047 --> 00:02:30.019
+in width and in height
+
+56
+00:02:30.019 --> 00:02:33.619
+so its area is four times as big: twenty
+
+57
+00:02:33.619 --> 00:02:34.390
+not ten.
+
+58
+00:02:34.740 --> 00:02:37.627
+Each row that doubles brings
+
+59
+00:02:37.730 --> 00:02:41.029
+its own factor of two: two rows
+
+60
+00:02:41.029 --> 00:02:42.885
+so two times two.
+
+61
+00:02:42.885 --> 00:02:46.391
+In general, for an n by n matrix
+
+62
+00:02:46.494 --> 00:02:48.969
+t times A has t to the n
+
+63
+00:02:49.072 --> 00:02:51.340
+times the determinant.
+
+64
+00:02:51.920 --> 00:02:55.222
+Now three consequences of the rules.
+
+65
+00:02:55.222 --> 00:02:58.799
+Number four: two equal rows give zero.
+
+66
+00:02:58.891 --> 00:03:01.551
+As the second row swings onto
+
+67
+00:03:01.642 --> 00:03:03.660
+the line of the first
+
+68
+00:03:03.660 --> 00:03:06.320
+the parallelogram goes flat.
+
+69
+00:03:06.670 --> 00:03:10.243
+The rules say why: exchange two equal rows
+
+70
+00:03:10.243 --> 00:03:12.819
+and the matrix stays the same
+
+71
+00:03:12.819 --> 00:03:14.814
+yet the sign must flip.
+
+72
+00:03:14.814 --> 00:03:18.470
+A number equal to its own negative is zero.
+
+73
+00:03:18.820 --> 00:03:19.748
+Number five
+
+74
+00:03:19.826 --> 00:03:22.379
+subtracting a multiple of one row
+
+75
+00:03:22.456 --> 00:03:24.699
+from another changes nothing.
+
+76
+00:03:24.699 --> 00:03:28.026
+Take a third of row one away from row two
+
+77
+00:03:28.026 --> 00:03:29.960
+the parallelogram leans
+
+78
+00:03:29.960 --> 00:03:31.971
+but base and height stay
+
+79
+00:03:31.971 --> 00:03:34.060
+so the area is still five.
+
+80
+00:03:34.410 --> 00:03:38.683
+Now the matrix is triangular: three, one
+
+81
+00:03:38.683 --> 00:03:40.663
+zero, five thirds.
+
+82
+00:03:40.663 --> 00:03:44.935
+One more lean turns it into a rectangle
+
+83
+00:03:44.935 --> 00:03:48.374
+three wide and five thirds high.
+
+84
+00:03:48.478 --> 00:03:51.605
+So a triangular matrix has the
+
+85
+00:03:51.709 --> 00:03:54.210
+product of its diagonal.
+
+86
+00:03:54.560 --> 00:03:58.259
+And number six: a row of zeros gives zero.
+
+87
+00:03:58.259 --> 00:04:00.902
+Shrink a row towards nothing
+
+88
+00:04:00.902 --> 00:04:03.280
+and the area goes with it.
+
+89
+00:04:03.860 --> 00:04:07.108
+Two quick ones, with no computing at all.
+
+90
+00:04:07.108 --> 00:04:10.038
+Exchange the two rows of our matrix
+
+91
+00:04:10.038 --> 00:04:11.068
+by rule two
+
+92
+00:04:11.068 --> 00:04:13.919
+the determinant becomes minus five.
+
+93
+00:04:13.999 --> 00:04:16.216
+Multiply the original second
+
+94
+00:04:16.296 --> 00:04:19.147
+row by three instead: by rule three
+
+95
+00:04:19.147 --> 00:04:19.860
+fifteen.
+
+96
+00:04:20.210 --> 00:04:23.292
+And a triangular matrix with a zero on
+
+97
+00:04:23.373 --> 00:04:26.130
+its diagonal has determinant zero
+
+98
+00:04:26.130 --> 00:04:29.211
+even though none of its rows is zero
+
+99
+00:04:29.211 --> 00:04:31.644
+both rows point the same way
+
+100
+00:04:31.644 --> 00:04:35.050
+and elimination would produce a zero row.
+
+101
+00:04:35.630 --> 00:04:39.134
+So the determinant is a signed area.
+
+102
+00:04:39.134 --> 00:04:42.248
+Rule one fixes the unit square
+
+103
+00:04:42.248 --> 00:04:44.097
+rule two the sign
+
+104
+00:04:44.097 --> 00:04:47.990
+and rule three the scaling of each row.
+
+105
+00:04:48.340 --> 00:04:51.497
+Elimination steps only lean the shape
+
+106
+00:04:51.497 --> 00:04:53.075
+so the area stays.
+
+107
+00:04:53.075 --> 00:04:55.152
+Exchanges flip the sign
+
+108
+00:04:55.152 --> 00:04:58.060
+and equal rows flatten it to zero.
+
+109
+00:04:58.640 --> 00:05:01.696
+In part two, the pivots give a fast way to
+
+110
+00:05:01.768 --> 00:05:03.514
+compute any determinant
+
+111
+00:05:03.587 --> 00:05:06.643
+and the determinant of a product turns out
+
+112
+00:05:06.716 --> 00:05:09.480
+to be the product of the determinants.

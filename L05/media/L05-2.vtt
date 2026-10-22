@@ -1,0 +1,553 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:04.890
+Each day of the café is a
+
+2
+00:00:04.970 --> 00:00:06.721
+list of three numbers.
+
+3
+00:00:06.721 --> 00:00:09.268
+Monday is twelve, thirty, five
+
+4
+00:00:09.268 --> 00:00:10.940
+a vector in R three.
+
+5
+00:00:11.290 --> 00:00:15.163
+Each drink, a column of four numbers
+
+6
+00:00:15.163 --> 00:00:17.570
+is a vector in R four.
+
+7
+00:00:17.920 --> 00:00:20.424
+R n is the set of all vectors
+
+8
+00:00:20.510 --> 00:00:22.495
+with n real components.
+
+9
+00:00:22.495 --> 00:00:25.949
+Today we draw them in the plane, R two
+
+10
+00:00:25.949 --> 00:00:28.107
+like the arrow two, one
+
+11
+00:00:28.107 --> 00:00:31.560
+and look at sets of vectors as a whole.
+
+12
+00:00:32.140 --> 00:00:35.174
+In R n we can do two things.
+
+13
+00:00:35.174 --> 00:00:37.991
+Take v equal to one, two
+
+14
+00:00:37.991 --> 00:00:40.808
+and w equal to zero, one.
+
+15
+00:00:40.808 --> 00:00:45.142
+Add them, tip to tail: v plus w is one
+
+16
+00:00:45.142 --> 00:00:45.900
+three.
+
+17
+00:00:46.250 --> 00:00:51.138
+Or scale: minus one times v is minus one
+
+18
+00:00:51.138 --> 00:00:52.450
+minus two.
+
+19
+00:00:52.800 --> 00:00:55.564
+Every linear combination is built
+
+20
+00:00:55.648 --> 00:00:57.407
+from these two moves
+
+21
+00:00:57.407 --> 00:01:00.674
+and the result is always in R n again.
+
+22
+00:01:00.674 --> 00:01:04.360
+You cannot leave R n by adding and scaling.
+
+23
+00:01:04.940 --> 00:01:07.525
+A subspace is a smaller set
+
+24
+00:01:07.621 --> 00:01:09.823
+with the same property.
+
+25
+00:01:09.823 --> 00:01:11.930
+If v and w are in it
+
+26
+00:01:11.930 --> 00:01:14.228
+then v plus w is in it
+
+27
+00:01:14.228 --> 00:01:17.100
+and so is any number times v.
+
+28
+00:01:17.450 --> 00:01:19.199
+Take the number zero
+
+29
+00:01:19.199 --> 00:01:21.946
+zero times v is the zero vector.
+
+30
+00:01:21.946 --> 00:01:25.610
+So every subspace contains the zero vector.
+
+31
+00:01:25.960 --> 00:01:28.871
+Here are three sets in the plane
+
+32
+00:01:28.871 --> 00:01:31.077
+the line y equals two x
+
+33
+00:01:31.077 --> 00:01:33.723
+the line y equals x plus one
+
+34
+00:01:33.811 --> 00:01:37.163
+and the quarter where both coordinates
+
+35
+00:01:37.252 --> 00:01:38.840
+are at least zero.
+
+36
+00:01:38.840 --> 00:01:40.692
+Which are subspaces?
+
+37
+00:01:40.692 --> 00:01:42.280
+Pause and decide.
+
+38
+00:01:45.860 --> 00:01:48.726
+Only the first, and here is why.
+
+39
+00:01:48.816 --> 00:01:51.682
+Every point of the line y equals
+
+40
+00:01:51.771 --> 00:01:54.637
+two x is a multiple of one, two.
+
+41
+00:01:54.637 --> 00:01:57.056
+Two times it is two, four
+
+42
+00:01:57.145 --> 00:01:59.743
+minus one and a half times it
+
+43
+00:01:59.832 --> 00:02:03.146
+is minus one and a half, minus three.
+
+44
+00:02:03.146 --> 00:02:06.460
+Every combination stays on the line.
+
+45
+00:02:06.810 --> 00:02:09.203
+In R three the subspaces are
+
+46
+00:02:09.288 --> 00:02:11.168
+the zero vector alone
+
+47
+00:02:11.168 --> 00:02:14.671
+the lines and planes through the origin
+
+48
+00:02:14.671 --> 00:02:16.380
+and R three itself.
+
+49
+00:02:16.380 --> 00:02:19.371
+Check the plane z equals x plus y.
+
+50
+00:02:19.371 --> 00:02:21.678
+If two vectors satisfy it
+
+51
+00:02:21.678 --> 00:02:23.301
+add the equations
+
+52
+00:02:23.301 --> 00:02:25.694
+their sum satisfies it too.
+
+53
+00:02:25.694 --> 00:02:28.856
+And a multiple satisfies it as well.
+
+54
+00:02:28.856 --> 00:02:30.650
+The plane is closed.
+
+55
+00:02:31.230 --> 00:02:34.677
+Now three sets in the plane that fail.
+
+56
+00:02:34.677 --> 00:02:37.852
+The line that passed stays behind
+
+57
+00:02:37.852 --> 00:02:39.212
+in faint grey.
+
+58
+00:02:39.303 --> 00:02:42.296
+The line y equals x plus one does
+
+59
+00:02:42.387 --> 00:02:44.927
+not pass through the origin
+
+60
+00:02:44.927 --> 00:02:47.467
+so it cannot be a subspace.
+
+61
+00:02:47.467 --> 00:02:51.095
+Also, zero, one and one, two are on it
+
+62
+00:02:51.095 --> 00:02:54.270
+but their sum, one, three, is not.
+
+63
+00:02:54.620 --> 00:02:57.884
+The quarter plane is closed under adding.
+
+64
+00:02:57.884 --> 00:03:00.750
+But multiply one, two by minus one
+
+65
+00:03:00.750 --> 00:03:02.740
+and you land outside it.
+
+66
+00:03:03.090 --> 00:03:05.383
+The two axes together are
+
+67
+00:03:05.475 --> 00:03:07.401
+closed under scaling.
+
+68
+00:03:07.401 --> 00:03:09.694
+But one, zero plus zero
+
+69
+00:03:09.694 --> 00:03:13.730
+one is the point one, one, on neither axis.
+
+70
+00:03:14.080 --> 00:03:17.800
+A subspace must survive both operations.
+
+71
+00:03:18.380 --> 00:03:20.617
+So this belief is wrong
+
+72
+00:03:20.617 --> 00:03:23.319
+that any line is a subspace.
+
+73
+00:03:23.319 --> 00:03:27.420
+Here is the line y equals x plus one again.
+
+74
+00:03:27.770 --> 00:03:30.424
+Only lines through the origin are.
+
+75
+00:03:30.424 --> 00:03:32.688
+Shift this line down by one
+
+76
+00:03:32.688 --> 00:03:34.874
+and it passes through zero
+
+77
+00:03:34.874 --> 00:03:36.279
+now it is closed.
+
+78
+00:03:36.357 --> 00:03:38.620
+A line that misses the origin
+
+79
+00:03:38.699 --> 00:03:40.650
+has lost the zero vector.
+
+80
+00:03:41.230 --> 00:03:43.861
+Here is a test we can run in code.
+
+81
+00:03:43.861 --> 00:03:46.337
+Pick random members of the set
+
+82
+00:03:46.337 --> 00:03:48.659
+here the quarter plane: five
+
+83
+00:03:48.659 --> 00:03:50.361
+three and three, one.
+
+84
+00:03:50.361 --> 00:03:52.992
+Combine them with random numbers
+
+85
+00:03:52.992 --> 00:03:55.081
+minus one and minus three
+
+86
+00:03:55.158 --> 00:03:57.325
+and check whether the result
+
+87
+00:03:57.402 --> 00:03:58.950
+is still in the set.
+
+88
+00:03:59.300 --> 00:04:03.368
+The result is minus fourteen, minus six
+
+89
+00:04:03.368 --> 00:04:06.928
+far outside, down and to the left
+
+90
+00:04:06.928 --> 00:04:08.861
+the quarter fails.
+
+91
+00:04:08.861 --> 00:04:12.827
+A plane in R three, z equals x plus y
+
+92
+00:04:12.827 --> 00:04:15.980
+passed two hundred such tests.
+
+93
+00:04:16.330 --> 00:04:20.136
+One failure proves a set is not a subspace.
+
+94
+00:04:20.136 --> 00:04:22.261
+Passing proves nothing.
+
+95
+00:04:22.261 --> 00:04:25.890
+For the plane, the algebra is the proof.
+
+96
+00:04:26.470 --> 00:04:28.992
+One subspace matters more than
+
+97
+00:04:29.076 --> 00:04:31.178
+any other in this course.
+
+98
+00:04:31.178 --> 00:04:34.036
+Take a matrix A with columns one
+
+99
+00:04:34.036 --> 00:04:35.634
+two and zero, one.
+
+100
+00:04:35.634 --> 00:04:39.081
+Send the unit arrows onto these columns
+
+101
+00:04:39.165 --> 00:04:42.612
+and the grid becomes all the combinations
+
+102
+00:04:42.696 --> 00:04:45.470
+c times a one plus d times a two.
+
+103
+00:04:45.820 --> 00:04:49.507
+A sum of two combinations is a combination
+
+104
+00:04:49.507 --> 00:04:51.394
+and so is a multiple.
+
+105
+00:04:51.394 --> 00:04:54.910
+So all the combinations form a subspace
+
+106
+00:04:54.910 --> 00:04:56.882
+the column space of A.
+
+107
+00:04:56.882 --> 00:04:59.540
+Here it fills the whole plane.
+
+108
+00:04:59.890 --> 00:05:00.850
+For the café
+
+109
+00:05:00.924 --> 00:05:03.362
+the column space holds every list
+
+110
+00:05:03.436 --> 00:05:05.873
+of daily takings that some choice
+
+111
+00:05:05.947 --> 00:05:07.720
+of prices could produce.
+
+112
+00:05:07.720 --> 00:05:10.010
+The next lecture starts there.
+
+113
+00:05:10.590 --> 00:05:13.222
+Last, a habit for working with AI.
+
+114
+00:05:13.299 --> 00:05:16.550
+Suppose an assistant says that the vectors
+
+115
+00:05:16.628 --> 00:05:19.724
+in R three with every component at least
+
+116
+00:05:19.801 --> 00:05:21.427
+zero form a subspace.
+
+117
+00:05:21.427 --> 00:05:24.910
+Its slice in our plane is the quarter again.
+
+118
+00:05:25.260 --> 00:05:28.104
+One counterexample settles it.
+
+119
+00:05:28.104 --> 00:05:32.276
+One, one, one is in the set, and so is one
+
+120
+00:05:32.276 --> 00:05:33.982
+one in the slice.
+
+121
+00:05:33.982 --> 00:05:37.300
+Minus one times either one is not.
+
+122
+00:05:37.650 --> 00:05:40.326
+The set is closed under adding
+
+123
+00:05:40.326 --> 00:05:42.311
+but not under scaling.
+
+124
+00:05:42.311 --> 00:05:45.850
+Test closure before you trust the claim.
+
+125
+00:05:46.430 --> 00:05:47.389
+To sum up.
+
+126
+00:05:47.389 --> 00:05:51.319
+R n holds all vectors with n components.
+
+127
+00:05:51.415 --> 00:05:53.907
+A subspace is closed under
+
+128
+00:05:54.003 --> 00:05:57.837
+adding and scaling, so it contains zero.
+
+129
+00:05:57.837 --> 00:05:59.850
+And to test a claim
+
+130
+00:05:59.850 --> 00:06:02.630
+look for one counterexample.
+
+131
+00:06:02.980 --> 00:06:04.015
+Now you try
+
+132
+00:06:04.102 --> 00:06:06.862
+is the set of vectors with first
+
+133
+00:06:06.949 --> 00:06:09.192
+component zero a subspace?
+
+134
+00:06:09.192 --> 00:06:11.780
+And with first component one?
+
+135
+00:06:12.130 --> 00:06:13.124
+Next lecture
+
+136
+00:06:13.124 --> 00:06:15.875
+the column space and the nullspace
+
+137
+00:06:15.951 --> 00:06:18.550
+the two subspaces that decide when
+
+138
+00:06:18.626 --> 00:06:20.690
+A x equals b can be solved.

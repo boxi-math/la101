@@ -1,0 +1,449 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:06.510
+Every matrix has four fundamental subspaces
+
+2
+00:00:06.510 --> 00:00:09.709
+and four numbers say how big they are.
+
+3
+00:00:09.709 --> 00:00:12.334
+Here is the drone matrix again
+
+4
+00:00:12.334 --> 00:00:15.780
+four buttons, three directions, rank two.
+
+5
+00:00:16.130 --> 00:00:18.677
+So far we read it by columns.
+
+6
+00:00:18.677 --> 00:00:22.367
+Now read the same twelve numbers by rows.
+
+7
+00:00:22.367 --> 00:00:25.968
+Row one is the east step of each button
+
+8
+00:00:25.968 --> 00:00:28.077
+row two the north step
+
+9
+00:00:28.077 --> 00:00:30.097
+row three the up step.
+
+10
+00:00:30.097 --> 00:00:34.050
+The transpose turns these rows into columns.
+
+11
+00:00:34.400 --> 00:00:36.363
+Two questions about rows
+
+12
+00:00:36.445 --> 00:00:38.326
+give two new subspaces
+
+13
+00:00:38.326 --> 00:00:41.925
+which combinations of the rows can we make
+
+14
+00:00:41.925 --> 00:00:45.360
+and which combinations give the zero row?
+
+15
+00:00:45.710 --> 00:00:47.239
+Before computing
+
+16
+00:00:47.329 --> 00:00:50.386
+is some combination of the drone's
+
+17
+00:00:50.476 --> 00:00:52.634
+three rows the zero row?
+
+18
+00:00:52.634 --> 00:00:56.501
+Hint: think of the plane from lecture six.
+
+19
+00:00:56.501 --> 00:00:58.030
+Pause and think.
+
+20
+00:01:01.610 --> 00:01:04.427
+The row space is all combinations
+
+21
+00:01:04.512 --> 00:01:05.536
+of the rows.
+
+22
+00:01:05.536 --> 00:01:07.243
+Written as columns
+
+23
+00:01:07.243 --> 00:01:10.572
+it is the column space of A transpose
+
+24
+00:01:10.572 --> 00:01:12.450
+a subspace of R four.
+
+25
+00:01:12.800 --> 00:01:13.835
+Eliminate.
+
+26
+00:01:13.939 --> 00:01:17.148
+Every row of R is a combination
+
+27
+00:01:17.251 --> 00:01:21.703
+of rows of A, and every step can be undone
+
+28
+00:01:21.806 --> 00:01:24.187
+so elimination does not
+
+29
+00:01:24.291 --> 00:01:26.465
+change the row space.
+
+30
+00:01:26.465 --> 00:01:30.812
+Its basis is the two nonzero rows: r one
+
+31
+00:01:30.812 --> 00:01:35.367
+one, zero, two, minus one, and r two, zero
+
+32
+00:01:35.367 --> 00:01:36.920
+one, one, one.
+
+33
+00:01:37.270 --> 00:01:37.954
+Check
+
+34
+00:01:37.954 --> 00:01:42.746
+row one of A is one r one plus one r two.
+
+35
+00:01:42.746 --> 00:01:47.765
+Row two is two r one plus three r two: two
+
+36
+00:01:47.765 --> 00:01:49.932
+three, seven, one.
+
+37
+00:01:49.932 --> 00:01:54.381
+Row three is one r one plus two r two.
+
+38
+00:01:54.381 --> 00:01:58.830
+So the row space has dimension r, two.
+
+39
+00:01:59.180 --> 00:02:02.020
+Careful: elimination keeps the row
+
+40
+00:02:02.104 --> 00:02:04.108
+space and the nullspace
+
+41
+00:02:04.108 --> 00:02:06.280
+but not the column space.
+
+42
+00:02:06.364 --> 00:02:08.786
+The columns of R are not even
+
+43
+00:02:08.869 --> 00:02:10.624
+in the drone's plane
+
+44
+00:02:10.624 --> 00:02:13.380
+one minus zero plus zero is one.
+
+45
+00:02:13.960 --> 00:02:19.390
+The left nullspace is every y in R three with
+
+46
+00:02:19.511 --> 00:02:23.855
+y transpose A equal to the zero row
+
+47
+00:02:23.855 --> 00:02:27.475
+y multiplies A from the left.
+
+48
+00:02:27.475 --> 00:02:32.423
+For the drone, y is one, minus one, one
+
+49
+00:02:32.423 --> 00:02:35.560
+east minus north plus up.
+
+50
+00:02:35.910 --> 00:02:40.874
+Column by column: one minus two plus one
+
+51
+00:02:40.874 --> 00:02:44.022
+one minus three plus two
+
+52
+00:02:44.022 --> 00:02:47.534
+three minus seven plus four
+
+53
+00:02:47.534 --> 00:02:50.561
+zero minus one plus one.
+
+54
+00:02:50.561 --> 00:02:53.830
+All zero: the rows cancel.
+
+55
+00:02:54.180 --> 00:02:57.840
+This is the reachability test again.
+
+56
+00:02:57.840 --> 00:02:59.568
+If A x equals b
+
+57
+00:02:59.568 --> 00:03:03.940
+then y transpose b equals y transpose A x
+
+58
+00:03:03.940 --> 00:03:05.465
+which is zero.
+
+59
+00:03:05.567 --> 00:03:08.617
+Here that is b one minus b two
+
+60
+00:03:08.718 --> 00:03:11.260
+plus b three equals zero.
+
+61
+00:03:11.610 --> 00:03:13.267
+Where to find y
+
+62
+00:03:13.267 --> 00:03:16.478
+reduce A next to the identity
+
+63
+00:03:16.478 --> 00:03:19.689
+and the right block becomes E
+
+64
+00:03:19.689 --> 00:03:21.864
+with E A equal to R.
+
+65
+00:03:21.967 --> 00:03:24.453
+The row of E in front of
+
+66
+00:03:24.556 --> 00:03:26.939
+the zero row of R is y.
+
+67
+00:03:26.939 --> 00:03:30.356
+So the left nullspace is a line
+
+68
+00:03:30.356 --> 00:03:34.810
+dimension m minus r, three minus two, one.
+
+69
+00:03:35.390 --> 00:03:38.396
+Each vector in a basis of the left
+
+70
+00:03:38.485 --> 00:03:41.491
+nullspace gives one condition that
+
+71
+00:03:41.580 --> 00:03:43.702
+a reachable b must pass.
+
+72
+00:03:43.702 --> 00:03:47.150
+A five by three matrix has rank three.
+
+73
+00:03:47.150 --> 00:03:49.007
+How many conditions?
+
+74
+00:03:49.007 --> 00:03:50.510
+Pause and count.
+
+75
+00:03:51.060 --> 00:03:55.580
+m minus r: five minus three, two conditions.
+
+76
+00:03:59.160 --> 00:04:04.046
+All four dimensions come from m, n and r.
+
+77
+00:04:04.046 --> 00:04:08.097
+Row space r, nullspace n minus r
+
+78
+00:04:08.097 --> 00:04:12.745
+these two live in R n and add up to n.
+
+79
+00:04:12.745 --> 00:04:17.749
+Column space r, left nullspace m minus r
+
+80
+00:04:17.749 --> 00:04:21.920
+these live in R m and add up to m.
+
+81
+00:04:22.270 --> 00:04:25.911
+The spaces of the drone are too big to draw
+
+82
+00:04:25.911 --> 00:04:29.304
+so take the robot matrix of lecture six
+
+83
+00:04:29.304 --> 00:04:32.366
+one, two, three, six, with rank one.
+
+84
+00:04:32.366 --> 00:04:35.676
+Here all four spaces live in the plane.
+
+85
+00:04:35.676 --> 00:04:37.248
+On the input side
+
+86
+00:04:37.248 --> 00:04:40.890
+the row space is the line through one, two
+
+87
+00:04:40.972 --> 00:04:43.124
+and the nullspace the line
+
+88
+00:04:43.207 --> 00:04:45.110
+through minus two, one.
+
+89
+00:04:45.460 --> 00:04:47.095
+On the output side
+
+90
+00:04:47.095 --> 00:04:50.708
+the column space is the line through one
+
+91
+00:04:50.708 --> 00:04:53.634
+three, and the left nullspace the
+
+92
+00:04:53.720 --> 00:04:56.301
+line through three, minus one
+
+93
+00:04:56.301 --> 00:05:00.000
+three times row one minus row two is zero.
+
+94
+00:05:00.000 --> 00:05:03.700
+Four lines, dimensions one, one, one, one.
+
+95
+00:05:04.050 --> 00:05:07.970
+The surprise is that the row space and the column
+
+96
+00:05:08.050 --> 00:05:11.010
+space always have the same dimension
+
+97
+00:05:11.010 --> 00:05:13.650
+both equal the number of pivots.
+
+98
+00:05:13.650 --> 00:05:15.970
+Row rank equals column rank.
+
+99
+00:05:16.550 --> 00:05:16.872
+So
+
+100
+00:05:16.872 --> 00:05:21.701
+the row space and the nullspace live in R n
+
+101
+00:05:21.808 --> 00:05:24.384
+the column space and the
+
+102
+00:05:24.491 --> 00:05:26.852
+left nullspace in R m.
+
+103
+00:05:26.852 --> 00:05:30.608
+Their dimensions are r, n minus r
+
+104
+00:05:30.608 --> 00:05:35.115
+r and m minus r: for the drone, two, two
+
+105
+00:05:35.115 --> 00:05:36.510
+two and one.
+
+106
+00:05:36.860 --> 00:05:39.224
+Each vector y in the left
+
+107
+00:05:39.319 --> 00:05:41.305
+nullspace is a check
+
+108
+00:05:41.305 --> 00:05:43.858
+y transpose b equals zero
+
+109
+00:05:43.858 --> 00:05:47.168
+that a reachable target must pass.
+
+110
+00:05:47.168 --> 00:05:48.208
+Your turn
+
+111
+00:05:48.303 --> 00:05:51.518
+give the four dimensions for a six
+
+112
+00:05:51.612 --> 00:05:54.260
+by four matrix of rank four.

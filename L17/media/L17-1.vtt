@@ -1,0 +1,529 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:06.046
+Lecture sixteen defined the determinant
+
+2
+00:00:06.126 --> 00:00:07.336
+by three rules
+
+3
+00:00:07.336 --> 00:00:09.756
+and drew it as a signed area.
+
+4
+00:00:09.756 --> 00:00:12.740
+Today, the formula behind the rules.
+
+5
+00:00:13.090 --> 00:00:16.809
+Take the rows four, one and one, two.
+
+6
+00:00:16.809 --> 00:00:20.930
+They span a parallelogram of area seven.
+
+7
+00:00:21.280 --> 00:00:25.914
+Rule three lets us split a row into pieces.
+
+8
+00:00:25.914 --> 00:00:30.225
+Four, one is four, zero plus zero, one.
+
+9
+00:00:30.225 --> 00:00:34.320
+One, two is one, zero plus zero, two.
+
+10
+00:00:34.670 --> 00:00:38.036
+Splitting both rows gives four pieces.
+
+11
+00:00:38.036 --> 00:00:40.604
+Which of them keep any area?
+
+12
+00:00:40.604 --> 00:00:42.110
+Pause and think.
+
+13
+00:00:45.690 --> 00:00:49.170
+Two pieces use the same direction twice
+
+14
+00:00:49.170 --> 00:00:52.215
+four, zero with one, zero is flat
+
+15
+00:00:52.215 --> 00:00:55.347
+and so is zero, one with zero, two.
+
+16
+00:00:55.347 --> 00:00:56.130
+No area.
+
+17
+00:00:56.480 --> 00:01:00.898
+Four, zero with zero, two is a rectangle
+
+18
+00:01:00.898 --> 00:01:04.022
+plus eight, the product a d.
+
+19
+00:01:04.022 --> 00:01:08.763
+Zero, one with one, zero is a small square
+
+20
+00:01:08.763 --> 00:01:11.349
+but it turns clockwise
+
+21
+00:01:11.349 --> 00:01:15.120
+so it counts minus one: minus b c.
+
+22
+00:01:15.470 --> 00:01:19.720
+Eight minus one is seven: a d minus b c
+
+23
+00:01:19.720 --> 00:01:22.270
+rebuilt from the rules.
+
+24
+00:01:22.620 --> 00:01:25.534
+For any size the same thing happens.
+
+25
+00:01:25.615 --> 00:01:28.610
+A piece survives only if it takes one
+
+26
+00:01:28.691 --> 00:01:31.606
+entry from each row and each column
+
+27
+00:01:31.606 --> 00:01:32.820
+a permutation.
+
+28
+00:01:32.820 --> 00:01:36.220
+Its sign is the sign of that permutation.
+
+29
+00:01:36.570 --> 00:01:40.053
+For two by two, the two surviving pieces are
+
+30
+00:01:40.132 --> 00:01:41.794
+the two permutations
+
+31
+00:01:41.794 --> 00:01:44.644
+the rectangle and the small square.
+
+32
+00:01:44.723 --> 00:01:46.623
+For three by three there
+
+33
+00:01:46.702 --> 00:01:49.551
+would be six pieces, and for n by n
+
+34
+00:01:49.551 --> 00:01:52.955
+one for each of the n factorial orderings.
+
+35
+00:01:52.955 --> 00:01:54.697
+That grows very fast.
+
+36
+00:01:54.776 --> 00:01:56.992
+Elimination needs only about
+
+37
+00:01:57.071 --> 00:01:59.050
+n cubed over three steps.
+
+38
+00:01:59.630 --> 00:02:03.075
+Now group the terms by the
+
+39
+00:02:03.208 --> 00:02:05.725
+entries of row one.
+
+40
+00:02:05.725 --> 00:02:09.435
+a d minus b c is a times d
+
+41
+00:02:09.435 --> 00:02:12.350
+plus b times minus c.
+
+42
+00:02:12.700 --> 00:02:16.059
+The multipliers d and minus c are
+
+43
+00:02:16.161 --> 00:02:18.706
+the cofactors of row one.
+
+44
+00:02:18.706 --> 00:02:21.658
+As a vector, two, minus one
+
+45
+00:02:21.759 --> 00:02:24.610
+it is row two turned a right
+
+46
+00:02:24.711 --> 00:02:26.340
+angle clockwise.
+
+47
+00:02:26.690 --> 00:02:30.133
+So the determinant is a dot product
+
+48
+00:02:30.133 --> 00:02:33.959
+row one dotted with n, eight minus one
+
+49
+00:02:33.959 --> 00:02:34.629
+seven.
+
+50
+00:02:34.629 --> 00:02:38.837
+Geometrically, the length of n is the base
+
+51
+00:02:38.933 --> 00:02:42.854
+and the dot product measures how high row
+
+52
+00:02:42.950 --> 00:02:46.393
+one rises above the line of row two.
+
+53
+00:02:46.393 --> 00:02:48.210
+Base times height.
+
+54
+00:02:48.560 --> 00:02:50.833
+The same holds in every size
+
+55
+00:02:50.912 --> 00:02:54.047
+the cofactors of a row are perpendicular
+
+56
+00:02:54.125 --> 00:02:55.850
+to all the other rows
+
+57
+00:02:55.850 --> 00:02:58.907
+so they always give base times height.
+
+58
+00:02:58.907 --> 00:03:02.042
+Each cofactor is a smaller determinant
+
+59
+00:03:02.042 --> 00:03:04.080
+with a checkerboard sign.
+
+60
+00:03:04.430 --> 00:03:06.991
+Expand along row two instead.
+
+61
+00:03:06.991 --> 00:03:10.348
+Its cofactors are minus one and four
+
+62
+00:03:10.436 --> 00:03:14.499
+row one turned a right angle counterclockwise.
+
+63
+00:03:14.587 --> 00:03:17.060
+One times minus one plus two
+
+64
+00:03:17.148 --> 00:03:19.445
+times four is seven again.
+
+65
+00:03:19.445 --> 00:03:21.653
+A zero entry saves work
+
+66
+00:03:21.653 --> 00:03:24.037
+if row two were zero, two
+
+67
+00:03:24.037 --> 00:03:28.012
+only one term would survive, two times four
+
+68
+00:03:28.012 --> 00:03:28.630
+eight.
+
+69
+00:03:29.210 --> 00:03:30.295
+A common slip
+
+70
+00:03:30.295 --> 00:03:33.783
+all four entries of our matrix are positive
+
+71
+00:03:33.783 --> 00:03:36.650
+so both pieces must get a plus sign?
+
+72
+00:03:37.230 --> 00:03:39.230
+That gives nine, not seven.
+
+73
+00:03:39.230 --> 00:03:42.488
+It counts the clockwise square as positive
+
+74
+00:03:42.563 --> 00:03:44.858
+and eight plus one is more than
+
+75
+00:03:44.933 --> 00:03:46.710
+the whole parallelogram.
+
+76
+00:03:47.060 --> 00:03:49.436
+The minus sign belongs to the position
+
+77
+00:03:49.436 --> 00:03:50.533
+not to the entry.
+
+78
+00:03:50.594 --> 00:03:52.300
+Keep the checkerboard in the
+
+79
+00:03:52.361 --> 00:03:53.580
+corner of your page.
+
+80
+00:03:54.160 --> 00:03:56.892
+Cofactors also give the inverse.
+
+81
+00:03:56.892 --> 00:04:00.648
+The cofactors of row one, the vector n one
+
+82
+00:04:00.648 --> 00:04:03.209
+are perpendicular to row two.
+
+83
+00:04:03.209 --> 00:04:06.879
+The cofactors of row two, minus one, four
+
+84
+00:04:06.879 --> 00:04:09.440
+are perpendicular to row one.
+
+85
+00:04:09.790 --> 00:04:14.545
+So row one times n one is the determinant
+
+86
+00:04:14.545 --> 00:04:18.281
+and row two times n one is zero.
+
+87
+00:04:18.281 --> 00:04:22.243
+Put the cofactors into a matrix C
+
+88
+00:04:22.356 --> 00:04:25.526
+A times C transpose is seven
+
+89
+00:04:25.639 --> 00:04:27.790
+times the identity.
+
+90
+00:04:28.140 --> 00:04:30.309
+The inverse is C transpose
+
+91
+00:04:30.392 --> 00:04:32.144
+over the determinant.
+
+92
+00:04:32.144 --> 00:04:33.813
+Note the transpose.
+
+93
+00:04:33.813 --> 00:04:36.732
+For two by two it is the old rule
+
+94
+00:04:36.732 --> 00:04:40.153
+swap the diagonal, negate the other two
+
+95
+00:04:40.153 --> 00:04:40.820
+divide.
+
+96
+00:04:41.400 --> 00:04:43.287
+Last, Cramer's rule
+
+97
+00:04:43.287 --> 00:04:46.118
+which works with the columns.
+
+98
+00:04:46.118 --> 00:04:49.892
+Take the columns two, one and one, two
+
+99
+00:04:49.892 --> 00:04:51.024
+area three.
+
+100
+00:04:51.024 --> 00:04:54.326
+We want b, four, three and a half
+
+101
+00:04:54.326 --> 00:04:57.440
+as x one a one plus x two a two.
+
+102
+00:04:57.790 --> 00:05:00.399
+Replace column one by b.
+
+103
+00:05:00.399 --> 00:05:05.292
+Keep a faint copy, then slide b along a two
+
+104
+00:05:05.292 --> 00:05:08.771
+sliding never changes the area
+
+105
+00:05:08.771 --> 00:05:12.794
+and b lands on one and a half a one.
+
+106
+00:05:12.903 --> 00:05:15.838
+So the area of b with a two
+
+107
+00:05:15.947 --> 00:05:18.230
+is x one times three.
+
+108
+00:05:18.580 --> 00:05:20.413
+That is Cramer's rule
+
+109
+00:05:20.413 --> 00:05:23.495
+x one is four and a half over three
+
+110
+00:05:23.495 --> 00:05:24.828
+one and a half.
+
+111
+00:05:24.911 --> 00:05:27.327
+Replacing column two the same
+
+112
+00:05:27.411 --> 00:05:29.660
+way gives x two equals one.
+
+113
+00:05:30.010 --> 00:05:30.550
+Check
+
+114
+00:05:30.550 --> 00:05:34.238
+one and a half a one plus a two is four
+
+115
+00:05:34.238 --> 00:05:36.936
+three and a half, which is b.
+
+116
+00:05:36.936 --> 00:05:40.714
+But Cramer needs n plus one determinants.
+
+117
+00:05:40.714 --> 00:05:44.132
+Use it for two by two and for proofs.
+
+118
+00:05:44.132 --> 00:05:47.010
+Solve numbers with elimination.
+
+119
+00:05:47.590 --> 00:05:50.198
+So: the big formula has one
+
+120
+00:05:50.294 --> 00:05:52.323
+term per permutation.
+
+121
+00:05:52.323 --> 00:05:55.317
+Cofactors organise it by rows
+
+122
+00:05:55.317 --> 00:05:59.470
+and point perpendicular to the other rows.
+
+123
+00:05:59.820 --> 00:06:03.191
+That perpendicularity gives the inverse
+
+124
+00:06:03.191 --> 00:06:06.056
+C transpose over the determinant
+
+125
+00:06:06.056 --> 00:06:07.658
+and Cramer's rule
+
+126
+00:06:07.658 --> 00:06:10.860
+by sliding b along the other columns.
+
+127
+00:06:11.440 --> 00:06:15.152
+In part two: what the determinant measures.
+
+128
+00:06:15.152 --> 00:06:16.792
+An area, a volume
+
+129
+00:06:16.879 --> 00:06:19.641
+and the factor by which a matrix
+
+130
+00:06:19.728 --> 00:06:21.454
+scales every region
+
+131
+00:06:21.540 --> 00:06:24.476
+which machine learning uses inside
+
+132
+00:06:24.562 --> 00:06:26.720
+its probability formulas.

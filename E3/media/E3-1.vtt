@@ -1,0 +1,477 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:05.715
+This elective is about two problems
+
+2
+00:00:05.795 --> 00:00:07.403
+that look unrelated
+
+3
+00:00:07.403 --> 00:00:09.976
+moving goods through a network
+
+4
+00:00:09.976 --> 00:00:13.193
+and playing a game against an opponent.
+
+5
+00:00:13.193 --> 00:00:15.847
+Both end in a theorem that says
+
+6
+00:00:15.847 --> 00:00:18.420
+the maximum equals the minimum.
+
+7
+00:00:18.770 --> 00:00:20.050
+First, flows.
+
+8
+00:00:20.050 --> 00:00:23.301
+A bakery sends vans to a market
+
+9
+00:00:23.301 --> 00:00:26.650
+through three depots, a, b and c.
+
+10
+00:00:27.230 --> 00:00:29.141
+Each road is one way
+
+11
+00:00:29.232 --> 00:00:31.872
+and carries at most a certain
+
+12
+00:00:31.963 --> 00:00:35.421
+number of vans per hour: its capacity.
+
+13
+00:00:35.421 --> 00:00:38.789
+Six from the bakery to a, four to b
+
+14
+00:00:38.789 --> 00:00:39.790
+and so on.
+
+15
+00:00:40.140 --> 00:00:43.614
+A flow gives every road a number of vans
+
+16
+00:00:43.614 --> 00:00:46.240
+between zero and its capacity.
+
+17
+00:00:46.240 --> 00:00:47.935
+And at every depot
+
+18
+00:00:47.935 --> 00:00:50.900
+as many vans must arrive as leave.
+
+19
+00:00:51.480 --> 00:00:54.829
+Linear algebra writes this in one line.
+
+20
+00:00:54.915 --> 00:00:57.061
+With the incidence matrix
+
+21
+00:00:57.147 --> 00:01:00.668
+A of Lecture eleven, A transpose f lists
+
+22
+00:01:00.668 --> 00:01:04.360
+for every node, arrivals minus departures.
+
+23
+00:01:04.710 --> 00:01:05.850
+For this flow
+
+24
+00:01:05.850 --> 00:01:09.432
+A transpose f is minus eight at the bakery
+
+25
+00:01:09.432 --> 00:01:11.142
+zero at every depot
+
+26
+00:01:11.142 --> 00:01:13.178
+and eight at the market.
+
+27
+00:01:13.178 --> 00:01:15.865
+Eight vans per hour get through
+
+28
+00:01:15.865 --> 00:01:18.470
+the value of the flow is eight.
+
+29
+00:01:18.820 --> 00:01:21.320
+But the roads out of the bakery
+
+30
+00:01:21.400 --> 00:01:23.900
+could carry six plus four: ten.
+
+31
+00:01:24.480 --> 00:01:27.953
+Can a cleverer flow move ten vans per hour
+
+32
+00:01:27.953 --> 00:01:31.427
+using the full capacity out of the bakery?
+
+33
+00:01:31.427 --> 00:01:32.800
+Pause and guess.
+
+34
+00:01:36.380 --> 00:01:36.752
+No.
+
+35
+00:01:36.752 --> 00:01:39.450
+Draw a line around the bakery
+
+36
+00:01:39.543 --> 00:01:41.682
+and the depots a and b.
+
+37
+00:01:41.682 --> 00:01:44.659
+Every van must cross that line
+
+38
+00:01:44.659 --> 00:01:48.380
+and only three roads cross it outwards.
+
+39
+00:01:48.730 --> 00:01:51.295
+Together they carry three
+
+40
+00:01:51.398 --> 00:01:54.066
+plus one plus four: eight.
+
+41
+00:01:54.066 --> 00:01:57.247
+So eight is the best possible
+
+42
+00:01:57.247 --> 00:02:00.530
+and our flow is a maximum flow.
+
+43
+00:02:00.880 --> 00:02:02.580
+Such a line is a cut.
+
+44
+00:02:02.580 --> 00:02:05.251
+Every flow is at most every cut
+
+45
+00:02:05.332 --> 00:02:08.651
+and the max flow min cut theorem says the
+
+46
+00:02:08.732 --> 00:02:11.726
+largest flow equals the smallest cut.
+
+47
+00:02:11.726 --> 00:02:14.155
+The cut names the bottleneck
+
+48
+00:02:14.236 --> 00:02:16.178
+widen one of these three
+
+49
+00:02:16.259 --> 00:02:18.040
+roads to deliver more.
+
+50
+00:02:18.620 --> 00:02:20.553
+Now change two numbers
+
+51
+00:02:20.553 --> 00:02:24.168
+six vans on the road from the bakery to a
+
+52
+00:02:24.168 --> 00:02:25.933
+and two from a to b.
+
+53
+00:02:25.933 --> 00:02:29.380
+Every road is still within its capacity.
+
+54
+00:02:29.730 --> 00:02:33.498
+But A transpose g is one at depot
+
+55
+00:02:33.612 --> 00:02:38.294
+a and one at depot b: vans pile up there.
+
+56
+00:02:38.294 --> 00:02:40.578
+This is not a flow.
+
+57
+00:02:40.578 --> 00:02:44.803
+Capacities alone do not make a flow.
+
+58
+00:02:44.803 --> 00:02:49.370
+Conservation, a linear condition, does.
+
+59
+00:02:49.950 --> 00:02:52.440
+How do we find a maximum flow?
+
+60
+00:02:52.440 --> 00:02:53.850
+Start from zero
+
+61
+00:02:53.850 --> 00:02:56.589
+and look for an augmenting path
+
+62
+00:02:56.672 --> 00:02:59.576
+a route from bakery to market where
+
+63
+00:02:59.659 --> 00:03:02.066
+each road has spare capacity
+
+64
+00:03:02.149 --> 00:03:04.389
+or carries flow that we may
+
+65
+00:03:04.472 --> 00:03:06.630
+cancel by going backwards.
+
+66
+00:03:06.980 --> 00:03:11.254
+Push as much as the path allows, and repeat.
+
+67
+00:03:11.254 --> 00:03:14.363
+Searching shortest paths first
+
+68
+00:03:14.363 --> 00:03:17.860
+we push four, then three, then one.
+
+69
+00:03:18.210 --> 00:03:19.232
+Total: eight.
+
+70
+00:03:19.232 --> 00:03:21.275
+And when no path is left
+
+71
+00:03:21.354 --> 00:03:24.261
+the nodes we can still reach from the
+
+72
+00:03:24.340 --> 00:03:27.091
+bakery are exactly the minimum cut.
+
+73
+00:03:27.169 --> 00:03:29.370
+The algorithm finds the flow
+
+74
+00:03:29.448 --> 00:03:31.570
+and the bottleneck at once.
+
+75
+00:03:32.150 --> 00:03:34.221
+Why allow going backwards?
+
+76
+00:03:34.301 --> 00:03:36.770
+Isn't it enough to keep pushing
+
+77
+00:03:36.850 --> 00:03:38.204
+along free paths?
+
+78
+00:03:38.204 --> 00:03:41.310
+Take a second network with five roads.
+
+79
+00:03:41.660 --> 00:03:44.388
+Send everything along the long path
+
+80
+00:03:44.466 --> 00:03:47.896
+from the bakery through a and b: three vans.
+
+81
+00:03:47.896 --> 00:03:50.624
+Now the road from the bakery to a
+
+82
+00:03:50.624 --> 00:03:53.352
+and the road from b to the market
+
+83
+00:03:53.352 --> 00:03:54.521
+are both full.
+
+84
+00:03:54.521 --> 00:03:56.236
+No free path is left
+
+85
+00:03:56.236 --> 00:03:58.340
+and greedy stops at three.
+
+86
+00:03:58.690 --> 00:04:00.946
+But the maximum is five.
+
+87
+00:04:00.946 --> 00:04:03.297
+Go from the bakery to b
+
+88
+00:04:03.297 --> 00:04:06.399
+back along the road from a to b
+
+89
+00:04:06.399 --> 00:04:08.561
+then on to the market.
+
+90
+00:04:08.561 --> 00:04:12.416
+That cancels two vans and reroutes them.
+
+91
+00:04:12.416 --> 00:04:14.672
+Without backward steps
+
+92
+00:04:14.672 --> 00:04:17.210
+greedy can stop too early.
+
+93
+00:04:17.790 --> 00:04:20.756
+One more link to Lecture eleven.
+
+94
+00:04:20.849 --> 00:04:23.908
+Add a return road from the market
+
+95
+00:04:24.000 --> 00:04:25.761
+back to the bakery.
+
+96
+00:04:25.761 --> 00:04:29.098
+Then a flow balances at every node
+
+97
+00:04:29.098 --> 00:04:31.230
+A transpose f is zero.
+
+98
+00:04:31.580 --> 00:04:34.181
+So flows are vectors in the
+
+99
+00:04:34.277 --> 00:04:38.226
+nullspace of A transpose: the loop space.
+
+100
+00:04:38.226 --> 00:04:41.404
+With eight roads and five nodes
+
+101
+00:04:41.404 --> 00:04:45.642
+its dimension is eight minus five plus one
+
+102
+00:04:45.642 --> 00:04:46.220
+four.
+
+103
+00:04:46.570 --> 00:04:48.949
+The capacities cut a bounded
+
+104
+00:04:49.034 --> 00:04:51.157
+region out of that space
+
+105
+00:04:51.157 --> 00:04:54.980
+and the maximum flow sits at a corner of it.
+
+106
+00:04:54.980 --> 00:04:57.189
+That is a linear program
+
+107
+00:04:57.274 --> 00:05:00.417
+and max flow equals min cut is a case
+
+108
+00:05:00.502 --> 00:05:03.050
+of linear programming duality.
+
+109
+00:05:03.630 --> 00:05:07.018
+So, a flow balances at the inner nodes
+
+110
+00:05:07.018 --> 00:05:09.363
+A transpose f equals zero
+
+111
+00:05:09.363 --> 00:05:12.230
+and stays within the capacities.
+
+112
+00:05:12.580 --> 00:05:15.460
+Every flow is at most every cut
+
+113
+00:05:15.460 --> 00:05:19.510
+and the maximum flow equals the minimum cut.
+
+114
+00:05:19.510 --> 00:05:22.030
+Augmenting paths find both
+
+115
+00:05:22.030 --> 00:05:25.180
+as long as they may run backwards.
+
+116
+00:05:25.530 --> 00:05:28.889
+In part two: games where one side's gain
+
+117
+00:05:28.973 --> 00:05:30.652
+is the other's loss
+
+118
+00:05:30.652 --> 00:05:33.591
+why the best plan is a random mix
+
+119
+00:05:33.591 --> 00:05:35.690
+and the minimax theorem.

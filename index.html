@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LA101 Linear Algebra · Interactive Notes</title>
+  <meta name="description" content="LA101 Linear Algebra: an open course with checked lecture notes, interactive pages and videos. Inspired by Gilbert Strang's MIT 18.06.">
+  <!-- seo --><!-- written by la101/tools/site_build.py -->
+  <link rel="canonical" href="https://boxi-math.github.io/la101/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="LA101 Linear Algebra">
+  <meta property="og:title" content="LA101 Linear Algebra · Interactive Notes">
+  <meta property="og:description" content="LA101 Linear Algebra: an open course with checked lecture notes, interactive pages and videos. Inspired by Gilbert Strang&#x27;s MIT 18.06.">
+  <meta property="og:url" content="https://boxi-math.github.io/la101/">
+  <meta property="og:image" content="https://boxi-math.github.io/la101/assets/share-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="LA101 Linear Algebra: an open course with interactive notes, demos and videos">
+  <meta property="og:locale" content="en">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="LA101 Linear Algebra · Interactive Notes">
+  <meta name="twitter:description" content="LA101 Linear Algebra: an open course with checked lecture notes, interactive pages and videos. Inspired by Gilbert Strang&#x27;s MIT 18.06.">
+  <meta name="twitter:image" content="https://boxi-math.github.io/la101/assets/share-card.png">
+  <!-- /seo -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230F6E73'/%3E%3Ctext x='16' y='22' font-family='serif' font-size='17' font-weight='700' text-anchor='middle' fill='%23F6F5F1'%3EAx%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/style.css">
+<!-- Hub page: adapted from peiyuUniversity/aie1001/site/index.html. -->
+  <style>
+    .lec:hover { transform: none; }
+    .lec .acts { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 4px; }
+    .lec .notes { font-size: 13px; font-weight: 600; text-decoration: none; padding: 6px 10px; border-radius: 7px; border: 1px solid var(--line); }
+    .lec.ready .notes { color: var(--paper); background: var(--teal); border-color: var(--teal); }
+    .lec.soon .notes { color: var(--stone); cursor: help; }
+    .lec .watch { font-size: 13px; padding: 6px 10px; border-radius: 7px; border: 1px solid var(--amber); background: var(--mark); color: var(--ink); cursor: pointer; }
+    .lec .watch:hover { filter: brightness(1.05); }
+    .lec .msg-soon { flex-basis: 100%; font: 500 11px var(--mono); color: var(--stone); }
+    .part { font: 600 12px var(--mono); color: var(--amber); letter-spacing: 0.06em; margin: 34px 0 12px; }
+    dialog.player { width: min(1040px, calc(100vw - 32px)); padding: 0; border: 1px solid var(--line); border-radius: 14px; background: var(--card); color: var(--ink); }
+    dialog.player::backdrop { background: rgba(0, 0, 0, 0.6); }
+    dialog.player video { display: block; width: 100%; background: #000; }
+    dialog.player .bar { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 10px 14px; font-size: 14px; }
+    dialog.player .plist { display: flex; flex-wrap: wrap; gap: 6px; padding: 0 14px 14px; }
+    dialog.player .plist button { font-size: 12.5px; padding: 5px 9px; border-radius: 7px; border: 1px solid var(--line); background: var(--paper); color: var(--ink); cursor: pointer; text-align: left; }
+    dialog.player .plist button.on { border-color: var(--amber); background: var(--mark); font-weight: 600; }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html"><span class="brand-mark">Ax</span><span class="brand-text"><b>LA101</b><span>Linear Algebra</span></span></a>
+    <span class="spacer" style="flex:1"></span>
+    <button class="iconbtn" id="theme" title="Light / dark">☾</button>
+  </header>
+  <main class="wrap">
+    <section class="hero" style="grid-template-columns:minmax(0,1fr)">
+      <div>
+        <span class="pill">Open course · English · CC BY-SA 4.0</span>
+        <h1>Linear Algebra<small>Interactive lecture notes and videos</small></h1>
+        <p class="lead">Thirty lectures, from three pictures of a linear system to the singular value decomposition and computing with matrices, plus a few optional electives. Each lecture has notes where every number has been computed by running code, demos you can step through, and two captioned videos of about five minutes each (10–12 minutes per lecture). Most lectures connect the algebra to a machine-learning example, and every lecture ends with a self-check, exercises with hints and full solutions, and a section on working with AI: what to ask, and how to check the answer.</p>
+        <p class="meta">Inspired by Gilbert Strang's MIT 18.06 (<a href="https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/" target="_blank" rel="noopener">MIT OpenCourseWare</a>).</p>
+      </div>
+    </section>
+    <div id="lectures"></div>
+    <p class="meta" style="margin:40px 0">Lectures and electives go live one at a time. The order of topics follows MIT 18.06, with two extra lectures on computing with matrices; the quiz-review lectures are replaced by the self-check at the end of every lecture (review pages for whole units are planned).</p>
+  </main>
+  <footer></footer>
+  <script src="assets/course.js"></script>
+  <script>
+    renderFooter("");
+    const LECTURES = [
+      ["Unit 1 · Equations and elimination", [
+        [1, "Three pictures of a linear system", "Rows as lines and planes, columns as combinations, Ax as one product"],
+        [2, "Elimination", "Remove unknowns step by step, and see where it breaks"],
+        [3, "Multiplying and inverting matrices", "Four ways to read AB, rank-one pieces; Gauss–Jordan; when no inverse exists"],
+        [4, "A = LU", "Elimination's bookkeeping becomes a factorization"],
+        [5, "Transposes, permutations and Rⁿ", "Symmetric matrices, and what a subspace is"],
+      ]],
+      ["Unit 2 · The four subspaces", [
+        [6, "Column space and nullspace", "When Ax = b can be solved; what the solutions of Ax = 0 form"],
+        [7, "Solving Ax = 0", "Pivots, free variables and special solutions"],
+        [8, "Solving Ax = b", "A particular solution plus the nullspace; rank decides"],
+        [9, "Independence, basis and dimension", "The fewest vectors that describe a space"],
+        [10, "The four fundamental subspaces", "Their dimensions, how they fit together, and rank-one matrices"],
+        [11, "Graphs and networks", "Incidence matrices, Kirchhoff's laws, graphs behind recommendations"],
+      ]],
+      ["Unit 3 · Orthogonality and least squares", [
+        [12, "Inner products, lengths and orthogonal subspaces", "Cosines, and why the row space is perpendicular to the nullspace"],
+        [13, "Projections", "Dropping a vector onto a line or a subspace"],
+        [14, "Least squares", "Fitting a line to data: the first step of linear regression"],
+        [15, "Orthonormal bases, Gram–Schmidt and QR", "Building perpendicular axes"],
+      ]],
+      ["Unit 4 · Determinants", [
+        [16, "Three properties of the determinant", "Everything else follows from them"],
+        [17, "Determinant formulas and their uses", "Cofactors, Cramer's rule, area and volume"],
+      ]],
+      ["Unit 5 · Eigenvalues and dynamics", [
+        [18, "Eigenvalues and eigenvectors", "The directions a matrix only stretches"],
+        [19, "Diagonalization and powers", "Powers of a matrix made easy, with a recurrence of our own"],
+        [20, "Differential equations and e^(At)", "Growth, decay, oscillation and stability"],
+        [21, "Markov matrices and steady states", "Random walks, PageRank and power iteration"],
+      ]],
+      ["Unit 6 · Symmetric, complex and similar matrices", [
+        [22, "Symmetric and positive definite matrices", "Real eigenvalues, perpendicular eigenvectors, energy bowls"],
+        [23, "Positive definiteness and minima", "The Hessian, and why gradient descent works on a bowl"],
+        [24, "Complex matrices and the FFT", "Complex inner products and the fast Fourier transform (optional)"],
+        [25, "Linear transformations, change of basis and similar matrices", "One map, many matrices"],
+      ]],
+      ["Unit 7 · The SVD and its uses", [
+        [26, "The singular value decomposition", "Any matrix is rotate, stretch, rotate"],
+        [27, "Low-rank approximation and PCA", "Compression and principal components"],
+        [28, "The pseudoinverse", "The best answer to any Ax = b"],
+      ]],
+      ["Unit 8 · Computing with matrices", [
+        [29, "Norms and the condition number", "How much errors can grow, and why"],
+        [30, "Iterative methods and the course map", "Solving huge systems step by step; the whole course on one page"],
+      ]],
+      // Electives keep their own ids (E1–E7) and never shift the core numbering (PLAN.md). "later": not scheduled
+      // yet, so the card never links; "page": a short link page with no notes or videos of its own.
+      ["Electives · optional", [
+        ["E1", "Graph Laplacians and spectral clustering", "Grouping the nodes of a graph with eigenvectors"],
+        ["E2", "Linear programming and duality", "A short link page: corners, prices and duality, continued in OPT101", "page"],
+        ["E3", "Network flows and zero-sum games", "Flows through networks, cuts, and minimax"],
+        ["E4", "Minimum principles and finite elements", "Solving by minimizing energy"],
+        ["E5", "The Jordan form", "Generalized eigenvectors, Jordan blocks, and why computers prefer the Schur form"],
+        ["E6", "Kronecker products, tensors and sums of subspaces", "Block structure, vec, and arrays with more than two indices"],
+        ["E7", "Multivariate Gaussians and weighted least squares", "Covariance as a quadratic form, whitening, least squares with unequal noise"],
+      ]],
+    ];
+    // Video parts per lecture: [title, minutes]. Files are LNN/media/LNN-K.mp4 (electives: E1/media/E1-K.mp4;
+    // gitignored, copied from build/). tools/publish.py checks that every part of a published lecture is there.
+    const VIDEOS = {
+      1: [["Row picture and column picture", 5.1], ["Ax = b: two ways to multiply", 6.4]],
+      2: [["Elimination: one unknown at a time", 5.5], ["Each step is a matrix", 5.8]],
+      3: [["Four ways to multiply", 5.5], ["Undoing a matrix", 5.5]],
+      4: [["Elimination becomes A = LU", 4.9], ["Factor once, solve many", 5.3]],
+      5: [["Turning the table", 4.9], ["Spaces you cannot leave", 5.0]],
+      6: [["Where can it go, and what goes nowhere?", 5.2], ["A drone in space", 6.3]],
+      7: [["Pivots, free variables and special solutions", 4.9], ["The reduced form R, and counting n − r", 4.9]],
+      8: [["Can the drone get there, and in how many ways?", 5.0], ["The rank decides", 4.8]],
+      9: [["Independence and span", 4.6], ["Basis and dimension", 5.0]],
+      10: [["Rows: the row space and the left nullspace", 6.3], ["Rank-one pieces", 5.8]],
+      11: [["Heights, climbs and loops", 6.2], ["Flows, loops and the Laplacian", 6.2]],
+      12: [["Dot products, lengths and angles", 5.9], ["Orthogonal subspaces and complements", 6.2]],
+      13: [["Projecting onto a line", 5.7], ["Projecting onto a plane", 6.2]],
+      14: [["The best line through four points", 5.4], ["Least squares at work", 5.4]],
+      15: [["Orthonormal bases and Gram–Schmidt", 5.6], ["A = QR, Cholesky, and stable least squares", 5.9]],
+      16: [["Three rules for the determinant", 5.0], ["Determinants from pivots, and the product rule", 4.7]],
+      17: [["Formulas for the determinant", 5.0], ["Determinants as areas, volumes and densities", 5.3]],
+      18: [["Directions that only stretch", 5.5], ["Finding eigenvalues", 5.8]],
+      19: [["A hundred turns ahead", 5.5], ["Sequences, populations, networks", 5.3]],
+      20: [["Two rooms cooling", 5.2], ["Decay, growth, oscillation", 6.4]],
+      21: [["Where the bikes settle", 5.0], ["Ranking a mini-web", 5.3]],
+      22: [["The spectral theorem and Householder QR", 6.1], ["Positive definite matrices", 5.6]],
+      23: [["Minima, saddles and the Rayleigh quotient", 5.2], ["Quadratic forms, conics and Sylvester's law", 5.2]],
+      24: [["Complex vectors and the Fourier matrix", 5.4], ["The fast Fourier transform and convolution", 5.4]],
+      25: [["Vector spaces, coordinates and the matrix of a map", 5.4], ["Change of basis and similar matrices", 5.5]],
+      26: [["Rotate, stretch, rotate", 5.2], ["Pieces, subspaces and hidden tastes", 5.5]],
+      27: [["Keep the first pieces", 5.1], ["Principal components and low-rank updates", 5.0]],
+      28: [["Left, right and pseudo inverses", 4.8], ["The shortest best answer", 5.0]],
+      29: [["How much can errors grow?", 4.8], ["Squaring, collinear features and low precision", 4.6]],
+      30: [["Step by step to the answer", 6.1], ["How eigenvalues are really computed, and the course map", 6.0]],
+      E1: [["The Laplacian and the Fiedler vector", 5.3], ["Balanced cuts and spectral clustering", 5.3]],
+      E3: [["Flows, cuts and the bottleneck", 5.6], ["Zero-sum games and the minimax theorem", 5.8]],
+      E4: [["Solving by minimising: springs and the Ritz method", 6.0], ["Finite elements: every element is a spring", 6.1]],
+      E5: [["Missing eigenvectors and Jordan chains", 6.6], ["Powers, exponentials, and why computers avoid the Jordan form", 6.4]],
+      E6: [["Kronecker products: matrices made of matrices", 5.9], ["Sums of subspaces, and arrays with more indices", 5.4]],
+      E7: [["The Gaussian is a quadratic form", 6.0], ["Weighted least squares: trust each measurement by its noise", 6.2]],
+    };
+    const pad = (n) => String(n).padStart(2, "0");
+    // A core lecture is a number (folder LNN), an elective its id string (folder E1).
+    const fid = (n) => (typeof n === "number" ? `L${pad(n)}` : n);
+    const longName = (n) => (typeof n === "number" ? `Lecture ${n}` : `Elective ${n}`);
+    const total = (n) => Math.round((VIDEOS[n] || []).reduce((a, [, m]) => a + m, 0));
+    document.getElementById("lectures").innerHTML = LECTURES.map(([part, list]) =>
+      `<div class="part">${part.toUpperCase()}</div><div class="chapters">` + list.map(([n, t, s, kind]) =>
+        `<div class="card chapcard lec soon${kind === "later" ? " later" : ""}" data-n="${fid(n)}" data-kind="${kind || ""}">
+          <span class="num">${fid(n)}</span><h3>${t}</h3><p>${s}</p>
+          <div class="acts">
+            <span class="notes" data-href="${fid(n)}/index.html">${kind === "later" ? "Planned for later" : "Notes in preparation"}</span>
+            ${VIDEOS[n] ? `<button class="watch" data-n="${n}" data-title="${t}" hidden>▶ ${VIDEOS[n].length} videos · ${total(n)} min</button>` : ""}
+          </div></div>`).join("") + "</div>").join("");
+    // A lecture is live when its folder has an index.html (on the published site: only the lectures in
+    // site/PUBLISHED). Until then the card has no link and no video button, so the hub never links to a page or
+    // video that isn't there. Over file:// the check can't run, so every lecture shows as live.
+    // tools/publish.py replaces the null below with the published folder ids (site/PUBLISHED: "L01", …, "E1"), so
+    // the published hub needs no probing; the working copy checks each folder with a HEAD request instead.
+    // Electives marked "later" never link, not even locally.
+    const PUBLISHED = ["L01", "L02", "L03", "L04", "L05", "L06", "L07", "L08", "L09", "L10", "L11", "L12", "L13", "L14", "L15", "L16", "L17", "L18", "L19", "L20", "L21", "L22", "L23", "L24", "L25", "L26", "L27", "L28", "L29", "L30", "E1", "E2", "E3", "E4", "E5", "E6", "E7"];
+    const local = location.protocol === "file:";
+    document.querySelectorAll(".lec").forEach((card) => {
+      const label = card.querySelector(".notes");
+      const ready = () => {
+        const a = document.createElement("a");
+        a.className = "notes";
+        a.href = label.dataset.href;
+        a.textContent = card.dataset.kind === "page" ? "Open page →" : "Open notes →";
+        label.replaceWith(a);
+        card.classList.replace("soon", "ready");
+        const watch = card.querySelector(".watch");
+        if (watch) watch.hidden = false;
+      };
+      if (card.dataset.kind === "later") { label.title = "This elective is planned for later."; return; }
+      label.title = "The notes for this lecture are still being written.";
+      if (Array.isArray(PUBLISHED)) { if (PUBLISHED.includes(card.dataset.n)) ready(); return; }
+      // Over file:// an elective counts as live only once the hub lists its videos (or it is a link page), so the
+      // ones another lane is still producing stay "in preparation" in the working copy too.
+      if (local) { if (card.dataset.n.startsWith("E") && !card.querySelector(".watch") && card.dataset.kind !== "page") return; return ready(); }
+      fetch(label.dataset.href, { method: "HEAD" })
+        .then((r) => { if (r.ok) ready(); })
+        .catch(() => { /* offline or blocked: leave the card as "in preparation" */ });
+    });
+    // One shared player: the lecture's parts are listed under the video, and each part
+    // runs on into the next.
+    const dlg = document.createElement("dialog");
+    dlg.className = "player";
+    dlg.innerHTML = `<video controls preload="none"></video><div class="bar"><b></b><button class="cbtn">Close</button></div><div class="plist"></div>`;
+    document.body.appendChild(dlg);
+    const vid = dlg.querySelector("video");
+    // Captions: media/LNN-K.vtt next to every video (la101/tools/site_build.py); a Chinese track only for these.
+    const ZH_CAPTIONS = new Set(["L01"]);
+    let cur = { n: 0, k: 0, title: "" };
+    function playPart(k) {
+      const parts = VIDEOS[cur.n];
+      cur.k = k;
+      const base = `${fid(cur.n)}/media/${fid(cur.n)}-${k + 1}`;
+      vid.querySelectorAll("track").forEach((t) => t.remove());
+      [["en", "English", ""], ...(ZH_CAPTIONS.has(fid(cur.n)) ? [["zh", "中文", ".zh"]] : [])].forEach(([lang, label, ext], j) => {
+        const t = document.createElement("track");
+        Object.assign(t, { kind: "captions", srclang: lang, label, src: `${base}${ext}.vtt`, default: j === 0 });
+        vid.appendChild(t);
+      });
+      vid.src = `${base}.mp4`;
+      // English on, the others off (set again once the video loads: Chrome re-runs its own track selection).
+      const captionModes = () => [...vid.textTracks].forEach((t, j) => { t.mode = j === 0 ? "showing" : "disabled"; });
+      captionModes();
+      vid.addEventListener("loadedmetadata", captionModes, { once: true });
+      dlg.querySelector("b").textContent = `${longName(cur.n)} · Part ${k + 1} of ${parts.length} — ${parts[k][0]}`;
+      dlg.querySelectorAll(".plist button").forEach((b, j) => b.classList.toggle("on", j === k));
+      vid.play().catch(() => {});
+    }
+    vid.addEventListener("ended", () => { if (cur.k + 1 < VIDEOS[cur.n].length) playPart(cur.k + 1); });
+    dlg.querySelector(".bar button").onclick = () => dlg.close();
+    dlg.addEventListener("close", () => vid.pause());
+    document.querySelectorAll(".watch").forEach((b) => {
+      b.onclick = () => {
+        cur = { n: /^\d+$/.test(b.dataset.n) ? +b.dataset.n : b.dataset.n, k: 0, title: b.dataset.title };
+        dlg.querySelector(".plist").innerHTML = VIDEOS[cur.n].map(([t, m], j) =>
+          `<button data-k="${j}">${j + 1}. ${t} · ${m.toFixed(1)} min</button>`).join("");
+        dlg.querySelectorAll(".plist button").forEach((pb) => { pb.onclick = () => playPart(+pb.dataset.k); });
+        dlg.showModal();
+        playPart(0);
+      };
+    });
+    const themeBtn = document.getElementById("theme");
+    function applyTheme(t) {
+      if (t) document.documentElement.dataset.theme = t; else delete document.documentElement.dataset.theme;
+      const dark = t ? t === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+      themeBtn.textContent = dark ? "☀" : "☾";
+    }
+    try { applyTheme(localStorage.getItem(COURSE.themeKey)); } catch { applyTheme(null); }
+    themeBtn.onclick = () => {
+      const cur = document.documentElement.dataset.theme;
+      const dark = cur ? cur === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+      const t = dark ? "light" : "dark";
+      applyTheme(t);
+      try { localStorage.setItem(COURSE.themeKey, t); } catch { /* storage unavailable */ }
+    };
+  </script>
+</body>
+</html>

@@ -1,0 +1,453 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:05.016
+Last time we cut a matrix
+
+2
+00:00:05.101 --> 00:00:08.487
+into rank one pieces, the biggest first.
+
+3
+00:00:08.487 --> 00:00:10.265
+Here is our A again
+
+4
+00:00:10.265 --> 00:00:13.820
+it turns the unit circle into an ellipse.
+
+5
+00:00:14.170 --> 00:00:16.318
+Its two stretches are four
+
+6
+00:00:16.400 --> 00:00:18.052
+along the long axis
+
+7
+00:00:18.052 --> 00:00:20.530
+and one along the short axis.
+
+8
+00:00:20.880 --> 00:00:23.994
+Now a question with a surprising answer.
+
+9
+00:00:23.994 --> 00:00:26.252
+Of all matrices of rank one
+
+10
+00:00:26.252 --> 00:00:28.354
+which is the closest to A?
+
+11
+00:00:28.354 --> 00:00:31.157
+Does finding it need a long search?
+
+12
+00:00:31.157 --> 00:00:32.480
+Pause and think.
+
+13
+00:00:36.060 --> 00:00:37.670
+No search is needed.
+
+14
+00:00:37.670 --> 00:00:40.890
+Keep the first piece and drop the rest.
+
+15
+00:00:40.970 --> 00:00:43.788
+Four u one v one transpose squeezes
+
+16
+00:00:43.868 --> 00:00:46.605
+the whole circle onto one segment
+
+17
+00:00:46.605 --> 00:00:49.020
+the long axis of the ellipse.
+
+18
+00:00:49.370 --> 00:00:51.995
+Keep k pieces and you get A k
+
+19
+00:00:51.995 --> 00:00:53.744
+a matrix of rank k.
+
+20
+00:00:53.832 --> 00:00:57.244
+The Eckart Young theorem says no matrix
+
+21
+00:00:57.331 --> 00:00:59.518
+of rank k is closer to A.
+
+22
+00:00:59.518 --> 00:01:01.443
+We will not prove it
+
+23
+00:01:01.443 --> 00:01:04.330
+but we can see what it measures.
+
+24
+00:01:04.910 --> 00:01:08.004
+What is left over is the dropped piece
+
+25
+00:01:08.004 --> 00:01:10.623
+sigma two u two v two transpose.
+
+26
+00:01:10.623 --> 00:01:13.003
+It always points along u two.
+
+27
+00:01:13.003 --> 00:01:15.066
+Take the point one, zero.
+
+28
+00:01:15.066 --> 00:01:18.240
+A sends it to two, zero on the ellipse
+
+29
+00:01:18.240 --> 00:01:21.652
+the first piece sends it to one point six
+
+30
+00:01:21.652 --> 00:01:24.270
+zero point eight on the segment.
+
+31
+00:01:24.620 --> 00:01:27.239
+The gap between them has length
+
+32
+00:01:27.323 --> 00:01:29.182
+about zero point nine.
+
+33
+00:01:29.182 --> 00:01:31.378
+Now take the input v two.
+
+34
+00:01:31.378 --> 00:01:34.250
+The first piece sends it to zero
+
+35
+00:01:34.250 --> 00:01:37.206
+and the gap is the whole of u two
+
+36
+00:01:37.206 --> 00:01:38.220
+length one.
+
+37
+00:01:38.570 --> 00:01:40.773
+No point has a longer gap
+
+38
+00:01:40.773 --> 00:01:43.315
+the largest gap is sigma two.
+
+39
+00:01:43.315 --> 00:01:45.772
+In general the error of A k
+
+40
+00:01:45.772 --> 00:01:47.212
+in the two norm
+
+41
+00:01:47.212 --> 00:01:50.686
+is the first singular value you dropped.
+
+42
+00:01:50.686 --> 00:01:52.634
+In the Frobenius norm
+
+43
+00:01:52.634 --> 00:01:55.600
+which adds up all squared entries
+
+44
+00:01:55.684 --> 00:01:58.057
+its square is the sum of the
+
+45
+00:01:58.141 --> 00:02:00.090
+dropped sigmas squared.
+
+46
+00:02:00.670 --> 00:02:03.520
+Compare a guess that looks natural.
+
+47
+00:02:03.602 --> 00:02:06.208
+Keep only the first row of A and
+
+48
+00:02:06.289 --> 00:02:08.488
+set the second row to zero.
+
+49
+00:02:08.488 --> 00:02:10.280
+That is rank one too
+
+50
+00:02:10.361 --> 00:02:12.560
+it flattens the circle onto
+
+51
+00:02:12.641 --> 00:02:14.270
+the horizontal axis.
+
+52
+00:02:14.620 --> 00:02:17.154
+Look at the input zero, one.
+
+53
+00:02:17.154 --> 00:02:19.506
+A sends it to three, two.
+
+54
+00:02:19.506 --> 00:02:22.673
+The guess sends it to three, zero.
+
+55
+00:02:22.673 --> 00:02:25.930
+The gap is two units straight down
+
+56
+00:02:25.930 --> 00:02:27.740
+twice the best gap.
+
+57
+00:02:28.090 --> 00:02:30.434
+Keeping the first column gives
+
+58
+00:02:30.512 --> 00:02:33.872
+the same matrix here, also at distance two.
+
+59
+00:02:33.872 --> 00:02:35.435
+The SVD piece wins
+
+60
+00:02:35.435 --> 00:02:38.170
+and we found it without searching.
+
+61
+00:02:38.750 --> 00:02:40.062
+Now a real use.
+
+62
+00:02:40.149 --> 00:02:42.423
+A grey picture is a matrix
+
+63
+00:02:42.510 --> 00:02:44.347
+of brightness values.
+
+64
+00:02:44.347 --> 00:02:46.445
+We drew a small sunset
+
+65
+00:02:46.445 --> 00:02:50.380
+forty eight rows by sixty four columns: sky
+
+66
+00:02:50.380 --> 00:02:52.916
+sun, a mountain and the sea.
+
+67
+00:02:52.916 --> 00:02:55.190
+Its rank is thirty eight.
+
+68
+00:02:55.540 --> 00:02:58.031
+Here are its first ten singular
+
+69
+00:02:58.111 --> 00:02:59.316
+values as bars.
+
+70
+00:02:59.316 --> 00:03:02.209
+The first one towers over the rest
+
+71
+00:03:02.209 --> 00:03:04.860
+and after that they shrink fast.
+
+72
+00:03:05.210 --> 00:03:07.386
+Each piece costs one column
+
+73
+00:03:07.386 --> 00:03:09.174
+one row and one sigma
+
+74
+00:03:09.174 --> 00:03:12.438
+a hundred and thirteen numbers per piece
+
+75
+00:03:12.516 --> 00:03:15.392
+instead of three thousand and seventy
+
+76
+00:03:15.469 --> 00:03:17.490
+two for the whole picture.
+
+77
+00:03:17.840 --> 00:03:18.998
+Keep one piece
+
+78
+00:03:18.998 --> 00:03:22.008
+and the error is about thirty percent.
+
+79
+00:03:22.085 --> 00:03:24.015
+The two norm error is the
+
+80
+00:03:24.092 --> 00:03:25.867
+height of the next bar.
+
+81
+00:03:25.867 --> 00:03:28.646
+Two pieces: under nineteen percent.
+
+82
+00:03:28.646 --> 00:03:31.193
+Ten pieces: about seven percent
+
+83
+00:03:31.193 --> 00:03:34.280
+from eleven hundred and thirty numbers.
+
+84
+00:03:34.860 --> 00:03:38.305
+How much of the picture does one piece keep?
+
+85
+00:03:38.383 --> 00:03:41.124
+A tempting answer divides sigma one
+
+86
+00:03:41.202 --> 00:03:43.473
+by the sum of all the sigmas.
+
+87
+00:03:43.473 --> 00:03:45.900
+That gives forty nine percent.
+
+88
+00:03:46.250 --> 00:03:48.719
+But the size of a picture is the
+
+89
+00:03:48.796 --> 00:03:50.879
+sum of its squared entries
+
+90
+00:03:50.956 --> 00:03:52.730
+and that equals the sum
+
+91
+00:03:52.807 --> 00:03:54.504
+of the squared sigmas.
+
+92
+00:03:54.504 --> 00:03:57.821
+Square the bars, and the first piece keeps
+
+93
+00:03:57.899 --> 00:03:59.364
+ninety one percent.
+
+94
+00:03:59.364 --> 00:04:01.370
+The rest are almost flat.
+
+95
+00:04:01.950 --> 00:04:04.277
+Not every matrix compresses.
+
+96
+00:04:04.360 --> 00:04:06.521
+Fill a picture of the same
+
+97
+00:04:06.604 --> 00:04:08.515
+size with random noise
+
+98
+00:04:08.598 --> 00:04:10.842
+and put its singular values
+
+99
+00:04:10.925 --> 00:04:12.670
+next to the sunset's.
+
+100
+00:04:13.020 --> 00:04:15.823
+The noise bars hardly fall at all.
+
+101
+00:04:15.906 --> 00:04:18.461
+Ten pieces keep ninety nine and
+
+102
+00:04:18.544 --> 00:04:20.935
+a half percent of the sunset
+
+103
+00:04:20.935 --> 00:04:23.243
+but only half of the noise.
+
+104
+00:04:23.326 --> 00:04:25.799
+Compression works because real
+
+105
+00:04:25.881 --> 00:04:27.860
+pictures have structure.
+
+106
+00:04:28.440 --> 00:04:31.564
+So: to get the best matrix of rank k
+
+107
+00:04:31.564 --> 00:04:34.180
+keep the k biggest SVD pieces.
+
+108
+00:04:34.265 --> 00:04:36.882
+The error is the first singular
+
+109
+00:04:36.966 --> 00:04:38.486
+value you dropped
+
+110
+00:04:38.486 --> 00:04:42.200
+and what you keep is measured with squares.
+
+111
+00:04:42.550 --> 00:04:43.033
+Next
+
+112
+00:04:43.033 --> 00:04:47.091
+the same idea applied to a table of data
+
+113
+00:04:47.091 --> 00:04:49.990
+principal component analysis.
